@@ -1,0 +1,135 @@
+{
+  "kanji": "丼",
+  "on": "どん · たん",
+  "onRomaji": "don · tan",
+  "kun": "どんぶり",
+  "kunRomaji": "donburi",
+  "hanviet": "Đảm (ít dùng)",
+  "jlpt": "N1",
+  "strokes": 5,
+  "radical": "丨",
+  "radicalReading": "ぼう",
+  "radicalMeaning": "gậy / nét dọc",
+  "radicalNumber": 2,
+  "type": "Hội ý",
+  "typeJa": "会意文字",
+  "structure": "井 (giếng) + 丶 (một chấm ở giữa — vật rơi xuống giếng)",
+  "school": "Ngoài danh sách Joyo · Thường dùng trong ẩm thực",
+
+  "lead": "丼 là chữ Hán <span class=\"hl\">5 nét</span>, loại <span class=\"hl\">Hội ý</span> — kết hợp hình ảnh giếng 井 và một chấm 丶 ở giữa để gợi âm thanh và hình ảnh. Đây là chữ <strong>đặc trưng của tiếng Nhật</span> (kokujị — 国字), rất ít dùng trong Hán ngữ.",
+  "mnemonic": "Nhìn vào 丼: đó là chữ <strong>井 (giếng)</strong> với <strong>một chấm (丶) rơi vào trong</strong> — hình ảnh hòn đá rơi xuống giếng tạo tiếng \"ドン！\" → <span class=\"hl\">丼 = cái tô lớn / cơm tô</span>",
+
+  "originLead": "丼 là <span class=\"hl\">chữ Nhật thuần túy (国字 — kokujị)</span>, được người Nhật sáng tạo ra, không có trong chữ Hán cổ điển của Trung Quốc. Hình thành từ 井 (giếng) thêm dấu chấm ở giữa.",
+  "originDetail": "Nguồn gốc có hai thuyết: <strong>①</strong> Mô phỏng âm thanh \"ドン\" (đồng) — tiếng vật nặng rơi xuống giếng; <strong>②</strong> Hình ảnh thức ăn đổ ào vào bát lớn, giống như đổ vào giếng. Từ thời Edo (1603–1868), 丼 được dùng để chỉ <span class=\"hl\">cái bát lớn sâu lòng</span> và sau đó chỉ <span class=\"hl\">món cơm tô</span> — cơm trắng phủ thức ăn bên trên. Ngày nay 丼 gắn liền với văn hóa ẩm thực Nhật: 牛丼、親子丼、天丼、海鮮丼…",
+  "decomp": [
+    { "char": "井", "name": "Tỉnh",   "meaning": "Cái giếng — hình dạng cái bát sâu lòng, tròn miệng" },
+    { "char": "丶", "name": "Chủ",   "meaning": "Dấu chấm — vật rơi xuống, âm thanh ドン, hoặc thức ăn đổ vào" }
+  ],
+
+  "meanings": [
+    { "title": "Cái bát lớn, tô lớn",        "desc": "Bát sâu lòng, thường dùng để đựng cơm và đồ ăn phủ bên trên. Đây là nghĩa gốc của 丼." },
+    { "title": "Món cơm tô (どんぶりもの)", "desc": "Cơm trắng trong bát lớn với các loại topping phủ lên — thể loại ẩm thực Nhật cực phổ biến. 牛丼、親子丼、天丼 đều thuộc nhóm này." },
+    { "title": "Âm tiếng động ドン",          "desc": "Dùng trong manga/anime để mô tả tiếng động mạnh, bất ngờ. Ít dùng trong văn viết trang trọng." }
+  ],
+
+  "vocab": [
+    { "word": "丼",     "reading": "どんぶり (donburi)",           "vi": "Cơm tô, cái tô lớn",          "jlpt": "N1", "jp": "「丼を注文したら、すぐに運ばれてきた。」",                       "jpVi": "Tôi gọi cơm tô và nó được mang ra ngay." },
+    { "word": "牛丼",   "reading": "ぎゅうどん (gyūdon)",          "vi": "Cơm thịt bò",                  "jlpt": "N1", "jp": "「牛丼を食べるなら吉野家が好きだ。」",                           "jpVi": "Nếu ăn cơm thịt bò, tôi thích Yoshinoya hơn." },
+    { "word": "親子丼", "reading": "おやこどん (oyakodon)",        "vi": "Cơm gà trứng",                 "jlpt": "N1", "jp": "「親子丼は鶏肉と卵を使ったどんぶりだ。」",                       "jpVi": "Oyakodon là cơm tô dùng thịt gà và trứng." },
+    { "word": "天丼",   "reading": "てんどん (tendon)",            "vi": "Cơm tempura",                  "jlpt": "N1", "jp": "「天丼のエビがサクサクしていておいしい。」",                     "jpVi": "Con tôm tempura trong cơm tempura giòn tan và ngon." },
+    { "word": "海鮮丼", "reading": "かいせんどん (kaisedon)",      "vi": "Cơm hải sản",                  "jlpt": "",   "jp": "「築地で海鮮丼を食べるのが夢だった。」",                         "jpVi": "Ăn cơm hải sản ở Tsukiji là ước mơ của tôi." },
+    { "word": "カツ丼", "reading": "かつどん (katsudon)",          "vi": "Cơm thịt heo tẩm bột chiên",  "jlpt": "N1", "jp": "「試験に合格したのでカツ丼を食べた。」",                         "jpVi": "Vì thi đỗ nên tôi ăn cơm katsu để ăn mừng." },
+    { "word": "丼物",   "reading": "どんぶりもの (donburimono)",   "vi": "Các món cơm tô",               "jlpt": "",   "jp": "「丼物はワンコインで食べられる店が多い。」",                     "jpVi": "Có nhiều quán ăn cơm tô với giá chỉ 500 yên." },
+    { "word": "鉄火丼", "reading": "てっかどん (tekkadon)",        "vi": "Cơm cá ngừ sashimi",           "jlpt": "",   "jp": "「鉄火丼はマグロのさくを薄く切ってのせたものだ。」",             "jpVi": "Tekkadon là cơm phủ cá ngừ thái mỏng bên trên." }
+  ],
+
+  "idioms": [
+    {
+      "text": "どんぶり勘定", "fontSize": 18,
+      "kana": "どんぶりかんじょう",
+      "meaning": "Tính toán đại khái, ẩu, không cẩn thận — bỏ tiền vào túi không quản lý, giống như bỏ tất cả vào cái tô lớn không phân loại.",
+      "jp": "「どんぶり勘定では、いつまでたっても貯金できない。」",
+      "jpVi": "Cứ chi tiêu bừa bãi không tính toán thì mãi mãi không tiết kiệm được."
+    },
+    {
+      "text": "親子丼", "fontSize": 22,
+      "kana": "おやこどん",
+      "meaning": "Cơm gà trứng — tên món này vui ở chỗ: gà là \"cha mẹ\" (親), trứng là \"con\" (子) → thật sự là \"cơm cha mẹ-con cái\"!",
+      "jp": "「親子丼という名前は、鶏（親）と卵（子）を使うことから来ている。」",
+      "jpVi": "Tên gọi 'oyakodon' xuất phát từ việc dùng cả gà (cha mẹ) và trứng (con cái)."
+    },
+    {
+      "text": "カツ丼で験担ぎ", "fontSize": 16,
+      "kana": "かつどんでげんかつぎ",
+      "meaning": "Ăn cơm katsu trước kỳ thi để lấy may — vì 「カツ」đồng âm với「勝つ」(thắng). Phong tục phổ biến trong học sinh Nhật.",
+      "jp": "「試験の前日、験担ぎにカツ丼を食べた。」",
+      "jpVi": "Hôm trước ngày thi, tôi ăn cơm katsu để lấy may."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết phần 井 (4 nét) trước theo thứ tự chuẩn, sau đó thêm dấu chấm 丶 vào giữa.",
+  "strokeSteps": [
+    { "range": "1",   "char": "一", "label": "Nét ngang trên",   "detail": "ngang từ trái sang phải" },
+    { "range": "2",   "char": "丨", "label": "Nét dọc trái",     "detail": "dọc từ trên xuống" },
+    { "range": "3",   "char": "丨", "label": "Nét dọc phải",     "detail": "dọc từ trên xuống" },
+    { "range": "4",   "char": "一", "label": "Nét ngang dưới",   "detail": "ngang từ trái sang phải" },
+    { "range": "5",   "char": "丶", "label": "Dấu chấm giữa",   "detail": "chấm ngắn ở trung tâm" }
+  ],
+  "strokeDetail": "• <strong>Nét 1–4:</strong> viết chữ 井 theo thứ tự chuẩn (ngang trên → dọc trái → dọc phải → ngang dưới)<br>• <strong>Nét 5 (丶):</strong> dấu chấm ngắn đặt ngay trung tâm khung 井 — đây là nét phân biệt 丼 với 井<br>• Tổng: 4+1 = <strong>5 nét ✓</strong>",
+
+  "calliNote": "Dấu chấm 丶 ở giữa phải nằm đúng tâm của khung 井 — không lệch sang trái hay phải. Khi viết nhanh, nét chấm có thể hơi nghiêng về phía phải. Đây là chữ đặc biệt chỉ dùng trong tiếng Nhật, nên cách viết khá thống nhất.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">4 nét 井 trước</span>, cuối cùng mới thêm <span class=\"hl\">chấm ở giữa</span> — như đặt thức ăn vào trong cái bát.",
+
+  "canvasHints": [
+    { "x": 168, "y": 60,  "label": "①" },
+    { "x": 110, "y": 180, "label": "②" },
+    { "x": 230, "y": 180, "label": "③" },
+    { "x": 168, "y": 300, "label": "④" },
+    { "x": 168, "y": 195, "label": "⑤" }
+  ],
+
+  "quiz": [
+    {
+      "q": "丼 の訓読みは何ですか？",
+      "opts": ["たん (tan)", "どん (don)", "どんぶり (donburi)", "せい (sei)"],
+      "ans": 2,
+      "explain": "丼 の訓読みは どんぶり。短縮して「どん」とも読む。牛丼 (ぎゅうどん)、親子丼 (おやこどん) など。"
+    },
+    {
+      "q": "丼 は何画ですか？",
+      "opts": ["4画", "5画", "6画", "7画"],
+      "ans": 1,
+      "explain": "丼 は 5画 — 井 (4 nét) + dấu chấm 丶 (1 nét) ở giữa = 5 nét tổng cộng."
+    },
+    {
+      "q": "「親子丼」という名前の由来は何ですか？",
+      "opts": [
+        "Được phát minh bởi cha và con",
+        "Gà (cha mẹ) và trứng (con) cùng được dùng trong một món",
+        "Truyền thống gia đình nhiều thế hệ",
+        "Hình dạng tô giống cha và con ngồi cạnh nhau"
+      ],
+      "ans": 1,
+      "explain": "親子丼 = 親 (cha mẹ = gà) + 子 (con = trứng gà) + 丼 (cơm tô). Tên gọi hài hước và thú vị vì dùng cả gà và trứng — cha mẹ và con cùng trong một bát!"
+    },
+    {
+      "q": "「どんぶり勘定」の意味は何ですか？",
+      "opts": ["Tính toán chính xác từng đồng", "Quản lý tài chính bừa bãi, thiếu kỹ lưỡng", "Món ăn giá rẻ bình dân", "Cách nấu cơm tô truyền thống"],
+      "ans": 1,
+      "explain": "どんぶり勘定 = \"tính toán kiểu tô lớn\" — ném tất cả vào một chỗ, không phân loại chi tiết. Chỉ thói quen quản lý tiền bạc cẩu thả, tùy tiện."
+    },
+    {
+      "q": "丼 はどんな種類の文字ですか？",
+      "opts": ["中国から伝わった漢字", "日本で作られた国字", "ひらがなの変形", "当て字"],
+      "ans": 1,
+      "explain": "丼 は 国字 (kokujị) — chữ do người Nhật sáng tạo, không có trong Hán ngữ cổ điển. Ghép 井 (giếng) + 丶 (dấu chấm) để mô tả âm thanh và hình ảnh vật rơi xuống."
+    },
+    {
+      "q": "試験の前に「カツ丼」を食べる習慣の理由は？",
+      "opts": ["Tốt cho não bộ và trí nhớ", "「カツ」và「勝つ」(thắng) đồng âm — ăn để lấy may", "Truyền thống từ thời Edo", "Giá rẻ, tiện lợi cho học sinh"],
+      "ans": 1,
+      "explain": "カツ (katsu) đồng âm với 勝つ (katsu = thắng lợi). Vì vậy ăn カツ丼 trước khi thi là phong tục lấy may 「験担ぎ (げんかつぎ)」rất phổ biến trong học sinh Nhật Bản."
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "kanji": "逸",
+  "on": "いつ",
+  "onRomaji": "itsu",
+  "kun": "そ.れる · そ.らす · はぐ.れる",
+  "kunRomaji": "so.reru · so.rasu · hagu.reru",
+  "hanviet": "Dật",
+  "jlpt": "N2",
+  "strokes": 11,
+  "radical": "辶",
+  "radicalReading": "しんにょう · しんにゅう",
+  "radicalMeaning": "di chuyển / đi đường",
+  "radicalNumber": 162,
+  "type": "Hội ý",
+  "typeJa": "会意文字",
+  "structure": "辶 (di chuyển, đi đường) + 兔→免 (con thỏ — chạy nhanh, trốn thoát)",
+  "school": "Joyo · Dạy lớp trung học · Kanken Pre-2",
+
+  "lead": "逸 là chữ Hán <span class=\"hl\">11 nét</span>, loại <span class=\"hl\">Hội ý</span> — ghép bộ 辶 (di chuyển) với hình ảnh con thỏ 兔 (viết thành 免 trong shinjitai Nhật). Đây là chữ <strong>đa nghĩa đặc biệt</strong>: vừa có nghĩa <em>thoát ra / lạc đường</em>, vừa có nghĩa <em>xuất chúng / tài ba</em>.",
+  "mnemonic": "Hình dung <strong>con thỏ 兔</strong> đang <strong>chạy vụt đi 辶</strong> — nhanh đến mức thoát khỏi tầm nhìn, vượt hơn mọi con vật khác. <span class=\"hl\">逸 = thoát ra ngoài thông thường → xuất chúng!</span>",
+
+  "originLead": "逸 là <span class=\"hl\">chữ Hội ý cổ điển</span>, có nguồn gốc từ giáp cốt văn (oracle bone script) của Trung Quốc. Hình ảnh gốc là một con thỏ đang chạy trốn thoát khỏi vòng vây.",
+  "originDetail": "Trong <strong>giáp cốt văn</strong> (甲骨文), 逸 được viết là 止 (dừng lại / chân bước) + 㚔 (xiềng xích trói buộc) — hình ảnh thoát khỏi xiềng xích. Sau đó tiến hóa thành dạng <strong>辵 (đi đường) + 兔 (con thỏ)</strong> trong chữ Triện — mô tả con thỏ phóng nhanh và biến mất. <br><br>Từ nghĩa gốc <span class=\"hl\">\"thoát khỏi / chạy mất\"</span>, chữ phát triển hai nhánh nghĩa song song: ① <em>lạc khỏi, trệch hướng</em> (逸れる — lạc đường); ② <em>vượt trội hơn hẳn, xuất chúng</em> (逸品、逸材 — vì con thỏ chạy vượt hơn tất cả). Trong tiếng Nhật hiện đại, phần 兔 được đơn giản hóa thành 免 (shinjitai), nên 逸 = 辶 + 免.",
+  "decomp": [
+    {
+      "char": "辶",
+      "name": "Thước / Sước",
+      "meaning": "Bộ đường đi, di chuyển — đứng bao quanh phía dưới và trái, chỉ hành động chạy / di chuyển"
+    },
+    {
+      "char": "免(兔)",
+      "name": "Thỏ / Miễn",
+      "meaning": "Con thỏ (兔) — biểu tượng cho sự nhanh nhẹn, thoát khỏi; trong shinjitai viết thành 免 (bỏ dấu chấm)"
+    }
+  ],
+
+  "meanings": [
+    {
+      "title": "Thoát ra, lạc đi, trệch khỏi",
+      "desc": "Rời khỏi hướng ban đầu, không trúng đích, lạc mất. Dùng trong: 逸れる (lạc ra ngoài), 逸らす (làm chệch hướng), 的を逸れる (trật mục tiêu)."
+    },
+    {
+      "title": "Xuất chúng, tài ba hơn người",
+      "desc": "Vượt trội hơn hẳn so với thông thường — như con thỏ vượt qua tất cả. Dùng trong: 逸品 (tuyệt phẩm), 逸材 (nhân tài xuất chúng), 逸話 (giai thoại đặc biệt)."
+    },
+    {
+      "title": "Nhàn nhã, thư thái, tự do",
+      "desc": "Thoát khỏi ràng buộc, tận hưởng sự tự do. Dùng trong: 逸楽 (khoái lạc nhàn hạ), 安逸 (an nhàn). Ít dùng hơn trong tiếng Nhật hiện đại."
+    },
+    {
+      "title": "Nhanh, ngay lập tức (trước người)",
+      "desc": "Vượt nhanh hơn người khác. Dùng trong: 逸早く / いち早く (ngay lập tức, trước tiên)."
+    }
+  ],
+
+  "vocab": [
+    {
+      "word": "逸れる",
+      "reading": "それる (soreru)",
+      "vi": "Lạc ra, trệch khỏi, lạc hướng",
+      "jlpt": "N1",
+      "jp": "「話が逸れてしまってすみません。」",
+      "jpVi": "Xin lỗi vì câu chuyện đã lạc đề."
+    },
+    {
+      "word": "逸らす",
+      "reading": "そらす (sorasu)",
+      "vi": "Làm chệch hướng, tránh né",
+      "jlpt": "N1",
+      "jp": "「目を逸らさずに正面から向き合うことが大切だ。」",
+      "jpVi": "Điều quan trọng là đối mặt thẳng, không né tránh ánh mắt."
+    },
+    {
+      "word": "逸品",
+      "reading": "いっぴん (ippin)",
+      "vi": "Tuyệt phẩm, món đồ xuất chúng",
+      "jlpt": "N1",
+      "jp": "「このワインは逸品中の逸品だ。」",
+      "jpVi": "Chai rượu này là tuyệt phẩm trong số những tuyệt phẩm."
+    },
+    {
+      "word": "逸材",
+      "reading": "いつざい (itsuzai)",
+      "vi": "Nhân tài xuất chúng, người tài hiếm",
+      "jlpt": "N1",
+      "jp": "「彼女はスポーツ界の逸材として注目されている。」",
+      "jpVi": "Cô ấy được chú ý như một tài năng xuất chúng trong làng thể thao."
+    },
+    {
+      "word": "逸話",
+      "reading": "いつわ (itsuwa)",
+      "vi": "Giai thoại, câu chuyện thú vị ít biết",
+      "jlpt": "N1",
+      "jp": "「その作家にまつわる逸話はたくさん残っている。」",
+      "jpVi": "Có rất nhiều giai thoại còn lưu truyền về nhà văn đó."
+    },
+    {
+      "word": "逸脱",
+      "reading": "いつだつ (itsudatsu)",
+      "vi": "Đi chệch khỏi, vi phạm quy tắc",
+      "jlpt": "N1",
+      "jp": "「規則から逸脱した行動は認められない。」",
+      "jpVi": "Hành vi đi chệch khỏi quy tắc sẽ không được chấp nhận."
+    },
+    {
+      "word": "逸する",
+      "reading": "いっする (issuru)",
+      "vi": "Bỏ lỡ, để vuột mất",
+      "jlpt": "N1",
+      "jp": "「このチャンスを逸することはできない。」",
+      "jpVi": "Không thể bỏ lỡ cơ hội này."
+    },
+    {
+      "word": "安逸",
+      "reading": "あんいつ (an'itsu)",
+      "vi": "An nhàn, thoải mái, lười biếng",
+      "jlpt": "",
+      "jp": "「安逸をむさぼるばかりでは成長できない。」",
+      "jpVi": "Chỉ chìm đắm trong an nhàn thì không thể trưởng thành được."
+    },
+    {
+      "word": "逸早く",
+      "reading": "いちはやく (ichihayaku)",
+      "vi": "Ngay lập tức, trước người khác",
+      "jlpt": "N1",
+      "jp": "「彼はいち早く現場に駆けつけた。」",
+      "jpVi": "Anh ấy lập tức lao đến hiện trường ngay lập tức."
+    }
+  ],
+
+  "idioms": [
+    {
+      "text": "大器晩成・逸材は若い",
+      "fontSize": 14,
+      "kana": "たいきばんせい・いつざいはわかい",
+      "meaning": "Tương phản thú vị: 大器晩成 (tài lớn thành muộn) ↔ 逸材 thường được phát hiện từ khi còn trẻ. Trong thể thao và nghệ thuật Nhật, người ta thường nói 「若い逸材」— tài năng trẻ xuất chúng.",
+      "jp": "「若い逸材を早い段階で見つけ、育てることが大切だ。」",
+      "jpVi": "Điều quan trọng là phát hiện và bồi dưỡng nhân tài xuất chúng trẻ từ sớm."
+    },
+    {
+      "text": "機を逸する",
+      "fontSize": 20,
+      "kana": "きをいっする",
+      "meaning": "\"Để vuột mất thời cơ\" — thành ngữ cổ điển chỉ việc bỏ lỡ cơ hội vàng. Tương đương với 「チャンスを逃す」nhưng trang trọng hơn, thường dùng trong văn viết.",
+      "jp": "「迷っているうちに機を逸してしまった。」",
+      "jpVi": "Do còn do dự mà đã để vuột mất thời cơ."
+    },
+    {
+      "text": "独逸",
+      "fontSize": 22,
+      "kana": "ドイツ",
+      "meaning": "Cách viết kanji cổ cho \"nước Đức\" — 独 (độc) + 逸 (dật). Dùng âm đọc イツ của 逸 để phiên âm \"Deutsch\". Ngày nay hiếm gặp trong văn thông thường nhưng vẫn dùng trong báo chí và văn bản trang trọng.",
+      "jp": "「独逸語（ドイツご）を勉強しています。」",
+      "jpVi": "Tôi đang học tiếng Đức."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">viết phần trong trước · bộ 辶 sau cùng</span>. Viết phần 免 (8 nét) trước ở bên trên-phải, sau đó mới vẽ bộ 辶 (3 nét) bao quanh phía dưới và trái.",
+  "strokeSteps": [
+    {
+      "range": "1",
+      "char": "⺈",
+      "label": "Nét đầu của 免",
+      "detail": "nét phẩy ngắn trên cùng bên trái"
+    },
+    {
+      "range": "2",
+      "char": "⺈",
+      "label": "Nét thứ hai của 免",
+      "detail": "nét gấp góc từ trái sang phải rồi xuống"
+    },
+    {
+      "range": "3–5",
+      "char": "口",
+      "label": "Phần 口 trong 免",
+      "detail": "ba nét tạo thành ô vuông giữa của 免"
+    },
+    {
+      "range": "6",
+      "char": "丿",
+      "label": "Nét phẩy của 免",
+      "detail": "nét phẩy xuyên qua giữa"
+    },
+    {
+      "range": "7–8",
+      "char": "儿",
+      "label": "Chân 儿 của 免",
+      "detail": "nét phẩy trái rồi nét dọc cong phải"
+    },
+    {
+      "range": "9",
+      "char": "辶",
+      "label": "Nét chấm 辶",
+      "detail": "chấm ngắn khởi đầu bộ辶"
+    },
+    {
+      "range": "10",
+      "char": "辶",
+      "label": "Nét ngang gấp 辶",
+      "detail": "ngang rồi gấp xuống"
+    },
+    {
+      "range": "11",
+      "char": "辶",
+      "label": "Nét quét ngang 辶",
+      "detail": "nét dài quét từ trái sang phải — nét đặc trưng của bộ しんにょう"
+    }
+  ],
+  "strokeDetail": "• <strong>Nét 1–8:</strong> viết phần 免 (biến thể của 兔) trước — theo thứ tự từ trên xuống, trái sang phải<br>• <strong>Nét 9–11:</strong> bộ 辶 (しんにょう) bao quanh phía dưới — chú ý nét quét cuối cùng phải dài và nhẹ tay, hơi cong lên<br>• Tổng: 8 + 3 = <strong>11 nét ✓</strong>",
+
+  "calliNote": "Bộ 辶 (しんにょう) là điểm khó nhất — nét quét ngang cuối cùng (nét 11) cần dài vừa đủ, nhẹ tay, hơi cong lên phía phải như đuôi con thỏ lướt đi. Phần 免 bên trên phải cân đối, không quá cao cũng không quá thấp so với bộ 辶 bên dưới.",
+
+  "practiceHint": "Luôn viết <span class=\"hl\">phần 免 trước</span>, để lại khoảng trống bên dưới-trái cho bộ 辶. Khi viết 辶, hãy hình dung con thỏ đang phóng đi — nét quét cuối phải <span class=\"hl\">dứt khoát và bay bổng</span>.",
+
+  "canvasHints": [
+    { "x": 170, "y": 50, "label": "①" },
+    { "x": 200, "y": 80, "label": "②" },
+    { "x": 180, "y": 130, "label": "③" },
+    { "x": 215, "y": 130, "label": "④" },
+    { "x": 195, "y": 155, "label": "⑤" },
+    { "x": 195, "y": 185, "label": "⑥" },
+    { "x": 170, "y": 220, "label": "⑦" },
+    { "x": 220, "y": 230, "label": "⑧" },
+    { "x": 80, "y": 180, "label": "⑨" },
+    { "x": 75, "y": 230, "label": "⑩" },
+    { "x": 130, "y": 290, "label": "⑪" }
+  ],
+
+  "quiz": [
+    {
+      "q": "逸 の音読みは何ですか？",
+      "opts": ["えつ (etsu)", "いつ (itsu)", "いち (ichi)", "よつ (yotsu)"],
+      "ans": 1,
+      "explain": "逸 の音読みは いつ (itsu)。逸品 (いっぴん)、逸材 (いつざい)、逸話 (いつわ) など。訓読みは そ.れる・そ.らす・はぐ.れる。"
+    },
+    {
+      "q": "逸 の部首（ぶしゅ）は何ですか？",
+      "opts": [
+        "免 (めん)",
+        "兔 (うさぎ)",
+        "辶 (しんにょう)",
+        "儿 (にんにょう)"
+      ],
+      "ans": 2,
+      "explain": "逸 の部首は 辶 (しんにょう / しんにゅう) — bộ đi đường, di chuyển. Các chữ cùng bộ: 道、通、近、逃、逆、進…"
+    },
+    {
+      "q": "逸 の成り立ちで正しいのはどれですか？",
+      "opts": [
+        "日 (mặt trời) + 免 (tránh khỏi)",
+        "辶 (di chuyển) + 兔 (con thỏ đang chạy trốn)",
+        "人 (người) + 免 (miễn, thoát)",
+        "走 (chạy) + 兔 (con thỏ)"
+      ],
+      "ans": 1,
+      "explain": "逸 = 辶 (di chuyển, đi đường) + 兔 (con thỏ). Hình ảnh con thỏ phóng nhanh và biến mất → nghĩa \"thoát ra\". Trong shinjitai Nhật, 兔 được viết thành 免 (bỏ dấu chấm)."
+    },
+    {
+      "q": "「逸品」の意味は何ですか？",
+      "opts": [
+        "Món hàng bình thường",
+        "Tuyệt phẩm, món đồ xuất chúng vượt trội",
+        "Hàng hóa bị thất lạc",
+        "Sản phẩm rẻ tiền"
+      ],
+      "ans": 1,
+      "explain": "逸品 (いっぴん) = 逸 (xuất chúng, vượt trội) + 品 (đồ vật, hàng hóa). Chỉ món đồ, tác phẩm có chất lượng đặc biệt xuất sắc, vượt hơn hẳn so với các thứ khác."
+    },
+    {
+      "q": "「話が逸れる」の意味は？",
+      "opts": [
+        "Câu chuyện rất hay",
+        "Câu chuyện lạc đề, đi chệch khỏi chủ đề",
+        "Câu chuyện kết thúc",
+        "Câu chuyện bắt đầu"
+      ],
+      "ans": 1,
+      "explain": "逸れる (それる) = đi lạc, trệch khỏi hướng. 「話が逸れる」= câu chuyện bị lạc đề. Đây là nghĩa \"trệch khỏi\" của 逸 — một trong hai nhánh nghĩa chính của chữ này."
+    },
+    {
+      "q": "「独逸」は何と読みますか？",
+      "opts": [
+        "どくいつ (dokuItsu)",
+        "どくやす (dokuyasu)",
+        "ドイツ (Doitsu)",
+        "ひとりいつ (hitorītsu)"
+      ],
+      "ans": 2,
+      "explain": "独逸 はドイツ (Doitsu) と読む — cách viết kanji cổ cho \"nước Đức\". Dùng âm イツ của 逸 để phiên âm \"Deutsch\". Tương tự: 仏蘭西 (フランス), 伊太利亜 (イタリア)."
+    }
+  ]
+}

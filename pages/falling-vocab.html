@@ -1,0 +1,3460 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"
+    />
+    <title>Từ Vựng Rơi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        height: 100%;
+        overflow: hidden;
+        overscroll-behavior: none;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ════════════════════════════════════════
+   THEMES — applied on #game-area
+   ════════════════════════════════════════ */
+
+      /* ══════════════════════════════════════════════
+         SPACE
+      ══════════════════════════════════════════════ */
+      #game-area.theme-space {
+        background: radial-gradient(
+            ellipse 80% 60% at 20% 40%,
+            #1a0050 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            ellipse 70% 50% at 80% 20%,
+            #000d3a 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse 60% 40% at 55% 85%,
+            #1a0035 0%,
+            transparent 50%
+          ),
+          linear-gradient(
+            to bottom,
+            #02000f 0%,
+            #06001f 35%,
+            #0c0030 65%,
+            #110038 100%
+          );
+      }
+      #game-area.theme-space .bg-nebula {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(
+            ellipse 75% 55% at 15% 22%,
+            rgba(140, 0, 255, 0.22) 0%,
+            transparent 60%
+          ),
+          radial-gradient(
+            ellipse 60% 45% at 85% 55%,
+            rgba(0, 80, 220, 0.2) 0%,
+            transparent 58%
+          ),
+          radial-gradient(
+            ellipse 50% 35% at 50% 78%,
+            rgba(220, 0, 100, 0.16) 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            ellipse 35% 28% at 72% 12%,
+            rgba(0, 200, 255, 0.12) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            ellipse 40% 30% at 30% 65%,
+            rgba(180, 0, 180, 0.1) 0%,
+            transparent 48%
+          );
+      }
+      .space-aurora {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 40%;
+        pointer-events: none;
+        background: linear-gradient(
+          to top,
+          rgba(0, 255, 160, 0.14) 0%,
+          rgba(0, 180, 255, 0.08) 35%,
+          rgba(120, 0, 255, 0.05) 60%,
+          transparent 85%
+        );
+        filter: blur(22px);
+        animation: aurora-shift 9s ease-in-out infinite alternate;
+      }
+      @keyframes aurora-shift {
+        0% {
+          opacity: 0.7;
+          transform: scaleX(1) skewX(0deg);
+        }
+        33% {
+          opacity: 1;
+          transform: scaleX(1.04) skewX(2deg);
+        }
+        66% {
+          opacity: 0.8;
+          transform: scaleX(0.97) skewX(-2deg);
+        }
+        100% {
+          opacity: 1;
+          transform: scaleX(1.06) skewX(1deg);
+        }
+      }
+      .space-planet {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .star {
+        position: absolute;
+        border-radius: 50%;
+        background: #fff;
+        animation: twinkle var(--dur, 3s) ease-in-out infinite var(--delay, 0s);
+      }
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: var(--max-op, 0.85);
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.05;
+          transform: scale(0.5);
+        }
+      }
+      .shooting-star {
+        position: absolute;
+        height: 1.5px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 255, 255, 0.9),
+          transparent
+        );
+        border-radius: 2px;
+        animation: shoot var(--dur, 6s) linear infinite var(--delay, 0s);
+        opacity: 0;
+      }
+      @keyframes shoot {
+        0% {
+          transform: translateX(0) translateY(0) rotate(-35deg);
+          opacity: 0;
+        }
+        4% {
+          opacity: 1;
+        }
+        22% {
+          transform: translateX(500px) translateY(250px) rotate(-35deg);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(500px) translateY(250px) rotate(-35deg);
+          opacity: 0;
+        }
+      }
+
+      /* ══════════════════════════════════════════════
+         SKY
+      ══════════════════════════════════════════════ */
+      #game-area.theme-sky {
+        background: linear-gradient(
+          to bottom,
+          #0a2a6e 0%,
+          #1a4fa8 12%,
+          #2979c8 28%,
+          #4fa8e8 48%,
+          #80c8f0 66%,
+          #b8e0f8 82%,
+          #fde8c8 94%,
+          #fdd8a0 100%
+        );
+      }
+      .sky-sun-wrap {
+        position: absolute;
+        top: 22px;
+        right: 55px;
+        width: 80px;
+        height: 80px;
+      }
+      .sky-sun-core {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          #fffde7 20%,
+          #fff176 55%,
+          rgba(255, 235, 59, 0) 100%
+        );
+        box-shadow: 0 0 30px 12px rgba(255, 236, 64, 0.6),
+          0 0 70px 35px rgba(255, 180, 0, 0.3);
+        animation: sun-pulse 5s ease-in-out infinite;
+      }
+      .sky-sun-ray {
+        position: absolute;
+        inset: -20px;
+        border-radius: 50%;
+        background: conic-gradient(
+          from 0deg,
+          transparent 0deg,
+          rgba(255, 230, 0, 0.18) 4deg,
+          transparent 8deg,
+          transparent 14deg,
+          rgba(255, 220, 0, 0.14) 18deg,
+          transparent 22deg,
+          transparent 28deg,
+          rgba(255, 230, 0, 0.18) 32deg,
+          transparent 36deg,
+          transparent 42deg,
+          rgba(255, 220, 0, 0.12) 46deg,
+          transparent 50deg,
+          transparent 56deg,
+          rgba(255, 230, 0, 0.18) 60deg,
+          transparent 64deg,
+          transparent 70deg,
+          rgba(255, 220, 0, 0.14) 74deg,
+          transparent 78deg,
+          transparent 84deg,
+          rgba(255, 230, 0, 0.16) 88deg,
+          transparent 92deg,
+          transparent 98deg,
+          rgba(255, 220, 0, 0.12) 102deg,
+          transparent 106deg,
+          transparent 112deg,
+          rgba(255, 230, 0, 0.18) 116deg,
+          transparent 120deg,
+          transparent 126deg,
+          rgba(255, 220, 0, 0.14) 130deg,
+          transparent 134deg,
+          transparent 140deg,
+          rgba(255, 230, 0, 0.16) 144deg,
+          transparent 148deg,
+          transparent 154deg,
+          rgba(255, 220, 0, 0.12) 158deg,
+          transparent 162deg,
+          transparent 168deg,
+          rgba(255, 230, 0, 0.18) 172deg,
+          transparent 176deg,
+          transparent 182deg,
+          rgba(255, 220, 0, 0.14) 186deg,
+          transparent 190deg,
+          transparent 196deg,
+          rgba(255, 230, 0, 0.18) 200deg,
+          transparent 204deg,
+          transparent 210deg,
+          rgba(255, 220, 0, 0.12) 214deg,
+          transparent 218deg,
+          transparent 224deg,
+          rgba(255, 230, 0, 0.18) 228deg,
+          transparent 232deg,
+          transparent 238deg,
+          rgba(255, 220, 0, 0.14) 242deg,
+          transparent 246deg,
+          transparent 252deg,
+          rgba(255, 230, 0, 0.16) 256deg,
+          transparent 260deg,
+          transparent 266deg,
+          rgba(255, 220, 0, 0.12) 270deg,
+          transparent 274deg,
+          transparent 280deg,
+          rgba(255, 230, 0, 0.18) 284deg,
+          transparent 288deg,
+          transparent 294deg,
+          rgba(255, 220, 0, 0.14) 298deg,
+          transparent 302deg,
+          transparent 308deg,
+          rgba(255, 230, 0, 0.18) 312deg,
+          transparent 316deg,
+          transparent 322deg,
+          rgba(255, 220, 0, 0.14) 326deg,
+          transparent 330deg,
+          transparent 336deg,
+          rgba(255, 230, 0, 0.16) 340deg,
+          transparent 344deg,
+          transparent 350deg,
+          rgba(255, 220, 0, 0.12) 354deg,
+          transparent 360deg
+        );
+        animation: ray-spin 30s linear infinite;
+        filter: blur(1px);
+      }
+      @keyframes ray-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes sun-pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 30px 12px rgba(255, 236, 64, 0.6),
+            0 0 70px 35px rgba(255, 180, 0, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 45px 18px rgba(255, 240, 80, 0.75),
+            0 0 100px 50px rgba(255, 190, 0, 0.4);
+        }
+      }
+      .sky-cloud {
+        position: absolute;
+        border-radius: 50px;
+        animation: cloud-drift linear infinite;
+      }
+      @keyframes cloud-drift {
+        from {
+          transform: translateX(-320px);
+        }
+        to {
+          transform: translateX(calc(100vw + 320px));
+        }
+      }
+      .sky-mountain {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+      }
+      .sky-bird {
+        position: absolute;
+        animation: bird-fly linear infinite;
+        opacity: 0.7;
+      }
+      @keyframes bird-fly {
+        from {
+          transform: translateX(-80px) translateY(0);
+        }
+        50% {
+          transform: translateX(50vw) translateY(-20px);
+        }
+        to {
+          transform: translateX(calc(100vw + 80px)) translateY(5px);
+        }
+      }
+
+      /* ══════════════════════════════════════════════
+         OCEAN
+      ══════════════════════════════════════════════ */
+      #game-area.theme-ocean {
+        background: linear-gradient(
+          to bottom,
+          #003d5c 0%,
+          #002a4a 18%,
+          #001835 38%,
+          #000e28 60%,
+          #00071a 80%,
+          #00040f 100%
+        );
+      }
+      .ocean-surface {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: linear-gradient(
+          to right,
+          rgba(100, 220, 255, 0),
+          rgba(120, 230, 255, 0.45),
+          rgba(80, 210, 255, 0.25),
+          rgba(140, 240, 255, 0.5),
+          rgba(100, 220, 255, 0)
+        );
+        animation: surface-shimmer 4s ease-in-out infinite alternate;
+        filter: blur(1px);
+      }
+      @keyframes surface-shimmer {
+        from {
+          opacity: 0.5;
+          transform: scaleX(1);
+        }
+        to {
+          opacity: 1;
+          transform: scaleX(1.02);
+        }
+      }
+      .caustic-ray {
+        position: absolute;
+        top: 0;
+        width: 3px;
+        border-radius: 0 0 3px 3px;
+        background: linear-gradient(
+          to bottom,
+          rgba(80, 210, 255, 0.35),
+          transparent
+        );
+        animation: caustic-sway var(--dur, 5s) ease-in-out infinite alternate
+          var(--delay, 0s);
+        transform-origin: top center;
+      }
+      @keyframes caustic-sway {
+        from {
+          transform: skewX(var(--sk-from, -6deg)) scaleY(0.75);
+          opacity: 0.4;
+        }
+        to {
+          transform: skewX(var(--sk-to, 6deg)) scaleY(1.3);
+          opacity: 0.7;
+        }
+      }
+      .bio-particle {
+        position: absolute;
+        border-radius: 50%;
+        animation: bio-float var(--dur, 8s) ease-in-out infinite
+          var(--delay, 0s);
+        opacity: 0;
+      }
+      @keyframes bio-float {
+        0% {
+          transform: translateY(0) translateX(0);
+          opacity: 0;
+        }
+        8% {
+          opacity: 0.85;
+        }
+        85% {
+          opacity: 0.5;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(var(--dx, 15px));
+          opacity: 0;
+        }
+      }
+      .ocean-wave {
+        position: absolute;
+        bottom: 0;
+        left: -100%;
+        width: 300%;
+        pointer-events: none;
+      }
+      .ocean-wave svg {
+        display: block;
+      }
+      .wave1 {
+        animation: wave-move 6s linear infinite;
+        opacity: 0.55;
+      }
+      .wave2 {
+        animation: wave-move 9s linear infinite reverse;
+        opacity: 0.35;
+        bottom: -5px;
+      }
+      .wave3 {
+        animation: wave-move 13s linear infinite;
+        opacity: 0.2;
+        bottom: -10px;
+      }
+      @keyframes wave-move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(33.33%);
+        }
+      }
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        border: 1px solid rgba(100, 220, 255, 0.5);
+        background: rgba(100, 220, 255, 0.06);
+        animation: bubble-rise linear infinite;
+      }
+      @keyframes bubble-rise {
+        from {
+          transform: translateY(0) translateX(0);
+          opacity: 0.7;
+        }
+        50% {
+          transform: translateY(-40%) translateX(8px);
+          opacity: 0.5;
+        }
+        to {
+          transform: translateY(-100%) translateX(-6px);
+          opacity: 0;
+        }
+      }
+      .ocean-fish {
+        position: absolute;
+        font-size: 20px;
+        animation: fish-swim linear infinite;
+      }
+      @keyframes fish-swim {
+        from {
+          transform: translateX(-70px);
+        }
+        to {
+          transform: translateX(calc(100vw + 70px));
+        }
+      }
+      .ocean-jellyfish {
+        position: absolute;
+        animation: jelly-drift ease-in-out infinite alternate;
+        filter: blur(0.5px);
+      }
+      @keyframes jelly-drift {
+        from {
+          transform: translateY(0) scale(1);
+          opacity: 0.55;
+        }
+        to {
+          transform: translateY(-18px) scale(1.05);
+          opacity: 0.8;
+        }
+      }
+
+      /* ══════════════════════════════════════════════
+         DESERT
+      ══════════════════════════════════════════════ */
+      #game-area.theme-desert {
+        background: linear-gradient(
+          to bottom,
+          #12002e 0%,
+          #380060 8%,
+          #7a0a5a 18%,
+          #b52040 30%,
+          #e04828 42%,
+          #f07028 54%,
+          #f09830 66%,
+          #f0c050 78%,
+          #f0d880 90%,
+          #e8cc78 100%
+        );
+      }
+      .desert-glow {
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200%;
+        height: 35%;
+        background: radial-gradient(
+          ellipse at 50% 80%,
+          rgba(240, 100, 20, 0.45) 0%,
+          rgba(240, 150, 30, 0.2) 35%,
+          transparent 70%
+        );
+        pointer-events: none;
+        animation: glow-pulse 4s ease-in-out infinite alternate;
+        filter: blur(20px);
+      }
+      @keyframes glow-pulse {
+        from {
+          opacity: 0.7;
+          transform: translateX(-50%) scaleY(1);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(-50%) scaleY(1.12);
+        }
+      }
+      .desert-sun {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          #fff4c2 15%,
+          #ffe066 50%,
+          rgba(255, 180, 0, 0) 80%
+        );
+        box-shadow: 0 0 55px 25px rgba(255, 210, 80, 0.65),
+          0 0 120px 70px rgba(255, 140, 0, 0.35);
+        animation: desert-sun-pulse 5s ease-in-out infinite;
+        pointer-events: none;
+      }
+      @keyframes desert-sun-pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 55px 25px rgba(255, 210, 80, 0.65),
+            0 0 120px 70px rgba(255, 140, 0, 0.35);
+        }
+        50% {
+          box-shadow: 0 0 75px 35px rgba(255, 220, 90, 0.8),
+            0 0 160px 90px rgba(255, 160, 0, 0.45);
+        }
+      }
+      .desert-dune {
+        position: absolute;
+        bottom: 0;
+        pointer-events: none;
+      }
+      .desert-haze {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 120px;
+        background: linear-gradient(
+          to top,
+          rgba(240, 180, 80, 0.35),
+          transparent
+        );
+        animation: haze 4s ease-in-out infinite alternate;
+        pointer-events: none;
+        filter: blur(4px);
+      }
+      @keyframes haze {
+        from {
+          opacity: 0.5;
+          transform: scaleX(1);
+        }
+        to {
+          opacity: 0.9;
+          transform: scaleX(1.03);
+        }
+      }
+      .sand-particle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(240, 200, 100, 0.6);
+        animation: sand-drift linear infinite;
+      }
+      @keyframes sand-drift {
+        from {
+          transform: translateX(0) translateY(0);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.7;
+        }
+        90% {
+          opacity: 0.4;
+        }
+        to {
+          transform: translateX(var(--dx, 80px)) translateY(var(--dy, -60px));
+          opacity: 0;
+        }
+      }
+
+      /* ══════════════════════════════════════════════
+         MEADOW
+      ══════════════════════════════════════════════ */
+      #game-area.theme-meadow {
+        background: linear-gradient(
+          to bottom,
+          #0e3a8a 0%,
+          #1d6cc8 15%,
+          #3a9ae8 32%,
+          #70c4f0 50%,
+          #a8ddf8 65%,
+          #c8eecc 78%,
+          #7ac870 90%,
+          #4aaa3c 100%
+        );
+      }
+      .meadow-sun {
+        position: absolute;
+        top: 18px;
+        left: 36px;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          #fffde7 25%,
+          #fff176 60%,
+          rgba(255, 235, 59, 0) 100%
+        );
+        box-shadow: 0 0 28px 12px rgba(255, 238, 88, 0.6),
+          0 0 65px 32px rgba(255, 200, 0, 0.28);
+        animation: sun-pulse 5s ease-in-out infinite;
+      }
+      .meadow-cloud {
+        position: absolute;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 4px 18px rgba(100, 160, 255, 0.15);
+        animation: cloud-drift linear infinite;
+      }
+      .meadow-hill {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        pointer-events: none;
+      }
+      .grass-strip {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: linear-gradient(to bottom, #3cb83c, #2a8c2a);
+        border-radius: 45% 55% 0 0 / 18px 18px 0 0;
+        pointer-events: none;
+      }
+      .grass-blade {
+        position: absolute;
+        bottom: 100%;
+        width: 3px;
+        background: linear-gradient(to top, #2a8c2a, #6ed46e);
+        border-radius: 3px 3px 0 0;
+        transform-origin: bottom center;
+        animation: sway var(--dur, 2s) ease-in-out infinite alternate
+          var(--delay, 0s);
+      }
+      @keyframes sway {
+        from {
+          transform: rotate(var(--from, -8deg));
+        }
+        to {
+          transform: rotate(var(--to, 8deg));
+        }
+      }
+      .flower {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: flower-bob 3s ease-in-out infinite alternate var(--delay, 0s);
+      }
+      @keyframes flower-bob {
+        from {
+          transform: translateY(0) scale(1);
+        }
+        to {
+          transform: translateY(-5px) scale(1.08);
+        }
+      }
+      .petal {
+        position: absolute;
+        border-radius: 50% 0;
+        pointer-events: none;
+        animation: petal-fall var(--dur, 8s) ease-in var(--delay, 0s) infinite;
+        opacity: 0;
+      }
+      @keyframes petal-fall {
+        0% {
+          transform: translateX(0) translateY(-20px) rotate(0deg) scale(1);
+          opacity: 0;
+        }
+        5% {
+          opacity: 0.85;
+        }
+        85% {
+          opacity: 0.7;
+        }
+        100% {
+          transform: translateX(var(--dx, 40px)) translateY(100vh)
+            rotate(var(--rot, 480deg)) scale(0.8);
+          opacity: 0;
+        }
+      }
+      .butterfly {
+        position: absolute;
+        font-size: 16px;
+        animation: butterfly-fly linear infinite;
+      }
+      @keyframes butterfly-fly {
+        0% {
+          transform: translateX(-50px) translateY(0);
+          opacity: 0;
+        }
+        8% {
+          opacity: 0.85;
+        }
+        90% {
+          opacity: 0.85;
+        }
+        100% {
+          transform: translateX(calc(100vw+50px)) translateY(-25px);
+          opacity: 0;
+        }
+      }
+
+      /* ════════════════════════════════════════
+   NAVBAR
+   ════════════════════════════════════════ */
+      .g-nav {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        height: 52px;
+        gap: 0;
+        z-index: 50;
+        transition: background 0.6s, border-color 0.6s;
+      }
+      .g-nav.dark-nav {
+        background: rgba(5, 2, 21, 0.9);
+        border-bottom: 1px solid rgba(150, 120, 255, 0.12);
+        backdrop-filter: blur(16px);
+      }
+      .g-nav.light-nav {
+        background: rgba(255, 255, 255, 0.22);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        backdrop-filter: blur(16px);
+      }
+
+      /* Back icon button */
+      .g-nav-back {
+        flex-shrink: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1.5px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: background 0.2s, border-color 0.2s, opacity 0.2s, color 0.4s;
+        opacity: 0.6;
+      }
+      .dark-nav .g-nav-back {
+        color: #b39ddb;
+        border-color: rgba(150, 120, 255, 0.2);
+      }
+      .light-nav .g-nav-back {
+        color: #1a237e;
+        border-color: rgba(21, 101, 192, 0.22);
+      }
+      .dark-nav .g-nav-back:hover {
+        opacity: 1;
+        background: rgba(150, 120, 255, 0.1);
+        border-color: rgba(150, 120, 255, 0.4);
+      }
+      .light-nav .g-nav-back:hover {
+        opacity: 1;
+        background: rgba(21, 101, 192, 0.08);
+        border-color: rgba(21, 101, 192, 0.35);
+      }
+
+      /* Audio toggle button */
+      .g-audio-btn {
+        flex-shrink: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1.5px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        cursor: pointer;
+        transition: background 0.2s, border-color 0.2s, opacity 0.2s, color 0.4s;
+        opacity: 0.6;
+      }
+      .dark-nav .g-audio-btn {
+        color: #b39ddb;
+        border-color: rgba(150, 120, 255, 0.2);
+      }
+      .light-nav .g-audio-btn {
+        color: #1a237e;
+        border-color: rgba(21, 101, 192, 0.22);
+      }
+      .dark-nav .g-audio-btn:hover {
+        opacity: 1;
+        background: rgba(150, 120, 255, 0.1);
+        border-color: rgba(150, 120, 255, 0.4);
+      }
+      .light-nav .g-audio-btn:hover {
+        opacity: 1;
+        background: rgba(21, 101, 192, 0.08);
+        border-color: rgba(21, 101, 192, 0.35);
+      }
+      .g-audio-btn.muted {
+        opacity: 0.3;
+      }
+
+      /* Center */
+      .g-nav-center {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+      }
+      .g-nav-title {
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transition: color 0.4s;
+        font-variant-numeric: tabular-nums;
+      }
+      .dark-nav .g-nav-title {
+        color: rgba(220, 200, 255, 0.75);
+      }
+      .light-nav .g-nav-title {
+        color: rgba(0, 40, 100, 0.7);
+      }
+
+      #round-progress-bar {
+        width: 96px;
+        height: 4px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .dark-nav #round-progress-bar {
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .light-nav #round-progress-bar {
+        background: rgba(0, 0, 0, 0.08);
+      }
+      #round-progress-fill {
+        height: 100%;
+        border-radius: 4px;
+        width: 100%;
+        background: #4caf50;
+        transition: background 0.4s;
+      }
+
+      /* Right: lives + score */
+      .g-score {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .g-lives {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+      }
+      .life-heart {
+        width: 20px;
+        height: 20px;
+        transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+      }
+      .life-heart svg {
+        display: block;
+      }
+      .life-heart.lost {
+        opacity: 0.18;
+        transform: scale(0.75);
+        filter: grayscale(1);
+      }
+
+      .g-score-divider {
+        width: 1px;
+        height: 20px;
+        opacity: 0.2;
+        flex-shrink: 0;
+      }
+      .dark-nav .g-score-divider {
+        background: #b39ddb;
+      }
+      .light-nav .g-score-divider {
+        background: #1a237e;
+      }
+
+      .g-score-num {
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 1;
+        min-width: 28px;
+        text-align: right;
+        transition: color 0.4s;
+      }
+      .dark-nav .g-score-num {
+        color: #d4bbff;
+      }
+      .light-nav .g-score-num {
+        color: #1a237e;
+      }
+
+      .g-score-num.pop {
+        animation: score-pop 0.35s ease-out;
+      }
+      @keyframes score-pop {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.55);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* History panel */
+      #history-panel {
+        position: fixed;
+        inset: 0;
+        z-index: 200;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        pointer-events: none;
+      }
+
+      #history-panel.open {
+        pointer-events: all;
+      }
+
+      #history-backdrop {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.3s;
+      }
+      #history-panel.open #history-backdrop {
+        background: rgba(0, 0, 0, 0.55);
+      }
+
+      #history-drawer {
+        position: relative;
+        z-index: 1;
+        width: min(360px, 92vw);
+        height: 100%;
+        background: #0f0a2a;
+        border-left: 1px solid rgba(150, 120, 255, 0.2);
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: -8px 0 40px rgba(0, 0, 0, 0.5);
+      }
+      #history-panel.open #history-drawer {
+        transform: translateX(0);
+      }
+
+      #history-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(150, 120, 255, 0.15);
+        flex-shrink: 0;
+      }
+
+      #history-title {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: rgba(180, 150, 255, 0.8);
+      }
+
+      #history-close {
+        background: none;
+        border: none;
+        color: rgba(180, 150, 255, 0.5);
+        font-size: 20px;
+        cursor: pointer;
+        line-height: 1;
+        padding: 4px 8px;
+        border-radius: 6px;
+        transition: color 0.2s, background 0.2s;
+      }
+      #history-close:hover {
+        color: #b39ddb;
+        background: rgba(150, 120, 255, 0.12);
+      }
+
+      #history-stats {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(150, 120, 255, 0.1);
+        display: flex;
+        gap: 20px;
+        flex-shrink: 0;
+      }
+
+      .h-stat {
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: rgba(180, 150, 255, 0.45);
+      }
+      .h-stat span {
+        font-size: 16px;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 1px;
+      }
+      .h-stat.correct span {
+        color: #81c784;
+      }
+      .h-stat.wrong span {
+        color: #ef5350;
+      }
+      .h-stat.total span {
+        color: #b39ddb;
+      }
+
+      #history-list {
+        flex: 1;
+        overflow-y: auto;
+        padding: 12px 16px 24px;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(150, 120, 255, 0.2) transparent;
+      }
+
+      .h-empty {
+        text-align: center;
+        padding: 60px 20px;
+        color: rgba(180, 150, 255, 0.3);
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+
+      .h-sort-bar {
+        display: flex;
+        gap: 8px;
+        padding: 8px 16px 4px;
+        flex-shrink: 0;
+      }
+
+      .h-sort-btn {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        padding: 4px 10px;
+        border-radius: 20px;
+        border: 1px solid rgba(150, 120, 255, 0.2);
+        background: none;
+        color: rgba(180, 150, 255, 0.45);
+        cursor: pointer;
+        transition: all 0.18s;
+        font-family: "Inter", sans-serif;
+      }
+      .h-sort-btn.active {
+        background: rgba(126, 87, 194, 0.3);
+        border-color: rgba(150, 120, 255, 0.5);
+        color: #b39ddb;
+      }
+
+      .h-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        margin-bottom: 6px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(150, 120, 255, 0.08);
+      }
+
+      .h-item-word {
+        font-size: 22px;
+        color: #b39ddb;
+        min-width: 48px;
+        text-align: center;
+        flex-shrink: 0;
+        line-height: 1;
+      }
+
+      .h-item-info {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .h-item-reading {
+        font-size: 10px;
+        color: rgba(180, 150, 255, 0.45);
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+      }
+
+      .h-item-meaning {
+        font-size: 12px;
+        color: rgba(237, 231, 246, 0.7);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .h-item-counts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3px;
+        flex-shrink: 0;
+      }
+
+      .h-count {
+        font-size: 11px;
+        font-weight: 700;
+        padding: 2px 7px;
+        border-radius: 10px;
+        letter-spacing: 0.5px;
+        min-width: 36px;
+        text-align: center;
+      }
+      .h-count.c {
+        background: rgba(76, 175, 80, 0.18);
+        color: #81c784;
+      }
+      .h-count.w {
+        background: rgba(239, 83, 80, 0.18);
+        color: #ef5350;
+      }
+
+      /* ════════════════════════════════════════
+   GAME AREA
+   ════════════════════════════════════════ */
+      #game-area {
+        flex: 1;
+        position: relative;
+        overflow: hidden;
+        transition: background 0.8s;
+      }
+
+      #game-area::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 6px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(180, 30, 30, 0.6),
+          transparent
+        );
+        z-index: 5;
+      }
+
+      /* ════════════════════════════════════════
+   FALLING WORD CARD — Glassmorphism
+   ════════════════════════════════════════ */
+      .fw {
+        position: absolute;
+        border-radius: 22px;
+        padding: 16px 28px 14px;
+        min-width: 110px;
+        white-space: nowrap;
+        text-align: center;
+        cursor: default;
+        user-select: none;
+        z-index: 10;
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+      }
+
+      /* Shine overlay */
+      .fw::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.18) 0%,
+          transparent 55%
+        );
+        pointer-events: none;
+      }
+
+      .fw-word {
+        display: block;
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: 2px;
+        position: relative;
+      }
+      .fw-word.fw-vi {
+        font-size: 18px;
+        letter-spacing: 0.3px;
+        font-weight: 700;
+      }
+
+      /* ── SPACE ── */
+      .theme-space .fw {
+        background: linear-gradient(
+          135deg,
+          rgba(70, 20, 130, 0.55),
+          rgba(20, 5, 60, 0.5)
+        );
+        border: 1px solid rgba(180, 130, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6),
+          0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+          0 0 24px rgba(140, 80, 255, 0.2);
+      }
+      .theme-space .fw-word {
+        color: #e8d5ff;
+        text-shadow: 0 0 18px rgba(200, 150, 255, 0.7),
+          0 2px 4px rgba(0, 0, 0, 0.4);
+      }
+      .theme-space .fw.highlight {
+        border-color: rgba(200, 160, 255, 0.7);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6),
+          0 0 0 1px rgba(255, 255, 255, 0.06) inset,
+          0 0 36px rgba(180, 120, 255, 0.55);
+        transform: scale(1.04);
+      }
+
+      /* ── SKY ── */
+      .theme-sky .fw {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.65),
+          rgba(220, 240, 255, 0.5)
+        );
+        border: 1px solid rgba(100, 180, 255, 0.4);
+        box-shadow: 0 8px 28px rgba(30, 80, 160, 0.18),
+          0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+          0 0 18px rgba(80, 160, 255, 0.15);
+      }
+      .theme-sky .fw-word {
+        color: #0d47a1;
+        text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8),
+          0 0 12px rgba(30, 100, 220, 0.2);
+      }
+      .theme-sky .fw.highlight {
+        border-color: rgba(30, 120, 255, 0.6);
+        box-shadow: 0 8px 28px rgba(30, 80, 160, 0.25),
+          0 0 0 1px rgba(255, 255, 255, 0.6) inset,
+          0 0 28px rgba(50, 150, 255, 0.4);
+        transform: scale(1.04);
+      }
+
+      /* ── OCEAN ── */
+      .theme-ocean .fw {
+        background: linear-gradient(
+          135deg,
+          rgba(0, 60, 110, 0.6),
+          rgba(0, 20, 60, 0.55)
+        );
+        border: 1px solid rgba(80, 200, 255, 0.3);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55),
+          0 0 0 1px rgba(255, 255, 255, 0.05) inset,
+          0 0 20px rgba(0, 180, 255, 0.18);
+      }
+      .theme-ocean .fw-word {
+        color: #b3e5fc;
+        text-shadow: 0 0 16px rgba(80, 200, 255, 0.65),
+          0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .theme-ocean .fw.highlight {
+        border-color: rgba(80, 210, 255, 0.65);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.55),
+          0 0 0 1px rgba(255, 255, 255, 0.07) inset,
+          0 0 32px rgba(40, 200, 255, 0.5);
+        transform: scale(1.04);
+      }
+
+      /* ── DESERT ── */
+      .theme-desert .fw {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 245, 210, 0.7),
+          rgba(255, 225, 160, 0.55)
+        );
+        border: 1px solid rgba(220, 120, 20, 0.35);
+        box-shadow: 0 8px 28px rgba(120, 50, 0, 0.25),
+          0 0 0 1px rgba(255, 255, 255, 0.45) inset,
+          0 0 18px rgba(230, 120, 0, 0.15);
+      }
+      .theme-desert .fw-word {
+        color: #b71c1c;
+        text-shadow: 0 1px 3px rgba(255, 220, 150, 0.8),
+          0 0 12px rgba(220, 80, 0, 0.2);
+      }
+      .theme-desert .fw.highlight {
+        border-color: rgba(230, 100, 0, 0.6);
+        box-shadow: 0 8px 28px rgba(120, 50, 0, 0.3),
+          0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+          0 0 28px rgba(240, 120, 0, 0.45);
+        transform: scale(1.04);
+      }
+
+      /* ── MEADOW ── */
+      .theme-meadow .fw {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.65),
+          rgba(220, 255, 225, 0.55)
+        );
+        border: 1px solid rgba(60, 160, 80, 0.35);
+        box-shadow: 0 8px 28px rgba(20, 80, 30, 0.18),
+          0 0 0 1px rgba(255, 255, 255, 0.5) inset,
+          0 0 16px rgba(60, 180, 80, 0.15);
+      }
+      .theme-meadow .fw-word {
+        color: #1b5e20;
+        text-shadow: 0 1px 3px rgba(220, 255, 225, 0.9),
+          0 0 12px rgba(50, 160, 70, 0.2);
+      }
+      .theme-meadow .fw.highlight {
+        border-color: rgba(50, 160, 70, 0.6);
+        box-shadow: 0 8px 28px rgba(20, 80, 30, 0.25),
+          0 0 0 1px rgba(255, 255, 255, 0.55) inset,
+          0 0 26px rgba(60, 200, 80, 0.45);
+        transform: scale(1.04);
+      }
+
+      /* Correct animation */
+      @keyframes fw-correct {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+          filter: brightness(1);
+        }
+        35% {
+          transform: scale(1.22);
+          opacity: 1;
+          filter: brightness(1.6);
+        }
+        100% {
+          transform: scale(0.4) translateY(-50px);
+          opacity: 0;
+          filter: brightness(2);
+        }
+      }
+      .fw.correct {
+        animation: fw-correct 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        pointer-events: none;
+      }
+
+      /* ════════════════════════════════════════
+   CHOICE BAR
+   ════════════════════════════════════════ */
+      #choice-bar {
+        flex-shrink: 0;
+        padding: 10px 14px 14px;
+        display: flex;
+        gap: 8px;
+        align-items: stretch;
+        z-index: 50;
+        transition: background 0.6s, border-color 0.6s;
+      }
+      #choice-btns {
+        display: contents;
+      }
+      .input-bar-dark {
+        background: rgba(5, 2, 21, 0.96);
+        border-top: 1px solid rgba(150, 120, 255, 0.15);
+      }
+      .input-bar-light {
+        background: rgba(255, 255, 255, 0.35);
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(12px);
+      }
+
+      .choice-btn {
+        flex: 1;
+        padding: 12px 8px;
+        border-radius: 14px;
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        line-height: 1.35;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 56px;
+        transition: transform 0.15s, box-shadow 0.18s, background 0.2s,
+          border-color 0.2s, opacity 0.2s;
+      }
+      .choice-btn:active {
+        transform: scale(0.95) !important;
+      }
+      .choice-btn:disabled {
+        cursor: default;
+        opacity: 0.3;
+        pointer-events: none;
+      }
+
+      /* dark theme buttons */
+      .input-bar-dark .choice-btn {
+        background: rgba(70, 40, 140, 0.3);
+        border: 1.5px solid rgba(150, 120, 255, 0.25);
+        color: #d8c8ff;
+      }
+      .input-bar-dark .choice-btn:not(:disabled):hover {
+        background: rgba(100, 70, 180, 0.42);
+        border-color: rgba(180, 150, 255, 0.55);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(120, 80, 255, 0.35);
+      }
+
+      /* light theme buttons */
+      .input-bar-light .choice-btn {
+        background: rgba(255, 255, 255, 0.65);
+        border: 1.5px solid rgba(100, 160, 220, 0.3);
+        color: #1a237e;
+      }
+      .input-bar-light .choice-btn:not(:disabled):hover {
+        background: rgba(255, 255, 255, 0.9);
+        border-color: rgba(21, 101, 192, 0.5);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(21, 101, 192, 0.22);
+      }
+
+      /* ════════════════════════════════════════
+   BUILD BAR
+   ════════════════════════════════════════ */
+      #build-bar {
+        flex-shrink: 0;
+        padding: 10px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        z-index: 50;
+        transition: background 0.6s, border-color 0.6s;
+      }
+      #build-display {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        min-height: 44px;
+        padding: 4px 10px;
+        border-radius: 12px;
+      }
+      .input-bar-dark #build-display {
+        background: rgba(255, 255, 255, 0.07);
+      }
+      .input-bar-light #build-display {
+        background: rgba(0, 0, 0, 0.07);
+      }
+
+      #build-selected {
+        flex: 1;
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        align-items: center;
+        min-height: 32px;
+      }
+      .build-sel-char {
+        font-size: 22px;
+        font-weight: 700;
+        padding: 1px 5px;
+        border-radius: 6px;
+      }
+      .input-bar-dark .build-sel-char {
+        color: #e8d8ff;
+      }
+      .input-bar-light .build-sel-char {
+        color: #1a237e;
+      }
+
+      #build-backspace {
+        font-size: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        opacity: 0.5;
+        padding: 4px 10px;
+        border-radius: 8px;
+        flex-shrink: 0;
+        color: inherit;
+        transition: opacity 0.15s;
+      }
+      #build-backspace:active {
+        opacity: 1;
+      }
+
+      #build-tiles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+      .build-tile {
+        width: 54px;
+        height: 54px;
+        border-radius: 14px;
+        font-size: 24px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.12s, opacity 0.2s, box-shadow 0.15s;
+        border: 1.5px solid transparent;
+      }
+      .build-tile:active {
+        transform: scale(0.9);
+      }
+      .build-tile:disabled {
+        opacity: 0.18;
+        cursor: default;
+        pointer-events: none;
+      }
+
+      .input-bar-dark .build-tile {
+        background: rgba(70, 40, 140, 0.35);
+        border-color: rgba(150, 120, 255, 0.3);
+        color: #d8c8ff;
+      }
+      .input-bar-dark .build-tile:not(:disabled):hover {
+        background: rgba(100, 70, 180, 0.5);
+        border-color: rgba(180, 150, 255, 0.55);
+        box-shadow: 0 4px 16px rgba(120, 80, 255, 0.35);
+      }
+      .input-bar-light .build-tile {
+        background: rgba(255, 255, 255, 0.7);
+        border-color: rgba(100, 160, 220, 0.35);
+        color: #1a237e;
+      }
+      .input-bar-light .build-tile:not(:disabled):hover {
+        background: rgba(255, 255, 255, 0.95);
+        border-color: rgba(21, 101, 192, 0.5);
+        box-shadow: 0 4px 16px rgba(21, 101, 192, 0.22);
+      }
+
+      @keyframes build-shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-6px);
+        }
+        40% {
+          transform: translateX(6px);
+        }
+        60% {
+          transform: translateX(-4px);
+        }
+        80% {
+          transform: translateX(4px);
+        }
+      }
+      .build-shake {
+        animation: build-shake 0.35s ease-out;
+      }
+
+      /* flash states */
+      .choice-btn.correct-flash {
+        animation: choice-correct 0.45s ease-out forwards;
+      }
+      .choice-btn.wrong-flash {
+        animation: choice-wrong 0.4s ease-out;
+      }
+      @keyframes choice-correct {
+        0% {
+          background: rgba(76, 175, 80, 0.55);
+          border-color: rgba(76, 175, 80, 0.8);
+          box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.25);
+          transform: scale(1.04);
+        }
+        60% {
+          background: rgba(76, 175, 80, 0.25);
+        }
+        100% {
+          background: inherit;
+          border-color: inherit;
+          box-shadow: none;
+          transform: scale(1);
+        }
+      }
+      @keyframes choice-wrong {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-7px);
+        }
+        60% {
+          transform: translateX(7px);
+        }
+        80% {
+          transform: translateX(-4px);
+        }
+      }
+
+      /* ════════════════════════════════════════
+   OVERLAYS
+   ════════════════════════════════════════ */
+      .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+        backdrop-filter: blur(6px);
+      }
+      .overlay-dark {
+        background: rgba(5, 2, 21, 0.85);
+      }
+      .overlay-light {
+        background: rgba(240, 248, 255, 0.82);
+      }
+
+      .overlay-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding: 36px 28px;
+        max-width: 440px;
+        width: 100%;
+      }
+
+      .overlay-title {
+        font-size: clamp(24px, 6vw, 40px);
+        font-weight: 900;
+        letter-spacing: 4px;
+        margin-bottom: 6px;
+      }
+      .overlay-dark .overlay-title {
+        color: #ede7f6;
+      }
+      .overlay-light .overlay-title {
+        color: #1a237e;
+      }
+
+      .overlay-sub {
+        font-size: 12px;
+        letter-spacing: 3px;
+        margin-bottom: 28px;
+      }
+      .overlay-dark .overlay-sub {
+        color: rgba(180, 150, 255, 0.55);
+      }
+      .overlay-light .overlay-sub {
+        color: rgba(21, 101, 192, 0.55);
+      }
+
+      .overlay-btn {
+        padding: 14px 44px;
+        border: none;
+        border-radius: 10px;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .overlay-dark .overlay-btn {
+        background: linear-gradient(135deg, #7e57c2, #512da8);
+        color: #ede7f6;
+        box-shadow: 0 4px 20px rgba(126, 87, 194, 0.45);
+      }
+      .overlay-dark .overlay-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(126, 87, 194, 0.6);
+      }
+      .overlay-light .overlay-btn {
+        background: linear-gradient(135deg, #1565c0, #0d47a1);
+        color: #e3f2fd;
+        box-shadow: 0 4px 20px rgba(21, 101, 192, 0.4);
+      }
+      .overlay-light .overlay-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 28px rgba(21, 101, 192, 0.55);
+      }
+      .overlay-btn:active {
+        transform: translateY(0) !important;
+      }
+
+      /* Wrong review */
+      #overlay-gameover .overlay-content {
+        max-height: 90vh;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: rgba(180, 150, 255, 0.3) transparent;
+      }
+
+      .wrong-review {
+        margin-top: 24px;
+        text-align: left;
+        width: 100%;
+      }
+
+      .wrong-review-title {
+        font-size: 10px;
+        letter-spacing: 3px;
+        color: rgba(180, 150, 255, 0.5);
+        margin-bottom: 12px;
+        text-align: center;
+      }
+
+      .wrong-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 10px 14px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(180, 150, 255, 0.12);
+        margin-bottom: 8px;
+      }
+
+      .wrong-item-word {
+        font-size: 26px;
+        color: #b39ddb;
+        line-height: 1;
+        min-width: 44px;
+        text-align: center;
+        flex-shrink: 0;
+      }
+
+      .wrong-item-info {
+        flex: 1;
+        min-width: 0;
+      }
+
+      .wrong-item-reading {
+        font-size: 11px;
+        color: rgba(180, 150, 255, 0.6);
+        letter-spacing: 1px;
+        margin-bottom: 2px;
+      }
+
+      .wrong-item-meaning {
+        font-size: 13px;
+        color: rgba(237, 231, 246, 0.85);
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      /* Game over score */
+      .overlay-score-big {
+        font-size: clamp(56px, 14vw, 92px);
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+      .overlay-dark .overlay-score-big {
+        color: #b39ddb;
+      }
+      .overlay-light .overlay-score-big {
+        color: #1565c0;
+      }
+
+      .overlay-score-label {
+        font-size: 11px;
+        letter-spacing: 4px;
+        margin-bottom: 36px;
+      }
+      .overlay-dark .overlay-score-label {
+        color: rgba(180, 150, 255, 0.45);
+      }
+      .overlay-light .overlay-score-label {
+        color: rgba(21, 101, 192, 0.45);
+      }
+
+      /* ════════════════════════════════════════
+   MISS POPUP
+   ════════════════════════════════════════ */
+      #miss-popup {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 25;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+      }
+      #miss-popup.visible {
+        opacity: 1;
+        pointer-events: all;
+      }
+      .miss-card {
+        position: relative;
+        width: min(88%, 360px);
+        border-radius: 24px;
+        padding: 32px 28px 28px;
+        text-align: center;
+        background: linear-gradient(
+          160deg,
+          rgba(20, 10, 40, 0.97) 0%,
+          rgba(40, 10, 20, 0.97) 100%
+        );
+        border: 1px solid rgba(255, 90, 90, 0.35);
+        box-shadow: 0 0 0 1px rgba(255, 60, 60, 0.12),
+          0 8px 40px rgba(0, 0, 0, 0.6), 0 0 60px rgba(200, 40, 40, 0.15),
+          inset 0 1px 0 rgba(255, 255, 255, 0.07);
+        transform: scale(0.88) translateY(16px);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+      }
+      #miss-popup.visible .miss-card {
+        transform: scale(1) translateY(0);
+      }
+      .miss-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #ff6b6b;
+        background: rgba(255, 80, 80, 0.12);
+        border: 1px solid rgba(255, 80, 80, 0.25);
+        border-radius: 20px;
+        padding: 4px 14px;
+        margin-bottom: 20px;
+      }
+      .miss-badge::before {
+        content: "✕";
+        font-size: 11px;
+      }
+      .miss-kanji {
+        font-size: clamp(48px, 14vw, 72px);
+        font-weight: 900;
+        line-height: 1;
+        margin-bottom: 10px;
+        background: linear-gradient(
+          135deg,
+          #fff 30%,
+          rgba(255, 180, 180, 0.85)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        filter: drop-shadow(0 0 20px rgba(255, 120, 120, 0.4));
+      }
+      .miss-reading {
+        font-size: 22px;
+        color: rgba(220, 180, 255, 0.9);
+        margin-bottom: 4px;
+        letter-spacing: 1px;
+      }
+      .miss-romaji {
+        font-size: 13px;
+        color: rgba(180, 150, 220, 0.6);
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        text-transform: lowercase;
+      }
+      .miss-divider {
+        width: 40px;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 100, 100, 0.4),
+          transparent
+        );
+        margin: 0 auto 20px;
+      }
+      .miss-meaning {
+        font-size: 15px;
+        color: rgba(240, 230, 255, 0.75);
+        line-height: 1.5;
+        margin-bottom: 28px;
+        font-style: italic;
+      }
+      .miss-ok-btn {
+        display: inline-block;
+        padding: 13px 48px;
+        border: none;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        cursor: pointer;
+        background: linear-gradient(135deg, #ff6b6b, #c0392b);
+        color: #fff;
+        box-shadow: 0 4px 20px rgba(255, 80, 80, 0.4),
+          0 0 0 0 rgba(255, 80, 80, 0.35);
+        transition: transform 0.18s, box-shadow 0.18s;
+        animation: miss-btn-pulse 2s infinite;
+      }
+      .miss-ok-btn:hover {
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 8px 30px rgba(255, 80, 80, 0.55);
+        animation: none;
+      }
+      .miss-ok-btn:active {
+        transform: scale(0.96);
+      }
+      @keyframes miss-btn-pulse {
+        0%,
+        100% {
+          box-shadow: 0 4px 20px rgba(255, 80, 80, 0.4),
+            0 0 0 0 rgba(255, 80, 80, 0.35);
+        }
+        50% {
+          box-shadow: 0 4px 20px rgba(255, 80, 80, 0.4),
+            0 0 0 10px rgba(255, 80, 80, 0);
+        }
+      }
+      .miss-glow-ring {
+        position: absolute;
+        inset: -1px;
+        border-radius: 24px;
+        background: transparent;
+        border: 1px solid transparent;
+        background-clip: padding-box;
+        pointer-events: none;
+      }
+
+      /* ════════════════════════════════════════
+   PARTICLES
+   ════════════════════════════════════════ */
+      @keyframes particle-fly {
+        0% {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(var(--dx), var(--dy)) scale(0);
+          opacity: 0;
+        }
+      }
+      .particle {
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: particle-fly 0.65s ease-out forwards;
+        z-index: 15;
+      }
+      @keyframes shake-area {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(-5px);
+        }
+        40% {
+          transform: translateX(5px);
+        }
+        60% {
+          transform: translateX(-3px);
+        }
+        80% {
+          transform: translateX(3px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="g-nav dark-nav" id="g-nav" style="transition: none">
+      <a href="../index.html" class="g-nav-back" title="Danh sách">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="10,3 5,8 10,13" />
+        </svg>
+      </a>
+      <div class="g-nav-center">
+        <span class="g-nav-title" id="round-label"></span>
+        <div id="round-progress-bar">
+          <div id="round-progress-fill" style="width: 0%"></div>
+        </div>
+      </div>
+      <div class="g-score">
+        <div class="g-lives" id="lives-display"></div>
+        <div class="g-score-divider"></div>
+        <span class="g-score-num" id="score-display">0</span>
+        <div class="g-score-divider"></div>
+        <button id="audio-btn" class="g-audio-btn" onclick="toggleBgAudio()" title="Tắt/bật nhạc nền"></button>
+      </div>
+    </nav>
+
+    <!-- HISTORY PANEL -->
+    <div id="history-panel">
+      <div id="history-backdrop" onclick="closeHistory()"></div>
+      <div id="history-drawer">
+        <div id="history-header">
+          <span id="history-title">LỊCH SỬ TỪ VỰNG</span>
+          <button id="history-close" onclick="closeHistory()">✕</button>
+        </div>
+        <div id="history-stats">
+          <div class="h-stat total"><span id="hs-total">0</span>TỪ ĐÃ GẶP</div>
+          <div class="h-stat correct">
+            <span id="hs-correct">0</span>LẦN ĐÚNG
+          </div>
+          <div class="h-stat wrong"><span id="hs-wrong">0</span>LẦN SAI</div>
+        </div>
+        <div class="h-sort-bar">
+          <button
+            class="h-sort-btn active"
+            id="sort-wrong"
+            onclick="setSortMode('wrong')"
+          >
+            SAI NHIỀU
+          </button>
+          <button
+            class="h-sort-btn"
+            id="sort-recent"
+            onclick="setSortMode('recent')"
+          >
+            MỚI NHẤT
+          </button>
+          <button
+            class="h-sort-btn"
+            id="sort-alpha"
+            onclick="setSortMode('alpha')"
+          >
+            A→Z
+          </button>
+        </div>
+        <div id="history-list"></div>
+      </div>
+    </div>
+
+    <!-- GAME AREA -->
+    <div id="game-area" class="theme-space">
+      <!-- background decoration layer -->
+      <div id="bg-layer" aria-hidden="true"></div>
+
+      <!-- START OVERLAY -->
+      <div class="overlay overlay-dark" id="overlay-start">
+        <div class="overlay-content">
+          <h1 class="overlay-title">TỪ VỰNG RƠI</h1>
+          <p class="overlay-sub">Chọn nghĩa · Bấm đáp án · Nền ngẫu nhiên</p>
+
+          <div
+            style="
+              font-size: 12px;
+              letter-spacing: 1px;
+              margin-bottom: 28px;
+              line-height: 2;
+              opacity: 0.55;
+              color: inherit;
+            "
+          >
+            Từ vựng rơi từ trên xuống.<br />
+            Bấm <strong style="opacity: 1">đúng nghĩa tiếng Việt</strong> để bắt
+            từ.<br />
+            Bỏ lỡ <strong style="color: #ef5350; opacity: 1">3 từ</strong> là
+            thua!
+          </div>
+          <button class="overlay-btn" onclick="startGame()">BẮT ĐẦU</button>
+          <button
+            onclick="openHistory()"
+            style="
+              margin-top: 16px;
+              background: none;
+              border: none;
+              color: rgba(180, 150, 255, 0.5);
+              font-family: 'Inter', sans-serif;
+              font-size: 11px;
+              letter-spacing: 2px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              gap: 7px;
+              padding: 8px 16px;
+              border-radius: 8px;
+              transition: color 0.2s, background 0.2s;
+              margin-left: auto;
+              margin-right: auto;
+            "
+            onmouseover="this.style.color='#b39ddb';this.style.background='rgba(150,120,255,0.1)'"
+            onmouseout="this.style.color='rgba(180,150,255,0.5)';this.style.background='none'"
+          >
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 18 18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="9" cy="9" r="7.5" />
+              <polyline points="9,5 9,9 12,11" />
+            </svg>
+            LỊCH SỬ TỪ VỰNG
+          </button>
+        </div>
+      </div>
+
+      <!-- ROUND COMPLETE OVERLAY -->
+      <div
+        class="overlay overlay-dark"
+        id="overlay-round"
+        style="display: none"
+      >
+        <div class="overlay-content">
+          <p class="overlay-sub">HOÀN THÀNH</p>
+          <h1 class="overlay-title">VÒNG <span id="round-done-num">1</span></h1>
+          <div class="overlay-score-big" id="round-score">0</div>
+          <div class="overlay-score-label">TỪ ĐÃ BẮT ĐƯỢC</div>
+          <div
+            id="round-wrong-hint"
+            style="
+              font-size: 11px;
+              opacity: 0.5;
+              margin-bottom: 16px;
+              letter-spacing: 0.5px;
+            "
+          ></div>
+          <button class="overlay-btn" onclick="startNextRound()">
+            VÒNG <span id="round-next-num">2</span> →
+          </button>
+        </div>
+      </div>
+
+      <!-- GAME OVER OVERLAY -->
+      <div
+        class="overlay overlay-dark"
+        id="overlay-gameover"
+        style="display: none"
+      >
+        <div class="overlay-content">
+          <h1 class="overlay-title">HẾT GAME</h1>
+          <p class="overlay-sub">Đã bỏ lỡ quá nhiều từ</p>
+          <div class="overlay-score-big" id="final-score">0</div>
+          <div class="overlay-score-label">TỪ ĐÃ BẮT ĐƯỢC</div>
+          <button class="overlay-btn" onclick="showStart()">CHƠI LẠI</button>
+          <div class="wrong-review" id="wrong-review" style="display: none">
+            <div class="wrong-review-title">TỪ CẦN ÔN LẠI</div>
+            <div id="wrong-review-list"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MISS POPUP -->
+      <div id="miss-popup">
+        <div class="miss-card">
+          <div class="miss-badge">ĐÃ BỎ LỠ</div>
+          <div class="miss-kanji" id="miss-kanji"></div>
+          <div class="miss-reading" id="miss-reading"></div>
+          <div class="miss-romaji" id="miss-romaji"></div>
+          <div class="miss-divider"></div>
+          <div class="miss-meaning" id="miss-meaning"></div>
+          <button class="miss-ok-btn" onclick="closeMissPopup()">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHOICE BAR -->
+    <div id="choice-bar" class="input-bar-dark">
+      <div id="choice-btns">
+        <button class="choice-btn" id="choice-0" onclick="onChoice(0)" disabled>
+          —
+        </button>
+        <button class="choice-btn" id="choice-1" onclick="onChoice(1)" disabled>
+          —
+        </button>
+        <button class="choice-btn" id="choice-2" onclick="onChoice(2)" disabled>
+          —
+        </button>
+      </div>
+    </div>
+
+    <!-- BUILD BAR -->
+    <div id="build-bar" class="input-bar-dark" style="display: none">
+      <div id="build-display">
+        <div id="build-selected"></div>
+        <button id="build-backspace" onclick="onBuildBackspace()">⌫</button>
+      </div>
+      <div id="build-tiles"></div>
+    </div>
+
+    <script>
+      /* ════════════════════════════════
+   THEME CONFIG
+   ════════════════════════════════ */
+      const THEMES = {
+        space: { dark: true, particle: ["#b39ddb", "#ce93d8", "#fff9c4"] },
+        sky: { dark: false, particle: ["#1565c0", "#4fc3f7", "#ffffff"] },
+        ocean: { dark: true, particle: ["#29b6f6", "#b3e5fc", "#80deea"] },
+        desert: { dark: false, particle: ["#e65100", "#ffa726", "#fff9c4"] },
+        meadow: { dark: false, particle: ["#2e7d32", "#66bb6a", "#ffeb3b"] },
+      };
+
+      let currentTheme = "space";
+
+      function randomTheme() {
+        const keys = Object.keys(THEMES);
+        return keys[Math.floor(Math.random() * keys.length)];
+      }
+
+      function applyTheme(theme) {
+        currentTheme = theme;
+        const cfg = THEMES[theme];
+        const variant = cfg.dark ? "dark" : "light";
+
+        Object.keys(THEMES).forEach((t) =>
+          gameArea.classList.remove("theme-" + t)
+        );
+        gameArea.classList.add("theme-" + theme);
+
+        navEl.className = `g-nav ${variant}-nav`;
+        choiceBarEl.className = `input-bar-${variant}`;
+        buildBarEl.className = `input-bar-${variant}`;
+        overlayStart.className = `overlay overlay-${variant}`;
+        overlayGameover.className = `overlay overlay-${variant}`;
+        overlayRound.className = `overlay overlay-${variant}`;
+
+        buildBackground(theme);
+      }
+
+      /* ════════════════════════════════
+   BACKGROUND BUILDERS
+   ════════════════════════════════ */
+      function buildBackground(theme) {
+        bgLayer.innerHTML = "";
+
+        if (theme === "space") buildSpace(bgLayer);
+        if (theme === "sky") buildSky(bgLayer);
+        if (theme === "ocean") buildOcean(bgLayer);
+        if (theme === "desert") buildDesert(bgLayer);
+        if (theme === "meadow") buildMeadow(bgLayer);
+      }
+
+      function buildSpace(layer) {
+        // Nebula
+        const neb = document.createElement("div");
+        neb.className = "bg-nebula";
+        layer.appendChild(neb);
+
+        // Stars — 3 layers (tiny/small/medium)
+        const starColors = ["#ffffff", "#cce0ff", "#ffeedd", "#e0d0ff"];
+        for (let i = 0; i < 220; i++) {
+          const s = document.createElement("div");
+          s.className = "star";
+          const r = Math.random();
+          const size = r < 0.7 ? 1 : r < 0.92 ? 1.5 : r < 0.98 ? 2.5 : 3.5;
+          const color =
+            starColors[Math.floor(Math.random() * starColors.length)];
+          s.style.cssText = `width:${size}px;height:${size}px;left:${
+            Math.random() * 100
+          }%;top:${Math.random() * 100}%;background:${color};--dur:${
+            1.8 + Math.random() * 5
+          }s;--delay:${Math.random() * 6}s;--max-op:${
+            0.35 + Math.random() * 0.65
+          };`;
+          layer.appendChild(s);
+        }
+
+        // Shooting stars
+        for (let i = 0; i < 4; i++) {
+          const ss = document.createElement("div");
+          ss.className = "shooting-star";
+          const len = 80 + Math.random() * 100;
+          ss.style.cssText = `width:${len}px;top:${
+            4 + Math.random() * 38
+          }%;left:${Math.random() * 50}%;--dur:${
+            5 + Math.random() * 5
+          }s;--delay:${i * 3 + Math.random() * 2}s;`;
+          layer.appendChild(ss);
+        }
+
+        // Planet
+        const planet = document.createElement("div");
+        planet.className = "space-planet";
+        const pSize = 38 + Math.random() * 28;
+        planet.style.cssText = `width:${pSize}px;height:${pSize}px;top:${
+          8 + Math.random() * 25
+        }%;right:${
+          10 + Math.random() * 15
+        }%;background:radial-gradient(circle at 35% 35%,#b388ff,#4a148c);box-shadow:0 0 18px 6px rgba(150,80,255,0.4);`;
+        layer.appendChild(planet);
+
+        // Aurora
+        const aurora = document.createElement("div");
+        aurora.className = "space-aurora";
+        layer.appendChild(aurora);
+      }
+
+      function buildSky(layer) {
+        // Sun with rays
+        const sunWrap = document.createElement("div");
+        sunWrap.className = "sky-sun-wrap";
+        const ray = document.createElement("div");
+        ray.className = "sky-sun-ray";
+        const core = document.createElement("div");
+        core.className = "sky-sun-core";
+        sunWrap.appendChild(ray);
+        sunWrap.appendChild(core);
+        layer.appendChild(sunWrap);
+
+        // Mountain silhouette
+        const mt = document.createElement("div");
+        mt.className = "sky-mountain";
+        mt.innerHTML = `<svg viewBox="0 0 400 100" preserveAspectRatio="none" width="100%" height="80" style="display:block">
+          <path d="M0,100 L0,70 L40,30 L80,60 L120,20 L165,55 L200,15 L240,50 L280,25 L320,55 L360,35 L400,65 L400,100 Z" fill="rgba(10,30,60,0.25)"/>
+          <path d="M0,100 L0,80 L50,55 L90,70 L130,45 L170,65 L210,40 L250,62 L290,48 L330,68 L370,52 L400,72 L400,100 Z" fill="rgba(10,25,50,0.35)"/>
+        </svg>`;
+        layer.appendChild(mt);
+
+        // Clouds — layered with depth
+        const cloudDefs = [
+          { w: 230, h: 58, top: "7%", dur: "32s", delay: "0s", op: 0.95 },
+          { w: 160, h: 44, top: "18%", dur: "44s", delay: "9s", op: 0.85 },
+          { w: 280, h: 68, top: "30%", dur: "26s", delay: "16s", op: 0.78 },
+          { w: 190, h: 52, top: "12%", dur: "50s", delay: "4s", op: 0.9 },
+          { w: 120, h: 36, top: "24%", dur: "36s", delay: "22s", op: 0.7 },
+          { w: 200, h: 55, top: "5%", dur: "40s", delay: "30s", op: 0.8 },
+        ];
+        cloudDefs.forEach((c) => {
+          const cl = document.createElement("div");
+          cl.className = "sky-cloud";
+          cl.style.cssText = `width:${c.w}px;height:${c.h}px;top:${
+            c.top
+          };left:-${c.w + 30}px;animation-duration:${c.dur};animation-delay:${
+            c.delay
+          };opacity:${c.op};background:rgba(255,255,255,${
+            c.op
+          });box-shadow:0 4px 20px rgba(120,180,255,0.2);`;
+          [
+            { s: 1.35, tx: 0.22 },
+            { s: 1.15, tx: 0.5 },
+            { s: 0.9, tx: 0.7 },
+          ].forEach((b) => {
+            const bump = document.createElement("div");
+            bump.style.cssText = `position:absolute;width:${
+              c.h * b.s
+            }px;height:${c.h * b.s}px;top:-${c.h * 0.45}px;left:${
+              c.w * b.tx
+            }px;border-radius:50%;background:inherit;`;
+            cl.appendChild(bump);
+          });
+          layer.appendChild(cl);
+        });
+
+        // Birds
+        for (let i = 0; i < 5; i++) {
+          const b = document.createElement("div");
+          b.className = "sky-bird";
+          b.style.cssText = `top:${
+            8 + Math.random() * 32
+          }%;left:-80px;animation-duration:${
+            20 + Math.random() * 14
+          }s;animation-delay:${Math.random() * 18}s;width:28px;height:12px;`;
+          b.innerHTML = `<svg viewBox="0 0 28 12" width="28" height="12" fill="none"><path d="M0 6 Q7 0 14 6 Q21 12 28 6" stroke="rgba(20,50,100,0.55)" stroke-width="1.8" fill="none"/></svg>`;
+          layer.appendChild(b);
+        }
+      }
+
+      function buildOcean(layer) {
+        // Surface shimmer
+        const surf = document.createElement("div");
+        surf.className = "ocean-surface";
+        layer.appendChild(surf);
+
+        // Caustic light rays
+        for (let i = 0; i < 12; i++) {
+          const ray = document.createElement("div");
+          ray.className = "caustic-ray";
+          const h = 120 + Math.random() * 200;
+          const skF = -(4 + Math.random() * 8);
+          const skT = 4 + Math.random() * 8;
+          ray.style.cssText = `left:${
+            5 + Math.random() * 90
+          }%;height:${h}px;--dur:${3 + Math.random() * 5}s;--delay:${
+            Math.random() * 4
+          }s;--sk-from:${skF}deg;--sk-to:${skT}deg;`;
+          layer.appendChild(ray);
+        }
+
+        // Bioluminescent particles
+        const bioColors = [
+          "rgba(0,255,180,0.7)",
+          "rgba(0,200,255,0.7)",
+          "rgba(120,255,200,0.6)",
+          "rgba(80,200,255,0.6)",
+        ];
+        for (let i = 0; i < 28; i++) {
+          const p = document.createElement("div");
+          p.className = "bio-particle";
+          const sz = 2 + Math.random() * 5;
+          const color = bioColors[Math.floor(Math.random() * bioColors.length)];
+          const dx = (Math.random() - 0.5) * 60;
+          p.style.cssText = `width:${sz}px;height:${sz}px;left:${
+            Math.random() * 100
+          }%;bottom:${Math.random() * 70}%;background:${color};box-shadow:0 0 ${
+            sz * 3
+          }px ${color};--dur:${6 + Math.random() * 10}s;--delay:${
+            Math.random() * 8
+          }s;--dx:${dx}px;`;
+          layer.appendChild(p);
+        }
+
+        // Wave layers
+        for (let w = 1; w <= 3; w++) {
+          const wDiv = document.createElement("div");
+          wDiv.className = `ocean-wave wave${w}`;
+          const c =
+            w === 1 ? "60,200,255" : w === 2 ? "40,170,240" : "20,140,220";
+          const op = w === 1 ? 0.45 : w === 2 ? 0.3 : 0.18;
+          wDiv.innerHTML = `<svg viewBox="0 0 900 70" preserveAspectRatio="none" height="70" width="900"><path d="M0,35 C100,${
+            w % 2 ? 8 : 58
+          } 225,${w % 2 ? 58 : 8} 450,35 C675,${w % 2 ? 8 : 58} 800,${
+            w % 2 ? 58 : 8
+          } 900,35 L900,70 L0,70 Z" fill="rgba(${c},${op})"/></svg>`;
+          layer.appendChild(wDiv);
+        }
+
+        // Bubbles
+        for (let i = 0; i < 22; i++) {
+          const bub = document.createElement("div");
+          bub.className = "bubble";
+          const sz = 3 + Math.random() * 11;
+          bub.style.cssText = `width:${sz}px;height:${sz}px;left:${
+            Math.random() * 100
+          }%;bottom:${Math.random() * 35}%;animation-duration:${
+            5 + Math.random() * 9
+          }s;animation-delay:${Math.random() * 7}s;`;
+          layer.appendChild(bub);
+        }
+
+        // Fish
+        ["🐟", "🐠", "🐡", "🐟", "🦑"].forEach((e, i) => {
+          const f = document.createElement("div");
+          f.className = "ocean-fish";
+          const opacity = 0.18 + Math.random() * 0.25;
+          f.style.cssText = `font-size:${16 + Math.random() * 10}px;bottom:${
+            8 + Math.random() * 45
+          }%;left:-70px;animation-duration:${
+            18 + Math.random() * 18
+          }s;animation-delay:${Math.random() * 14}s;opacity:${opacity};`;
+          f.textContent = e;
+          layer.appendChild(f);
+        });
+
+        // Jellyfish
+        for (let i = 0; i < 3; i++) {
+          const jf = document.createElement("div");
+          jf.className = "ocean-jellyfish";
+          jf.style.cssText = `font-size:${22 + Math.random() * 14}px;left:${
+            10 + Math.random() * 80
+          }%;bottom:${20 + Math.random() * 40}%;animation-duration:${
+            3 + Math.random() * 3
+          }s;animation-delay:${Math.random() * 3}s;`;
+          jf.textContent = "🪼";
+          layer.appendChild(jf);
+        }
+      }
+
+      function buildDesert(layer) {
+        // Glow
+        const glow = document.createElement("div");
+        glow.className = "desert-glow";
+        layer.appendChild(glow);
+
+        // Sun — half-visible near horizon
+        const sun = document.createElement("div");
+        sun.className = "desert-sun";
+        const sz = 130 + Math.random() * 40;
+        sun.style.cssText = `width:${sz}px;height:${sz}px;bottom:${
+          18 + Math.random() * 10
+        }%;left:${35 + Math.random() * 30}%;transform:translateX(-50%);`;
+        layer.appendChild(sun);
+
+        // Dune SVGs — layered silhouettes
+        const duneColors = [
+          { fill: "#8c4a20", y: 68 },
+          { fill: "#a85c28", y: 74 },
+          { fill: "#c27034", y: 80 },
+        ];
+        duneColors.forEach((d, i) => {
+          const svg = document.createElement("div");
+          svg.className = "desert-dune";
+          svg.style.cssText = `left:0;right:0;z-index:${i};`;
+          const amp = 28 - i * 6;
+          const off = i * 15;
+          svg.innerHTML = `<svg viewBox="0 0 400 100" preserveAspectRatio="none" width="100%" height="80" style="display:block;margin-bottom:-2px"><path d="M-10,100 Q${
+            50 + off
+          },${100 - amp} ${110 + off},${d.y} Q${180 + off},${d.y - amp * 0.6} ${
+            240 + off
+          },${d.y + amp * 0.3} Q${310 + off},${d.y + amp * 0.8} 410,${
+            d.y + 10
+          } L410,100 Z" fill="${d.fill}"/></svg>`;
+          layer.appendChild(svg);
+        });
+
+        // Sand particles
+        for (let i = 0; i < 20; i++) {
+          const p = document.createElement("div");
+          p.className = "sand-particle";
+          const sz = 1.5 + Math.random() * 2.5;
+          const dx = (Math.random() - 0.5) * 120;
+          const dy = -(30 + Math.random() * 80);
+          p.style.cssText = `width:${sz}px;height:${sz}px;left:${
+            Math.random() * 100
+          }%;bottom:${5 + Math.random() * 30}%;animation-duration:${
+            4 + Math.random() * 6
+          }s;animation-delay:${Math.random() * 5}s;--dx:${dx}px;--dy:${dy}px;`;
+          layer.appendChild(p);
+        }
+
+        // Haze
+        const haze = document.createElement("div");
+        haze.className = "desert-haze";
+        layer.appendChild(haze);
+      }
+
+      function buildMeadow(layer) {
+        // Sun
+        const sun = document.createElement("div");
+        sun.className = "meadow-sun";
+        layer.appendChild(sun);
+
+        // Clouds
+        [
+          { w: 185, h: 52, top: "9%", dur: "34s", delay: "0s" },
+          { w: 130, h: 40, top: "21%", dur: "46s", delay: "11s" },
+          { w: 240, h: 62, top: "7%", dur: "28s", delay: "20s" },
+          { w: 155, h: 45, top: "16%", dur: "38s", delay: "6s" },
+        ].forEach((c) => {
+          const cl = document.createElement("div");
+          cl.className = "meadow-cloud";
+          cl.style.cssText = `width:${c.w}px;height:${c.h}px;top:${
+            c.top
+          };left:-${c.w + 30}px;animation-duration:${c.dur};animation-delay:${
+            c.delay
+          };`;
+          [
+            { s: 1.25, tx: 0.2 },
+            { s: 1.05, tx: 0.48 },
+            { s: 0.85, tx: 0.68 },
+          ].forEach((b) => {
+            const bm = document.createElement("div");
+            bm.style.cssText = `position:absolute;width:${c.h * b.s}px;height:${
+              c.h * b.s
+            }px;top:-${c.h * 0.42}px;left:${
+              c.w * b.tx
+            }px;border-radius:50%;background:inherit;`;
+            cl.appendChild(bm);
+          });
+          layer.appendChild(cl);
+        });
+
+        // Rolling hill silhouette
+        const hill = document.createElement("div");
+        hill.className = "meadow-hill";
+        hill.innerHTML = `<svg viewBox="0 0 400 100" preserveAspectRatio="none" width="100%" height="90" style="display:block"><path d="M-10,100 Q60,40 150,65 Q230,85 310,50 Q370,28 410,55 L410,100 Z" fill="rgba(50,140,50,0.55)"/><path d="M-10,100 Q80,60 180,78 Q270,92 360,68 L410,80 L410,100 Z" fill="rgba(40,120,40,0.7)"/></svg>`;
+        layer.appendChild(hill);
+
+        // Grass strip
+        const grass = document.createElement("div");
+        grass.className = "grass-strip";
+        layer.appendChild(grass);
+
+        for (let i = 0; i < 55; i++) {
+          const blade = document.createElement("div");
+          blade.className = "grass-blade";
+          blade.style.cssText = `left:${Math.random() * 100}%;height:${
+            18 + Math.random() * 32
+          }px;--dur:${1.2 + Math.random() * 2.2}s;--delay:${
+            Math.random() * 2
+          }s;--from:${-6 - Math.random() * 9}deg;--to:${
+            6 + Math.random() * 9
+          }deg;`;
+          grass.appendChild(blade);
+        }
+
+        const flColors = [
+          "#ff4f81",
+          "#ffcc00",
+          "#ff6b00",
+          "#cc44ff",
+          "#44ccff",
+          "#ff8888",
+          "#88ff88",
+        ];
+        for (let i = 0; i < 28; i++) {
+          const fl = document.createElement("div");
+          fl.className = "flower";
+          const sz = 6 + Math.random() * 7;
+          fl.style.cssText = `width:${sz}px;height:${sz}px;left:${
+            Math.random() * 100
+          }%;bottom:${1 + Math.random() * 45}%;background:${
+            flColors[Math.floor(Math.random() * flColors.length)]
+          };--delay:${
+            Math.random() * 3
+          }s;box-shadow:0 0 ${sz}px rgba(255,200,0,0.3);`;
+          grass.appendChild(fl);
+        }
+
+        // Cherry blossom petals
+        for (let i = 0; i < 18; i++) {
+          const p = document.createElement("div");
+          p.className = "petal";
+          const sz = 5 + Math.random() * 6;
+          const dx = (Math.random() - 0.5) * 120;
+          const rot = 360 + Math.random() * 360;
+          p.style.cssText = `width:${sz}px;height:${sz}px;left:${
+            Math.random() * 100
+          }%;top:-10px;background:rgba(255,${(160 + Math.random() * 60) | 0},${
+            (180 + Math.random() * 40) | 0
+          },0.85);--dur:${6 + Math.random() * 8}s;--delay:${
+            Math.random() * 8
+          }s;--dx:${dx}px;--rot:${rot}deg;`;
+          layer.appendChild(p);
+        }
+
+        // Butterflies
+        ["🦋", "🌸", "🍀", "🦋"].forEach((e, i) => {
+          const bf = document.createElement("div");
+          bf.className = "butterfly";
+          bf.textContent = e;
+          bf.style.cssText = `top:${
+            35 + Math.random() * 35
+          }%;left:-50px;animation-duration:${
+            20 + Math.random() * 12
+          }s;animation-delay:${i * 6 + Math.random() * 4}s;`;
+          layer.appendChild(bf);
+        });
+      }
+
+      /* ════════════════════════════════
+   GAME LOGIC
+   ════════════════════════════════ */
+      const AUDIO_BASE = "../db/audio/";
+      const MAX_LIVES = 3;
+      const SPAWN_INTERVAL_INIT = 3200;
+      const SPAWN_INTERVAL_MIN = 1200;
+      const BASE_SPEED_INIT = 12;
+      const BASE_SPEED_MAX = 80;
+      const ROUND_SIZE = 12;
+
+      let allWords = [];
+      let queue = [];
+      let falling = [];
+      let score = 0;
+      let lives = MAX_LIVES;
+      let gameRunning = false;
+
+      const bgAudio = new Audio("../asset/audio/bg_audio_1.mp3");
+      bgAudio.loop = true;
+      bgAudio.volume = 0.4;
+
+      const BG_AUDIO_KEY = "fallingVocab_bgAudio";
+      let bgMuted = localStorage.getItem(BG_AUDIO_KEY) === "false";
+
+      const SVG_SOUND_ON = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>`;
+      const SVG_SOUND_OFF = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>`;
+
+      function updateAudioBtn() {
+        const btn = document.getElementById("audio-btn");
+        if (!btn) return;
+        btn.innerHTML = bgMuted ? SVG_SOUND_OFF : SVG_SOUND_ON;
+        btn.classList.toggle("muted", bgMuted);
+      }
+
+      function toggleBgAudio() {
+        bgMuted = !bgMuted;
+        localStorage.setItem(BG_AUDIO_KEY, bgMuted ? "false" : "true");
+        if (bgMuted) {
+          bgAudio.pause();
+        } else {
+          bgAudio.play().catch(() => {});
+        }
+        updateAudioBtn();
+      }
+
+      function bgPlay() {
+        if (!bgMuted) bgAudio.play().catch(() => {});
+      }
+      function bgStop() {
+        bgAudio.pause();
+        bgAudio.currentTime = 0;
+      }
+
+      updateAudioBtn();
+      let lastTime = null;
+      let spawnTimer = 0;
+      let spawnInterval = SPAWN_INTERVAL_INIT;
+      let baseSpeed = BASE_SPEED_INIT;
+      let rafId = null;
+
+      let round = 1;
+      let wordsSpawnedThisRound = 0;
+      let wordsCaughtThisRound = 0;
+      let wrongWords = [];
+
+      let buildSelected = [];
+      let buildTarget = "";
+
+      let missPopupOpen = false;
+
+      const gameArea = document.getElementById("game-area");
+      const navEl = document.getElementById("g-nav");
+      const scoreEl = document.getElementById("score-display");
+      const livesEl = document.getElementById("lives-display");
+      const roundLabelEl = document.getElementById("round-label");
+      const bgLayer = document.getElementById("bg-layer");
+      const choiceBarEl = document.getElementById("choice-bar");
+      const buildBarEl = document.getElementById("build-bar");
+      const overlayStart = document.getElementById("overlay-start");
+      const overlayGameover = document.getElementById("overlay-gameover");
+      const overlayRound = document.getElementById("overlay-round");
+      const finalScoreEl = document.getElementById("final-score");
+      const missPopupEl = document.getElementById("miss-popup");
+      const missKanjiEl = document.getElementById("miss-kanji");
+      const missReadingEl = document.getElementById("miss-reading");
+      const missRomajiEl = document.getElementById("miss-romaji");
+      const missMeaningEl = document.getElementById("miss-meaning");
+      const timerFill = document.getElementById("round-progress-fill");
+      const buildTilesEl = document.getElementById("build-tiles");
+      const buildSelectedEl = document.getElementById("build-selected");
+      const buildDisplayEl = document.getElementById("build-display");
+      const choiceBtns = [0, 1, 2].map((i) =>
+        document.getElementById("choice-" + i)
+      );
+      const roundDoneNumEl = document.getElementById("round-done-num");
+      const roundNextNumEl = document.getElementById("round-next-num");
+      const roundScoreEl = document.getElementById("round-score");
+      const roundWrongHintEl = document.getElementById("round-wrong-hint");
+
+      async function loadWords() {
+        try {
+          const res = await fetch(AUDIO_BASE + "index.json");
+          allWords = await res.json();
+        } catch (e) {
+          console.error("Không tải được từ vựng:", e);
+        }
+      }
+
+      function showStart() {
+        gameRunning = false;
+        if (rafId) cancelAnimationFrame(rafId);
+        falling.forEach((f) => f.el.remove());
+        falling = [];
+        clearChoices();
+        roundLabelEl.textContent = "";
+        timerFill.style.width = "0%";
+        overlayStart.style.display = "flex";
+        overlayGameover.style.display = "none";
+        overlayRound.style.display = "none";
+        bgStop();
+      }
+
+      async function startGame() {
+        if (!allWords.length) await loadWords();
+        bgPlay();
+
+        applyTheme(randomTheme());
+
+        score = 0;
+        lives = MAX_LIVES;
+        round = 1;
+        wrongWords = [];
+        wordsSpawnedThisRound = 0;
+        wordsCaughtThisRound = 0;
+        timerFill.style.width = "0%";
+        spawnInterval = SPAWN_INTERVAL_INIT;
+        baseSpeed = BASE_SPEED_INIT;
+        spawnTimer = 0;
+        lastTime = null;
+        gameRunning = true;
+
+        falling.forEach((f) => f.el.remove());
+        falling = [];
+        queue = buildRoundQueue();
+
+        updateScore();
+        updateLives();
+        updateRoundDisplay();
+        clearChoices();
+        overlayStart.style.display = "none";
+        overlayGameover.style.display = "none";
+
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = requestAnimationFrame(gameLoop);
+      }
+
+      function gameOver() {
+        gameRunning = false;
+        if (rafId) cancelAnimationFrame(rafId);
+        clearChoices();
+        finalScoreEl.textContent = score;
+
+        const reviewEl = document.getElementById("wrong-review");
+        const listEl = document.getElementById("wrong-review-list");
+        if (wrongWords.length > 0) {
+          listEl.innerHTML = wrongWords
+            .map(
+              (w) => `
+            <div class="wrong-item">
+              <div class="wrong-item-word">${w.word}</div>
+              <div class="wrong-item-info">
+                <div class="wrong-item-reading">${w.reading || ""}${
+                w.romaji ? " · " + w.romaji : ""
+              }</div>
+                <div class="wrong-item-meaning">${w.vi}</div>
+              </div>
+            </div>`
+            )
+            .join("");
+          reviewEl.style.display = "";
+        } else {
+          reviewEl.style.display = "none";
+        }
+
+        overlayGameover.style.display = "flex";
+        bgStop();
+      }
+
+      function gameLoop(ts) {
+        if (!gameRunning) return;
+        if (lastTime === null) lastTime = ts;
+        const dt = Math.min((ts - lastTime) / 1000, 0.1);
+        lastTime = ts;
+
+        if (!missPopupOpen) {
+          spawnTimer += dt * 1000;
+          if (
+            spawnTimer >= spawnInterval &&
+            falling.length < 1 &&
+            wordsSpawnedThisRound < ROUND_SIZE &&
+            queue.length > 0
+          ) {
+            spawnTimer = 0;
+            spawnWord();
+          }
+        }
+
+        const areaH = gameArea.clientHeight;
+        const active = falling.find((f) => !f.removing);
+        if (active) {
+          const total = areaH + 100;
+          const pct = Math.max(
+            0,
+            Math.min(100, ((areaH - active.y) / total) * 100)
+          );
+          timerFill.style.width = pct + "%";
+          if (pct > 55) timerFill.style.background = "#4caf50";
+          else if (pct > 25) timerFill.style.background = "#ff9800";
+          else timerFill.style.background = "#ef5350";
+        }
+        for (let i = falling.length - 1; i >= 0; i--) {
+          const item = falling[i];
+          if (item.removing) continue;
+          item.y += item.speed * dt;
+          item.el.style.top = item.y + "px";
+          if (item.y > areaH) removeFalling(i, "miss");
+        }
+
+        if (wordsSpawnedThisRound >= ROUND_SIZE && falling.length === 0) {
+          endRound();
+          return;
+        }
+
+        rafId = requestAnimationFrame(gameLoop);
+      }
+
+      function spawnWord() {
+        if (!queue.length) return;
+        wordsSpawnedThisRound++;
+        timerFill.style.width = "100%";
+        timerFill.style.background = "#4caf50";
+        updateRoundDisplay();
+        const wordData = queue.shift();
+        const el = document.createElement("div");
+        el.className = "fw";
+
+        const areaW = gameArea.clientWidth;
+        const mode = pickMode();
+        const displayText = mode.reverse
+          ? getShortMeaning(wordData.vi)
+          : wordData.word;
+        el.innerHTML = `<span class="fw-word${mode.reverse ? " fw-vi" : ""}">${displayText}</span>`;
+
+        const speedMult = mode.type === "build" ? 0.85 : 1;
+        const speed = (baseSpeed + Math.random() * 10) * speedMult;
+
+        el.style.left = "0px";
+        el.style.top = "-100px";
+        gameArea.appendChild(el);
+        const elW = el.offsetWidth;
+        const x = Math.max(
+          8,
+          Math.min(
+            areaW - elW - 8,
+            20 + Math.random() * Math.max(20, areaW - elW - 20)
+          )
+        );
+        el.style.left = x + "px";
+
+        falling.push({ el, wordData, x, y: -100, speed, removing: false });
+        generateChoices(wordData, mode);
+      }
+
+      function onChoice(idx) {
+        if (!gameRunning) return;
+        const btn = choiceBtns[idx];
+        const isCorrect = btn.dataset.correct === "1";
+
+        const fallingIdx = falling.findIndex((f) => !f.removing);
+        if (fallingIdx === -1) return;
+
+        if (isCorrect) {
+          btn.classList.add("correct-flash");
+          correctHit(fallingIdx);
+          setTimeout(clearChoices, 200);
+        } else {
+          btn.classList.add("wrong-flash");
+          addToWrongWords(falling[fallingIdx].wordData);
+          recordHistory(falling[fallingIdx].wordData, "wrong");
+          setTimeout(() => btn.classList.remove("wrong-flash"), 450);
+        }
+      }
+
+      function correctHit(idx) {
+        timerFill.style.width = "0%";
+        wordsCaughtThisRound++;
+        updateRoundDisplay();
+        const item = falling[idx];
+        item.removing = true;
+        item.el.classList.add("correct");
+        spawnParticles(item.el);
+        recordHistory(item.wordData, "correct");
+
+        setTimeout(() => {
+          item.el.remove();
+          falling.splice(falling.indexOf(item), 1);
+        }, 500);
+
+        score++;
+        updateScore();
+        scoreEl.classList.remove("pop");
+        void scoreEl.offsetWidth;
+        scoreEl.classList.add("pop");
+      }
+
+      function removeFalling(idx, type) {
+        const item = falling[idx];
+        item.removing = true;
+        if (type === "miss") {
+          item.el.style.opacity = "0";
+          item.el.style.transition = "opacity 0.3s";
+          lives--;
+          updateLives();
+          shakeGame();
+          clearChoices();
+          addToWrongWords(item.wordData);
+          recordHistory(item.wordData, "wrong");
+          const isGameOver = lives <= 0;
+          setTimeout(() => {
+            item.el.remove();
+            falling.splice(falling.indexOf(item), 1);
+            if (isGameOver) {
+              gameOver();
+            } else {
+              showMissPopup(item.wordData);
+            }
+          }, 350);
+        }
+      }
+
+      function showMissPopup(wordData) {
+        missPopupOpen = true;
+        spawnTimer = 0;
+        missKanjiEl.textContent = wordData.word;
+        missReadingEl.textContent = wordData.reading;
+        missRomajiEl.textContent = wordData.romaji;
+        missMeaningEl.textContent = wordData.vi;
+        missPopupEl.classList.add("visible");
+      }
+
+      function closeMissPopup() {
+        missPopupOpen = false;
+        missPopupEl.classList.remove("visible");
+        spawnTimer = -600;
+      }
+
+      /* ════════════════════════════════
+   ROUND SYSTEM
+   ════════════════════════════════ */
+      function buildRoundQueue() {
+        const seen = new Set();
+        const prioritized = wrongWords.filter((w) => {
+          if (seen.has(w.word)) return false;
+          seen.add(w.word);
+          return true;
+        });
+        const prioritizedSet = new Set(prioritized.map((w) => w.word));
+        const others = allWords
+          .filter((w) => !prioritizedSet.has(w.word))
+          .sort(() => Math.random() - 0.5);
+        return [...prioritized, ...others].slice(0, ROUND_SIZE);
+      }
+
+      function addToWrongWords(wordData) {
+        if (!wrongWords.find((w) => w.word === wordData.word)) {
+          wrongWords.push(wordData);
+        }
+      }
+
+      function endRound() {
+        gameRunning = false;
+        if (rafId) cancelAnimationFrame(rafId);
+        clearChoices();
+        roundDoneNumEl.textContent = round;
+        roundNextNumEl.textContent = round + 1;
+        roundScoreEl.textContent = score;
+        const wc = wrongWords.length;
+        roundWrongHintEl.textContent =
+          wc > 0
+            ? `${wc} từ sẽ xuất hiện đầu vòng tiếp`
+            : "Hoàn hảo! Không sai từ nào";
+        overlayRound.style.display = "flex";
+        setTimeout(startNextRound, 2500);
+      }
+
+      function startNextRound() {
+        overlayRound.style.display = "none";
+        overlayStart.style.display = "none";
+        overlayGameover.style.display = "none";
+        missPopupOpen = false;
+        missPopupEl.classList.remove("visible");
+        round++;
+        wordsSpawnedThisRound = 0;
+        wordsCaughtThisRound = 0;
+        timerFill.style.width = "0%";
+        baseSpeed = Math.min(
+          BASE_SPEED_MAX,
+          BASE_SPEED_INIT * Math.pow(1.1, round - 1)
+        );
+        spawnInterval = SPAWN_INTERVAL_INIT;
+        spawnTimer = 0;
+        lastTime = null;
+        queue = buildRoundQueue();
+        wrongWords = [];
+        applyTheme(randomTheme());
+        updateRoundDisplay();
+        gameRunning = true;
+        rafId = requestAnimationFrame(gameLoop);
+      }
+
+      function updateRoundDisplay() {
+        roundLabelEl.textContent = `${wordsCaughtThisRound} / ${ROUND_SIZE}`;
+      }
+
+      /* ════════════════════════════════
+   CHOICES
+   ════════════════════════════════ */
+      function getShortMeaning(vi) {
+        return vi.split(/[,;\/，；]/)[0].trim();
+      }
+
+      const CHOICE_MODES = [
+        { type: "choice", getText: (w) => getShortMeaning(w.vi), weight: 2 },
+        { type: "choice", getText: (w) => w.reading, weight: 2 },
+        { type: "choice", getText: (w) => w.romaji, weight: 2 },
+        { type: "build", weight: 2 },
+        { type: "choice", getText: (w) => w.word, reverse: true, weight: 1 },
+      ];
+
+      function pickMode() {
+        const total = CHOICE_MODES.reduce((s, m) => s + (m.weight || 1), 0);
+        let r = Math.random() * total;
+        for (const m of CHOICE_MODES) {
+          r -= m.weight || 1;
+          if (r <= 0) return m;
+        }
+        return CHOICE_MODES[CHOICE_MODES.length - 1];
+      }
+
+      const HIRAGANA_POOL = [
+        ..."あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをんがぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ",
+      ];
+
+      function isHiraganaOnly(word) {
+        return /^[\u3041-\u309f]+$/.test(word);
+      }
+
+      function generateChoices(wordData, mode) {
+        if (!mode) {
+          if (isHiraganaOnly(wordData.word)) {
+            mode = CHOICE_MODES[0];
+          } else {
+            mode = pickMode();
+          }
+        }
+
+        if (mode.type === "build") {
+          showBuildMode(wordData);
+          return;
+        }
+
+        hideBuildMode();
+        const wrongPool = allWords.filter((w) => w.word !== wordData.word);
+        const shuffled = wrongPool.sort(() => Math.random() - 0.5).slice(0, 2);
+
+        const choices = [
+          { text: mode.getText(wordData), correct: true },
+          { text: mode.getText(shuffled[0]), correct: false },
+          { text: mode.getText(shuffled[1]), correct: false },
+        ].sort(() => Math.random() - 0.5);
+
+        for (let i = 0; i < 3; i++) {
+          const btn = choiceBtns[i];
+          btn.textContent = choices[i].text;
+          btn.dataset.correct = choices[i].correct ? "1" : "0";
+          btn.disabled = false;
+          btn.classList.remove("correct-flash", "wrong-flash");
+        }
+      }
+
+      function showBuildMode(wordData) {
+        choiceBarEl.style.display = "none";
+        buildBarEl.style.display = "flex";
+        buildSelected = [];
+        buildTarget = wordData.reading;
+
+        const readingChars = [...wordData.reading];
+        const distCount = Math.max(3, 6 - readingChars.length);
+        const distractors = HIRAGANA_POOL.filter(
+          (c) => !readingChars.includes(c)
+        )
+          .sort(() => Math.random() - 0.5)
+          .slice(0, distCount);
+
+        buildTilesEl.innerHTML = "";
+        [...readingChars, ...distractors]
+          .sort(() => Math.random() - 0.5)
+          .forEach((char) => {
+            const btn = document.createElement("button");
+            btn.className = "build-tile";
+            btn.textContent = char;
+            btn.onclick = () => onBuildTile(char, btn);
+            buildTilesEl.appendChild(btn);
+          });
+
+        updateBuildDisplay();
+      }
+
+      function hideBuildMode() {
+        choiceBarEl.style.display = "";
+        buildBarEl.style.display = "none";
+        buildSelected = [];
+        buildTarget = "";
+      }
+
+      function onBuildTile(char, tileEl) {
+        if (!gameRunning) return;
+        tileEl.disabled = true;
+        buildSelected.push({ char, tileEl });
+        updateBuildDisplay();
+        if (buildSelected.length === [...buildTarget].length) checkBuild();
+      }
+
+      function onBuildBackspace() {
+        if (!buildSelected.length || !gameRunning) return;
+        const last = buildSelected.pop();
+        last.tileEl.disabled = false;
+        updateBuildDisplay();
+      }
+
+      function updateBuildDisplay() {
+        buildSelectedEl.innerHTML = buildSelected
+          .map((s) => `<span class="build-sel-char">${s.char}</span>`)
+          .join("");
+      }
+
+      function checkBuild() {
+        const answer = buildSelected.map((s) => s.char).join("");
+        if (answer === buildTarget) {
+          const idx = falling.findIndex((f) => !f.removing);
+          if (idx !== -1) {
+            correctHit(idx);
+            setTimeout(clearChoices, 200);
+          }
+        } else {
+          const fallingIdx2 = falling.findIndex((f) => !f.removing);
+          if (fallingIdx2 !== -1) {
+            addToWrongWords(falling[fallingIdx2].wordData);
+            recordHistory(falling[fallingIdx2].wordData, "wrong");
+          }
+          buildDisplayEl.classList.remove("build-shake");
+          void buildDisplayEl.offsetWidth;
+          buildDisplayEl.classList.add("build-shake");
+          setTimeout(() => buildDisplayEl.classList.remove("build-shake"), 400);
+          buildSelected.forEach((s) => {
+            s.tileEl.disabled = false;
+          });
+          buildSelected = [];
+          updateBuildDisplay();
+        }
+      }
+
+      function clearChoices() {
+        hideBuildMode();
+        choiceBtns.forEach((btn) => {
+          btn.textContent = "—";
+          btn.dataset.correct = "0";
+          btn.disabled = true;
+          btn.classList.remove("correct-flash", "wrong-flash");
+        });
+      }
+
+      /* ════════════════════════════════
+   HELPERS
+   ════════════════════════════════ */
+      function updateScore() {
+        scoreEl.textContent = score;
+      }
+
+      function updateLives() {
+        livesEl.innerHTML = "";
+        for (let i = 0; i < MAX_LIVES; i++) {
+          const d = document.createElement("div");
+          d.className = "life-heart" + (i >= lives ? " lost" : "");
+          d.innerHTML = `<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 15.5S2 11 2 6a4 4 0 0 1 7-2.65A4 4 0 0 1 16 6c0 5-7 9.5-7 9.5z"
+              fill="${i < lives ? "#ef5350" : "none"}"
+              stroke="${i < lives ? "#ef5350" : "#6b3535"}"
+              stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>`;
+          livesEl.appendChild(d);
+        }
+      }
+
+      function shakeGame() {
+        gameArea.style.animation = "none";
+        void gameArea.offsetWidth;
+        gameArea.style.animation = "shake-area 0.3s ease-out";
+      }
+
+      function spawnParticles(el) {
+        const rect = el.getBoundingClientRect();
+        const areaRect = gameArea.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2 - areaRect.left;
+        const cy = rect.top + rect.height / 2 - areaRect.top;
+        const colors = THEMES[currentTheme].particle;
+
+        for (let i = 0; i < 10; i++) {
+          const p = document.createElement("div");
+          p.className = "particle";
+          const angle = (i / 10) * Math.PI * 2;
+          const dist = 40 + Math.random() * 35;
+          p.style.cssText = `left:${cx}px;top:${cy}px;
+      --dx:${Math.cos(angle) * dist}px;--dy:${Math.sin(angle) * dist}px;
+      background:${colors[Math.floor(Math.random() * colors.length)]};`;
+          gameArea.appendChild(p);
+          setTimeout(() => p.remove(), 750);
+        }
+      }
+
+      /* ════════════════════════════════
+   HISTORY
+   ════════════════════════════════ */
+      const HISTORY_KEY = "falling-vocab-history";
+      let currentSort = "wrong";
+
+      function loadHistory() {
+        try {
+          return JSON.parse(localStorage.getItem(HISTORY_KEY)) || {};
+        } catch {
+          return {};
+        }
+      }
+
+      function recordHistory(wordData, result) {
+        const h = loadHistory();
+        const key = wordData.word;
+        if (!h[key]) {
+          h[key] = {
+            word: wordData.word,
+            reading: wordData.reading || "",
+            romaji: wordData.romaji || "",
+            vi: wordData.vi,
+            correct: 0,
+            wrong: 0,
+            lastSeen: 0,
+          };
+        }
+        h[key][result]++;
+        h[key].lastSeen = Date.now();
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(h));
+      }
+
+      function setSortMode(mode) {
+        currentSort = mode;
+        document
+          .querySelectorAll(".h-sort-btn")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById("sort-" + mode).classList.add("active");
+        renderHistoryList();
+      }
+
+      function openHistory() {
+        const panel = document.getElementById("history-panel");
+        panel.classList.add("open");
+        renderHistoryList();
+      }
+
+      function closeHistory() {
+        document.getElementById("history-panel").classList.remove("open");
+      }
+
+      function renderHistoryList() {
+        const h = loadHistory();
+        const items = Object.values(h);
+
+        // stats
+        const totalCorrect = items.reduce((s, i) => s + i.correct, 0);
+        const totalWrong = items.reduce((s, i) => s + i.wrong, 0);
+        document.getElementById("hs-total").textContent = items.length;
+        document.getElementById("hs-correct").textContent = totalCorrect;
+        document.getElementById("hs-wrong").textContent = totalWrong;
+
+        if (items.length === 0) {
+          document.getElementById("history-list").innerHTML =
+            '<div class="h-empty">Chưa có dữ liệu.<br>Hãy chơi game để ghi lịch sử.</div>';
+          return;
+        }
+
+        const sorted = [...items].sort((a, b) => {
+          if (currentSort === "wrong")
+            return (
+              b.wrong - b.correct - (a.wrong - a.correct) || b.wrong - a.wrong
+            );
+          if (currentSort === "recent") return b.lastSeen - a.lastSeen;
+          return a.word.localeCompare(b.word);
+        });
+
+        document.getElementById("history-list").innerHTML = sorted
+          .map(
+            (item) => `
+          <div class="h-item">
+            <div class="h-item-word">${item.word}</div>
+            <div class="h-item-info">
+              <div class="h-item-reading">${item.reading}${
+              item.romaji ? " · " + item.romaji : ""
+            }</div>
+              <div class="h-item-meaning">${item.vi
+                .split(/[\/,;]/)[0]
+                .trim()}</div>
+            </div>
+            <div class="h-item-counts">
+              <span class="h-count c">✓ ${item.correct}</span>
+              <span class="h-count w">✗ ${item.wrong}</span>
+            </div>
+          </div>`
+          )
+          .join("");
+      }
+
+      /* ════════════════════════════════
+   INIT
+   ════════════════════════════════ */
+      loadWords();
+      updateLives();
+      applyTheme(randomTheme());
+    </script>
+  </body>
+</html>

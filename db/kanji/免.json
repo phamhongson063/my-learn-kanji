@@ -1,0 +1,143 @@
+{
+  "kanji": "免",
+  "on": "めん",
+  "onRomaji": "men",
+  "kun": "まぬか·れる · まぬが·れる",
+  "kunRomaji": "manuka·reru · manuga·reru",
+  "hanviet": "Miễn",
+  "jlpt": "N2",
+  "strokes": 8,
+  "radical": "儿",
+  "radicalReading": "にんにょう",
+  "radicalMeaning": "người / chân người",
+  "radicalNumber": 10,
+  "type": "Hội ý",
+  "typeJa": "会意文字",
+  "structure": "刀 (dao — phần trên) + 口 (miệng) + 儿 (người — phần dưới)",
+  "school": "Trung học cơ sở · Joyo kanji",
+
+  "lead": "免 là chữ Hán <span class=\"hl\">8 nét</span>, loại <span class=\"hl\">Hội ý</span> — kết hợp nhiều thành phần tạo nghĩa. Chữ này mang ý nghĩa cốt lõi là <span class=\"hl\">thoát khỏi, miễn trừ</span> — được dùng rộng rãi trong cả văn viết trang trọng lẫn giao tiếp hằng ngày.",
+  "mnemonic": "Hình dung một <strong>người (儿)</strong> đang há <strong>miệng (口)</strong> kêu cứu, và lưỡi <strong>dao (刀)</strong> đang hướng về phía họ — nhưng rồi họ thoát ra được! → <span class=\"hl\">免 = thoát khỏi / miễn trừ</span>",
+
+  "originLead": "Chữ 免 trong <span class=\"hl\">giáp cốt văn</span> mô tả hình ảnh một người đang sinh con — đứa bé thoát ra khỏi bụng mẹ. Từ hình ảnh \"thoát ra\" đó, nghĩa mở rộng thành <span class=\"hl\">thoát khỏi, giải thoát, miễn trừ</span>.",
+  "originDetail": "Theo các nhà nghiên cứu chữ Hán, hình dạng ban đầu của 免 là hình người phụ nữ sinh nở — đứa trẻ đang \"thoát ra\". Từ nghĩa gốc này, 免 phát triển thêm nghĩa <span class=\"hl\">miễn cho, tha thứ, bãi miễn</span>. Trong tiếng Nhật hiện đại, 免 xuất hiện nhiều trong từ vựng pháp lý, hành chính: 免許 (bằng lái), 免税 (miễn thuế), 免疫 (miễn dịch), 免職 (bãi chức).",
+  "decomp": [
+    { "char": "𠂉", "name": "Đao đầu",  "meaning": "Dao, hình lưỡi dao — phần trên đầu chữ" },
+    { "char": "口",  "name": "Khẩu",     "meaning": "Miệng — phần giữa" },
+    { "char": "儿",  "name": "Nhân cước", "meaning": "Người — phần chân dưới" }
+  ],
+
+  "meanings": [
+    { "title": "Thoát khỏi, tránh được",   "desc": "Nghĩa gốc — thoát ra khỏi nguy hiểm hay tình huống bất lợi. 免れる (まぬかれる) = thoát khỏi, tránh được." },
+    { "title": "Miễn trừ, tha miễn",        "desc": "Được giảm hoặc bỏ nghĩa vụ, trách nhiệm. 免税 (めんぜい) = miễn thuế; 免除 (めんじょ) = miễn trừ." },
+    { "title": "Cấp phép, cho phép",        "desc": "免許 (めんきょ) = giấy phép, bằng lái. Nghĩa này hơi trái chiều — \"miễn\" cho người đó khỏi bị cấm." },
+    { "title": "Bãi miễn, cách chức",       "desc": "免職 (めんしょく) = bãi chức; 罷免 (ひめん) = bãi miễn. Dùng trong bối cảnh hành chính, pháp lý." },
+    { "title": "Miễn dịch (y học)",         "desc": "免疫 (めんえき) = miễn dịch — khả năng cơ thể \"thoát khỏi\" bệnh tật. Từ này rất quen thuộc sau đại dịch COVID-19." }
+  ],
+
+  "vocab": [
+    { "word": "免許",   "reading": "めんきょ (menkyo)",     "vi": "Giấy phép, bằng lái",          "jlpt": "N3", "jp": "「来月、運転免許の試験を受ける予定だ。」",                       "jpVi": "Tháng tới tôi dự định thi lấy bằng lái xe." },
+    { "word": "免税",   "reading": "めんぜい (menzei)",     "vi": "Miễn thuế",                    "jlpt": "N2", "jp": "「空港の免税店でお土産を買った。」",                             "jpVi": "Tôi đã mua quà lưu niệm ở cửa hàng miễn thuế tại sân bay." },
+    { "word": "免疫",   "reading": "めんえき (men'eki)",    "vi": "Miễn dịch",                    "jlpt": "N2", "jp": "「免疫力を高めるために、バランスのよい食事が大切だ。」",         "jpVi": "Để tăng sức đề kháng, chế độ ăn cân bằng rất quan trọng." },
+    { "word": "免除",   "reading": "めんじょ (menjo)",      "vi": "Miễn trừ, miễn giảm",          "jlpt": "N2", "jp": "「奨学金の返済が免除された。」",                                 "jpVi": "Việc hoàn trả học bổng đã được miễn trừ." },
+    { "word": "免職",   "reading": "めんしょく (menshoku)", "vi": "Bãi chức, cách chức",           "jlpt": "N1", "jp": "「不正行為により、彼は免職処分を受けた。」",                     "jpVi": "Do hành vi gian lận, anh ta bị xử lý kỷ luật cách chức." },
+    { "word": "免れる", "reading": "まぬかれる (manukareru)", "vi": "Thoát khỏi, tránh được",     "jlpt": "N2", "jp": "「大雨の中、奇跡的に事故を免れた。」",                           "jpVi": "Trong cơn mưa lớn, tôi kỳ diệu thoát khỏi tai nạn." },
+    { "word": "罷免",   "reading": "ひめん (himen)",        "vi": "Bãi miễn (chức vụ)",           "jlpt": "N1", "jp": "「大臣は議会の決定で罷免された。」",                             "jpVi": "Bộ trưởng bị bãi miễn theo quyết định của nghị viện." },
+    { "word": "免状",   "reading": "めんじょう (menjō)",    "vi": "Giấy chứng nhận, văn bằng",    "jlpt": "N1", "jp": "「茶道の免状を取得するのに十年かかった。」",                     "jpVi": "Tôi mất mười năm để lấy được chứng chỉ trà đạo." }
+  ],
+
+  "idioms": [
+    {
+      "text": "免許皆伝", "fontSize": 19,
+      "kana": "めんきょかいでん",
+      "meaning": "Truyền thụ toàn bộ bí kíp, đạt đến trình độ hoàn toàn thành thạo — thuật ngữ võ thuật / nghệ thuật truyền thống chỉ người được sư phụ công nhận là đã học hết toàn bộ tinh hoa.",
+      "jp": "「師匠からついに免許皆伝を授けられた。」",
+      "jpVi": "Cuối cùng tôi đã được sư phụ công nhận là đã thành thạo toàn bộ kỹ năng."
+    },
+    {
+      "text": "責任を免れる", "fontSize": 16,
+      "kana": "せきにんをまぬかれる",
+      "meaning": "Thoát khỏi trách nhiệm — không phải chịu hậu quả hay nghĩa vụ về việc gì đó. Thường dùng trong bối cảnh pháp lý hoặc đạo đức.",
+      "jp": "「証拠がなければ、責任を免れることもある。」",
+      "jpVi": "Nếu không có bằng chứng, đôi khi người ta có thể thoát khỏi trách nhiệm."
+    },
+    {
+      "text": "免疫ができる", "fontSize": 18,
+      "kana": "めんえきができる",
+      "meaning": "Trở nên miễn dịch — không chỉ dùng trong y học, còn dùng theo nghĩa bóng: quen rồi không còn bị ảnh hưởng nữa.",
+      "jp": "「毎日怒鳴られて、もう免疫ができてしまった。」",
+      "jpVi": "Bị la hét mỗi ngày, tôi đã quen và không còn bị ảnh hưởng nữa."
+    },
+    {
+      "text": "お世辞は免除", "fontSize": 18,
+      "kana": "おせじはめんじょ",
+      "meaning": "Miễn những lời khen xã giao — cách nói thẳng thắn rằng mình không cần những lời nịnh hót, muốn nghe ý kiến thật.",
+      "jp": "「お世辞は免除して、正直な意見を聞かせてください。」",
+      "jpVi": "Thôi đừng khen xã giao nữa, hãy cho tôi nghe ý kiến thật lòng."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết phần đầu (𠂉) trước, tiếp đến khẩu (口), cuối cùng là hai chân (儿).",
+  "strokeSteps": [
+    { "range": "1–2", "char": "𠂉", "label": "Phần đầu trên",     "detail": "2 nét — nét phẩy + nét ngang gập" },
+    { "range": "3–5", "char": "口", "label": "Khẩu giữa",          "detail": "3 nét" },
+    { "range": "6",   "char": "一", "label": "Nét ngang nối",      "detail": "ngang dài phân cách trên-dưới" },
+    { "range": "7–8", "char": "儿", "label": "Nhân cước dưới",     "detail": "2 nét chân" }
+  ],
+  "strokeDetail": "• <strong>𠂉 (2 nét):</strong> ① phẩy ngắn trên → ② nét ngang gập góc<br>• <strong>口 (3 nét):</strong> ① dọc + gập ngang → ② ngang trên → ③ ngang dưới đóng<br>• <strong>Nét ngang (1 nét):</strong> nét ngang dài kẻ ngang giữa chữ<br>• <strong>儿 (2 nét):</strong> ① phẩy trái → ② nét cong phải<br>• Tổng: 2+3+1+2 = <strong>8 nét ✓</strong>",
+
+  "calliNote": "Chú ý tỉ lệ: phần trên (𠂉 và 口) chiếm khoảng 60% chiều cao, phần 儿 bên dưới gọn và mở rộng tạo thế vững. Nét ngang ở giữa phải kẻ thẳng và dài, là nét phân cách rõ ràng giữa trên và dưới.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết từ <span class=\"hl\">trên xuống dưới</span> — phần đầu 𠂉 trước, sau đó 口, rồi nét ngang, kết thúc bằng hai chân 儿.",
+
+  "canvasHints": [
+    { "x": 155, "y": 45,  "label": "①②" },
+    { "x": 148, "y": 140, "label": "③④⑤" },
+    { "x": 168, "y": 230, "label": "⑥" },
+    { "x": 130, "y": 330, "label": "⑦⑧" }
+  ],
+
+  "quiz": [
+    {
+      "q": "免 の音読みは何ですか？",
+      "opts": ["ぶん (bun)", "めん (men)", "べん (ben)", "ふん (fun)"],
+      "ans": 1,
+      "explain": "免 の音読みは めん (men)。免許、免税、免疫 など多くの複合語で使われます。訓読みは まぬかれる / まぬがれる。"
+    },
+    {
+      "q": "「免許」(めんきょ) の意味は何ですか？",
+      "opts": ["Miễn thuế", "Giấy phép, bằng lái", "Bãi chức", "Miễn dịch"],
+      "ans": 1,
+      "explain": "免許 (めんきょ) = giấy phép, bằng lái. 運転免許 (うんてんめんきょ) = bằng lái xe là từ rất thông dụng. 免許皆伝 là thành ngữ chỉ việc được truyền thụ toàn bộ kỹ năng."
+    },
+    {
+      "q": "「免疫」(めんえき) の意味は何ですか？",
+      "opts": ["Miễn thuế hải quan", "Miễn dịch của cơ thể", "Thoát khỏi trách nhiệm pháp lý", "Giấy chứng nhận y tế"],
+      "ans": 1,
+      "explain": "免疫 (めんえき) = miễn dịch — khả năng cơ thể chống lại bệnh tật. Theo nghĩa bóng cũng dùng để nói \"đã quen, không còn bị ảnh hưởng nữa\": 免疫ができた."
+    },
+    {
+      "q": "「免れる」の読み方は？",
+      "opts": ["めんれる", "まぬかれる", "のがれる", "はずれる"],
+      "ans": 1,
+      "explain": "免れる の訓読みは まぬかれる (hoặc まぬがれる). Nghĩa: thoát khỏi, tránh được. Ví dụ: 「危険を免れた」= thoát khỏi nguy hiểm."
+    },
+    {
+      "q": "「免職」(めんしょく) の意味は何ですか？",
+      "opts": ["Thăng chức", "Bãi chức, cách chức", "Nghỉ hưu tự nguyện", "Chuyển công tác"],
+      "ans": 1,
+      "explain": "免職 (めんしょく) = bãi chức, cách chức. 免 (miễn) + 職 (chức vụ) = bị tước bỏ chức vụ. Dùng trong bối cảnh kỷ luật hành chính, pháp lý."
+    },
+    {
+      "q": "「免許皆伝」(めんきょかいでん) はどんな意味ですか？",
+      "opts": [
+        "Thi đỗ bằng lái xe quốc tế",
+        "Được sư phụ công nhận đã thành thạo toàn bộ kỹ năng",
+        "Giấy phép hành nghề do chính phủ cấp",
+        "Chứng chỉ hoàn thành khóa học ngắn hạn"
+      ],
+      "ans": 1,
+      "explain": "免許皆伝 = 免許 (giấy phép) + 皆伝 (truyền thụ toàn bộ). Thuật ngữ võ thuật / nghệ thuật truyền thống — sư phụ công nhận đệ tử đã học hết tinh hoa, có thể tự lập môn phái."
+    }
+  ]
+}

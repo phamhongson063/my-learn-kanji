@@ -1,0 +1,146 @@
+{
+  "kanji": "励",
+  "on": "れい",
+  "onRomaji": "rei",
+  "kun": "はげ(む) · はげ(ます)",
+  "kunRomaji": "hage(mu) · hage(masu)",
+  "hanviet": "Lệ",
+  "jlpt": "N2",
+  "strokes": 7,
+  "radical": "力",
+  "radicalReading": "ちから",
+  "radicalMeaning": "sức mạnh / bộ lực",
+  "radicalNumber": 19,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "厂・万 (bên trái) + 力 (bên phải)",
+  "school": "Trung học cơ sở · Joyo kanji",
+
+  "lead": "励 là chữ Hán <span class=\"hl\">7 nét</span>, loại <span class=\"hl\">Hình thanh</span> — 力 (sức mạnh) là bộ thủ gợi nghĩa, phần còn lại gợi âm <span class=\"hl\">れい</span>. Chữ phồn thể là <span class=\"hl\">勵</span> (17 nét). Hai nghĩa trung tâm: <span class=\"hl\">はげむ</span> (tự nỗ lực) và <span class=\"hl\">はげます</span> (khích lệ người khác).",
+  "mnemonic": "Hình dung mọi thứ chướng ngại — như vách đá <strong>(厂)</strong>, muôn vàn (万) khó khăn — nhưng vẫn dùng hết <strong>sức lực (力)</strong> để bước qua → <span class=\"hl\">励 = nỗ lực vượt qua, khích lệ tiến lên</span>. Khi gặp muôn khó khăn (万), sức mạnh (力) mới thật sự được thử thách.",
+
+  "originLead": "Chữ phồn thể <span class=\"hl\">勵</span> (17 nét) gồm 厲 (mài sắc, gắt gao) + 力 (sức mạnh). Hình ảnh gốc: <strong>mài giũa — dùng đá mài cho sắc bén</strong>, từ đó nghĩa chuyển sang <em>rèn luyện bản thân, khích lệ người khác cố gắng</em>. Quá trình giản lược của Nhật đã rút gọn 厲 thành 厂+万, tạo ra 励 chỉ còn 7 nét.",
+  "originDetail": "励 xuất hiện nhiều trong các từ chỉ sự nỗ lực có tổ chức: 奨励 (khuyến khích chính sách), 激励 (cổ vũ mạnh mẽ), 励行 (thực hiện nghiêm túc). Trong giáo dục và thể thao Nhật, 励ます là từ xuất hiện rất thường xuyên — lời khích lệ được coi trọng trong văn hoá nhóm Nhật Bản. Câu 「切磋琢磨」(học hỏi lẫn nhau để tiến bộ) phản ánh tinh thần này.",
+  "decomp": [
+    { "char": "厂", "name": "Hán / Nhai chương",  "meaning": "Vách đá, mái che — phần gợi âm れい cùng với 万" },
+    { "char": "力", "name": "Lực / Bộ lực",        "meaning": "Sức mạnh — bộ thủ gợi nghĩa nỗ lực, cố gắng" }
+  ],
+
+  "meanings": [
+    { "title": "Nỗ lực, gắng sức (はげむ)",    "desc": "Nội động từ — tự mình cố gắng hết sức: 勉強に励む (nỗ lực học tập), 仕事に励む (chăm chỉ làm việc). Bản thân là chủ thể của sự cố gắng." },
+    { "title": "Khích lệ, cổ vũ (はげます)",   "desc": "Ngoại động từ — tiếp thêm sức mạnh cho người khác: 友達を励ます (khích lệ bạn bè), 選手を励ます (cổ vũ vận động viên). Luôn có tân ngữ là người được khích lệ." },
+    { "title": "Khuyến khích (chính sách)",    "desc": "奨励 (shōrei) — khuyến khích thông qua chính sách, phần thưởng: 運動を奨励する (khuyến khích vận động), 研究を奨励する (khuyến khích nghiên cứu)." },
+    { "title": "Thực hiện nghiêm túc, cưỡng hành", "desc": "励行 (reikō) — thực hiện một quy tắc hay chính sách một cách nghiêm chỉnh, không ngoại lệ. 規則を励行する (thực hiện quy tắc nghiêm túc)." }
+  ],
+
+  "vocab": [
+    { "word": "励む",     "reading": "はげむ (hagemu)",           "vi": "Nỗ lực, cố gắng, chăm chỉ (nội động)",    "jlpt": "N2", "jp": "「夢を叶えるために毎日練習に励んでいる。」",             "jpVi": "Tôi chăm chỉ luyện tập mỗi ngày để thực hiện ước mơ." },
+    { "word": "励ます",   "reading": "はげます (hagemasu)",       "vi": "Khích lệ, cổ vũ, động viên (ngoại động)",  "jlpt": "N2", "jp": "「落ち込んでいる友人を励ました。」",                     "jpVi": "Tôi đã động viên người bạn đang chán nản." },
+    { "word": "激励",     "reading": "げきれい (gekirei)",        "vi": "Cổ vũ mạnh mẽ, khích lệ nhiệt tình",       "jlpt": "N2", "jp": "「監督の激励の言葉が選手たちに力を与えた。」",           "jpVi": "Những lời cổ vũ mạnh mẽ của huấn luyện viên đã tiếp thêm sức mạnh cho các vận động viên." },
+    { "word": "奨励",     "reading": "しょうれい (shōrei)",       "vi": "Khuyến khích (qua chính sách / khen thưởng)", "jlpt": "N2", "jp": "「政府は再生可能エネルギーの利用を奨励している。」",     "jpVi": "Chính phủ đang khuyến khích sử dụng năng lượng tái tạo." },
+    { "word": "励行",     "reading": "れいこう (reikō)",          "vi": "Thực hiện nghiêm túc, tuân thủ chặt chẽ",   "jlpt": "",   "jp": "「節電を励行するよう全社員に呼びかけた。」",             "jpVi": "Toàn bộ nhân viên được kêu gọi thực hiện tiết kiệm điện một cách nghiêm túc." },
+    { "word": "励ましの言葉", "reading": "はげましのことば",      "vi": "Lời động viên, lời khích lệ",               "jlpt": "",   "jp": "「先生からの励ましの言葉が今でも心に残っている。」",     "jpVi": "Những lời động viên của thầy giáo vẫn còn lưu trong lòng tôi đến tận bây giờ." },
+    { "word": "自己研鑽に励む", "reading": "じこけんさんにはげむ", "vi": "Nỗ lực tự trau dồi bản thân",             "jlpt": "",   "jp": "「社会人になってからも自己研鑽に励むことが大切だ。」",   "jpVi": "Việc không ngừng trau dồi bản thân ngay cả sau khi đi làm là điều quan trọng." }
+  ],
+
+  "idioms": [
+    {
+      "text": "切磋琢磨", "fontSize": 20,
+      "kana": "せっさたくま",
+      "meaning": "Mài giũa lẫn nhau — cùng nỗ lực cạnh tranh, học hỏi, khích lệ nhau để cùng tiến bộ. Giống như đá mài đá cho sắc bén. Tinh thần này gắn liền với 励む.",
+      "jp": "「チームメンバーが切磋琢磨することで、全体のレベルが上がった。」",
+      "jpVi": "Nhờ các thành viên trong nhóm mài giũa lẫn nhau, trình độ chung của cả nhóm được nâng cao."
+    },
+    {
+      "text": "互いに励まし合う", "fontSize": 14,
+      "kana": "たがいにはげましあう",
+      "meaning": "Khích lệ nhau cùng tiến — hai người hay nhiều người cùng cổ vũ, động viên nhau vượt qua khó khăn. Thể hiện tinh thần đoàn kết trong văn hoá Nhật.",
+      "jp": "「マラソンで苦しいとき、互いに励まし合いながらゴールを目指した。」",
+      "jpVi": "Khi khó khăn trong cuộc marathon, chúng tôi khích lệ nhau cùng hướng đến đích."
+    },
+    {
+      "text": "勉学に励む", "fontSize": 20,
+      "kana": "べんがくにはげむ",
+      "meaning": "Chuyên tâm học hành, nỗ lực trau dồi kiến thức — cụm từ trang trọng dùng trong văn viết, diễn văn, thư xin học bổng để nói về tinh thần học tập.",
+      "jp": "「奨学金をいただき、より一層勉学に励む所存です。」",
+      "jpVi": "Được nhận học bổng, tôi quyết tâm chuyên tâm học hành hơn nữa."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết phần <span class=\"hl\">厂+万</span> (5 nét) trước bên trái, sau đó viết <span class=\"hl\">力</span> (2 nét) bên phải.",
+  "strokeSteps": [
+    { "range": "1–2", "char": "厂", "label": "Nhai chương (厂)", "detail": "2 nét: ngang + dọc" },
+    { "range": "3–5", "char": "万", "label": "Vạn (万)",          "detail": "3 nét: ngang + nét cong + phẩy" },
+    { "range": "6–7", "char": "力", "label": "Lực (力)",           "detail": "2 nét kết thúc bên phải" }
+  ],
+  "strokeDetail": "• <strong>厂 (2 nét):</strong> ① nét ngang trên → ② nét dọc-gập dài xuống (tạo hình mái)<br>• <strong>万 (3 nét):</strong> ③ nét ngang → ④ nét cong dọc → ⑤ nét phẩy móc<br>• <strong>力 (2 nét):</strong> ⑥ nét phẩy dài (từ trên xuống, nghiêng trái) → ⑦ nét móc (từ trái sang phải rồi móc lên)<br>• Tổng: 2+3+2 = <strong>7 nét ✓</strong>",
+
+  "calliNote": "Chữ 励 chỉ 7 nét nhưng cần cân bằng tốt: phần 厂+万 bên trái chiếm khoảng 60% chiều rộng, 力 bên phải gọn nhưng nét móc phải dứt khoát và rõ ràng. Tránh viết 力 quá nhỏ so với phần trái.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">厂 trước</span> (2 nét mái), tiếp đến <span class=\"hl\">万</span> (3 nét), cuối cùng là <span class=\"hl\">力</span> (2 nét bên phải).",
+
+  "canvasHints": [
+    { "x": 88,  "y": 72,  "label": "①②" },
+    { "x": 100, "y": 210, "label": "③④⑤" },
+    { "x": 285, "y": 175, "label": "⑥⑦" }
+  ],
+
+  "quiz": [
+    {
+      "q": "励む と 励ます の違いは何ですか？",
+      "opts": [
+        "励む là lịch sự hơn 励ます",
+        "励む là nội động (tự cố gắng), 励ます là ngoại động (khích lệ người khác)",
+        "励む dùng cho công việc, 励ます dùng cho học tập",
+        "Hai từ hoàn toàn giống nhau"
+      ],
+      "ans": 1,
+      "explain": "励む (はげむ) = nội động — tự mình nỗ lực: 勉強に励む. 励ます (はげます) = ngoại động — khích lệ người khác: 友達を励ます. Cặp nội/ngoại động rất điển hình."
+    },
+    {
+      "q": "「激励」(げきれい) の意味は？",
+      "opts": [
+        "Phê bình gay gắt",
+        "Cổ vũ nhiệt tình, khích lệ mạnh mẽ",
+        "Tự ép bản thân học hành",
+        "Khuyến khích bằng phần thưởng tài chính"
+      ],
+      "ans": 1,
+      "explain": "激励 (げきれい) = 激 (mạnh mẽ, kịch liệt) + 励 (khích lệ) = Cổ vũ nhiệt tình, động viên hùng hồn. Khác với 奨励 (khuyến khích qua chính sách), 激励 mang sắc thái cảm xúc và nhiệt huyết hơn."
+    },
+    {
+      "q": "励 の部首は何ですか？",
+      "opts": ["厂 (がんだれ)", "万 (まん)", "力 (ちから)", "勸 (すすめる)"],
+      "ans": 2,
+      "explain": "Bộ của 励 là 力 (ちから) — bộ lực, số 19 trong 214 bộ thủ. Dù 力 đứng bên phải (không phải vị trí bộ thủ thông thường), đây vẫn là bộ thủ vì gợi nghĩa trung tâm của chữ."
+    },
+    {
+      "q": "「奨励」(しょうれい) はどんな場面で使いますか？",
+      "opts": [
+        "Một người tự động viên bản thân vượt khó",
+        "Chính sách, tổ chức khuyến khích hành vi nào đó",
+        "Lời cổ vũ trong thể thao",
+        "Lời khen ngợi sau khi hoàn thành nhiệm vụ"
+      ],
+      "ans": 1,
+      "explain": "奨励 (しょうれい) = 奨 (trao thưởng, khuyến khích) + 励 (nỗ lực) = Khuyến khích qua chính sách hoặc phần thưởng. Chủ thể thường là chính phủ, trường học, công ty: 読書を奨励する (khuyến khích đọc sách)."
+    },
+    {
+      "q": "励 の画数は何画ですか？",
+      "opts": ["5画", "6画", "7画", "8画"],
+      "ans": 2,
+      "explain": "励 は 7画 — 厂 (2 nét) + 万 (3 nét) + 力 (2 nét) = 7 nét. Chữ phồn thể 勵 có 17 nét, được giản lược đáng kể sau cải cách chữ viết Nhật Bản năm 1946."
+    },
+    {
+      "q": "「切磋琢磨」(せっさたくま) の意味は？",
+      "opts": [
+        "Tự mình nỗ lực không cần ai giúp",
+        "Mài giũa lẫn nhau để cùng tiến bộ",
+        "Cạnh tranh loại bỏ đối thủ",
+        "Học từ sách giáo khoa nghiêm túc"
+      ],
+      "ans": 1,
+      "explain": "切磋琢磨 = cắt - mài - đẽo - giũa (bốn kỹ thuật gia công đá quý). Ẩn dụ: hai người mài giũa nhau như đá mài đá cho sắc bén. Liên quan đến 励む vì cả hai cùng nỗ lực và khích lệ nhau."
+    }
+  ]
+}

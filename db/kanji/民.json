@@ -1,0 +1,269 @@
+{
+  "kanji": "民",
+  "on": "みん",
+  "onRomaji": "min",
+  "kun": "たみ",
+  "kunRomaji": "tami",
+  "hanviet": "Dân",
+  "jlpt": "N2",
+  "strokes": 5,
+  "radical": "氏",
+  "radicalReading": "うじ",
+  "radicalMeaning": "họ tộc / dòng dõi",
+  "radicalNumber": 83,
+  "type": "Tượng hình",
+  "typeJa": "象形文字",
+  "structure": "氏 (họ tộc) + 一 (nét ngang biến thể) — hoặc theo thuyết cổ: hình ảnh con mắt bị chọc mù bằng dùi nhọn",
+  "school": "Tiểu học lớp 4 · Joyo kanji",
+
+  "lead": "民 là chữ Hán <span class=\"hl\">5 nét</span>, loại <span class=\"hl\">Tượng hình</span> — một trong những chữ mang nguồn gốc lịch sử gây chấn động nhất. Từ hình ảnh cổ đại về <strong>người nô lệ bị chọc mù mắt</strong>, chữ dần chuyển nghĩa thành <span class=\"hl\">dân chúng, nhân dân, thường dân</span> — trục xoay của mọi nền chính trị.",
+  "mnemonic": "Nhìn vào 民: hình dạng giống <strong>con mắt (目) bị một nét nhọn đâm vào</strong> từ phía trên — theo giáp cốt văn, đây là hình ảnh chọc mù mắt tù binh để họ không thể trốn thoát. Từ \"người bị kiểm soát\" → <span class=\"hl\">\"thần dân, dân chúng\"</span>. Một gốc tích đau lòng ẩn sau một chữ cực kỳ phổ biến.",
+
+  "originLead": "民 là <span class=\"hl\">chữ tượng hình cổ</span>, xuất hiện trên giáp cốt văn (甲骨文) thời nhà Thương (khoảng 1600–1046 TCN) — một trong những chữ có lịch sử lâu đời và nguồn gốc gây tranh cãi nhất.",
+  "originDetail": "Theo các nhà nghiên cứu giáp cốt văn, hình dạng nguyên thủy của 民 là <strong>một con mắt với vật nhọn đâm vào</strong>. Thời cổ đại, tù binh chiến tranh bị chọc mù một mắt để <span class=\"hl\">ngăn họ trốn thoát và buộc phải phục tùng</span> — những người này trở thành nô lệ hay thần dân (民). Từ nghĩa gốc \"người bị khuất phục\", chữ dần mở rộng thành <strong>\"thường dân, bách tính, nhân dân\"</strong> — tức toàn bộ người dân không thuộc tầng lớp quý tộc hay quan lại. Trong tư tưởng Nho giáo, 民 là nền tảng của quốc gia: <span class=\"hl\">\"民為貴，社稷次之，君為輕\"</span> (Dân là quý nhất, xã tắc đứng thứ, vua là nhẹ nhất — Mạnh Tử). Tư tưởng này ảnh hưởng sâu sắc đến Nhật Bản qua lịch sử, và ngày nay 民 xuất hiện trong hầu hết các từ liên quan đến chính trị, xã hội và đời sống công dân.",
+
+  "decomp": [
+    {
+      "char": "氏",
+      "name": "Thị",
+      "meaning": "Họ tộc, dòng dõi — bộ thủ của 民. Hình dạng 民 và 氏 rất gần nhau; 民 = 氏 + nét ngang thêm vào phía dưới-phải."
+    },
+    {
+      "char": "⺀",
+      "name": "(nét nhọn)",
+      "meaning": "Nét biến thể phía trên — theo thuyết cổ đại, đây là hình ảnh dùi nhọn đâm vào mắt tù binh. Theo thuyết hiện đại hơn, đây chỉ đơn giản là nét phân biệt 民 với 氏."
+    }
+  ],
+
+  "meanings": [
+    {
+      "title": "Nhân dân, dân chúng, thường dân (たみ)",
+      "desc": "Toàn thể người dân trong một quốc gia hoặc vùng lãnh thổ — đối lập với tầng lớp cai trị. Đây là nghĩa cốt lõi và phổ biến nhất."
+    },
+    {
+      "title": "Công dân, thần dân",
+      "desc": "Người thuộc về một quốc gia hoặc dưới quyền cai quản của một vị vua/chính quyền. Dùng nhiều trong ngữ cảnh lịch sử và chính trị."
+    },
+    {
+      "title": "Dân sự, phi quân sự (民間・民営)",
+      "desc": "Trong các từ ghép hiện đại, 民 chỉ lĩnh vực dân sự, tư nhân — đối lập với 官 (nhà nước, công lập) hoặc 軍 (quân sự)."
+    },
+    {
+      "title": "Dân tộc, sắc tộc (民族)",
+      "desc": "Nhóm người có chung văn hóa, ngôn ngữ, lịch sử. 民族 là từ quan trọng trong nhân học, chính trị và xã hội học."
+    }
+  ],
+
+  "vocab": [
+    {
+      "word": "国民",
+      "reading": "こくみん (kokumin)",
+      "vi": "Quốc dân, công dân",
+      "jlpt": "N3",
+      "jp": "「国民の声に耳を傾けることが政治家の使命だ。」",
+      "jpVi": "Lắng nghe tiếng nói của người dân là sứ mệnh của chính khách."
+    },
+    {
+      "word": "市民",
+      "reading": "しみん (shimin)",
+      "vi": "Thị dân, công dân (thành phố)",
+      "jlpt": "N3",
+      "jp": "「市民が一致団結してゴミ問題に取り組んだ。」",
+      "jpVi": "Người dân thành phố đoàn kết cùng nhau giải quyết vấn đề rác thải."
+    },
+    {
+      "word": "民主",
+      "reading": "みんしゅ (minshu)",
+      "vi": "Dân chủ",
+      "jlpt": "N3",
+      "jp": "「民主主義は完璧ではないが、最善の制度の一つだ。」",
+      "jpVi": "Dân chủ không hoàn hảo nhưng là một trong những chế độ tốt nhất."
+    },
+    {
+      "word": "民族",
+      "reading": "みんぞく (minzoku)",
+      "vi": "Dân tộc, sắc tộc",
+      "jlpt": "N3",
+      "jp": "「日本にはアイヌ民族など複数の民族が暮らしている。」",
+      "jpVi": "Tại Nhật Bản có nhiều dân tộc sinh sống, trong đó có người Ainu."
+    },
+    {
+      "word": "住民",
+      "reading": "じゅうみん (jūmin)",
+      "vi": "Cư dân, người dân địa phương",
+      "jlpt": "N3",
+      "jp": "「住民の反対により、工場の建設計画が中止された。」",
+      "jpVi": "Do cư dân phản đối, kế hoạch xây dựng nhà máy đã bị hủy bỏ."
+    },
+    {
+      "word": "民間",
+      "reading": "みんかん (minkan)",
+      "vi": "Dân gian, tư nhân, phi nhà nước",
+      "jlpt": "N2",
+      "jp": "「民間企業と行政が協力してプロジェクトを進めた。」",
+      "jpVi": "Doanh nghiệp tư nhân và chính quyền hợp tác thúc đẩy dự án."
+    },
+    {
+      "word": "難民",
+      "reading": "なんみん (nanmin)",
+      "vi": "Người tị nạn",
+      "jlpt": "N2",
+      "jp": "「世界中で何百万人もの難民が保護を求めている。」",
+      "jpVi": "Hàng triệu người tị nạn trên khắp thế giới đang tìm kiếm sự bảo vệ."
+    },
+    {
+      "word": "民営化",
+      "reading": "みんえいか (min'eika)",
+      "vi": "Tư nhân hóa",
+      "jlpt": "N1",
+      "jp": "「国鉄の民営化によってJRが誕生した。」",
+      "jpVi": "Việc tư nhân hóa đường sắt quốc gia đã tạo ra JR."
+    },
+    {
+      "word": "庶民",
+      "reading": "しょみん (shomin)",
+      "vi": "Thường dân, dân thường",
+      "jlpt": "N1",
+      "jp": "「庶民の生活に寄り添った政策が必要だ。」",
+      "jpVi": "Cần có những chính sách gần gũi với cuộc sống của người dân thường."
+    }
+  ],
+
+  "idioms": [
+    {
+      "text": "民主主義",
+      "fontSize": 16,
+      "kana": "みんしゅしゅぎ",
+      "meaning": "Chủ nghĩa dân chủ — hệ thống chính trị lấy nhân dân làm chủ thể quyền lực. Từ ghép quan trọng nhất có 民 trong tiếng Nhật hiện đại, xuất hiện hàng ngày trong báo chí và chính trị.",
+      "jp": "「民主主義を守るためには、一人ひとりが政治に関心を持つことが大切だ。」",
+      "jpVi": "Để bảo vệ nền dân chủ, mỗi người đều cần quan tâm đến chính trị."
+    },
+    {
+      "text": "民の声は神の声",
+      "fontSize": 14,
+      "kana": "たみのこえはかみのこえ",
+      "meaning": "\"Tiếng dân là tiếng trời\" — tương đương \"Vox populi, vox Dei\" trong Latin. Tục ngữ nhấn mạnh ý chí của nhân dân có giá trị tối thượng, không thể bác bỏ. Dùng nhiều trong diễn văn chính trị và báo chí.",
+      "jp": "「民の声は神の声というが、政治家はその声を真剣に受け止めなければならない。」",
+      "jpVi": "Người ta nói tiếng dân là tiếng trời — các chính khách phải nghiêm túc lắng nghe tiếng nói đó."
+    },
+    {
+      "text": "衣食足りて礼節を知る",
+      "fontSize": 13,
+      "kana": "いしょくたりてれいせつをしる",
+      "meaning": "\"No cơm ấm áo mới biết lễ nghĩa\" — tục ngữ liên quan trực tiếp đến đời sống của 民 (dân chúng): khi người dân được no đủ thì mới có thể nói đến văn hóa và đạo đức. Tương đương \"có thực mới vực được đạo\" trong tiếng Việt.",
+      "jp": "「衣食足りて礼節を知るというように、まず国民の生活を安定させることが先決だ。」",
+      "jpVi": "Đúng như câu 'no cơm ấm áo mới biết lễ nghĩa' — trước tiên phải ổn định cuộc sống của người dân đã."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. 民 có 5 nét, cấu trúc gần với 氏 nhưng có thêm nét móc đặc trưng ở cuối.",
+  "strokeSteps": [
+    {
+      "range": "1",
+      "char": "𠂉",
+      "label": "Nét phẩy ngắn trên",
+      "detail": "phẩy ngắn từ trên xuống trái — nét đầu tiên, phía trên bên trái"
+    },
+    {
+      "range": "2",
+      "char": "一",
+      "label": "Nét ngang giữa",
+      "detail": "ngang từ trái sang phải, cắt ngang thân chữ"
+    },
+    {
+      "range": "3",
+      "char": "⺀",
+      "label": "Nét phẩy dài trái",
+      "detail": "phẩy dài xuống trái, tạo nửa trái của chữ"
+    },
+    {
+      "range": "4",
+      "char": "⺀",
+      "label": "Nét cong phải",
+      "detail": "cong từ trên xuống và vòng sang phải"
+    },
+    {
+      "range": "5",
+      "char": "乚",
+      "label": "Nét móc cuối",
+      "detail": "dọc xuống rồi móc sang trái — nét đặc trưng phân biệt 民 với 氏"
+    }
+  ],
+  "strokeDetail": "• <strong>Nét 1:</strong> phẩy ngắn phía trên bên trái<br>• <strong>Nét 2:</strong> nét ngang cắt qua giữa chữ<br>• <strong>Nét 3:</strong> phẩy dài tạo nửa trái<br>• <strong>Nét 4:</strong> nét cong tạo nửa phải<br>• <strong>Nét 5:</strong> nét móc cuối — đây là nét <span class=\"hl\">phân biệt 民 với 氏</span>; 氏 không có móc, 民 có móc hướng sang trái<br>• Tổng: <strong>5 nét ✓</strong>",
+
+  "calliNote": "Điểm then chốt của 民: nét 5 (móc cuối) phải vươn đủ dài và móc rõ sang trái — nếu thiếu móc hoặc móc quá yếu, chữ sẽ bị nhầm với 氏. Trong thư pháp, nét móc này thường được kéo mạnh và dứt khoát, tạo cảm giác vững chắc — như nền móng của xã hội mà 民 (nhân dân) đại diện.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Chú ý <span class=\"hl\">nét móc cuối (nét 5)</span> — đây là nét khó nhất và quan trọng nhất. So sánh với 氏: <span class=\"hl\">氏 không có móc, 民 có móc</span>. Hãy viết nét móc mạnh và dứt khoát như ý chí của nhân dân.",
+
+  "canvasHints": [
+    { "x": 120, "y": 60, "label": "①" },
+    { "x": 168, "y": 140, "label": "②" },
+    { "x": 95, "y": 230, "label": "③" },
+    { "x": 210, "y": 195, "label": "④" },
+    { "x": 185, "y": 290, "label": "⑤" }
+  ],
+
+  "quiz": [
+    {
+      "q": "民 の訓読みは何ですか？",
+      "opts": ["みん (min)", "たみ (tami)", "ひと (hito)", "くに (kuni)"],
+      "ans": 1,
+      "explain": "民 の訓読みは たみ（名詞：dân chúng, thường dân）。音読みは みん。たみ thường xuất hiện trong thơ ca và văn học cổ điển; trong tiếng Nhật hiện đại, âm みん phổ biến hơn trong các từ ghép: 国民、市民、民主 など。"
+    },
+    {
+      "q": "民 の字の起源について、正しいものはどれですか？",
+      "opts": [
+        "Hình ảnh người đang cày ruộng",
+        "Hình ảnh con mắt bị đâm bởi vật nhọn — tù binh bị chọc mù để không trốn thoát",
+        "Hình ảnh nhiều người đứng cạnh nhau",
+        "Chữ do người Nhật sáng tạo (国字)"
+      ],
+      "ans": 1,
+      "explain": "Theo nghiên cứu giáp cốt văn, 民 nguyên thủy là hình ảnh con mắt bị vật nhọn đâm vào — tù binh thời cổ đại bị chọc mù một mắt để ngăn trốn thoát, trở thành nô lệ/thần dân. Từ đó nghĩa mở rộng thành 'dân chúng, thường dân'."
+    },
+    {
+      "q": "「国民」と「市民」の違いは何ですか？",
+      "opts": [
+        "Hoàn toàn giống nhau",
+        "国民 chỉ công dân của một quốc gia; 市民 chỉ cư dân của một thành phố hoặc mang nghĩa công dân có ý thức",
+        "市民 chỉ dùng trong thành phố lớn, 国民 dùng ở nông thôn",
+        "国民 là từ cổ, 市民 là từ hiện đại"
+      ],
+      "ans": 1,
+      "explain": "国民 (こくみん) = công dân của một quốc gia cụ thể (国 = quốc gia). 市民 (しみん) = cư dân thành phố (市 = thành phố) hoặc theo nghĩa rộng hơn: công dân có ý thức, tích cực tham gia đời sống xã hội (市民運動、市民社会)."
+    },
+    {
+      "q": "民 と 氏 の書き方の違いは何ですか？",
+      "opts": [
+        "民 nhiều hơn 氏 một nét ngang",
+        "民 có nét móc ở cuối, 氏 không có",
+        "Hai chữ hoàn toàn giống nhau về cách viết",
+        "民 có bộ thủ khác với 氏"
+      ],
+      "ans": 1,
+      "explain": "民 (5 nét) và 氏 (4 nét) rất giống nhau. Điểm khác biệt duy nhất: 民 có nét móc (乚) ở nét cuối cùng hướng sang trái, còn 氏 kết thúc bằng nét cong đơn giản không có móc. Đây là nét phân biệt quan trọng nhất."
+    },
+    {
+      "q": "「民営化」の意味は何ですか？",
+      "opts": [
+        "Quốc hữu hóa — nhà nước tiếp quản doanh nghiệp tư nhân",
+        "Tư nhân hóa — chuyển từ nhà nước sang quản lý tư nhân",
+        "Dân chủ hóa — mở rộng quyền bầu cử",
+        "Hiện đại hóa cơ sở hạ tầng"
+      ],
+      "ans": 1,
+      "explain": "民営化 = 民 (dân, tư nhân) + 営 (kinh doanh, vận hành) + 化 (hóa, biến thành). Tức là chuyển đổi từ sở hữu/quản lý nhà nước sang tư nhân. Ví dụ nổi tiếng: 国鉄 (đường sắt quốc gia) → JR (1987), NTT (viễn thông nhà nước) → tư nhân hóa."
+    },
+    {
+      "q": "孟子の「民為貴」の思想は何を意味しますか？",
+      "opts": [
+        "Vua là người quan trọng nhất trong xã hội",
+        "Dân là quý nhất — ý chí nhân dân cao hơn quyền lực của vua",
+        "Của cải vật chất là nền tảng của xã hội",
+        "Quân đội bảo vệ nhân dân là điều tối thượng"
+      ],
+      "ans": 1,
+      "explain": "Mạnh Tử (孟子) viết: 「民為貴，社稷次之，君為輕」— Dân là quý nhất, xã tắc đứng thứ, vua là nhẹ nhất. Tư tưởng lấy dân làm gốc này ảnh hưởng sâu sắc đến triết học chính trị Đông Á suốt hơn 2.000 năm và vẫn còn được trích dẫn đến ngày nay."
+    }
+  ]
+}

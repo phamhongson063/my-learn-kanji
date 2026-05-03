@@ -1,0 +1,141 @@
+{
+  "kanji": "器",
+  "on": "き",
+  "onRomaji": "ki",
+  "kun": "うつわ",
+  "kunRomaji": "utsuwa",
+  "hanviet": "Khí",
+  "jlpt": "N2",
+  "strokes": 16,
+  "radical": "口",
+  "radicalReading": "くち",
+  "radicalMeaning": "miệng",
+  "radicalNumber": 30,
+  "type": "Hội ý",
+  "typeJa": "会意文字",
+  "structure": "4 chữ 口 + 1 chữ 犬",
+  "school": "Trung học cơ sở · Joyo kanji",
+
+  "lead": "器 là chữ Hán <span class=\"hl\">16 nét</span>, loại <span class=\"hl\">Hội ý</span> — ghép nhiều thành phần tạo nên ý nghĩa mới. Đây là một trong những chữ có cấu trúc đặc biệt và giàu hình tượng nhất.",
+  "mnemonic": "Hình dung <strong>4 cái chén 口</strong> đặt ở bốn góc, ở giữa là <strong>con chó 犬</strong> đang canh giữ → Những đồ vật quý được bảo vệ → <span class=\"hl\">器 = đồ vật / tài năng</span>",
+
+  "originLead": "器 được tạo từ <span class=\"hl\">5 thành phần</span>: bốn chữ 口 ở bốn góc và một chữ 犬 ở trung tâm. Hình ảnh này xuất hiện từ thời <strong>Kim văn</strong> (~1046–256 TCN), tượng trưng cho đồ tế lễ quý giá được canh giữ.",
+  "originDetail": "Người xưa dùng <span class=\"hl\">chó (犬)</span> canh giữ kho tàng và đồ tế lễ. Bốn chữ <span class=\"hl\">口</span> tượng trưng cho bốn chiếc chén/đồ vật xung quanh. Theo thời gian, nghĩa mở rộng từ \"đồ vật\" sang \"tài năng\" — vì con người xuất sắc cũng được coi như một <em>khí cụ</em> quý giá của xã hội.",
+  "decomp": [
+    { "char": "口", "name": "Khẩu × 4", "meaning": "Miệng / Đồ vật" },
+    { "char": "犬", "name": "Khuyển",   "meaning": "Con chó" }
+  ],
+
+  "meanings": [
+    { "title": "Đồ vật / Dụng cụ",    "desc": "Nghĩa gốc — dụng cụ, vật dụng, công cụ mà con người chế tạo và sử dụng." },
+    { "title": "Tài năng / Năng lực",  "desc": "Mở rộng nghĩa sang tài năng bẩm sinh. Người xuất sắc được gọi là \"大器\" (đại khí)." },
+    { "title": "Cơ quan cơ thể",       "desc": "Dùng trong y học: 器官 (きかん) — các cơ quan như tim, gan, phổi trong cơ thể." },
+    { "title": "Độ lượng / Tầm vóc",   "desc": "器量 (きりょう) — tầm vóc tinh thần, phẩm giá. 器が大きい — người rộng lượng, khoan dung." }
+  ],
+
+  "vocab": [
+    { "word": "武器", "reading": "ぶき (buki)",           "vi": "Vũ khí, binh khí",              "jlpt": "N3", "jp": "「最強の武器は言葉だ。」",                                   "jpVi": "Vũ khí mạnh nhất chính là ngôn từ." },
+    { "word": "楽器", "reading": "がっき (gakki)",         "vi": "Nhạc cụ",                       "jlpt": "N3", "jp": "「子供の頃から楽器を習っていた。」",                           "jpVi": "Tôi đã học nhạc cụ từ hồi nhỏ." },
+    { "word": "食器", "reading": "しょっき (shokki)",      "vi": "Bát đĩa, đồ dùng ăn uống",     "jlpt": "N2", "jp": "「食器を洗うのは私の担当だ。」",                               "jpVi": "Rửa bát là việc của tôi." },
+    { "word": "容器", "reading": "ようき (yōki)",          "vi": "Vật chứa, hộp, bình",           "jlpt": "N2", "jp": "「密閉容器に入れて冷蔵庫で保存する。」",                       "jpVi": "Cho vào hộp kín và bảo quản trong tủ lạnh." },
+    { "word": "器官", "reading": "きかん (kikan)",         "vi": "Cơ quan (trong cơ thể)",        "jlpt": "N2", "jp": "「心臓は生命維持に欠かせない器官だ。」",                       "jpVi": "Tim là cơ quan không thể thiếu để duy trì sự sống." },
+    { "word": "器用", "reading": "きよう (kiyō) — な adj", "vi": "Khéo léo, tài hoa, khéo tay",  "jlpt": "N2", "jp": "「彼女は手先がとても器用で、何でも作れる。」",                   "jpVi": "Cô ấy rất khéo tay, có thể làm được mọi thứ." },
+    { "word": "機器", "reading": "きき (kiki)",            "vi": "Thiết bị, máy móc",             "jlpt": "N1", "jp": "「最新の電子機器を導入した。」",                               "jpVi": "Chúng tôi đã đưa vào sử dụng các thiết bị điện tử mới nhất." },
+    { "word": "兵器", "reading": "へいき (heiki)",         "vi": "Binh khí, vũ khí quân sự",     "jlpt": "N1", "jp": "「核兵器の廃絶を訴える運動が広がっている。」",                   "jpVi": "Phong trào kêu gọi xóa bỏ vũ khí hạt nhân đang lan rộng." },
+    { "word": "土器", "reading": "どき (doki)",            "vi": "Đồ gốm đất nung, gốm cổ",      "jlpt": "",   "jp": "「縄文時代の土器が博物館に展示されている。」",                   "jpVi": "Đồ gốm thời Jomon được trưng bày tại bảo tàng." }
+  ],
+
+  "idioms": [
+    {
+      "text": "大器晩成", "fontSize": 22,
+      "kana": "たいきばんせい · Đại khí vãn thành",
+      "meaning": "Người có tài năng lớn thường cần nhiều thời gian để tỏa sáng — như cái bình lớn đúc lâu mới xong.",
+      "jp": "「大器晩成型の人だから、焦らなくていい。」",
+      "jpVi": "Anh ấy là kiểu người tài lớn thành công muộn, không cần vội."
+    },
+    {
+      "text": "器が大きい", "fontSize": 22,
+      "kana": "うつわがおおきい",
+      "meaning": "Người có \"cái chén lớn\" — tâm hồn rộng lượng, khoan dung, không cố chấp vặt vãnh.",
+      "jp": "「あの社長は器が大きくて、部下の失敗を許してくれる。」",
+      "jpVi": "Vị giám đốc đó rộng lượng, tha thứ lỗi lầm của nhân viên."
+    },
+    {
+      "text": "器量よし", "fontSize": 22,
+      "kana": "きりょうよし",
+      "meaning": "Người có ngoại hình xinh đẹp hoặc phẩm chất tốt. 器量 vừa chỉ dung mạo, vừa chỉ năng lực phẩm hạnh.",
+      "jp": "「器量よしの娘に育った。」",
+      "jpVi": "Con gái lớn lên xinh đẹp và đức hạnh."
+    },
+    {
+      "text": "君子は器ならず", "fontSize": 19,
+      "kana": "くんしはうつわならず · Luận Ngữ — Khổng Tử",
+      "meaning": "Người quân tử không bị giới hạn như một công cụ — không chỉ chuyên một việc mà thông hiểu toàn diện.",
+      "jp": "出典: 論語「為政篇」",
+      "jpVi": "Trích Luận Ngữ, thiên Vi Chính — triết lý giáo dục của Nho gia."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải · ngoài → trong</span>. Viết phần 口犬口 trước, rồi mới đến hai 口 bên dưới.",
+  "strokeSteps": [
+    { "range": "1–3",   "char": "口", "label": "口 trên trái",         "detail": "3 nét" },
+    { "range": "4",     "char": "一", "label": "Nét ngang trên của 犬", "detail": "" },
+    { "range": "5–6",   "char": "大", "label": "Phần 大 trong 犬",      "detail": "" },
+    { "range": "7",     "char": "犬", "label": "Chấm 犬",               "detail": "nét 7" },
+    { "range": "8–10",  "char": "口", "label": "口 trên phải",          "detail": "3 nét" },
+    { "range": "11–13", "char": "口", "label": "口 dưới trái",          "detail": "3 nét" },
+    { "range": "14–16", "char": "口", "label": "口 dưới phải",          "detail": "3 nét" }
+  ],
+  "strokeDetail": "• <strong>口 (3 nét):</strong> ① nét dọc xuống rồi gập ngang → ② nét ngang trên → ③ nét ngang dưới đóng hộp<br>• <strong>犬 (4 nét):</strong> ① nét ngang → ② nét dọc → ③ phẩy trái → ④ chấm<br>• Tổng: 4 × 口 = 12 nét + 犬 = 4 nét = <strong>16 nét ✓</strong>",
+
+  "calliNote": "Cân bằng 4 chữ 口 — kích thước đồng đều, khoảng cách hài hoà. Chữ 犬 ở giữa là \"linh hồn\" của toàn bộ chữ — viết tự nhiên, không cứng nhắc. Trong Khải thư, mỗi 口 nên có tỉ lệ bằng nhau theo chiều dọc.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Số đỏ chỉ thứ tự nhóm nét — viết <span class=\"hl\">trên → dưới · trái → phải</span>.",
+
+  "canvasHints": [
+    { "x": 78,  "y": 78,  "label": "①" },
+    { "x": 200, "y": 68,  "label": "④⑤⑥⑦" },
+    { "x": 322, "y": 78,  "label": "⑧" },
+    { "x": 78,  "y": 322, "label": "⑪" },
+    { "x": 322, "y": 322, "label": "⑭" }
+  ],
+
+  "quiz": [
+    {
+      "q": "器 được cấu tạo từ những thành phần nào?",
+      "opts": ["4 chữ 口 + 1 chữ 犬", "3 chữ 口 + 1 chữ 大", "2 chữ 口 + 2 chữ 人", "5 chữ 口"],
+      "ans": 0,
+      "explain": "器 = 4 chữ 口 (miệng/đồ vật) ở bốn góc + 1 chữ 犬 (chó) ở trung tâm. Tổng cộng 5 thành phần, 16 nét."
+    },
+    {
+      "q": "器 đọc âm Kun (訓読み) là gì?",
+      "opts": ["き (ki)", "うつわ (utsuwa)", "きかん (kikan)", "ようき (yōki)"],
+      "ans": 1,
+      "explain": "Âm Kun của 器 là うつわ (utsuwa) — nghĩa là đồ vật, cái chén. Âm On là き (ki), dùng trong từ ghép như 器官、楽器."
+    },
+    {
+      "q": "器用 (きよう) có nghĩa là gì?",
+      "opts": ["Khéo léo, tài hoa", "Vô dụng, vụng về", "Đồ dùng nhà bếp", "Cơ quan trong cơ thể"],
+      "ans": 0,
+      "explain": "器用 (きよう) là tính từ な nghĩa là khéo léo, khéo tay. 「手先が器用だ」— Đôi tay khéo léo. Trái nghĩa là 不器用 (ぶきよう) — vụng về."
+    },
+    {
+      "q": "楽器 (がっき) có nghĩa là gì?",
+      "opts": ["Vũ khí", "Nhạc cụ", "Cơ quan cơ thể", "Đồ dùng ăn uống"],
+      "ans": 1,
+      "explain": "楽器 (がっき) = 楽 (âm nhạc) + 器 (dụng cụ) = Nhạc cụ. Ví dụ: ピアノ、ギター、太鼓 đều là 楽器."
+    },
+    {
+      "q": "「器が大きい人」có nghĩa là gì?",
+      "opts": ["Người to lớn về thể xác", "Người rộng lượng, khoan dung", "Người ăn nhiều", "Người giỏi nấu ăn"],
+      "ans": 1,
+      "explain": "「器が大きい」là thành ngữ: nghĩa đen \"cái chén lớn\", nghĩa bóng chỉ người có tâm hồn rộng lượng, không cố chấp vặt vãnh."
+    },
+    {
+      "q": "四字熟語「大器晩成」(たいきばんせい) có nghĩa là gì?",
+      "opts": ["Đồ vật lớn làm xong sớm", "Người tài lớn thành công muộn", "Vũ khí lớn mạnh mẽ", "Nhạc cụ quý hiếm"],
+      "ans": 1,
+      "explain": "大器晩成 — người có tài năng lớn cần thời gian dài để tỏa sáng, như cái bình lớn đúc lâu mới hoàn thành."
+    }
+  ]
+}

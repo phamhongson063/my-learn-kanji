@@ -1,0 +1,259 @@
+{
+  "kanji": "晩",
+  "on": "ばん",
+  "onRomaji": "ban",
+  "kun": "—",
+  "kunRomaji": "—",
+  "hanviet": "Vãn",
+  "jlpt": "N2",
+  "strokes": 12,
+  "radical": "日",
+  "radicalReading": "にち · ひへん",
+  "radicalMeaning": "mặt trời / ngày",
+  "radicalNumber": 72,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "日 (mặt trời) + 免 (tránh khỏi — dùng làm thanh phù, gợi âm BAN và nghĩa ẩn khuất)",
+  "school": "Joyo · Dạy lớp 6 tiểu học",
+
+  "lead": "晩 là chữ Hán <span class=\"hl\">12 nét</span>, loại <span class=\"hl\">Hình thanh</span> — trái là 日 (mặt trời) biểu nghĩa, phải là 免 (tránh khỏi) biểu âm. Chữ này thuộc <strong>nhóm Joyo</strong> và là một trong những chữ cơ bản chỉ thời điểm trong ngày.",
+  "mnemonic": "Nhìn vào 晩: <strong>mặt trời 日</strong> gặp <strong>免 (thoát khỏi)</strong> — mặt trời đang thoát khỏi bầu trời, lặn xuống chân trời. <span class=\"hl\">Trời vừa tắt nắng = buổi tối!</span>",
+
+  "originLead": "晩 là <span class=\"hl\">chữ Hán có nguồn gốc từ Trung Quốc cổ</span>, truyền sang Nhật từ thời xa xưa. Cấu tạo theo kiểu Hình thanh — 日 chỉ nghĩa liên quan đến thời điểm trong ngày, 免 dùng để gợi âm đọc.",
+  "originDetail": "Trong chữ Triện (ten style), 晩 gồm 日 (mặt trời) và 免. Thành phần 免 ở đây mang ý <strong>\"ẩn khuất, không nhìn thấy\"</strong> — gợi hình ảnh mặt trời biến mất, không còn nhìn thấy nữa. Từ ý nghĩa <span class=\"hl\">\"mặt trời ẩn đi\"</span> mà 晩 có nghĩa là <strong>buổi tối, đêm</strong>. Nghĩa phái sinh <span class=\"hl\">\"muộn / cuối\"</span> xuất hiện sau — vì buổi tối là phần <em>cuối</em> của ngày. Chữ Nhật hiện đại 晩 là dạng shinjitai (新字体), giản lược từ dạng cũ 晚.",
+  "decomp": [
+    {
+      "char": "日",
+      "name": "Nhật",
+      "meaning": "Mặt trời — chỉ thời điểm trong ngày; bộ thủ của chữ này"
+    },
+    {
+      "char": "免",
+      "name": "Miễn / Vãn",
+      "meaning": "Tránh khỏi, thoát ra — dùng làm thanh phù gợi âm BAN; cũng gợi ý nghĩa 'ẩn khuất, biến mất'"
+    }
+  ],
+
+  "meanings": [
+    {
+      "title": "Buổi tối, đêm",
+      "desc": "Thời điểm sau khi mặt trời lặn. Đây là nghĩa gốc và phổ biến nhất: 今晩 (tối nay), 毎晩 (mỗi tối), 昨晩 (tối qua)."
+    },
+    {
+      "title": "Muộn / Cuối (thời kỳ)",
+      "desc": "Nghĩa phái sinh: chỉ giai đoạn cuối hoặc thời điểm trễ. Dùng trong: 晩年 (cuối đời), 晩春 (cuối xuân), 晩婚 (kết hôn muộn)."
+    },
+    {
+      "title": "Bữa tối (口語)",
+      "desc": "Trong hội thoại thông thường, 晩 có thể chỉ bữa cơm tối: 晩ご飯 (cơm tối). Nghĩa này phổ biến trong tiếng Nhật hàng ngày."
+    }
+  ],
+
+  "vocab": [
+    {
+      "word": "今晩",
+      "reading": "こんばん (konban)",
+      "vi": "Tối nay",
+      "jlpt": "N5",
+      "jp": "「今晩、一緒に食事はどうですか？」",
+      "jpVi": "Tối nay chúng ta ăn cơm cùng nhau nhé?"
+    },
+    {
+      "word": "毎晩",
+      "reading": "まいばん (maiban)",
+      "vi": "Mỗi tối / Tối nào",
+      "jlpt": "N4",
+      "jp": "「毎晩、日本語を一時間勉強している。」",
+      "jpVi": "Mỗi tối tôi học tiếng Nhật một tiếng."
+    },
+    {
+      "word": "昨晩",
+      "reading": "さくばん (sakuban)",
+      "vi": "Tối qua",
+      "jlpt": "N3",
+      "jp": "「昨晩は雨が激しく降っていた。」",
+      "jpVi": "Tối qua trời mưa rất to."
+    },
+    {
+      "word": "晩ご飯",
+      "reading": "ばんごはん (bangohan)",
+      "vi": "Cơm tối, bữa tối",
+      "jlpt": "N5",
+      "jp": "「晩ご飯は何を食べたいですか？」",
+      "jpVi": "Bữa tối bạn muốn ăn gì?"
+    },
+    {
+      "word": "晩年",
+      "reading": "ばんねん (bannen)",
+      "vi": "Cuối đời, tuổi già",
+      "jlpt": "N2",
+      "jp": "「彼は晩年を故郷で過ごした。」",
+      "jpVi": "Ông ấy sống những năm cuối đời ở quê hương."
+    },
+    {
+      "word": "晩春",
+      "reading": "ばんしゅん (banshun)",
+      "vi": "Cuối mùa xuân",
+      "jlpt": "",
+      "jp": "「晩春の桜は、散り際が一番美しい。」",
+      "jpVi": "Hoa anh đào cuối xuân đẹp nhất lúc rụng."
+    },
+    {
+      "word": "一晩",
+      "reading": "ひとばん (hitoban)",
+      "vi": "Một đêm, suốt đêm",
+      "jlpt": "N3",
+      "jp": "「一晩中、友達と語り合った。」",
+      "jpVi": "Tôi đã trò chuyện với bạn bè suốt cả đêm."
+    },
+    {
+      "word": "晩婚",
+      "reading": "ばんこん (bankon)",
+      "vi": "Kết hôn muộn",
+      "jlpt": "",
+      "jp": "「最近、晩婚化が進んでいる。」",
+      "jpVi": "Gần đây xu hướng kết hôn muộn ngày càng phổ biến."
+    }
+  ],
+
+  "idioms": [
+    {
+      "text": "晩学",
+      "fontSize": 22,
+      "kana": "ばんがく",
+      "meaning": "Học muộn / bắt đầu học ở tuổi trung niên hay lớn tuổi. Câu nói nổi tiếng: 「晩学に遅すぎることはない」— Không bao giờ là quá muộn để học.",
+      "jp": "「六十歳から語学を始めるのは晩学だが、続ければ必ず上達する。」",
+      "jpVi": "Bắt đầu học ngoại ngữ từ năm 60 tuổi là muộn, nhưng nếu kiên trì ắt sẽ tiến bộ."
+    },
+    {
+      "text": "大器晩成",
+      "fontSize": 18,
+      "kana": "たいきばんせい",
+      "meaning": "\"Tài lớn thành muộn\" — Người tài năng thực sự thường tỏa sáng muộn hơn so với người thường. Thành ngữ Hán-Nhật, xuất phát từ Đạo Đức Kinh của Lão Tử.",
+      "jp": "「大器晩成という言葉があるように、焦らず努力を続けることが大切だ。」",
+      "jpVi": "Như câu 'tài lớn thành muộn', điều quan trọng là đừng nôn nóng mà hãy kiên trì nỗ lực."
+    },
+    {
+      "text": "今晩は",
+      "fontSize": 20,
+      "kana": "こんばんは",
+      "meaning": "Lời chào buổi tối — câu chào quen thuộc nhất trong tiếng Nhật khi gặp nhau vào chiều tối hoặc đêm. Chú ý: trợ từ「は」đọc là「wa」, không phải「ha」.",
+      "jp": "「今晩は！久しぶりですね。」",
+      "jpVi": "Chào buổi tối! Lâu rồi không gặp nhỉ."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết bộ 日 (4 nét) trước ở bên trái, sau đó viết phần 免 (8 nét) ở bên phải.",
+  "strokeSteps": [
+    {
+      "range": "1",
+      "char": "｜",
+      "label": "Nét dọc 日",
+      "detail": "dọc trái của bộ 日"
+    },
+    {
+      "range": "2",
+      "char": "口",
+      "label": "Nét ngang trên 日",
+      "detail": "ngang trên của khung 日"
+    },
+    {
+      "range": "3",
+      "char": "口",
+      "label": "Nét ngang giữa 日",
+      "detail": "gạch ngang giữa bên trong 日"
+    },
+    {
+      "range": "4",
+      "char": "口",
+      "label": "Đóng khung 日",
+      "detail": "nét đóng phần dưới bộ 日"
+    },
+    {
+      "range": "5–8",
+      "char": "免",
+      "label": "Phần trên của 免",
+      "detail": "viết các nét trên của 免 từ trái sang phải"
+    },
+    {
+      "range": "9–12",
+      "char": "儿",
+      "label": "Phần 儿 dưới 免",
+      "detail": "nét phẩy trái rồi nét dọc cong phải của 儿"
+    }
+  ],
+  "strokeDetail": "• <strong>Nét 1–4:</strong> bộ 日 bên trái — viết theo thứ tự chuẩn của chữ 日<br>• <strong>Nét 5–12:</strong> bộ 免 bên phải — phần trên gồm nét cong phức tạp, phần dưới là 儿<br>• Tổng: 4 + 8 = <strong>12 nét ✓</strong>",
+
+  "calliNote": "Bộ 日 bên trái cần viết hơi hẹp và nhỏ để nhường chỗ cho phần 免 bên phải. Phần 免 chiếm khoảng 2/3 chiều rộng của chữ. Khi viết chữ thảo (草書), 免 thường được đơn giản hóa đáng kể.",
+
+  "practiceHint": "Viết <span class=\"hl\">bộ 日 bên trái trước</span> — nhỏ và cân đối. Sau đó mới viết <span class=\"hl\">免 bên phải</span>, chú ý phần 儿 ở cuối phải mở rộng ra hai bên như \"chân\" đỡ toàn bộ chữ.",
+
+  "canvasHints": [
+    { "x": 80, "y": 80, "label": "①" },
+    { "x": 80, "y": 130, "label": "②" },
+    { "x": 80, "y": 160, "label": "③" },
+    { "x": 80, "y": 200, "label": "④" },
+    { "x": 200, "y": 80, "label": "⑤" },
+    { "x": 200, "y": 160, "label": "⑥" },
+    { "x": 200, "y": 200, "label": "⑦" },
+    { "x": 200, "y": 230, "label": "⑧" },
+    { "x": 170, "y": 270, "label": "⑨" },
+    { "x": 220, "y": 290, "label": "⑩" },
+    { "x": 175, "y": 310, "label": "⑪" },
+    { "x": 230, "y": 320, "label": "⑫" }
+  ],
+
+  "quiz": [
+    {
+      "q": "晩 の音読みは何ですか？",
+      "opts": ["まん (man)", "ばん (ban)", "わん (wan)", "たん (tan)"],
+      "ans": 1,
+      "explain": "晩 の音読みは ばん (ban)。今晩 (こんばん)、毎晩 (まいばん)、晩年 (ばんねん) など。訓読みはない。"
+    },
+    {
+      "q": "晩 は何画ですか？",
+      "opts": ["10画", "11画", "12画", "13画"],
+      "ans": 2,
+      "explain": "晩 は 12画 — 日 (4 nét) + 免 (8 nét) = 12 nét tổng cộng."
+    },
+    {
+      "q": "晩 の部首（ぶしゅ）は何ですか？",
+      "opts": [
+        "免 (めん)",
+        "日 (にち)",
+        "儿 (にんにょう)",
+        "勹 (つつみがまえ)"
+      ],
+      "ans": 1,
+      "explain": "晩 の部首は 日 (にちへん) — bộ mặt trời, đứng bên trái. Các chữ cùng bộ: 明、時、昨、朝、暮…"
+    },
+    {
+      "q": "「大器晩成」の意味は何ですか？",
+      "opts": [
+        "Làm việc lớn cần hoàn thành ngay trong tối",
+        "Người tài năng lớn thường tỏa sáng muộn hơn",
+        "Đêm tối là lúc tài năng thể hiện rõ nhất",
+        "Người học muộn không bao giờ thành công"
+      ],
+      "ans": 1,
+      "explain": "大器晩成 (たいきばんせい) = \"tài lớn thành muộn\". Xuất phát từ Đạo Đức Kinh — người có tài năng thực sự thường cần thời gian dài để chín muồi và tỏa sáng."
+    },
+    {
+      "q": "晩 の JLPT レベルは？",
+      "opts": ["N5", "N4", "N3", "N2"],
+      "ans": 2,
+      "explain": "晩 は JLPT N3 — tiểu học lớp 6 trong chương trình Joyo. Thường gặp trong 今晩、毎晩、晩ご飯 là các từ N4/N5, nhưng bản thân chữ 晩 được xếp N3."
+    },
+    {
+      "q": "「晩ご飯」の「晩」はどんな意味ですか？",
+      "opts": [
+        "Bữa ăn ngon",
+        "Buổi tối / đêm",
+        "Cuối ngày làm việc",
+        "Thức ăn muộn"
+      ],
+      "ans": 1,
+      "explain": "晩ご飯 = 晩 (buổi tối) + ご飯 (cơm/bữa ăn). Tương tự: 朝ご飯 (sáng), 昼ご飯 (trưa), 晩ご飯 (tối) — ba bữa chính trong ngày."
+    }
+  ]
+}

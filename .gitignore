@@ -1,0 +1,12 @@
+tmp/*
+!tmp/.gitkeep
+
+cache/*
+!tmp/.gitkeep
+
+database/*
+!database/library
+!database/library/*
+
+.claude/*
+

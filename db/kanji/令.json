@@ -1,0 +1,148 @@
+{
+  "kanji": "令",
+  "on": "れい · りょう",
+  "onRomaji": "rei · ryō",
+  "kun": "—",
+  "kunRomaji": "—",
+  "hanviet": "Lệnh",
+  "jlpt": "N2",
+  "strokes": 5,
+  "radical": "人",
+  "radicalReading": "ひとやね · にんべん",
+  "radicalMeaning": "người (mái nhà — người đứng dưới mái)",
+  "radicalNumber": 9,
+  "type": "Hội ý",
+  "typeJa": "会意文字",
+  "structure": "亽 (mái nhà — tập hợp người lại) + 卩 (người quỳ gối lắng nghe)",
+  "school": "Joyo · Dạy lớp 4 tiểu học",
+
+  "lead": "令 là chữ Hán <span class=\"hl\">5 nét</span>, loại <span class=\"hl\">Hội ý</span> — ghép hình ảnh <strong>mái nhà tập hợp người</strong> và <strong>người quỳ gối lắng nghe</strong>. Đây là chữ <strong>cực kỳ năng suất</strong>: tự thân mang nghĩa \"mệnh lệnh\", đồng thời là <span class=\"hl\">thanh phù của hàng chục chữ Hán khác</span> như 領、冷、鈴、玲、零…",
+  "mnemonic": "Hình dung <strong>mái nhà 亽</strong> che phủ bên trên, bên dưới là <strong>người quỳ gối 卩</strong> cúi đầu lắng nghe. <span class=\"hl\">Người bề trên triệu tập, kẻ dưới phải quỳ nghe lệnh!</span> → 令 = mệnh lệnh.",
+
+  "originLead": "令 là <span class=\"hl\">chữ Hội ý cổ điển</span>, xuất hiện trong giáp cốt văn từ thời nhà Thương (~1200 TCN). Hình ảnh gốc rất sinh động và rõ ràng: kẻ thống trị ra lệnh, bề tôi phục tùng lắng nghe.",
+  "originDetail": "Trong <strong>giáp cốt văn</strong> (甲骨文), 令 được khắc họa là hình tam giác (ký hiệu \"tập hợp nhiều người dưới một mái\") đặt bên trên một người đang quỳ gối với hai tay đặt trên đầu gối, lưng thẳng — tư thế phục tùng kính cẩn lắng nghe lời thần thánh hay vua chúa. <br><br>Trong <strong>kim văn</strong> (bronze ware style), lưng người quỳ bắt đầu khom xuống hơn — càng thể hiện sự cung kính. Trong <strong>chữ Triện</strong>, hình người được cách điệu hóa thành bộ 卩 (ふしづくり — người quỳ). <br><br>Từ nghĩa gốc <span class=\"hl\">\"mệnh lệnh, chỉ thị\"</span>, 令 phát triển thêm nghĩa <span class=\"hl\">\"tốt lành, cát tường\"</span> — vì trong văn hóa cổ đại, lệnh của thiên tử hay thần thánh đồng nghĩa với điều tốt đẹp. Nghĩa này còn thấy rõ trong 令月 (tháng tốt lành) và tên niên hiệu <strong>令和</strong>.",
+  "decomp": [
+    { "char": "亽", "name": "Tập", "meaning": "Mái nhà — hình tam giác tượng trưng cho việc tập hợp nhiều người dưới một mái nhà, hay lệnh của đấng bề trên" },
+    { "char": "卩", "name": "Tiết / Phục", "meaning": "Người quỳ gối — bộ ふしづくり, hình người cúi mình phục tùng, lắng nghe lệnh" }
+  ],
+
+  "meanings": [
+    { "title": "Mệnh lệnh, chỉ thị, pháp lệnh",     "desc": "Nghĩa gốc và phổ biến nhất. Dùng trong: 命令 (mệnh lệnh), 号令 (hô lệnh), 法令 (pháp lệnh), 政令 (sắc lệnh)." },
+    { "title": "Tốt lành, cát tường (văn ngữ)",     "desc": "Nghĩa trang trọng dùng trong văn học và kính ngữ. Dùng trong: 令月 (tháng tốt lành), 令嬢 (lệnh ái — tôn xưng con gái người khác), 令息 (tôn xưng con trai người khác)." },
+    { "title": "Khiến, làm cho (văn ngôn)",          "desc": "Nghĩa sai khiến trong văn ngôn cổ điển: \"ra lệnh cho ai làm gì\". Hiếm trong tiếng Nhật hiện đại nhưng quan trọng khi đọc văn bản Hán-Nhật cổ." },
+    { "title": "Niên hiệu 令和 (Reiwa)",              "desc": "Từ ngày 1/5/2019, 令 trở thành chữ Hán đầu tiên của niên hiệu 令和 — lấy từ 万葉集 (Manyoshu), mang nghĩa 令月 (tháng tốt lành). Đây là lần đầu tiên 令 xuất hiện trong tên niên hiệu Nhật." }
+  ],
+
+  "vocab": [
+    { "word": "命令",   "reading": "めいれい (meirei)",       "vi": "Mệnh lệnh, lệnh (từ cấp trên)",      "jlpt": "N3", "jp": "「上司の命令には従わなければならない。」",                   "jpVi": "Phải tuân theo mệnh lệnh của cấp trên." },
+    { "word": "号令",   "reading": "ごうれい (gōrei)",         "vi": "Hô lệnh, lệnh (cho tập thể)",        "jlpt": "N2", "jp": "「先生が号令をかけ、授業が始まった。」",                     "jpVi": "Thầy giáo hô lệnh và buổi học bắt đầu." },
+    { "word": "法令",   "reading": "ほうれい (hōrei)",         "vi": "Pháp lệnh, luật lệnh",               "jlpt": "N2", "jp": "「新しい法令が施行された。」",                             "jpVi": "Pháp lệnh mới đã được ban hành." },
+    { "word": "令和",   "reading": "れいわ (Reiwa)",           "vi": "Reiwa — niên hiệu Nhật từ 5/2019",   "jlpt": "N2", "jp": "「令和元年は2019年5月1日から始まった。」",                   "jpVi": "Năm đầu tiên của Reiwa bắt đầu từ ngày 1 tháng 5 năm 2019." },
+    { "word": "令嬢",   "reading": "れいじょう (reijō)",       "vi": "Lệnh ái — con gái (người) đáng kính", "jlpt": "N1", "jp": "「社長のご令嬢にお会いできて光栄です。」",                   "jpVi": "Thật vinh dự được gặp con gái của giám đốc." },
+    { "word": "政令",   "reading": "せいれい (seirei)",         "vi": "Sắc lệnh chính phủ, nghị định",      "jlpt": "N1", "jp": "「新しい政令が公布された。」",                             "jpVi": "Sắc lệnh mới đã được công bố." },
+    { "word": "令状",   "reading": "れいじょう (reijō)",       "vi": "Lệnh bắt, trát tòa, giấy triệu tập", "jlpt": "N1", "jp": "「警察が逮捕令状を取得した。」",                           "jpVi": "Cảnh sát đã lấy được lệnh bắt giữ." },
+    { "word": "司令",   "reading": "しれい (shirei)",           "vi": "Tư lệnh, chỉ huy",                   "jlpt": "N1", "jp": "「司令官の指示のもと部隊が動いた。」",                       "jpVi": "Đơn vị hành động theo chỉ thị của tư lệnh." },
+    { "word": "令月",   "reading": "れいげつ (reigetsu)",       "vi": "Tháng tốt lành, tháng cát tường",    "jlpt": "",   "jp": "「初春の令月、気淑く風和ぎ。」（万葉集）",                   "jpVi": "\"Đầu xuân trong tháng tốt lành, khí trong lành, gió dịu nhẹ.\" (Manyoshu)" },
+    { "word": "令息",   "reading": "れいそく (reisoku)",       "vi": "Lệnh lang — con trai (người) đáng kính","jlpt": "",  "jp": "「ご令息はおいくつですか？」",                             "jpVi": "Cậu trai nhà ông/bà năm nay bao nhiêu tuổi rồi?" }
+  ],
+
+  "idioms": [
+    {
+      "text": "令和", "fontSize": 24,
+      "kana": "れいわ",
+      "meaning": "Niên hiệu Nhật Bản hiện tại (từ 1/5/2019), lấy từ bài thơ trong 万葉集. 令 ở đây mang nghĩa 令月 — \"tháng tốt lành, cát tường\". Đây là lần đầu tiên trong lịch sử 1300 năm, niên hiệu Nhật được lấy từ văn học Nhật thay vì văn học Hán cổ. Bộ Ngoại giao Nhật dịch chính thức là \"Beautiful Harmony\" (hòa hợp tươi đẹp).",
+      "jp": "「令和の時代に生きられることを誇りに思う。」",
+      "jpVi": "Tôi tự hào được sống trong thời đại Reiwa."
+    },
+    {
+      "text": "命令口調", "fontSize": 16,
+      "kana": "めいれいくちょう",
+      "meaning": "\"Giọng điệu ra lệnh\" — cách nói chuyện ra lệnh, không lịch sự, áp đặt. Chỉ phong cách giao tiếp hách dịch, trịch thượng. Thường bị coi là thiếu lễ phép trong văn hóa Nhật vốn coi trọng sự khiêm nhường.",
+      "jp": "「命令口調で話すのは、職場では避けたほうがいい。」",
+      "jpVi": "Ở nơi làm việc nên tránh nói chuyện với giọng ra lệnh."
+    },
+    {
+      "text": "令嬢・令息", "fontSize": 18,
+      "kana": "れいじょう・れいそく",
+      "meaning": "Cặp tôn xưng lịch sự: 令嬢 (con gái của người khác — lệnh ái) và 令息 (con trai của người khác — lệnh lang). Chữ 令 ở đây mang nghĩa \"tốt lành, đáng kính\". Dùng trong văn phong trang trọng và thư từ lịch sự.",
+      "jp": "「先生のご令嬢は立派な医師になられたそうですね。」",
+      "jpVi": "Nghe nói con gái thầy đã trở thành bác sĩ xuất sắc."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới</span>. Chữ chỉ có 5 nét — viết phần trên trước (2 nét tạo hình mái 亽), sau đó viết phần dưới (3 nét tạo người quỳ 卩).",
+  "strokeSteps": [
+    { "range": "1", "char": "ノ", "label": "Nét phẩy trái",     "detail": "nét phẩy từ đỉnh xuống trái — phần trái của mái nhà 亽" },
+    { "range": "2", "char": "乀", "label": "Nét phẩy phải",    "detail": "nét phẩy từ đỉnh xuống phải — phần phải của mái nhà 亽; tạo hình tam giác ∧" },
+    { "range": "3", "char": "一", "label": "Nét ngang",         "detail": "nét ngang ngắn ở giữa — vai của người quỳ" },
+    { "range": "4", "char": "𠃊", "label": "Nét gấp góc",      "detail": "nét xuống rồi gấp ngang sang phải — thân người quỳ 卩" },
+    { "range": "5", "char": "乛", "label": "Nét móc cuối",     "detail": "nét ngang ngắn có móc lên — phần chân / đáy của 卩" }
+  ],
+  "strokeDetail": "• <strong>Nét 1–2:</strong> hình mái nhà ∧ (亽) — hai nét phẩy gặp nhau ở đỉnh<br>• <strong>Nét 3:</strong> gạch ngang ngắn — phần nối<br>• <strong>Nét 4–5:</strong> bộ 卩 — người quỳ gối; nét 4 gấp góc vuông, nét 5 có móc nhỏ lên phía phải<br>• Tổng: <strong>5 nét ✓</strong> — một trong những chữ Joyo ít nét nhất",
+
+  "calliNote": "Mặc dù chỉ có 5 nét, 令 dễ viết mất cân đối. Phần mái nhà ∧ (nét 1–2) phải đủ rộng để che phần thân bên dưới. Nét 4 (gấp góc) là nét đặc trưng của bộ 卩 — góc gấp phải vuông và sắc, không được cong. Nét 5 kết thúc bằng móc nhỏ hướng lên.",
+
+  "practiceHint": "Hình dung: <span class=\"hl\">vẽ hình mái nhà ∧ trước</span>, rồi <span class=\"hl\">vẽ người quỳ bên dưới</span>. Toàn bộ chữ phải gọn, cân đối — không để phần trên quá to hay phần dưới quá dài. 令 là \"xương sống\" của nhiều chữ khác: <span class=\"hl\">領、冷、鈴、玲、零、齢…</span>",
+
+  "canvasHints": [
+    { "x": 140, "y": 60,  "label": "①" },
+    { "x": 200, "y": 60,  "label": "②" },
+    { "x": 170, "y": 130, "label": "③" },
+    { "x": 155, "y": 185, "label": "④" },
+    { "x": 175, "y": 240, "label": "⑤" }
+  ],
+
+  "relatedKanji": [
+    { "char": "領", "reading": "りょう", "note": "令 làm thanh phù — lãnh thổ, kiểm soát" },
+    { "char": "冷", "reading": "れい・つめたい", "note": "令 làm thanh phù — lạnh" },
+    { "char": "鈴", "reading": "れい・すず", "note": "令 làm thanh phù — chuông nhỏ" },
+    { "char": "玲", "reading": "れい", "note": "令 làm thanh phù — tiếng ngọc trong trẻo" },
+    { "char": "零", "reading": "れい", "note": "令 làm thanh phù — số không, rơi rụng" },
+    { "char": "齢", "reading": "れい", "note": "令 làm thanh phù — tuổi tác" },
+    { "char": "命", "reading": "めい・いのち", "note": "Chị em của 令 — thêm 口 (miệng) vào; sinh mệnh, lệnh" }
+  ],
+
+  "quiz": [
+    {
+      "q": "令 の音読みは何ですか？",
+      "opts": ["りん (rin) · りょく (ryoku)", "れい (rei) · りょう (ryō)", "らい (rai) · ろう (rō)", "れん (ren) · りゅう (ryū)"],
+      "ans": 1,
+      "explain": "令 の音読みは れい (rei) と りょう (ryō)。命令 (めいれい)、号令 (ごうれい)、法令 (ほうれい) では れい。領 (りょう) のように他の字の音に影響する場合は りょう。訓読みはない。"
+    },
+    {
+      "q": "令 は何画ですか？",
+      "opts": ["4画", "5画", "6画", "7画"],
+      "ans": 1,
+      "explain": "令 は 5画 — 上部 亽 (2 nét) + 横画 (1 nét) + 卩 (2 nét) = 5 nét. Joyo kanji の中でも特に少ない画数のひとつ。"
+    },
+    {
+      "q": "令 の成り立ちで正しいのはどれですか？",
+      "opts": [
+        "山 (núi) + 人 (người) — người đứng trên núi ra lệnh",
+        "亽 (mái nhà, tập hợp người) + 卩 (người quỳ gối lắng nghe lệnh)",
+        "口 (miệng) + 人 (người) — người dùng miệng ra lệnh",
+        "ノ (nét phẩy) + 卩 (người quỳ) — không có ý nghĩa đặc biệt"
+      ],
+      "ans": 1,
+      "explain": "令 = 亽 (hình tam giác tượng trưng \"tập hợp dưới một mái\") + 卩 (người quỳ gối cung kính lắng nghe). Hình ảnh từ giáp cốt văn: bề trên tập họp, bề dưới quỳ nghe lệnh."
+    },
+    {
+      "q": "令 を音符（おんぷ）として含む漢字はどれですか？",
+      "opts": ["明 · 時 · 晴 (đều có 日)", "領 · 冷 · 鈴 · 玲 (đều có 令)", "語 · 話 · 読 (đều có 言)", "転 · 輪 · 軽 (đều có 車)"],
+      "ans": 1,
+      "explain": "令 は形声文字の音符として非常によく使われる: 領 (りょう)、冷 (れい)、鈴 (れい/すず)、玲 (れい)、零 (れい)、齢 (れい)、命 (めい)。すべて「rei/ryō」系の音を持つ。"
+    },
+    {
+      "q": "「令和」の「令」はどんな意味で使われていますか？",
+      "opts": ["命令・強制の意味", "令月（めでたい月）のように「よい・めでたい」の意味", "令嬢（他人の娘への敬称）の意味", "法令・規則の意味"],
+      "ans": 1,
+      "explain": "令和 の 令 は、万葉集の「初春の令月（れいげつ）」から取られた。令月 = めでたい・よい月 の意。この場合の 令 は「よい・うるわしい」という古い意味で使われており、「命令」の意ではない。"
+    },
+    {
+      "q": "「令嬢」と「令息」の「令」はどんな意味ですか？",
+      "opts": ["命令する / 従わせる", "相手の家族への敬意を表す「よい・立派な」", "法律上の親子関係", "年齢・世代を表す"],
+      "ans": 1,
+      "explain": "令嬢 (れいじょう) = 令 (よい・立派な) + 嬢 (娘) → 他人の娘への敬称。令息 (れいそく) = 令 + 息 (子) → 他人の息子への敬称。この「令」は「めでたい・尊い」の意で、礼儀正しい話し言葉や手紙で使う。"
+    }
+  ]
+}

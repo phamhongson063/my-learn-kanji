@@ -1,0 +1,142 @@
+{
+  "kanji": "党",
+  "on": "とう",
+  "onRomaji": "tō",
+  "kun": "—",
+  "kunRomaji": "—",
+  "hanviet": "Đảng",
+  "jlpt": "N2",
+  "strokes": 10,
+  "radical": "儿",
+  "radicalReading": "にんにょう",
+  "radicalMeaning": "người / chân người",
+  "radicalNumber": 10,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "尚 (phần trên) + 儿 (phần dưới)",
+  "school": "Trung học cơ sở · Joyo kanji",
+
+  "lead": "党 là chữ Hán <span class=\"hl\">10 nét</span>, loại <span class=\"hl\">Hình thanh</span> — một phần gợi âm, một phần gợi nghĩa. Dạng phồn thể là <span class=\"hl\">黨</span> (27 nét), được giản lược rất nhiều trong Nhật ngữ hiện đại.",
+  "mnemonic": "Hình dung những <strong>người (儿)</strong> đứng dưới <strong>mái che (冖)</strong>, cùng hô to qua <strong>miệng (口)</strong> → Nhóm người cùng chí hướng → <span class=\"hl\">党 = đảng phái / phe nhóm</span>",
+
+  "originLead": "Chữ 党 có nguồn gốc từ <span class=\"hl\">黨</span> phồn thể — gồm 黑 (đen, tối) + 尚 (tôn trọng). Hình ảnh ban đầu chỉ nhóm người cùng màu sắc (tư tưởng), cùng tôn thờ một lý tưởng. Qua quá trình <strong>giản thể hoá</strong> của Nhật Bản sau 1946, 黨 được thu gọn thành 党.",
+  "originDetail": "Trong văn học cổ, 党 mang nghĩa <span class=\"hl\">họ hàng thân tộc</span> và <span class=\"hl\">làng xã</span>. Nghĩa chính trị \"đảng phái\" hình thành muộn hơn khi các tổ chức chính trị phương Tây du nhập vào Đông Á. Ngày nay 党 gắn chặt với các từ như 政党 (chính đảng), 与党 (đảng cầm quyền), 野党 (đảng đối lập).",
+  "decomp": [
+    { "char": "尚", "name": "Thượng / Thượng thanh", "meaning": "Tôn trọng / Phần gợi âm" },
+    { "char": "儿", "name": "Nhân cước",             "meaning": "Người / Chân người" }
+  ],
+
+  "meanings": [
+    { "title": "Đảng phái, chính đảng",  "desc": "Nghĩa hiện đại chính — tổ chức chính trị. 自民党、共産党、社民党 đều dùng chữ 党 này." },
+    { "title": "Phe nhóm, bè đảng",      "desc": "Nhóm người có cùng lợi ích hoặc mục tiêu. Đôi khi mang nghĩa tiêu cực: 悪党 (kẻ xấu, đám phản diện)." },
+    { "title": "Họ hàng, thân tộc",      "desc": "Nghĩa cổ — nhóm người cùng huyết thống. 親党 (thân quyến). Ít dùng trong tiếng Nhật hiện đại." },
+    { "title": "Thiên vị, bao che",      "desc": "党 còn dùng trong thành ngữ \"党同伐異\" — bao che người cùng phe, công kích người khác phe." }
+  ],
+
+  "vocab": [
+    { "word": "政党", "reading": "せいとう (seitō)",     "vi": "Chính đảng",                    "jlpt": "N2", "jp": "「どの政党に投票するか、まだ決めていない。」",                     "jpVi": "Tôi vẫn chưa quyết định sẽ bầu cho đảng nào." },
+    { "word": "与党", "reading": "よとう (yotō)",        "vi": "Đảng cầm quyền",                "jlpt": "N1", "jp": "「与党は今回の選挙で過半数を維持した。」",                         "jpVi": "Đảng cầm quyền đã duy trì đa số trong cuộc bầu cử lần này." },
+    { "word": "野党", "reading": "やとう (yatō)",        "vi": "Đảng đối lập",                  "jlpt": "N1", "jp": "「野党は政府の政策を強く批判した。」",                             "jpVi": "Đảng đối lập đã phê phán mạnh mẽ chính sách của chính phủ." },
+    { "word": "党員", "reading": "とういん (tōin)",      "vi": "Đảng viên",                     "jlpt": "N1", "jp": "「党員の数が年々減少している。」",                                 "jpVi": "Số lượng đảng viên đang giảm dần theo từng năm." },
+    { "word": "党首", "reading": "とうしゅ (tōshu)",     "vi": "Lãnh đạo đảng, chủ tịch đảng",  "jlpt": "",   "jp": "「新しい党首が選出された。」",                                     "jpVi": "Lãnh đạo đảng mới đã được bầu chọn." },
+    { "word": "悪党", "reading": "あくとう (akutō)",     "vi": "Kẻ xấu, tên phản diện",         "jlpt": "N2", "jp": "「映画の中で、彼は典型的な悪党の役を演じた。」",                   "jpVi": "Trong bộ phim, anh ta vào vai một kẻ phản diện điển hình." },
+    { "word": "入党", "reading": "にゅうとう (nyūtō)",   "vi": "Gia nhập đảng",                 "jlpt": "",   "jp": "「20歳の時に入党し、今も活動を続けている。」",                     "jpVi": "Tôi gia nhập đảng năm 20 tuổi và vẫn đang hoạt động đến nay." },
+    { "word": "党派", "reading": "とうは (tōha)",        "vi": "Phe phái, đảng phái",           "jlpt": "",   "jp": "「党派を超えて協力することが大切だ。」",                           "jpVi": "Điều quan trọng là phải hợp tác vượt qua ranh giới phe phái." },
+    { "word": "与野党", "reading": "よやとう (yoyatō)",  "vi": "Đảng cầm quyền và đối lập",    "jlpt": "",   "jp": "「与野党の合意なしに法案を通すのは難しい。」",                     "jpVi": "Rất khó thông qua dự luật mà không có sự đồng thuận của cả hai phe." }
+  ],
+
+  "idioms": [
+    {
+      "text": "党利党略", "fontSize": 20,
+      "kana": "とうりとうりゃく",
+      "meaning": "Lợi ích và mưu tính của riêng đảng phái — chỉ hành động vì lợi ích đảng mà bỏ qua lợi ích quốc gia hay nhân dân.",
+      "jp": "「党利党略ではなく、国民のために政治をしてほしい。」",
+      "jpVi": "Tôi mong muốn các chính trị gia làm chính trị vì nhân dân, không phải vì lợi ích đảng phái."
+    },
+    {
+      "text": "一党独裁", "fontSize": 20,
+      "kana": "いっとうどくさい",
+      "meaning": "Chế độ độc đảng cầm quyền — chỉ một đảng kiểm soát toàn bộ quyền lực chính trị, không có đối lập.",
+      "jp": "「一党独裁の国では、批判的な報道が制限されることが多い。」",
+      "jpVi": "Ở các nước độc đảng, báo chí phê phán thường bị hạn chế."
+    },
+    {
+      "text": "党同伐異", "fontSize": 19,
+      "kana": "とうどうばつい",
+      "meaning": "Bao che người cùng phe, tấn công người khác phe — thiên vị mù quáng theo đảng phái, bất kể phải trái.",
+      "jp": "「党同伐異の姿勢では、公正な議論はできない。」",
+      "jpVi": "Với thái độ thiên vị đảng phái, không thể có cuộc thảo luận công bằng."
+    },
+    {
+      "text": "悪の党", "fontSize": 22,
+      "kana": "あくのとう",
+      "meaning": "Bọn xấu, đám tội phạm, nhóm người làm điều ác — cách nói dân gian để chỉ một nhóm người nguy hiểm.",
+      "jp": "「警察はついに悪の党を一網打尽にした。」",
+      "jpVi": "Cảnh sát cuối cùng đã bắt gọn toàn bộ băng nhóm tội phạm."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết phần trên (𠆢 và 口) trước, phần che phủ (冖) tiếp theo, cuối cùng là hai nét chân (儿).",
+  "strokeSteps": [
+    { "range": "1–2",   "char": "𠆢", "label": "Hai nét mở trên",   "detail": "phần đỉnh" },
+    { "range": "3–5",   "char": "口", "label": "Khẩu giữa",          "detail": "3 nét" },
+    { "range": "6–8",   "char": "冖", "label": "Nét che phủ",        "detail": "3 nét" },
+    { "range": "9–10",  "char": "儿", "label": "Nhân cước dưới",     "detail": "2 nét chân" }
+  ],
+  "strokeDetail": "• <strong>𠆢 (2 nét):</strong> ① phẩy trái ngắn → ② nét xiên phải (như chữ 八)<br>• <strong>口 (3 nét):</strong> ① dọc + gập ngang → ② ngang trên → ③ ngang dưới đóng<br>• <strong>冖 (3 nét):</strong> ① ngang → ② dọc trái → ③ dọc phải<br>• <strong>儿 (2 nét):</strong> ① phẩy trái → ② nét cong phải<br>• Tổng: 2+3+3+2 = <strong>10 nét ✓</strong>",
+
+  "calliNote": "Chú ý tỉ lệ trên–dưới: phần trên (𠆢口冖) chiếm khoảng 2/3 chiều cao, phần 儿 bên dưới gọn gàng. Hai nét 儿 mở rộng tạo thế vững chắc, tránh viết quá khép.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết từ <span class=\"hl\">trên xuống dưới</span> — phần 𠆢 đỉnh trước, kết thúc bằng hai chân 儿.",
+
+  "canvasHints": [
+    { "x": 168, "y": 38,  "label": "①②" },
+    { "x": 148, "y": 148, "label": "③④⑤" },
+    { "x": 130, "y": 248, "label": "⑥⑦⑧" },
+    { "x": 130, "y": 330, "label": "⑨⑩" }
+  ],
+
+  "quiz": [
+    {
+      "q": "党 の音読みは何ですか？",
+      "opts": ["どう (dō)", "とう (tō)", "だん (dan)", "ぐん (gun)"],
+      "ans": 1,
+      "explain": "党 の音読みは とう (tō)。政党、与党、野党 など多くの複合語で使われます。訓読みは現代日本語では基本的にありません。"
+    },
+    {
+      "q": "「政党」(せいとう) の意味は何ですか？",
+      "opts": ["政府の役人", "政治的な党派・組織", "選挙の候補者", "議会の法案"],
+      "ans": 1,
+      "explain": "政党 (せいとう) = 政治 (chính trị) + 党 (đảng) = Chính đảng, tổ chức chính trị. Ví dụ: 自由民主党、立憲民主党、公明党 đều là 政党."
+    },
+    {
+      "q": "「与党」の反対語は何ですか？",
+      "opts": ["同党", "野党", "党員", "入党"],
+      "ans": 1,
+      "explain": "与党 (よとう) = đảng cầm quyền. Trái nghĩa là 野党 (やとう) = đảng đối lập. 「与」có nghĩa \"tham gia (chính quyền)\", còn 「野」có nghĩa \"đồng nội\" — ý chỉ ở bên ngoài quyền lực."
+    },
+    {
+      "q": "「悪党」(あくとう) の意味は？",
+      "opts": ["Đảng viên trẻ", "Kẻ xấu, tên phản diện", "Lãnh đạo đảng", "Cuộc bầu cử đảng"],
+      "ans": 1,
+      "explain": "悪党 (あくとう) = 悪 (xấu, ác) + 党 (nhóm/bọn) = Kẻ xấu, bọn phản diện. Đây là ví dụ 党 dùng theo nghĩa \"phe nhóm\" thay vì \"đảng chính trị\"."
+    },
+    {
+      "q": "党 の旧字体（繁体字）は何ですか？",
+      "opts": ["黒", "黨", "尚", "儿"],
+      "ans": 1,
+      "explain": "Chữ phồn thể của 党 là 黨 (27 nét!) — gồm 黑 (đen) + 尚 (tôn trọng). Nhật Bản giản lược thành 党 (10 nét) sau cải cách chữ viết năm 1946."
+    },
+    {
+      "q": "「党利党略」(とうりとうりゃく) はどんな意味ですか？",
+      "opts": [
+        "Đảng mạnh, đảng yếu hợp tác",
+        "Hành động vì lợi ích đảng, bỏ qua lợi ích quốc dân",
+        "Bầu cử công bằng và minh bạch",
+        "Liên minh giữa các đảng phái"
+      ],
+      "ans": 1,
+      "explain": "党利党略 = 党利 (lợi ích đảng) + 党略 (mưu tính của đảng). Chỉ hành vi chính trị chỉ phục vụ lợi ích đảng phái mà không quan tâm đến quốc gia hay nhân dân. Thường dùng với nghĩa phê phán."
+    }
+  ]
+}

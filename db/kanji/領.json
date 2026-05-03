@@ -1,0 +1,150 @@
+{
+  "kanji": "領",
+  "on": "りょう",
+  "onRomaji": "ryō",
+  "kun": "えり",
+  "kunRomaji": "eri",
+  "hanviet": "Lĩnh",
+  "jlpt": "N2",
+  "strokes": 14,
+  "radical": "頁",
+  "radicalReading": "おおがい",
+  "radicalMeaning": "đầu người (hình người đầu to quỳ gối)",
+  "radicalNumber": 181,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "令 (lệnh — biểu âm, gợi âm RYŌ) + 頁 (đầu người — biểu nghĩa, liên quan cổ / đầu)",
+  "school": "Joyo · Dạy lớp 5 tiểu học",
+
+  "lead": "領 là chữ Hán <span class=\"hl\">14 nét</span>, loại <span class=\"hl\">Hình thanh</span> — phải là 頁 (đầu người) biểu nghĩa, trái là 令 (lệnh) biểu âm. Nghĩa gốc là <strong>cái cổ / cổ áo</strong> — phần nối đầu với thân, rồi mở rộng thành <span class=\"hl\">\"kiểm soát, lãnh thổ\"</span>.",
+  "mnemonic": "Hình dung <strong>令 (mệnh lệnh)</strong> đặt lên <strong>đầu người 頁</strong> — người nắm quyền ra lệnh chỉ đạo, <span class=\"hl\">lãnh đạo, kiểm soát một vùng lãnh thổ</span>. Nắm đầu = nắm quyền!",
+
+  "originLead": "領 là <span class=\"hl\">chữ Hình thanh cổ điển</span> có nguồn gốc từ tiếng Hán cổ, liên hệ trực tiếp với ngôn ngữ Tạng-Miến cổ đại. Đây là một trong số ít chữ Hán có thể truy nguyên từ nguồn <strong>ngữ hệ Sino-Tạng</strong>.",
+  "originDetail": "Nghĩa gốc của 領 là <span class=\"hl\">\"cái cổ\"</span> — có nguồn gốc từ Proto-Sino-Tạng *g/m-liŋ có nghĩa là \"cổ\", liên hệ với tiếng Tây Tạng མཇིང་པ (mjing pa = cổ), tiếng Miến Điện လည် (lany = cổ). <br><br>Từ nghĩa \"cổ\" phát triển logic theo hai hướng: <strong>①</strong> <em>Cổ áo, cổ phục</em> (訓読み えり); <strong>②</strong> <em>\"nắm lấy cổ\" → dẫn dắt, kiểm soát</em> → lãnh thổ, lĩnh nhận. Trong kinh Mạnh Tử (thế kỷ 4 TCN), 引領 có nghĩa là <span class=\"hl\">\"dài cổ ra mà trông ngóng\"</span> — vẫn còn giữ nghĩa gốc \"cổ\". Phần 令 biểu âm, gợi âm RYŌ đồng thời cũng gợi ý nghĩa quyền lực và mệnh lệnh.",
+  "decomp": [
+    { "char": "令", "name": "Lệnh", "meaning": "Mệnh lệnh, quyền lực — biểu âm gợi âm RYŌ; cũng mang ý nghĩa quyền uy đặt lên người" },
+    { "char": "頁", "name": "Hiệt / Trang", "meaning": "Hình người đầu to quỳ gối — bộ thủ chỉ phần đầu và cổ; gặp trong 頭、顔、頂、頸 (cổ)…" }
+  ],
+
+  "meanings": [
+    { "title": "Cổ áo, viền cổ (えり)",          "desc": "Nghĩa gốc và là kun'yomi: phần cổ của quần áo. Ít dùng trong văn nói hiện đại nhưng còn thấy trong văn học và thuật ngữ may mặc." },
+    { "title": "Lĩnh thổ, vùng lãnh địa",        "desc": "Đất đai, vùng đất thuộc quyền kiểm soát. Dùng trong: 領土 (lãnh thổ), 領地 (lãnh địa), 領海 (lãnh hải), 領空 (không phận)." },
+    { "title": "Nhận, tiếp nhận",                "desc": "Hành động tiếp nhận chính thức. Dùng trong: 領収 (nhận tiền / biên lai), 受領 (tiếp nhận), 領収書 (hóa đơn, biên lai)." },
+    { "title": "Lãnh đạo, chỉ huy, kiểm soát",   "desc": "Người đứng đầu, lãnh đạo. Dùng trong: 大統領 (tổng thống), 領袖 (lãnh tụ, thủ lĩnh), 統領 (tổng lĩnh, chỉ huy)." },
+    { "title": "Nắm bắt, thấu hiểu (文語)",       "desc": "Hiểu sâu sắc, nắm vững. Dùng trong: 要領 (yêu lĩnh — điểm mấu chốt), 領悟 (lĩnh ngộ). Mang màu sắc trang trọng." }
+  ],
+
+  "vocab": [
+    { "word": "大統領",   "reading": "だいとうりょう (daitōryō)",   "vi": "Tổng thống",                       "jlpt": "N3", "jp": "「アメリカの大統領が来日した。」",                           "jpVi": "Tổng thống Mỹ đã đến thăm Nhật Bản." },
+    { "word": "領土",     "reading": "りょうど (ryōdo)",           "vi": "Lãnh thổ",                         "jlpt": "N2", "jp": "「領土問題は両国間の外交課題となっている。」",               "jpVi": "Vấn đề lãnh thổ đang là thách thức ngoại giao giữa hai nước." },
+    { "word": "領収書",   "reading": "りょうしゅうしょ (ryōshūsho)", "vi": "Biên lai, hóa đơn",               "jlpt": "N2", "jp": "「領収書を発行していただけますか？」",                         "jpVi": "Bạn có thể xuất biên lai cho tôi không?" },
+    { "word": "領域",     "reading": "りょういき (ryōiki)",         "vi": "Lĩnh vực, phạm vi, vùng",         "jlpt": "N2", "jp": "「これは私の専門領域ではありません。」",                       "jpVi": "Đây không phải lĩnh vực chuyên môn của tôi." },
+    { "word": "領海",     "reading": "りょうかい (ryōkai)",         "vi": "Lãnh hải",                         "jlpt": "N1", "jp": "「外国の船が領海に侵入した。」",                             "jpVi": "Tàu nước ngoài đã xâm phạm lãnh hải." },
+    { "word": "要領",     "reading": "ようりょう (yōryō)",           "vi": "Yếu lĩnh, điểm cốt lõi, bí quyết", "jlpt": "N2", "jp": "「彼女は仕事の要領がいい。」",                               "jpVi": "Cô ấy rất biết cách làm việc hiệu quả." },
+    { "word": "受領",     "reading": "じゅりょう (juryō)",           "vi": "Tiếp nhận, nhận (chính thức)",     "jlpt": "N1", "jp": "「書類を受領したことを確認します。」",                         "jpVi": "Tôi xác nhận đã tiếp nhận tài liệu." },
+    { "word": "領袖",     "reading": "りょうしゅう (ryōshū)",       "vi": "Lãnh tụ, thủ lĩnh",               "jlpt": "",   "jp": "「彼は党の領袖として知られている。」",                         "jpVi": "Ông ấy được biết đến là thủ lĩnh của đảng." },
+    { "word": "占領",     "reading": "せんりょう (senryō)",         "vi": "Chiếm đóng, chiếm lĩnh",           "jlpt": "N2", "jp": "「敵軍がその地域を占領した。」",                             "jpVi": "Quân địch đã chiếm đóng vùng đó." },
+    { "word": "領空",     "reading": "りょうくう (ryōkū)",           "vi": "Không phận",                       "jlpt": "",   "jp": "「許可なく領空を侵犯することは禁じられている。」",             "jpVi": "Việc xâm phạm không phận mà không có phép là điều bị cấm." }
+  ],
+
+  "idioms": [
+    {
+      "text": "大統領", "fontSize": 20,
+      "kana": "だいとうりょう",
+      "meaning": "Tổng thống — 大 (lớn) + 統 (thống nhất) + 領 (lãnh đạo, nắm giữ). Từ chỉ người đứng đầu nhà nước cộng hòa. Ngược lại, người đứng đầu nội các Nhật là 首相 (thủ tướng), không dùng 領.",
+      "jp": "「次の大統領選挙はいつですか？」",
+      "jpVi": "Cuộc bầu cử tổng thống tiếp theo là khi nào?"
+    },
+    {
+      "text": "要領を得ない", "fontSize": 16,
+      "kana": "ようりょうをえない",
+      "meaning": "\"Không nắm được trọng tâm\" — mô tả người nói chuyện lan man, không đi vào điểm chính; hoặc cách làm việc lề mề, thiếu hiệu quả. 要 (yếu điểm) + 領 (lĩnh hội) — không thể nắm bắt điều quan trọng.",
+      "jp": "「彼の説明はいつも要領を得なくて困る。」",
+      "jpVi": "Giải thích của anh ấy luôn không đi vào trọng tâm, thật khó chịu."
+    },
+    {
+      "text": "領袖", "fontSize": 22,
+      "kana": "りょうしゅう",
+      "meaning": "Lãnh tụ, thủ lĩnh — từ Hán-Nhật trang trọng. 領 (cổ áo) + 袖 (tay áo) — hai phần dễ thấy nhất của bộ y phục, ẩn dụ chỉ người nổi bật dẫn đầu. Dùng trong chính trị và văn học.",
+      "jp": "「新しい政治領袖の登場が期待されている。」",
+      "jpVi": "Sự xuất hiện của một lãnh tụ chính trị mới đang được mong đợi."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết phần 令 (5 nét) trước bên trái-trên, sau đó viết bộ 頁 (9 nét) bên phải-dưới.",
+  "strokeSteps": [
+    { "range": "1",   "char": "𠆢", "label": "Mái nhà của 令",       "detail": "nét phẩy + nét dọc nghiêng tạo hình mái" },
+    { "range": "2",   "char": "一", "label": "Nét ngang của 令",      "detail": "nét ngang ngắn ở giữa" },
+    { "range": "3–5", "char": "卩", "label": "Phần dưới của 令",      "detail": "ba nét tạo phần thân dưới của 令" },
+    { "range": "6–7", "char": "一", "label": "Hai nét ngang trên 頁", "detail": "hai nét ngang đầu của phần 頁" },
+    { "range": "8",   "char": "自", "label": "Phần 自 trong 頁",       "detail": "viết phần giữa của 頁" },
+    { "range": "9–12","char": "貝", "label": "Phần dưới 頁",          "detail": "các nét tạo phần dưới của bộ 頁 (giống 貝)" },
+    { "range": "13–14","char": "八","label": "Chân 八 của 頁",         "detail": "hai nét xòe ra hai bên như chân người quỳ" }
+  ],
+  "strokeDetail": "• <strong>Nét 1–5:</strong> phần 令 bên trái — viết từ trên xuống<br>• <strong>Nét 6–14:</strong> bộ 頁 bên phải — khá phức tạp, chú ý phần trên giống 自, phần dưới xòe ra như chân người<br>• Tổng: 5 + 9 = <strong>14 nét ✓</strong>",
+
+  "calliNote": "Bộ 頁 (おおがい) chiếm khoảng 2/3 diện tích chữ và là phần dễ viết sai nhất — phần dưới gồm hai nét xòe ra (八) không được quá hẹp. Phần 令 bên trái viết nhỏ gọn, cân xứng với 頁 bên phải.",
+
+  "practiceHint": "Nhớ 頁 = <span class=\"hl\">bộ \"đầu người\"</span>. Khi viết, hãy hình dung người đầu to đang quỳ gối — phần trên là đầu, phần dưới là <span class=\"hl\">hai chân xòe ra (八)</span>. Viết 令 trước như đang đặt \"mệnh lệnh\" lên đầu người.",
+
+  "canvasHints": [
+    { "x": 80,  "y": 50,  "label": "①" },
+    { "x": 85,  "y": 100, "label": "②" },
+    { "x": 80,  "y": 140, "label": "③" },
+    { "x": 100, "y": 160, "label": "④" },
+    { "x": 80,  "y": 185, "label": "⑤" },
+    { "x": 195, "y": 55,  "label": "⑥" },
+    { "x": 195, "y": 80,  "label": "⑦" },
+    { "x": 195, "y": 120, "label": "⑧" },
+    { "x": 185, "y": 165, "label": "⑨" },
+    { "x": 210, "y": 165, "label": "⑩" },
+    { "x": 195, "y": 200, "label": "⑪" },
+    { "x": 195, "y": 230, "label": "⑫" },
+    { "x": 170, "y": 275, "label": "⑬" },
+    { "x": 220, "y": 275, "label": "⑭" }
+  ],
+
+  "quiz": [
+    {
+      "q": "領 の音読みは何ですか？",
+      "opts": ["れい (rei)", "りょう (ryō)", "りん (rin)", "ろう (rō)"],
+      "ans": 1,
+      "explain": "領 の音読みは りょう (ryō)。大統領 (だいとうりょう)、領土 (りょうど)、領収書 (りょうしゅうしょ) など。訓読みは えり (cổ áo)。"
+    },
+    {
+      "q": "領 の部首（ぶしゅ）は何ですか？",
+      "opts": ["令 (れい)", "頁 (おおがい)", "貝 (かい)", "首 (くび)"],
+      "ans": 1,
+      "explain": "領 の部首は 頁 (おおがい) — bộ đầu người. Các chữ cùng bộ: 頭 (đầu)、顔 (khuôn mặt)、頂 (đỉnh)、頸 (cổ)、頑 (ngoan cố)…"
+    },
+    {
+      "q": "領 の成り立ちで正しいのはどれですか？",
+      "opts": [
+        "頁 (biểu âm) + 令 (biểu nghĩa)",
+        "令 (biểu âm, gợi âm RYŌ) + 頁 (biểu nghĩa, chỉ đầu/cổ)",
+        "首 (cổ, biểu nghĩa) + 令 (lệnh, biểu âm)",
+        "人 (người) + 令 (lệnh) + 頁 (đầu)"
+      ],
+      "ans": 1,
+      "explain": "領 là chữ Hình thanh: 令 là phần biểu âm (gợi âm RYŌ), 頁 là phần biểu nghĩa (đầu/cổ người). Nghĩa gốc là \"cái cổ\", rồi mở rộng thành \"kiểm soát, lãnh thổ\"."
+    },
+    {
+      "q": "「要領がいい」の意味は何ですか？",
+      "opts": ["Lãnh thổ rộng lớn", "Biết nắm bắt trọng tâm, làm việc hiệu quả khéo léo", "Có nhiều lãnh đạo giỏi", "Nhận biên lai đầy đủ"],
+      "ans": 1,
+      "explain": "要領 (ようりょう) = nắm được điểm mấu chốt. 「要領がいい」= biết cách làm việc hiệu quả, khéo xử lý. Ngược lại 「要領を得ない」 = không đi vào trọng tâm, lộn xộn."
+    },
+    {
+      "q": "「領収書」とは何ですか？",
+      "opts": ["Bản đồ lãnh thổ", "Tài liệu chứng minh đã nhận tiền — biên lai, hóa đơn", "Giấy phép xuất nhập cảnh", "Lệnh của tổng thống"],
+      "ans": 1,
+      "explain": "領収書 (りょうしゅうしょ) = 領収 (nhận tiền) + 書 (văn bản) → biên lai, hóa đơn xác nhận đã thanh toán. Rất thường gặp trong giao dịch kinh doanh và yêu cầu hoàn tiền thuế tại Nhật."
+    },
+    {
+      "q": "「大統領」の「領」はどんな意味ですか？",
+      "opts": ["Nhận lương", "Lãnh đạo, kiểm soát, nắm quyền", "Lãnh thổ quốc gia", "Biên lai chính thức"],
+      "ans": 1,
+      "explain": "大統領 = 大 (lớn) + 統 (thống nhất) + 領 (lãnh đạo, nắm quyền). Chữ 領 ở đây mang nghĩa \"người dẫn đầu kiểm soát\" — xuất phát từ nghĩa gốc \"nắm lấy cổ → dẫn dắt\"."
+    }
+  ]
+}

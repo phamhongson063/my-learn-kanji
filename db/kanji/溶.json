@@ -1,0 +1,129 @@
+{
+  "kanji": "溶",
+  "on": "よう",
+  "onRomaji": "yō",
+  "kun": "と(ける) · と(かす)",
+  "kunRomaji": "to(keru) · to(kasu)",
+  "hanviet": "Dung",
+  "jlpt": "N2",
+  "strokes": 13,
+  "radical": "氵",
+  "radicalReading": "さんずい",
+  "radicalMeaning": "nước / bộ thuỷ",
+  "radicalNumber": 85,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "氵 (bên trái) + 容 (bên phải)",
+  "school": "Trung học cơ sở · Joyo kanji",
+
+  "lead": "溶 là chữ Hán <span class=\"hl\">13 nét</span>, loại <span class=\"hl\">Hình thanh</span> — 氵 gợi nghĩa liên quan đến chất lỏng, 容 gợi âm <span class=\"hl\">よう</span>. Nghĩa trung tâm là <span class=\"hl\">tan ra, hoà tan</span> — khi một chất rắn hay khí hoà vào chất lỏng và biến mất vào đó.",
+  "mnemonic": "Hình dung <strong>nước (氵)</strong> đủ chỗ <strong>chứa đựng (容)</strong> mọi thứ — cục đường thả vào nước, nước <em>dung nạp</em> nó hoàn toàn → <span class=\"hl\">溶 = tan chảy, hoà tan</span>. 容 vừa gợi âm vừa gợi nghĩa: \"chứa\" = tan vào bên trong.",
+
+  "originLead": "Chữ 溶 được cấu tạo từ <span class=\"hl\">氵</span> (bộ thuỷ — nước) và <span class=\"hl\">容</span> (dung nạp, chứa đựng). 容 bao gồm 宀 (mái nhà) và 谷 (thung lũng) — hình ảnh thung lũng rộng lớn có thể <strong>chứa</strong> nhiều thứ. Khi ghép với 氵, nghĩa trở thành <span class=\"hl\">nước dung nạp, hoà tan vật thể vào trong mình</span>.",
+  "originDetail": "Trong hoá học, 溶 xuất hiện dày đặc: 溶液 (dung dịch), 溶解 (hoà tan), 水溶液 (dung dịch nước). Trong đời thường, 溶ける thường dùng cho băng, tuyết, đường, muối tan trong nước hay khi gặp nhiệt. 溶岩 (dung nham) là đá <strong>tan chảy</strong> từ lòng núi lửa — hình ảnh ấn tượng nhất của 溶 trong tự nhiên. Động từ 溶かす là dạng <strong>ngoại động từ</strong> (ai đó làm tan), còn 溶ける là <strong>nội động từ</strong> (tự tan).",
+  "decomp": [
+    { "char": "氵", "name": "Tam thuỷ / Tả thuỷ bàng", "meaning": "Nước — gợi nghĩa liên quan đến chất lỏng" },
+    { "char": "容", "name": "Dung / Dung nạp",          "meaning": "Chứa đựng, dung nạp — vừa gợi âm よう vừa gợi nghĩa" }
+  ],
+
+  "meanings": [
+    { "title": "Tan chảy (do nhiệt)",   "desc": "Chất rắn tan ra thành chất lỏng khi gặp nhiệt độ cao. 溶岩 (dung nham), アイスが溶ける (kem tan chảy), 鉄が溶ける (sắt tan chảy)." },
+    { "title": "Hoà tan (trong dung môi)", "desc": "Chất tan vào chất lỏng tạo thành dung dịch đồng nhất. 塩が水に溶ける (muối tan trong nước), 溶液 (dung dịch), 溶解度 (độ hoà tan)." },
+    { "title": "Biến mất, hoà vào",      "desc": "Nghĩa ẩn dụ — tan biến vào đám đông, vào môi trường xung quanh. 人込みに溶け込む (hoà vào đám đông), 闇に溶ける (tan vào bóng tối)." },
+    { "title": "Làm tan, hoà tan (ngoại)", "desc": "Dạng ngoại động từ 溶かす — chủ động làm cho thứ khác tan ra. バターを溶かす (làm tan bơ), 氷を溶かす (làm tan đá)." }
+  ],
+
+  "vocab": [
+    { "word": "溶ける",   "reading": "とける (tokeru)",         "vi": "Tan ra, tan chảy, hoà tan (nội động)",  "jlpt": "N3", "jp": "「春になると雪が溶けて川になる。」",                           "jpVi": "Vào mùa xuân, tuyết tan chảy thành sông." },
+    { "word": "溶かす",   "reading": "とかす (tokasu)",         "vi": "Làm tan, hoà tan (ngoại động)",         "jlpt": "N3", "jp": "「砂糖をお湯に溶かしてシロップを作った。」",                   "jpVi": "Tôi hoà tan đường vào nước nóng để làm xi-rô." },
+    { "word": "溶液",     "reading": "ようえき (yōeki)",        "vi": "Dung dịch (hoá học)",                   "jlpt": "N2", "jp": "「この溶液は酸性なので取り扱いに注意してください。」",           "jpVi": "Dung dịch này có tính axit nên hãy cẩn thận khi xử lý." },
+    { "word": "溶解",     "reading": "ようかい (yōkai)",        "vi": "Hoà tan, tan chảy, sự hoà tan",         "jlpt": "N2", "jp": "「塩の水への溶解は温度が高いほど速くなる。」",                 "jpVi": "Muối hoà tan vào nước càng nhanh khi nhiệt độ càng cao." },
+    { "word": "溶岩",     "reading": "ようがん (yōgan)",        "vi": "Dung nham, nham thạch",                 "jlpt": "N2", "jp": "「火山から噴き出た溶岩が村を飲み込んだ。」",                   "jpVi": "Dung nham phun ra từ núi lửa đã nuốt chửng ngôi làng." },
+    { "word": "溶接",     "reading": "ようせつ (yōsetsu)",      "vi": "Hàn (kim loại), mối hàn",               "jlpt": "N2", "jp": "「工場では鉄骨の溶接作業が行われていた。」",                   "jpVi": "Tại nhà máy, công việc hàn khung thép đang được tiến hành." },
+    { "word": "水溶液",   "reading": "すいようえき (suiyōeki)", "vi": "Dung dịch nước (aqueous solution)",     "jlpt": "N2", "jp": "「食塩水は塩化ナトリウムの水溶液だ。」",                       "jpVi": "Nước muối là dung dịch nước của natri clorua." },
+    { "word": "溶け込む", "reading": "とけこむ (tokekomu)",     "vi": "Hoà nhập, tan vào, hoà mình vào",       "jlpt": "N2", "jp": "「新しい環境にもすぐに溶け込めた。」",                         "jpVi": "Tôi có thể nhanh chóng hoà nhập vào môi trường mới." }
+  ],
+
+  "idioms": [
+    {
+      "text": "闇に溶ける", "fontSize": 20,
+      "kana": "やみにとける",
+      "meaning": "Tan vào bóng tối — hình ảnh thơ của sự biến mất hoàn toàn, không để lại dấu vết, như tan chảy vào màn đêm.",
+      "jp": "「彼はコートの襟を立て、闇に溶けるように路地へ消えた。」",
+      "jpVi": "Anh ta dựng cổ áo khoác và biến vào ngõ hẻm, tan vào bóng tối."
+    },
+    {
+      "text": "溶けるような笑顔", "fontSize": 16,
+      "kana": "とけるようなえがお",
+      "meaning": "Nụ cười ngọt ngào đến tan chảy — diễn tả nụ cười ấm áp, dịu dàng khiến người nhìn cảm thấy tan chảy theo.",
+      "jp": "「彼女の溶けるような笑顔に、思わず見とれてしまった。」",
+      "jpVi": "Tôi bất giác mê mẩn trước nụ cười ngọt ngào đến tan chảy của cô ấy."
+    },
+    {
+      "text": "心が溶ける", "fontSize": 20,
+      "kana": "こころがとける",
+      "meaning": "Trái tim tan chảy — cảm giác được xúc động, cảm động mạnh, rào cản trong lòng tan biến trước điều gì đó ấm áp.",
+      "jp": "「子犬の無邪気な目を見ていたら、心が溶けていくようだった。」",
+      "jpVi": "Nhìn vào đôi mắt trong sáng của chú chó con, tôi cảm thấy trái tim mình đang tan chảy."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết bộ <span class=\"hl\">氵</span> (3 nét) trước bên trái, sau đó viết <span class=\"hl\">容</span> (10 nét) bên phải từ trên xuống dưới.",
+  "strokeSteps": [
+    { "range": "1–3",   "char": "氵", "label": "Tam thuỷ bàng",      "detail": "3 nét chấm bên trái" },
+    { "range": "4–6",   "char": "宀", "label": "Miên đầu (mái nhà)", "detail": "3 nét phần trên của 容" },
+    { "range": "7–10",  "char": "八", "label": "Bát (phần trên 谷)", "detail": "2 nét phẩy + phần trên" },
+    { "range": "11–13", "char": "口", "label": "Khẩu (phần dưới 谷)", "detail": "3 nét đóng hộp dưới" }
+  ],
+  "strokeDetail": "• <strong>氵 (3 nét):</strong> ① chấm trên → ② chấm giữa nghiêng → ③ phẩy dài xuống<br>• <strong>宀 (3 nét):</strong> ④ chấm trên → ⑤ nét cong trái → ⑥ nét dài phải<br>• <strong>谷 phần trên (4 nét):</strong> ⑦ phẩy trái → ⑧ phẩy phải (tạo 八) → ⑨ nét dọc → ⑩ nét gập<br>• <strong>口 (3 nét):</strong> ⑪ nét gập trái-trên → ⑫ nét ngang trên → ⑬ nét đóng đáy<br>• Tổng: 3+3+4+3 = <strong>13 nét ✓</strong>",
+
+  "calliNote": "Bộ 氵 bên trái cần viết gọn, 3 nét chấm thẳng hàng. Phần 容 bên phải chiếm 2/3 chiều rộng — 宀 (mái) toả rộng che phủ, 谷 bên dưới cân xứng. Tránh để 口 cuối cùng quá nhỏ hoặc quá to so với tổng thể.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">氵 trước</span> (3 nét bên trái), sau đó viết <span class=\"hl\">容</span> từ mái 宀 xuống đến 口 dưới cùng.",
+
+  "canvasHints": [
+    { "x": 62,  "y": 130, "label": "①②③" },
+    { "x": 210, "y": 42,  "label": "④⑤⑥" },
+    { "x": 205, "y": 168, "label": "⑦⑧⑨⑩" },
+    { "x": 205, "y": 285, "label": "⑪⑫⑬" }
+  ],
+
+  "quiz": [
+    {
+      "q": "溶 の訓読みはどれですか？",
+      "opts": ["とかす (tokasu)", "とける (tokeru)", "とかす と とける 両方", "よける (yokeru)"],
+      "ans": 2,
+      "explain": "溶 の訓読みは とける（nội động — tự tan）と とかす（ngoại động — làm tan）の両方。音読みは よう (yō)。例：氷が溶ける / バターを溶かす。"
+    },
+    {
+      "q": "「溶岩」(ようがん) の意味は？",
+      "opts": ["Đá granit, đá hoa cương", "Dung nham phun ra từ núi lửa", "Tinh thể muối khoáng", "Lớp đất đá dưới lòng biển"],
+      "ans": 1,
+      "explain": "溶岩 (ようがん) = 溶 (tan chảy) + 岩 (đá) = Đá tan chảy → Dung nham. Là đá magma từ lòng núi lửa phun lên mặt đất dưới dạng chất lỏng đặc ở nhiệt độ cực cao."
+    },
+    {
+      "q": "溶 の部首は何ですか？",
+      "opts": ["谷 (たに)", "容 (いれる)", "氵 (さんずい)", "宀 (うかんむり)"],
+      "ans": 2,
+      "explain": "溶 の部首は 氵 (さんずい) — bộ thuỷ 3 chấm, đứng bên trái. Gợi nghĩa liên quan đến nước và chất lỏng. Số thứ tự trong 214 bộ thủ là 85."
+    },
+    {
+      "q": "「溶け込む」(とけこむ) の意味は？",
+      "opts": ["Tan chảy hoàn toàn vì nhiệt độ cao", "Hoà nhập, tan vào, hoà mình vào môi trường", "Nhúng vào chất lỏng để làm lạnh", "Khuấy đều dung dịch"],
+      "ans": 1,
+      "explain": "溶け込む = 溶ける (tan) + 込む (vào trong) = Tan hoà vào bên trong. Thường dùng theo nghĩa ẩn dụ: hoà nhập vào môi trường mới, cộng đồng mới. Ví dụ: 新しいクラスに溶け込む (hoà nhập vào lớp mới)."
+    },
+    {
+      "q": "溶 の画数（かくすう）は何画ですか？",
+      "opts": ["11画", "12画", "13画", "14画"],
+      "ans": 2,
+      "explain": "溶 は 13画 — 氵 (3 nét) + 容 (10 nét) = 13 nét tổng cộng. 容 gồm 宀 (3 nét) + 谷 (7 nét) = 10 nét."
+    },
+    {
+      "q": "「溶解」(ようかい) と同じ意味に近い言葉は？",
+      "opts": ["蒸発 (じょうはつ — bay hơi)", "融解 (ゆうかい — tan chảy do nhiệt)", "凝固 (ぎょうこ — đông đặc)", "沈殿 (ちんでん — kết tủa)"],
+      "ans": 1,
+      "explain": "溶解 (ようかい) = hoà tan / tan chảy. Gần nghĩa nhất là 融解 (ゆうかい) — cũng chỉ sự tan chảy, thường dùng trong vật lý/công nghiệp. Trái nghĩa là 凝固 (đông đặc). 蒸発 là bay hơi, 沈殿 là kết tủa."
+    }
+  ]
+}

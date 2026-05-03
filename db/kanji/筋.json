@@ -1,0 +1,143 @@
+{
+  "kanji": "筋",
+  "on": "きん",
+  "onRomaji": "kin",
+  "kun": "すじ",
+  "kunRomaji": "suji",
+  "hanviet": "Cân",
+  "jlpt": "N2",
+  "strokes": 12,
+  "radical": "竹",
+  "radicalReading": "たけかんむり",
+  "radicalMeaning": "tre / bộ trúc",
+  "radicalNumber": 118,
+  "type": "Hội ý hình thanh",
+  "typeJa": "会意形声文字",
+  "structure": "竹 (trên) + 月・肉 (dưới trái) + 力 (dưới phải)",
+  "school": "Tiểu học lớp 6 · Joyo kanji",
+
+  "lead": "筋 là chữ Hán <span class=\"hl\">12 nét</span>, loại <span class=\"hl\">Hội ý hình thanh</span> — 竹 (tre: dẻo dai, có gân), 月/肉 (thịt: cơ thể), 力 (sức mạnh). Ba thành phần hợp lại tạo ra nghĩa <span class=\"hl\">gân cơ — thứ kết nối thịt với sức lực</span>. Âm kun là <span class=\"hl\">すじ</span> với nhiều nghĩa phong phú từ cơ bắp đến logic.",
+  "mnemonic": "Hình dung <strong>thân tre (竹)</strong> — có những <strong>gân dọc (筋)</strong> bên trong giúp nó dẻo dai. Khi kết hợp với <strong>thịt (月)</strong> và <strong>sức mạnh (力)</strong> → <span class=\"hl\">筋 = gân, cơ bắp, đường gân kết nối tất cả</span>. Tre có gân, người cũng có gân!",
+
+  "originLead": "Chữ 筋 là chữ <span class=\"hl\">Hội ý</span> — gộp ý nghĩa của nhiều thành phần: <strong>竹</strong> (tre — biểu tượng sự dẻo dai và gân guốc trong văn hoá Đông Á), <strong>肉/月</strong> (thịt — thành phần cơ thể), <strong>力</strong> (sức mạnh). Ba yếu tố này cùng mô tả <em>gân cơ: bộ phận trong cơ thể kết nối thịt với sức lực vận động</em>.",
+  "originDetail": "Từ nghĩa gốc 'gân cơ', 筋 phát triển thành 'đường, mạch, tuyến' (血筋 — huyết thống; 話の筋 — mạch chuyện). Trong văn hoá võ thuật và thể dục Nhật, 筋トレ (luyện cơ) là từ quen thuộc. 筋道 (con đường lý lẽ) dùng hình ảnh 'đường gân thẳng' để ám chỉ logic rõ ràng. Câu 「筋が通る」(có lý, hợp logic) phản ánh hình ảnh gân thẳng — khi gân căng thẳng thì mọi thứ hoạt động đúng.",
+  "decomp": [
+    { "char": "竹", "name": "Trúc / Bộ trúc",    "meaning": "Tre — biểu tượng sự dẻo dai, có gân dọc đặc trưng" },
+    { "char": "月", "name": "Thịt / Nhục nguyệt", "meaning": "Thịt, cơ thể — đây là 月 dạng 肉 (thịt), không phải mặt trăng" }
+  ],
+
+  "meanings": [
+    { "title": "Gân, cơ bắp, cơ thịt",     "desc": "Nghĩa gốc về giải phẫu: 筋肉 (cơ bắp), 筋が痛い (đau gân), 腱筋 (gân cơ). Phần cơ thể kết nối xương và tạo ra chuyển động." },
+    { "title": "Đường, mạch, tuyến, gân",   "desc": "Đường chạy dài có hướng: 血筋 (huyết thống), 木の筋 (vân gỗ), 葉の筋 (gân lá). Bất kỳ thứ gì chạy thành đường đều có thể dùng 筋." },
+    { "title": "Mạch chuyện, cốt truyện",   "desc": "筋書き (kịch bản, cốt truyện), 話の筋 (mạch câu chuyện), 筋を追う (theo dõi cốt truyện). Nghĩa quan trọng trong phê bình văn học." },
+    { "title": "Logic, lý lẽ, mạch lý",     "desc": "筋が通る (có lý, logic nhất quán), 筋の通った話 (lập luận mạch lạc), 筋道を立てる (lập luận có hệ thống). Dùng phổ biến trong tranh luận và văn viết." },
+    { "title": "Nguồn tin, kênh thông tin", "desc": "Nghĩa đặc biệt: 確かな筋 (nguồn tin đáng tin cậy), 政府筋 (nguồn tin chính phủ), 軍筋 (nguồn tin quân đội). Dùng trong báo chí." }
+  ],
+
+  "vocab": [
+    { "word": "筋肉",     "reading": "きんにく (kinniku)",         "vi": "Cơ bắp, cơ thịt",                   "jlpt": "N3", "jp": "「毎日トレーニングをして筋肉をつけている。」",               "jpVi": "Tôi tập luyện mỗi ngày để phát triển cơ bắp." },
+    { "word": "筋トレ",   "reading": "きんトレ (kin-tore)",        "vi": "Luyện tập cơ bắp, gym",              "jlpt": "",   "jp": "「健康のために筋トレを始めた。」",                           "jpVi": "Tôi bắt đầu tập gym vì sức khoẻ." },
+    { "word": "筋道",     "reading": "すじみち (sujimichi)",       "vi": "Mạch lý, lý lẽ rõ ràng, logic",     "jlpt": "N2", "jp": "「筋道を立てて説明してください。」",                         "jpVi": "Hãy giải thích theo mạch lý rõ ràng." },
+    { "word": "筋書き",   "reading": "すじがき (sujigaki)",        "vi": "Kịch bản, cốt truyện, plot",         "jlpt": "N2", "jp": "「映画の筋書きが予想外で驚いた。」",                         "jpVi": "Cốt truyện bộ phim ngoài dự đoán khiến tôi bất ngờ." },
+    { "word": "血筋",     "reading": "ちすじ (chisuji)",           "vi": "Huyết thống, dòng máu",              "jlpt": "N2", "jp": "「彼は音楽家の血筋を引いている。」",                         "jpVi": "Anh ta mang huyết thống nhạc sĩ." },
+    { "word": "筋力",     "reading": "きんりょく (kinryoku)",      "vi": "Sức mạnh cơ bắp",                    "jlpt": "N2", "jp": "「年齢とともに筋力が衰えるのは自然なことだ。」",             "jpVi": "Sức mạnh cơ bắp suy giảm theo tuổi tác là điều tự nhiên." },
+    { "word": "筋が通る", "reading": "すじがとおる",               "vi": "Có lý, hợp logic, nhất quán",        "jlpt": "",   "jp": "「彼の言い訳は筋が通っていない。」",                         "jpVi": "Lý do biện minh của anh ta không có lý." },
+    { "word": "確かな筋", "reading": "たしかなすじ (tashikana suji)", "vi": "Nguồn tin đáng tin cậy",          "jlpt": "",   "jp": "「確かな筋からの情報によると、明日発表があるらしい。」",     "jpVi": "Theo thông tin từ nguồn đáng tin cậy, dường như sẽ có thông báo vào ngày mai." }
+  ],
+
+  "idioms": [
+    {
+      "text": "筋を通す", "fontSize": 24,
+      "kana": "すじをとおす",
+      "meaning": "Tuân thủ nguyên tắc, làm cho đúng lý — làm việc theo đúng mạch lý, không sai trái, không phá vỡ quy tắc. Quan trọng trong văn hoá làm việc Nhật Bản.",
+      "jp": "「どんな状況でも、筋を通して正直に行動することが大切だ。」",
+      "jpVi": "Dù trong hoàn cảnh nào, điều quan trọng là phải hành động trung thực và đúng nguyên tắc."
+    },
+    {
+      "text": "筋金入り", "fontSize": 20,
+      "kana": "すじがねいり",
+      "meaning": "Được rèn luyện kỹ càng, cứng cáp như thép — chỉ người hay vật được tôi luyện qua thử thách lâu dài, có bản lĩnh vững chắc không gì lay chuyển.",
+      "jp": "「彼女は筋金入りの活動家で、20年間運動を続けている。」",
+      "jpVi": "Cô ấy là nhà hoạt động được tôi luyện thực sự, đã hoạt động suốt 20 năm."
+    },
+    {
+      "text": "一筋縄ではいかない", "fontSize": 13,
+      "kana": "ひとすじなわではいかない",
+      "meaning": "Không thể giải quyết bằng một sợi dây đơn giản — chỉ vấn đề hay người khó giải quyết, phức tạp hơn bề ngoài, không thể xử lý theo cách thông thường.",
+      "jp": "「あの交渉は一筋縄ではいかないと、最初から覚悟していた。」",
+      "jpVi": "Tôi đã chuẩn bị tư tưởng ngay từ đầu rằng cuộc đàm phán đó không đơn giản chút nào."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới</span>. Viết bộ <span class=\"hl\">竹</span> (6 nét) trên trước, sau đó viết <span class=\"hl\">月</span> (4 nét) dưới trái, cuối cùng là <span class=\"hl\">力</span> (2 nét) dưới phải.",
+  "strokeSteps": [
+    { "range": "1–6",  "char": "竹", "label": "Bộ trúc (竹かんむり)", "detail": "6 nét — 2 nhóm 个×3 nét" },
+    { "range": "7–10", "char": "月", "label": "Nhục nguyệt (月=肉)",  "detail": "4 nét — thịt, cơ thể" },
+    { "range": "11–12","char": "力", "label": "Sức mạnh (力)",         "detail": "2 nét — kết thúc dưới phải" }
+  ],
+  "strokeDetail": "• <strong>竹 (6 nét):</strong> ① phẩy trái trên → ② nét thẳng đứng trái → ③ nét ngang trái · sau đó ④ phẩy phải → ⑤ nét thẳng đứng phải → ⑥ nét ngang phải (đối xứng hai bên)<br>• <strong>月/肉 (4 nét):</strong> ⑦ nét gập trái-trên → ⑧ nét dọc phải → ⑨ nét ngang trên trong → ⑩ nét ngang dưới trong<br>• <strong>力 (2 nét):</strong> ⑪ nét phẩy dài → ⑫ nét móc<br>• Tổng: 6+4+2 = <strong>12 nét ✓</strong>",
+
+  "calliNote": "Bộ 竹 trên cần đối xứng hai bên, hai nhóm nét cân bằng nhau. Phần 月 dưới trái và 力 dưới phải chiếm ngang nhau — tránh để một bên to hơn. 力 cuối cùng cần nét móc dứt khoát, tạo điểm nhấn kết thúc chữ.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">竹 trước</span> (6 nét trên, từ trái sang phải), sau đó <span class=\"hl\">月</span> dưới trái rồi <span class=\"hl\">力</span> dưới phải.",
+
+  "canvasHints": [
+    { "x": 145, "y": 35,  "label": "①②③④⑤⑥" },
+    { "x": 85,  "y": 218, "label": "⑦⑧⑨⑩" },
+    { "x": 268, "y": 218, "label": "⑪⑫" }
+  ],
+
+  "quiz": [
+    {
+      "q": "「筋肉」(きんにく) の意味は？",
+      "opts": ["Xương sườn", "Cơ bắp, cơ thịt trong cơ thể", "Gân nối xương", "Mạch máu"],
+      "ans": 1,
+      "explain": "筋肉 (きんにく) = 筋 (gân, cơ) + 肉 (thịt) = Cơ bắp. Bộ phận trong cơ thể tạo ra chuyển động. Ví dụ: 筋肉痛 (đau cơ sau tập), 筋肉トレーニング (luyện tập cơ bắp)."
+    },
+    {
+      "q": "「筋が通る」の意味は？",
+      "opts": [
+        "Gân bị kéo căng quá mức",
+        "Lý luận nhất quán, có logic rõ ràng",
+        "Cốt truyện hấp dẫn",
+        "Nguồn tin đáng tin cậy"
+      ],
+      "ans": 1,
+      "explain": "筋が通る = mạch lý thẳng, không bị gãy = có logic nhất quán. Ngược lại 筋が通らない = phi logic, vô lý. Đây là cụm từ rất hay dùng trong văn hoá làm việc và thảo luận của Nhật."
+    },
+    {
+      "q": "筋 の部首は何ですか？",
+      "opts": ["月 (つき)", "力 (ちから)", "竹 (たけかんむり)", "肉 (にく)"],
+      "ans": 2,
+      "explain": "Bộ của 筋 là 竹 (たけかんむり) — bộ trúc đứng trên đầu chữ. Số 118 trong 214 bộ thủ. Mặc dù 月 và 力 cũng là thành phần, bộ thủ chính là 竹 ở vị trí đỉnh."
+    },
+    {
+      "q": "「筋書き」(すじがき) の意味は？",
+      "opts": [
+        "Bài tập luyện cơ theo kế hoạch",
+        "Kịch bản, cốt truyện, plot",
+        "Sách hướng dẫn y học",
+        "Danh sách nhân vật trong phim"
+      ],
+      "ans": 1,
+      "explain": "筋書き = 筋 (mạch chuyện) + 書き (viết ra) = Kịch bản, cốt truyện. Dùng cho phim, tiểu thuyết, kịch. Ví dụ: 筋書きどおりに進んだ (diễn ra đúng như kịch bản)."
+    },
+    {
+      "q": "「筋金入り」の意味として正しいのは？",
+      "opts": [
+        "Có nhiều cơ bắp, vạm vỡ",
+        "Được rèn luyện kỹ, bản lĩnh vững chắc không gì lay chuyển",
+        "Theo đúng kịch bản định sẵn",
+        "Nguồn tin từ bên trong tổ chức"
+      ],
+      "ans": 1,
+      "explain": "筋金入り = được đúc thêm cốt thép vào gân → kiên cường, không gì lay chuyển được. Dùng cho người hoạt động lâu năm, có lập trường vững chắc: 筋金入りの保守派 (bảo thủ cứng đầu)."
+    },
+    {
+      "q": "筋 の画数は何画ですか？",
+      "opts": ["10画", "11画", "12画", "13画"],
+      "ans": 2,
+      "explain": "筋 は 12画 — 竹 (6 nét) + 月/肉 (4 nét) + 力 (2 nét) = 12 nét tổng cộng. Bộ 竹 trên đầu có 6 nét, là phần nhiều nét nhất."
+    }
+  ]
+}

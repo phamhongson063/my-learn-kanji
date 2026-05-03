@@ -1,0 +1,144 @@
+{
+  "kanji": "協",
+  "on": "きょう",
+  "onRomaji": "kyō",
+  "kun": "—",
+  "kunRomaji": "—",
+  "hanviet": "Hiệp",
+  "jlpt": "N3",
+  "strokes": 8,
+  "radical": "十",
+  "radicalReading": "じゅう",
+  "radicalMeaning": "mười / bộ thập",
+  "radicalNumber": 24,
+  "type": "Hội ý",
+  "typeJa": "会意文字",
+  "structure": "十 (bên trái) + 劦 — ba 力 chồng lên nhau (bên phải)",
+  "school": "Tiểu học lớp 4 · Joyo kanji",
+
+  "lead": "協 là chữ Hán <span class=\"hl\">8 nét</span>, loại <span class=\"hl\">Hội ý</span> — được tạo thành từ <span class=\"hl\">十</span> (nhiều, tụ lại) và <span class=\"hl\">劦</span> (ba lực 力 chồng lên nhau). Toàn bộ cấu tạo trực quan miêu tả <strong>nhiều sức mạnh cùng hướng về một điểm</strong> → <span class=\"hl\">協 = hợp tác, hiệp lực</span>. Không có âm Kun — chỉ dùng trong hợp từ với âm On きょう.",
+  "mnemonic": "Nhìn vào chữ: bên trái là <strong>十</strong> (nhiều người tụ lại thành chữ thập), bên phải là <strong>ba lực 力 xếp chồng</strong> — ba người cùng ra sức → <span class=\"hl\">協 = cùng nhau hợp lực</span>. Khi ba sức mạnh hợp làm một, không việc gì không thể làm được!",
+
+  "originLead": "協 là chữ <span class=\"hl\">Hội ý</span> thuần tuý — ghép hình ảnh lại để tạo nghĩa, không có thành phần gợi âm. <strong>十</strong> trong cổ văn chỉ 'nhiều, tập hợp' (không nhất thiết là số 10). <strong>劦</strong> (ba 力 chồng) là chữ cổ độc lập mang nghĩa 'nhiều sức mạnh cùng lúc'. Kết hợp lại: tập hợp nhiều sức mạnh → hợp tác.",
+  "originDetail": "協 xuất hiện dày đặc trong từ vựng chính trị, ngoại giao và kinh doanh hiện đại: 協力 (hợp tác), 協議 (thương lượng), 協定 (hiệp định), 協会 (hiệp hội). Trong tiếng Việt, âm Hán Việt <span class=\"hl\">Hiệp</span> xuất hiện trong: hiệp lực, hiệp hội, hiệp định, hiệp thương — đều mang nghĩa cùng nhau làm việc. Chữ 妥協 (타협 — thỏa hiệp) thú vị ở chỗ 妥 (yên ổn) + 協 (hợp) = tìm điểm chung để cùng ổn thoả.",
+  "decomp": [
+    { "char": "十",  "name": "Thập / Bộ thập", "meaning": "Nhiều, tập hợp — gợi ý nhiều thực thể cùng hội tụ" },
+    { "char": "劦",  "name": "Hiệp / Ba lực",   "meaning": "Ba 力 chồng lên nhau — ba sức mạnh cùng một hướng" }
+  ],
+
+  "meanings": [
+    { "title": "Hợp tác, cùng nhau làm", "desc": "Nghĩa cơ bản và phổ biến nhất. 協力 (hợp tác), 協同 (cùng nhau), 協働 (làm việc chung). Luôn hàm ý nhiều bên cùng đóng góp." },
+    { "title": "Thương lượng, đàm phán",  "desc": "協議 (thương lượng, hội đàm), 協定 (hiệp định ký kết sau đàm phán). Nhấn mạnh quá trình các bên trao đổi để đạt đồng thuận." },
+    { "title": "Hiệp hội, tổ chức chung", "desc": "協会 (hiệp hội), 協組 (hợp tác xã). Chỉ tổ chức được lập ra bởi nhiều thành viên cùng chung mục tiêu." },
+    { "title": "Nhượng bộ, thoả hiệp",    "desc": "妥協 (타협 — thỏa hiệp) — tìm điểm chung bằng cách mỗi bên nhường một phần. Đây là nghĩa đặc biệt quan trọng trong đàm phán và ngoại giao." }
+  ],
+
+  "vocab": [
+    { "word": "協力",   "reading": "きょうりょく (kyōryoku)",   "vi": "Hợp tác, giúp đỡ lẫn nhau",          "jlpt": "N3", "jp": "「プロジェクトの成功には全員の協力が必要だ。」",           "jpVi": "Thành công của dự án cần sự hợp tác của tất cả mọi người." },
+    { "word": "協議",   "reading": "きょうぎ (kyōgi)",           "vi": "Thương lượng, hội đàm, bàn bạc",      "jlpt": "N2", "jp": "「両国は協議を重ねた末に合意に達した。」",               "jpVi": "Hai nước đã đạt được thỏa thuận sau nhiều vòng đàm phán." },
+    { "word": "協定",   "reading": "きょうてい (kyōtei)",        "vi": "Hiệp định, thoả thuận (văn bản)",      "jlpt": "N2", "jp": "「両社の間で業務提携協定が結ばれた。」",                 "jpVi": "Hiệp định hợp tác kinh doanh đã được ký kết giữa hai công ty." },
+    { "word": "協調",   "reading": "きょうちょう (kyōchō)",      "vi": "Phối hợp, điều hoà, đồng bộ",         "jlpt": "N2", "jp": "「チームワークには部署間の協調が欠かせない。」",           "jpVi": "Làm việc nhóm cần sự phối hợp giữa các bộ phận." },
+    { "word": "協会",   "reading": "きょうかい (kyōkai)",        "vi": "Hiệp hội, hội, liên đoàn",            "jlpt": "N3", "jp": "「日本サッカー協会は年次総会を開催した。」",             "jpVi": "Liên đoàn bóng đá Nhật Bản đã tổ chức đại hội thường niên." },
+    { "word": "妥協",   "reading": "だきょう (dakyō)",           "vi": "Thỏa hiệp, nhượng bộ lẫn nhau",       "jlpt": "N2", "jp": "「双方が妥協点を見つけ、交渉はまとまった。」",           "jpVi": "Cả hai bên tìm được điểm thỏa hiệp và cuộc đàm phán kết thúc." },
+    { "word": "協同",   "reading": "きょうどう (kyōdō)",          "vi": "Cộng đồng, cùng làm chung",           "jlpt": "N2", "jp": "「地域住民が協同して公園を清掃した。」",                 "jpVi": "Người dân trong khu vực cùng nhau dọn dẹp công viên." },
+    { "word": "国際協力", "reading": "こくさいきょうりょく (kokusai kyōryoku)", "vi": "Hợp tác quốc tế",         "jlpt": "",   "jp": "「国際協力機構（JICA）は途上国の支援を行っている。」",   "jpVi": "Cơ quan Hợp tác Quốc tế Nhật Bản (JICA) hỗ trợ các nước đang phát triển." }
+  ],
+
+  "idioms": [
+    {
+      "text": "協力して山を動かす", "fontSize": 14,
+      "kana": "きょうりょくしてやまをうごかす",
+      "meaning": "Hợp tác để dời núi — sức mạnh của sự đoàn kết có thể làm được điều tưởng chừng không thể. Phản ánh trực tiếp ý nghĩa hình ảnh trong chữ 協: nhiều lực hợp lại.",
+      "jp": "「一人では無理でも、協力して山を動かすことができる。チームの力を信じよう。」",
+      "jpVi": "Một mình không thể, nhưng hợp tác lại có thể dời cả núi. Hãy tin vào sức mạnh của đội nhóm."
+    },
+    {
+      "text": "妥協点を探る", "fontSize": 20,
+      "kana": "だきょうてんをさぐる",
+      "meaning": "Tìm điểm thỏa hiệp — trong đàm phán, mỗi bên nhường một chút để tìm ra giải pháp mà cả hai có thể chấp nhận. Kỹ năng quan trọng trong kinh doanh và ngoại giao.",
+      "jp": "「交渉は難航したが、互いに妥協点を探ることで最終的に合意できた。」",
+      "jpVi": "Đàm phán diễn ra căng thẳng, nhưng cuối cùng cả hai bên đã đạt được thỏa thuận bằng cách tìm điểm thỏa hiệp."
+    },
+    {
+      "text": "協議の末", "fontSize": 26,
+      "kana": "きょうぎのすえ",
+      "meaning": "Sau khi thương lượng — cụm từ chỉ kết quả đạt được sau một quá trình bàn bạc dài. Dùng rất phổ biến trong văn bản báo chí, pháp lý và chính trị.",
+      "jp": "「長い協議の末、ついに両社は合併に合意した。」",
+      "jpVi": "Sau quá trình thương lượng dài, cuối cùng hai công ty đã đồng ý sáp nhập."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết <span class=\"hl\">十</span> (2 nét) trước bên trái, sau đó viết ba 力 của <span class=\"hl\">劦</span> từ trên xuống dưới bên phải.",
+  "strokeSteps": [
+    { "range": "1–2", "char": "十", "label": "Thập (十)",        "detail": "ngang rồi dọc" },
+    { "range": "3–4", "char": "力", "label": "Lực trên (力)",    "detail": "2 nét 力 đầu tiên" },
+    { "range": "5–6", "char": "力", "label": "Lực giữa (力)",   "detail": "2 nét 力 thứ hai" },
+    { "range": "7–8", "char": "力", "label": "Lực dưới (力)",    "detail": "2 nét 力 thứ ba" }
+  ],
+  "strokeDetail": "• <strong>十 (2 nét):</strong> ① nét ngang → ② nét dọc thẳng<br>• <strong>力 trên (2 nét):</strong> ③ nét phẩy → ④ nét móc<br>• <strong>力 giữa (2 nét):</strong> ⑤ nét phẩy → ⑥ nét móc<br>• <strong>力 dưới (2 nét):</strong> ⑦ nét phẩy → ⑧ nét móc dài nhất<br>• Tổng: 2+2+2+2 = <strong>8 nét ✓</strong>",
+
+  "calliNote": "Chữ 協 có cấu trúc trái-phải rõ ràng: 十 bên trái gọn và thẳng đứng, phần 劦 (ba 力) bên phải chiếm 2/3 chiều rộng. Ba 力 xếp đều từ trên xuống, mỗi 力 có kích thước gần bằng nhau. 力 dưới cùng nét móc kéo dài nhẹ để cân bằng tổng thể.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">十 trước</span> (2 nét bên trái), sau đó viết <span class=\"hl\">ba 力</span> từ trên xuống dưới — mỗi 力 chỉ 2 nét.",
+
+  "canvasHints": [
+    { "x": 68,  "y": 165, "label": "①②" },
+    { "x": 248, "y": 68,  "label": "③④" },
+    { "x": 248, "y": 188, "label": "⑤⑥" },
+    { "x": 248, "y": 305, "label": "⑦⑧" }
+  ],
+
+  "quiz": [
+    {
+      "q": "協 の音読みは何ですか？",
+      "opts": ["こう (kō)", "きょう (kyō)", "ごう (gō)", "ちょう (chō)"],
+      "ans": 1,
+      "explain": "協 の音読みは きょう (kyō)。協力・協議・協定・協会 など多くの重要な語に使われます。訓読みはありません — 常に音読みで使う漢字です。"
+    },
+    {
+      "q": "協 はどんな文字の種類ですか？",
+      "opts": [
+        "象形文字 — hình dạng vật thể",
+        "形声文字 — một phần gợi âm",
+        "会意文字 — ghép ý nghĩa nhiều thành phần",
+        "指事文字 — ký hiệu trừu tượng"
+      ],
+      "ans": 2,
+      "explain": "協 là 会意文字 (Hội ý) — ghép 十 (nhiều, tụ lại) và 劦 (ba 力 chồng = nhiều sức mạnh). Cả hai thành phần đều đóng góp ý nghĩa, không có phần gợi âm. Đây là điểm phân biệt với 形声文字."
+    },
+    {
+      "q": "「協力」(きょうりょく) の意味は？",
+      "opts": ["Cạnh tranh để giành chiến thắng", "Hợp tác, cùng nhau nỗ lực", "Phân chia công việc", "Kiểm soát lẫn nhau"],
+      "ans": 1,
+      "explain": "協力 (きょうりょく) = 協 (hợp) + 力 (sức mạnh) = Hợp tác, cùng chung sức. Là từ vựng cực kỳ phổ biến trong tiếng Nhật hàng ngày. Ví dụ: ご協力ありがとうございます (cảm ơn sự hợp tác của bạn)."
+    },
+    {
+      "q": "「妥協」(だきょう) の意味は？",
+      "opts": [
+        "Từ chối thỏa thuận",
+        "Thỏa hiệp, mỗi bên nhượng bộ để đạt đồng thuận",
+        "Ký kết hiệp định chính thức",
+        "Hợp tác không điều kiện"
+      ],
+      "ans": 1,
+      "explain": "妥協 (だきょう) = 妥 (yên ổn, thoả đáng) + 協 (hợp) = Thỏa hiệp. Mỗi bên nhường một phần lợi ích để đạt được giải pháp chấp nhận được. 妥協点 (điểm thỏa hiệp) là từ hay dùng trong đàm phán."
+    },
+    {
+      "q": "「協議」と「協定」の違いは？",
+      "opts": [
+        "Hai từ hoàn toàn giống nhau",
+        "協議 là quá trình đàm phán, 協定 là văn bản kết quả sau đàm phán",
+        "協議 là hợp tác, 協定 là cạnh tranh",
+        "協議 dùng cho ngoại giao, 協定 dùng cho kinh doanh"
+      ],
+      "ans": 1,
+      "explain": "協議 (きょうぎ) = quá trình thảo luận, bàn bạc (động/danh từ mô tả hành động). 協定 (きょうてい) = văn bản thoả thuận được ký kết sau khi đàm phán xong (danh từ chỉ kết quả). Thường: 協議を経て協定を結ぶ (sau khi đàm phán, ký kết hiệp định)."
+    },
+    {
+      "q": "協 の画数は何画ですか？",
+      "opts": ["6画", "7画", "8画", "9画"],
+      "ans": 2,
+      "explain": "協 は 8画 — 十 (2 nét) + 劦 (ba 力 × 2 nét = 6 nét) = 8 nét tổng cộng. Cấu trúc rất đều đặn: mỗi thành phần đều chỉ 2 nét, tổng cộng 4 thành phần."
+    }
+  ]
+}

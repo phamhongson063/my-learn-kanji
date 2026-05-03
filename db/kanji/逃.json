@@ -1,0 +1,156 @@
+{
+  "kanji": "逃",
+  "on": "とう",
+  "onRomaji": "tō",
+  "kun": "に.げる · に.がす · のが.れる · のが.す",
+  "kunRomaji": "ni.geru · ni.gasu · noga.reru · noga.su",
+  "hanviet": "Đào",
+  "jlpt": "N3",
+  "strokes": 9,
+  "radical": "辶",
+  "radicalReading": "しんにょう / しんにゅう",
+  "radicalMeaning": "đi / di chuyển",
+  "radicalNumber": 162,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "辶 (di chuyển — nghĩa phù) + 兆 (ちょう — thanh phù, cho âm đọc)",
+  "school": "Tiểu học lớp 5 · Joyo kanji",
+
+  "lead": "逃 là chữ Hán <span class=\"hl\">9 nét</span>, loại <span class=\"hl\">Hình thanh</span> — kết hợp bộ <strong>辶 (di chuyển)</strong> và phần <strong>兆 (cho âm)</strong>. Chữ mang nghĩa cốt lõi: <span class=\"hl\">chạy trốn, thoát khỏi, bỏ đi</span> — sự di chuyển khẩn cấp rời xa một mối nguy hiểm hay trách nhiệm.",
+  "mnemonic": "Nhìn vào 逃: <strong>辶 (chân đang chạy)</strong> + <strong>兆 (điềm báo nguy hiểm)</strong> → <span class=\"hl\">thấy điềm nguy là chân bắt đầu chạy!</span> Đó chính là 逃 — trốn thoát khi thấy dấu hiệu nguy hiểm.",
+
+  "originLead": "逃 là <span class=\"hl\">chữ hình thanh (形声文字)</span> — phần 辶 chỉ nghĩa \"di chuyển, đi lại\", phần 兆 cung cấp âm đọc (とう/ちょう gần nhau trong tiếng Hán cổ).",
+  "originDetail": "Bộ <strong>辶 (しんにょう)</strong> xuất hiện trong hàng trăm chữ liên quan đến sự di chuyển: 道 (đường), 送 (gửi đi), 追 (đuổi theo), 進 (tiến tới)… 逃 thuộc nhóm này với sắc thái <span class=\"hl\">di chuyển khẩn cấp, tránh né</span>. Phần 兆 không mang nghĩa trong chữ này mà chỉ đóng vai trò <strong>thanh phù</strong> — gợi âm とう. Trong văn học cổ điển Nhật Bản và Trung Quốc, 逃 thường xuất hiện trong các tích về <span class=\"hl\">chiến trận, ân oán, tình yêu trắc trở</span> — những hoàn cảnh buộc con người phải bỏ trốn. Ngày nay chữ dùng cả nghĩa vật lý (bỏ trốn) lẫn nghĩa tâm lý (trốn tránh trách nhiệm).",
+
+  "decomp": [
+    { "char": "辶", "name": "Sước", "meaning": "Bộ di chuyển — chỉ hành động đi lại, dịch chuyển. Xuất hiện ở tất cả chữ liên quan đến đường đi và hành trình." },
+    { "char": "兆", "name": "Triệu", "meaning": "Thanh phù — cung cấp âm đọc とう. Bản thân nghĩa \"điềm báo\" không ảnh hưởng trực tiếp đến nghĩa của 逃." }
+  ],
+
+  "meanings": [
+    { "title": "Chạy trốn, bỏ trốn (にげる)",          "desc": "Rời đi để tránh khỏi nguy hiểm, kẻ thù, hoặc tình huống khó khăn. Đây là nghĩa cơ bản và phổ biến nhất." },
+    { "title": "Thả ra, để thoát (にがす)",             "desc": "Động từ ngoại động: chủ động để cho ai/cái gì thoát đi. Ngược lại với「捕まえる」(bắt giữ)." },
+    { "title": "Thoát khỏi, thoát nạn (のがれる)",      "desc": "Thoát được khỏi tình huống nguy hiểm hay trách nhiệm — mang sắc thái may mắn hoặc khéo léo hơn にげる." },
+    { "title": "Để lỡ, bỏ lỡ cơ hội (のがす)",         "desc": "Để cho cơ hội/mục tiêu tuột mất — không nhất thiết là cố ý. Dùng nhiều trong thể thao và kinh doanh." }
+  ],
+
+  "vocab": [
+    { "word": "逃げる",   "reading": "にげる (nigeru)",             "vi": "Chạy trốn, bỏ trốn",            "jlpt": "N3", "jp": "「猫はびっくりして逃げてしまった。」",                         "jpVi": "Con mèo hoảng sợ và bỏ chạy mất." },
+    { "word": "逃がす",   "reading": "にがす (nigasu)",             "vi": "Để thoát, thả ra",               "jlpt": "N3", "jp": "「せっかく捕まえた魚を逃がしてしまった。」",                   "jpVi": "Con cá vất vả mới bắt được lại để tuột mất rồi." },
+    { "word": "逃れる",   "reading": "のがれる (nogareru)",         "vi": "Thoát khỏi, thoát nạn",         "jlpt": "N2", "jp": "「彼はどうにか危機を逃れることができた。」",                   "jpVi": "Anh ấy đã thoát khỏi tình huống nguy hiểm một cách nào đó." },
+    { "word": "逃す",     "reading": "のがす (nogasu)",             "vi": "Bỏ lỡ, để tuột mất",            "jlpt": "N2", "jp": "「絶好のチャンスを逃してしまった。」",                         "jpVi": "Tôi đã để lỡ mất một cơ hội tuyệt vời." },
+    { "word": "逃走",     "reading": "とうそう (tōsō)",            "vi": "Bỏ trốn, tẩu thoát",            "jlpt": "N2", "jp": "「犯人は車で逃走した。」",                                     "jpVi": "Tên tội phạm đã bỏ trốn bằng xe hơi." },
+    { "word": "逃亡",     "reading": "とうぼう (tōbō)",            "vi": "Đào tẩu, trốn chạy lâu dài",   "jlpt": "N2", "jp": "「彼は海外へ逃亡したとみられている。」",                       "jpVi": "Người ta cho rằng anh ta đã đào tẩu ra nước ngoài." },
+    { "word": "逃避",     "reading": "とうひ (tōhi)",              "vi": "Trốn tránh (trách nhiệm, thực tại)", "jlpt": "N1", "jp": "「現実逃避をしても何も解決しない。」",                   "jpVi": "Dù có trốn tránh thực tại thì cũng không giải quyết được gì." },
+    { "word": "見逃す",   "reading": "みのがす (minogasu)",         "vi": "Bỏ qua, nhìn mà không bắt",    "jlpt": "N2", "jp": "「先生はその間違いを見逃してくれた。」",                       "jpVi": "Thầy giáo đã bỏ qua lỗi đó cho tôi." },
+    { "word": "取り逃がす", "reading": "とりにがす (torinigasu)",   "vi": "Để sổng mất, không bắt được",  "jlpt": "",   "jp": "「もう少しで捕まえられたのに、取り逃がしてしまった。」",       "jpVi": "Suýt nữa thì bắt được rồi, vậy mà để sổng mất." }
+  ],
+
+  "idioms": [
+    {
+      "text": "逃げるが勝ち", "fontSize": 16,
+      "kana": "にげるがかち",
+      "meaning": "\"Chạy trốn mới là thắng\" — tục ngữ Nhật: đôi khi rút lui khôn ngoan hơn là cố đấu tranh vô ích. Tương đương \"tam thập lục kế, tẩu vi thượng sách\" trong tiếng Việt.",
+      "jp": "「あの人と口論しても無駄だ。逃げるが勝ちだよ。」",
+      "jpVi": "Cãi nhau với người đó cũng vô ích thôi. Bỏ đi cho lành."
+    },
+    {
+      "text": "現実逃避", "fontSize": 18,
+      "kana": "げんじつとうひ",
+      "meaning": "Trốn tránh thực tại — chỉ hành vi cố tình không đối mặt với hiện thực khó khăn, thường thông qua giải trí, mơ mộng, hoặc phủ nhận. Từ rất phổ biến trong tâm lý học và đời sống hiện đại.",
+      "jp": "「ゲームに没頭するのは現実逃避の一種だと言われることがある。」",
+      "jpVi": "Người ta hay nói rằng đắm chìm vào trò chơi điện tử là một kiểu trốn tránh thực tại."
+    },
+    {
+      "text": "逃した魚は大きい", "fontSize": 14,
+      "kana": "にがしたさかなはおおきい",
+      "meaning": "\"Con cá để tuột bao giờ cũng lớn\" — tục ngữ: những gì đã mất thì thường bị phóng đại lên trong ký ức. Tương đương \"của mình thì giữ bo bo, của người thì muốn\" hoặc \"grapes are sour\" biến thể.",
+      "jp": "「逃した魚は大きいというけど、あの仕事を断ったことをずっと後悔している。」",
+      "jpVi": "Đúng là con cá để tuột bao giờ cũng lớn — tôi cứ tiếc mãi vì đã từ chối công việc đó."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết phần <strong>兆 (7 nét đầu)</strong> trước theo thứ tự chuẩn, sau đó mới thêm bộ <strong>辶 (2 nét cuối)</strong> bao quanh phía dưới-trái.",
+  "strokeSteps": [
+    { "range": "1",   "char": "⺦", "label": "Nét phẩy trái trên (兆)",  "detail": "phẩy ngắn từ trên xuống trái" },
+    { "range": "2",   "char": "⺦", "label": "Nét cong trái dưới (兆)",  "detail": "cong xuống và vòng ra ngoài trái" },
+    { "range": "3",   "char": "⺦", "label": "Nét phẩy giữa (兆)",       "detail": "nét phẩy ngắn hướng xuống" },
+    { "range": "4",   "char": "儿", "label": "Nét móc giữa (兆)",        "detail": "dọc xuống và móc sang phải" },
+    { "range": "5",   "char": "⺦", "label": "Nét phẩy phải trên (兆)",  "detail": "phẩy từ trên xuống phải" },
+    { "range": "6",   "char": "⺦", "label": "Nét cong phải dưới (兆)",  "detail": "cong xuống và vòng ra ngoài phải" },
+    { "range": "7",   "char": "辶", "label": "Nét phẩy của 辶",          "detail": "nét phẩy ngắn phía dưới-trái" },
+    { "range": "8",   "char": "辶", "label": "Nét ngang đầu 辶",         "detail": "ngang ngắn rồi chuyển hướng" },
+    { "range": "9",   "char": "辶", "label": "Nét ngang dài cuối 辶",    "detail": "ngang dài từ trái sang phải, hơi cong lên cuối" }
+  ],
+  "strokeDetail": "• <strong>Nét 1–6:</strong> viết phần 兆 bên trong theo thứ tự chuẩn (xem chữ 兆 riêng)<br>• <strong>Nét 7–9:</strong> thêm bộ 辶 (しんにょう) bao quanh phía dưới — đây là bộ viết SAU CÙNG theo quy tắc của tất cả chữ có 辶<br>• Tổng: 6 + 3 = <strong>9 nét ✓</strong>",
+
+  "calliNote": "Điểm khó của 逃 nằm ở bộ 辶: nét ngang dài cuối cùng (nét 9) phải kéo đủ dài và hơi cong lên ở phần cuối — đây là đặc trưng thẩm mỹ quan trọng của bộ しんにょう. Nếu nét này quá ngắn hoặc quá thẳng, chữ sẽ mất cân đối. Phần 兆 bên trong cần viết nhỏ gọn để nhường chỗ cho 辶.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Nhớ quy tắc: <span class=\"hl\">bộ 辶 luôn viết cuối cùng</span>. Phần 兆 bên trong cần <span class=\"hl\">thu nhỏ lại</span> so với khi viết độc lập — hãy tưởng tượng 兆 đang <span class=\"hl\">co chân chạy trốn</span> vào trong bộ 辶.",
+
+  "canvasHints": [
+    { "x": 120, "y": 60,  "label": "①" },
+    { "x": 100, "y": 160, "label": "②" },
+    { "x": 168, "y": 100, "label": "③" },
+    { "x": 175, "y": 210, "label": "④" },
+    { "x": 235, "y": 60,  "label": "⑤" },
+    { "x": 255, "y": 160, "label": "⑥" },
+    { "x": 65,  "y": 240, "label": "⑦" },
+    { "x": 80,  "y": 285, "label": "⑧" },
+    { "x": 185, "y": 320, "label": "⑨" }
+  ],
+
+  "quiz": [
+    {
+      "q": "「逃げる」の意味は何ですか？",
+      "opts": ["Đuổi theo ai đó", "Chạy trốn, bỏ đi", "Tìm kiếm ai đó", "Đứng yên chờ đợi"],
+      "ans": 1,
+      "explain": "逃げる (にげる) = chạy trốn, bỏ đi để tránh nguy hiểm hoặc tình huống khó khăn. Đây là dạng tự động từ (自動詞) — chủ thể tự mình trốn."
+    },
+    {
+      "q": "「逃がす」と「逃げる」の違いは何ですか？",
+      "opts": [
+        "Hoàn toàn giống nhau",
+        "逃がす là ngoại động từ (để người khác thoát), 逃げる là tự động từ (tự mình chạy)",
+        "逃がす chỉ dùng cho động vật",
+        "逃げる chỉ dùng trong văn viết trang trọng"
+      ],
+      "ans": 1,
+      "explain": "逃げる (自動詞): chủ thể tự chạy trốn. 逃がす (他動詞): chủ thể để cho người/vật khác thoát đi. Ví dụ: 魚が逃げた (cá tự trốn) vs 魚を逃がした (tôi để cá thoát)."
+    },
+    {
+      "q": "逃 の部首は何ですか？",
+      "opts": ["兆 (ちょう)", "辶 (しんにょう)", "儿 (にんにょう)", "走 (はしる)"],
+      "ans": 1,
+      "explain": "逃 の部首は 辶 (しんにょう／しんにゅう) — bộ di chuyển, đi lại. Bộ này xuất hiện trong nhiều chữ liên quan đến sự dịch chuyển: 道、送、追、進、逃 など。"
+    },
+    {
+      "q": "「現実逃避」の意味は何ですか？",
+      "opts": ["Đối mặt dũng cảm với thực tại", "Trốn tránh thực tại, không chịu đối mặt", "Thoát khỏi hoàn cảnh nhờ nỗ lực", "Thực tế ảo trong trò chơi điện tử"],
+      "ans": 1,
+      "explain": "現実逃避 = 現実 (thực tại) + 逃避 (trốn tránh, đào tẩu). Chỉ tâm lý hoặc hành vi cố ý không đối mặt với vấn đề, thường bằng cách đắm mình vào giải trí, mơ mộng, hoặc phủ nhận."
+    },
+    {
+      "q": "「逃した魚は大きい」のような意味のことわざは何ですか？",
+      "opts": [
+        "Những gì đã mất thường bị phóng đại trong ký ức",
+        "Nên buông bỏ những điều không thuộc về mình",
+        "Cá lớn thì khó bắt hơn cá nhỏ",
+        "Kiên nhẫn chờ đợi sẽ thành công"
+      ],
+      "ans": 0,
+      "explain": "逃した魚は大きい = \"con cá để tuột bao giờ cũng lớn\" — tâm lý con người thường phóng đại giá trị của những gì đã mất hoặc lỡ mất. Tương tự \"the one that got away\" trong tiếng Anh."
+    },
+    {
+      "q": "「逃走」と「逃亡」の違いは？",
+      "opts": [
+        "Hoàn toàn giống nhau, dùng thay nhau được",
+        "逃走 chỉ hành động bỏ trốn ngắn hạn/tức thì; 逃亡 chỉ trốn chạy lâu dài, thường trốn khỏi pháp luật",
+        "逃亡 chỉ dùng cho tội phạm, 逃走 dùng cho dân thường",
+        "逃走 là tiếng cổ, 逃亡 là tiếng hiện đại"
+      ],
+      "ans": 1,
+      "explain": "逃走 (とうそう) = hành động bỏ trốn tức thì (犯人が逃走した). 逃亡 (とうぼう) = trốn chạy kéo dài, ẩn náu — thường mang sắc thái pháp lý nặng hơn (海外に逃亡する). Cả hai đều trang trọng hơn 逃げる."
+    }
+  ]
+}

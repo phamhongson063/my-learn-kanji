@@ -1,0 +1,141 @@
+{
+  "kanji": "井",
+  "on": "せい · しょう",
+  "onRomaji": "sei · shō",
+  "kun": "い",
+  "kunRomaji": "i",
+  "hanviet": "Tỉnh",
+  "jlpt": "N1",
+  "strokes": 4,
+  "radical": "二",
+  "radicalReading": "に",
+  "radicalMeaning": "hai / hai nét ngang",
+  "radicalNumber": 7,
+  "type": "Tượng hình",
+  "typeJa": "象形文字",
+  "structure": "Hình cái giếng nhìn từ trên xuống — bốn thanh gỗ ghép thành khung vuông",
+  "school": "Tiểu học · Joyo kanji",
+
+  "lead": "井 là chữ Hán <span class=\"hl\">4 nét</span>, loại <span class=\"hl\">Tượng hình</span> — mô phỏng trực tiếp hình dạng thực tế của sự vật. Đây là một trong những chữ đơn giản nhất và cổ xưa nhất trong chữ Hán.",
+  "mnemonic": "Nhìn 井 từ trên xuống — bạn thấy <strong>bốn thanh gỗ ghép thành ô vuông</strong>, chính là khung gỗ quanh miệng giếng. → <span class=\"hl\">井 = cái giếng</span>",
+
+  "originLead": "Chữ 井 xuất hiện từ thời <span class=\"hl\">giáp cốt văn</span> (chữ khắc trên xương thú) — hình ảnh một cái giếng nhìn từ trên xuống: bốn tấm ván ghép thành khung, có thể thấy rõ miệng giếng hình vuông.",
+  "originDetail": "Trong xã hội cổ đại Trung Quốc, 井 không chỉ là cái giếng mà còn là <span class=\"hl\">đơn vị hành chính</span>. Chế độ <strong>tỉnh điền (井田制)</strong> — chia ruộng thành 9 ô như chữ 井, 8 nhà canh tác 8 ô ngoài, cùng cày chung ô giữa để nộp thuế. Từ đây, 井 mang thêm nghĩa \"làng xã, nơi sinh sống\". Trong tiếng Nhật hiện đại, 井 hay gặp trong tên người (Fujii 藤井, Inoue 井上) và địa danh.",
+  "decomp": [
+    { "char": "二", "name": "Nhị hoành", "meaning": "Hai nét ngang — phần trên và dưới khung giếng" },
+    { "char": "丨丨", "name": "Nhị thụ", "meaning": "Hai nét dọc — thành trái và phải của khung giếng" }
+  ],
+
+  "meanings": [
+    { "title": "Cái giếng (nước)",         "desc": "Nghĩa gốc và phổ biến nhất. 井戸 (いど) = giếng nước. Hình ảnh khung gỗ xung quanh miệng giếng." },
+    { "title": "Khu dân cư, làng xã",      "desc": "Từ chế độ tỉnh điền cổ đại. 市井 (しせい) = phố phường, nơi dân thường sinh sống." },
+    { "title": "Ngăn nắp, có trật tự",     "desc": "井然 (せいぜん) = ngăn nắp, có thứ tự. Bắt nguồn từ hình ảnh ruộng tỉnh điền chia đều, đẹp đẽ." },
+    { "title": "Dùng trong tên riêng",     "desc": "Cực kỳ phổ biến trong họ tên người Nhật: 井上 (Inoue), 藤井 (Fujii), 石井 (Ishii), 三井 (Mitsui)." }
+  ],
+
+  "vocab": [
+    { "word": "井戸", "reading": "いど (ido)",               "vi": "Giếng nước",              "jlpt": "N2", "jp": "「庭に古い井戸がある。」",                                     "jpVi": "Trong sân có một cái giếng cổ." },
+    { "word": "市井", "reading": "しせい (shisei)",          "vi": "Phố phường, dân gian",    "jlpt": "N1", "jp": "「市井の人々の声に耳を傾けるべきだ。」",                       "jpVi": "Nên lắng nghe tiếng nói của người dân thường." },
+    { "word": "井然", "reading": "せいぜん (seizan)",        "vi": "Ngăn nắp, có trật tự",   "jlpt": "N1", "jp": "「資料が井然と整理されている。」",                             "jpVi": "Tài liệu được sắp xếp ngăn nắp, có trật tự." },
+    { "word": "油井", "reading": "ゆせい (yusei)",           "vi": "Giếng dầu",               "jlpt": "N1", "jp": "「新しい油井が発見された。」",                                 "jpVi": "Một giếng dầu mới đã được phát hiện." },
+    { "word": "天井", "reading": "てんじょう (tenjō)",       "vi": "Trần nhà",                "jlpt": "N3", "jp": "「天井が高くて部屋が広く感じる。」",                           "jpVi": "Trần nhà cao khiến căn phòng cảm thấy rộng hơn." },
+    { "word": "井戸端", "reading": "いどばた (idobata)",     "vi": "Bên cạnh giếng",          "jlpt": "",   "jp": "「井戸端会議でうわさが広まった。」",                           "jpVi": "Tin đồn lan ra qua những cuộc chuyện trò bên giếng." },
+    { "word": "掘り井戸", "reading": "ほりいど (horiido)",   "vi": "Giếng đào",               "jlpt": "",   "jp": "「昔はこの村に掘り井戸がたくさんあった。」",                   "jpVi": "Ngày xưa ngôi làng này có rất nhiều giếng đào." },
+    { "word": "坑井", "reading": "こうせい (kōsei)",         "vi": "Giếng mỏ, giếng khoan",  "jlpt": "",   "jp": "「坑井の掘削には高度な技術が必要だ。」",                       "jpVi": "Việc khoan giếng mỏ đòi hỏi kỹ thuật cao." }
+  ],
+
+  "idioms": [
+    {
+      "text": "井の中の蛙大海を知らず", "fontSize": 14,
+      "kana": "いのなかのかわずたいかいをしらず",
+      "meaning": "Ếch ngồi đáy giếng không biết biển lớn — chỉ người có tầm nhìn hạn hẹp, chỉ biết thế giới nhỏ bé của mình.",
+      "jp": "「海外に出るまで、私はまさに井の中の蛙大海を知らずだった。」",
+      "jpVi": "Cho đến khi ra nước ngoài, tôi đúng là ếch ngồi đáy giếng không biết biển lớn."
+    },
+    {
+      "text": "井然と", "fontSize": 22,
+      "kana": "せいぜんと",
+      "meaning": "Ngăn nắp, có trật tự, chỉnh tề — dùng để mô tả sự sắp xếp gọn gàng, có hệ thống.",
+      "jp": "「兵士たちは井然と整列した。」",
+      "jpVi": "Các binh sĩ xếp hàng ngay ngắn, chỉnh tề."
+    },
+    {
+      "text": "市井の人", "fontSize": 20,
+      "kana": "しせいのひと",
+      "meaning": "Người dân thường, dân phố — người bình dân sống trong xã hội, không có địa vị đặc biệt.",
+      "jp": "「彼は市井の人として静かに余生を送った。」",
+      "jpVi": "Ông ấy sống những năm cuối đời bình lặng như một người dân thường."
+    },
+    {
+      "text": "天井知らず", "fontSize": 19,
+      "kana": "てんじょうしらず",
+      "meaning": "Không có giới hạn trên, tăng không ngừng — thường nói về giá cả hoặc mức độ tăng không có điểm dừng.",
+      "jp": "「物価が天井知らずに上がり続けている。」",
+      "jpVi": "Giá cả tiếp tục tăng không có điểm dừng."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết nét ngang trên trước, rồi nét dọc trái, nét dọc phải, cuối cùng nét ngang dưới.",
+  "strokeSteps": [
+    { "range": "1",   "char": "一", "label": "Nét ngang trên",   "detail": "ngang từ trái sang phải" },
+    { "range": "2",   "char": "丨", "label": "Nét dọc trái",     "detail": "dọc từ trên xuống" },
+    { "range": "3",   "char": "丨", "label": "Nét dọc phải",     "detail": "dọc từ trên xuống" },
+    { "range": "4",   "char": "一", "label": "Nét ngang dưới",   "detail": "ngang từ trái sang phải" }
+  ],
+  "strokeDetail": "• <strong>Nét 1:</strong> ngang trên — dài vừa phải, làm mái khung giếng<br>• <strong>Nét 2:</strong> dọc trái — từ điểm giao nét ngang trên, kéo xuống<br>• <strong>Nét 3:</strong> dọc phải — đối xứng với nét dọc trái<br>• <strong>Nét 4:</strong> ngang dưới — đóng khung, tạo hình ô vuông hoàn chỉnh<br>• Tổng: 1+1+1+1 = <strong>4 nét ✓</strong>",
+
+  "calliNote": "Chú ý giữ khung 井 cân đối: hai nét dọc cách đều nhau, hai nét ngang song song. Hình vuông không nhất thiết phải hoàn hảo nhưng phải đều và vững. Khi viết thảo, bốn nét có thể được nối liền mạch.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Bắt đầu từ <span class=\"hl\">nét ngang trên</span> — giống như đặt nắp giếng trước, rồi dựng hai cột, cuối cùng đặt đáy.",
+
+  "canvasHints": [
+    { "x": 168, "y": 60,  "label": "①" },
+    { "x": 110, "y": 180, "label": "②" },
+    { "x": 230, "y": 180, "label": "③" },
+    { "x": 168, "y": 300, "label": "④" }
+  ],
+
+  "quiz": [
+    {
+      "q": "井 の訓読みは何ですか？",
+      "opts": ["せい (sei)", "しょう (shō)", "い (i)", "けい (kei)"],
+      "ans": 2,
+      "explain": "井 の訓読みは い (i)。「井戸 (いど)」= giếng nước là từ phổ biến nhất. Âm Hán-Việt là Tỉnh."
+    },
+    {
+      "q": "「天井」(てんじょう) の意味は何ですか？",
+      "opts": ["Bầu trời", "Trần nhà", "Giếng trời", "Tầng thượng"],
+      "ans": 1,
+      "explain": "天井 (てんじょう) = 天 (trời, phía trên) + 井 (khung) = Trần nhà. Hình ảnh \"tấm khung phía trên đầu\". Đây là từ N3 rất thông dụng."
+    },
+    {
+      "q": "「井の中の蛙」のことわざが表す意味は？",
+      "opts": [
+        "Người có kiến thức rộng lớn",
+        "Người tầm nhìn hạn hẹp, không biết thế giới bên ngoài",
+        "Người sống gần thiên nhiên",
+        "Người khiêm tốn, không khoe khoang"
+      ],
+      "ans": 1,
+      "explain": "「井の中の蛙大海を知らず」= ếch ngồi đáy giếng không biết biển lớn. Câu tục ngữ phê phán người có tầm nhìn hẹp, chỉ biết thế giới nhỏ bé của mình."
+    },
+    {
+      "q": "井 は何画ですか？",
+      "opts": ["3画", "4画", "5画", "6画"],
+      "ans": 1,
+      "explain": "井 は 4画 (4 nét). Thứ tự: ① ngang trên → ② dọc trái → ③ dọc phải → ④ ngang dưới. Đây là một trong những chữ Hán ít nét nhất."
+    },
+    {
+      "q": "「市井」(しせい) の意味は何ですか？",
+      "opts": ["Chợ và giếng", "Thành phố lớn", "Phố phường, dân gian", "Khu công nghiệp"],
+      "ans": 2,
+      "explain": "市井 (しせい) = phố phường, nơi dân thường sinh sống. Bắt nguồn từ hình ảnh chợ (市) và giếng (井) là hai nơi tụ họp của dân làng xưa."
+    },
+    {
+      "q": "井 の文字の種類（字源）は何ですか？",
+      "opts": ["指事文字", "会意文字", "象形文字", "形声文字"],
+      "ans": 2,
+      "explain": "井 は 象形文字 (tượng hình) — mô phỏng hình dạng miệng giếng nhìn từ trên xuống: bốn thanh gỗ tạo thành khung vuông. Xuất hiện từ thời giáp cốt văn cổ đại."
+    }
+  ]
+}

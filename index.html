@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học Kanji — Bài Giảng Hán Tự</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700;900&family=Noto+Sans:wght@300;400;600;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="ix-hero">
+  <div class="ix-hero-bg" aria-hidden="true">漢字</div>
+  <div class="ix-hero-content">
+    <div class="ix-logo">学</div>
+    <h1 class="ix-title">Học Kanji</h1>
+    <p class="ix-sub">Bài giảng hán tự · từng chữ · từng nét</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px;">
+      <a href="pages/learn-vocabulary.html" style="display:inline-block;padding:9px 22px;border:1.5px solid rgba(138,98,24,0.4);border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--gold);text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--gold)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--gold)'">語 · HỌC TỪ VỰNG →</a>
+      <a href="pages/falling-vocab.html" style="display:inline-block;padding:9px 22px;border:1.5px solid rgba(138,98,24,0.4);border-radius:20px;font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--gold);text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='var(--gold)';this.style.color='#fff'" onmouseout="this.style.background='';this.style.color='var(--gold)'">🎮 · TỪ VỰNG RƠI →</a>
+    </div>
+  </div>
+</header>
+
+<!-- STICKY SEARCH BAR -->
+<div class="ix-bar" id="ix-bar">
+  <div class="ix-bar-inner">
+    <div class="ix-search-wrap">
+      <span class="ix-search-icon">🔍</span>
+      <input
+        id="ix-search"
+        class="ix-search"
+        type="search"
+        placeholder="Tìm kanji, âm đọc, nghĩa..."
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+      >
+    </div>
+    <div class="ix-filters" id="ix-filters">
+      <button class="ix-chip active" data-filter="all">Tất cả</button>
+      <button class="ix-chip" data-filter="N1">N1</button>
+      <button class="ix-chip" data-filter="N2">N2</button>
+      <button class="ix-chip" data-filter="N3">N3</button>
+    </div>
+  </div>
+</div>
+
+<!-- GRID -->
+<main class="ix-wrap">
+  <div class="ix-meta" id="ix-meta"></div>
+  <div id="kanji-grid" class="ix-grid"></div>
+</main>
+
+<!-- FOOTER -->
+<footer class="ix-footer">
+  <div class="ix-footer-char">漢字学習</div>
+  <div class="ix-footer-sub">KANJI TIẾNG NHẬT · BÀI GIẢNG CHI TIẾT</div>
+</footer>
+
+<script src="js/index.js"></script>
+</body>
+</html>

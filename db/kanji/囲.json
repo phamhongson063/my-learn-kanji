@@ -1,0 +1,147 @@
+{
+  "kanji": "囲",
+  "on": "い",
+  "onRomaji": "i",
+  "kun": "かこ·む · かこ·い",
+  "kunRomaji": "kako·mu · kako·i",
+  "hanviet": "Vi",
+  "jlpt": "N2",
+  "strokes": 7,
+  "radical": "囗",
+  "radicalReading": "くにがまえ",
+  "radicalMeaning": "khung vuông / bao vây",
+  "radicalNumber": 31,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "囗 (khung bao ngoài — gợi nghĩa) + 井 (bên trong — gợi âm い)",
+  "school": "Tiểu học · Joyo kanji",
+
+  "lead": "囲 là chữ Hán <span class=\"hl\">7 nét</span>, loại <span class=\"hl\">Hình thanh</span> — bộ khung 囗 gợi nghĩa \"bao vây, bao quanh\", còn 井 bên trong gợi âm い (i). Dạng phồn thể là <span class=\"hl\">圍</span> (12 nét), được giản lược trong Nhật ngữ hiện đại.",
+  "mnemonic": "Nhìn vào 囲: có <strong>cái khung vuông (囗)</strong> bao bọc bên ngoài, và <strong>cái giếng (井)</strong> nằm bên trong — giống như một cái giếng được rào xung quanh để bảo vệ. → <span class=\"hl\">囲 = bao vây / vây quanh</span>",
+
+  "originLead": "Chữ phồn thể <span class=\"hl\">圍</span> gồm bộ 囗 (khung bao) bên ngoài và 韋 (da thuộc — gợi âm) bên trong. Qua cải cách chữ viết Nhật Bản sau 1946, 韋 được thay bằng 井 (đơn giản hơn nhiều), tạo thành 囲 (7 nét) dễ viết hơn rất nhiều so với 圍 (12 nét).",
+  "originDetail": "Nghĩa cốt lõi của 囲 là <span class=\"hl\">bao quanh, bao vây</span> — được biểu đạt rõ qua hình ảnh bộ 囗 (khung vuông kín) bao bọc tất cả. Trong lịch sử, 囲 dùng nhiều trong bối cảnh quân sự (vây thành, vây quân địch). Ngày nay, 囲 xuất hiện nhiều trong từ vựng thông dụng: 囲む (vây quanh), 周囲 (xung quanh), 雰囲気 (bầu không khí, khí quyển). Đặc biệt, 囲碁 (cờ vây — môn cờ truyền thống Á Đông) dùng chữ này.",
+  "decomp": [
+    { "char": "囗", "name": "Quốc vi môn", "meaning": "Khung vuông kín — bao vây, bao quanh" },
+    { "char": "井", "name": "Tỉnh",        "meaning": "Giếng nước — phần gợi âm い (i)" }
+  ],
+
+  "meanings": [
+    { "title": "Bao vây, vây quanh",      "desc": "Nghĩa cơ bản và trực tiếp nhất. 囲む (かこむ) = vây quanh, bao vây. Dùng cả nghĩa vật lý lẫn trừu tượng." },
+    { "title": "Xung quanh, vòng quanh", "desc": "周囲 (しゅうい) = xung quanh, phạm vi xung quanh. 囲い (かこい) = hàng rào, vách ngăn." },
+    { "title": "Bầu không khí, khí quyển", "desc": "雰囲気 (ふんいき) = không khí, bầu không khí — một trong những từ phổ biến nhất dùng 囲." },
+    { "title": "Cờ vây (trò chơi)",       "desc": "囲碁 (いご) = cờ vây — môn cờ truyền thống Á Đông, tên gọi bắt nguồn từ ý nghĩa \"vây\" (bao vây quân đối phương)." }
+  ],
+
+  "vocab": [
+    { "word": "囲む",   "reading": "かこむ (kakomu)",       "vi": "Bao vây, vây quanh",         "jlpt": "N2", "jp": "「警察が建物を囲んだ。」",                                         "jpVi": "Cảnh sát đã bao vây tòa nhà." },
+    { "word": "周囲",   "reading": "しゅうい (shūi)",       "vi": "Xung quanh, vòng quanh",     "jlpt": "N2", "jp": "「周囲の人々に支えられて成功できた。」",                           "jpVi": "Tôi có thể thành công nhờ sự hỗ trợ của những người xung quanh." },
+    { "word": "雰囲気", "reading": "ふんいき (fun'iki)",    "vi": "Bầu không khí, khí quyển",   "jlpt": "N3", "jp": "「このレストランは雰囲気がとてもいい。」",                         "jpVi": "Nhà hàng này có bầu không khí rất tốt." },
+    { "word": "囲碁",   "reading": "いご (igo)",            "vi": "Cờ vây",                     "jlpt": "N1", "jp": "「祖父は毎週友人と囲碁を楽しんでいる。」",                       "jpVi": "Ông nội tôi thường chơi cờ vây với bạn bè mỗi tuần." },
+    { "word": "囲い",   "reading": "かこい (kakoi)",        "vi": "Hàng rào, vật bao quanh",    "jlpt": "N1", "jp": "「庭に木の囲いを作った。」",                                       "jpVi": "Tôi đã làm hàng rào gỗ trong sân vườn." },
+    { "word": "取り囲む", "reading": "とりかこむ (torikakomu)", "vi": "Vây kín, bao vây tứ phía", "jlpt": "N1", "jp": "「ファンたちがスターを取り囲んだ。」",                           "jpVi": "Những người hâm mộ đã vây kín ngôi sao." },
+    { "word": "囲炉裏", "reading": "いろり (irori)",        "vi": "Bếp lửa truyền thống Nhật",  "jlpt": "N1", "jp": "「囲炉裏を囲んで家族が団らんした。」",                           "jpVi": "Cả gia đình quây quần quanh bếp lửa truyền thống." },
+    { "word": "包囲",   "reading": "ほうい (hōi)",          "vi": "Bao vây (quân sự)",           "jlpt": "N1", "jp": "「敵軍の包囲を突破するのは困難だった。」",                       "jpVi": "Phá vỡ vòng vây của quân địch là điều rất khó khăn." }
+  ],
+
+  "idioms": [
+    {
+      "text": "雰囲気を読む", "fontSize": 18,
+      "kana": "ふんいきをよむ",
+      "meaning": "Đọc không khí, cảm nhận bầu không khí — khả năng nhận biết tâm trạng, tình thế của mọi người xung quanh. Gần giống \"đọc vị\" trong tiếng Việt.",
+      "jp": "「彼女は雰囲気を読むのが上手で、いつも場を和ませる。」",
+      "jpVi": "Cô ấy giỏi đọc không khí và luôn làm dịu bầu không khí trong phòng."
+    },
+    {
+      "text": "四方を囲まれる", "fontSize": 17,
+      "kana": "しほうをかこまれる",
+      "meaning": "Bị vây tứ phía — bị bao vây hoàn toàn, không còn đường thoát. Dùng cả nghĩa quân sự lẫn ẩn dụ về tình huống khó khăn.",
+      "jp": "「敵に四方を囲まれ、部隊は退路を失った。」",
+      "jpVi": "Bị kẻ địch vây tứ phía, đơn vị mất đường rút lui."
+    },
+    {
+      "text": "囲炉裏を囲む", "fontSize": 18,
+      "kana": "いろりをかこむ",
+      "meaning": "Quây quần bên bếp lửa — hình ảnh đầm ấm của gia đình, bạn bè sum họp. Biểu tượng của sự gắn kết và ấm cúng.",
+      "jp": "「冬の夜に家族みんなで囲炉裏を囲むのは最高だ。」",
+      "jpVi": "Cả nhà quây quần bên bếp lửa trong đêm đông thật là tuyệt vời."
+    },
+    {
+      "text": "囲碁で頭を鍛える", "fontSize": 16,
+      "kana": "いごであたまをきたえる",
+      "meaning": "Luyện trí não qua cờ vây — cờ vây từ lâu được coi là môn rèn luyện tư duy chiến lược và khả năng tính toán.",
+      "jp": "「毎日囲碁を打つことで頭を鍛えている。」",
+      "jpVi": "Tôi đang rèn luyện trí não bằng cách chơi cờ vây mỗi ngày."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">bộ khung 囗 viết trước nhưng chưa đóng đáy, viết 井 bên trong, rồi mới đóng nét ngang dưới cùng</span>. Đây là quy tắc chung cho tất cả chữ có bộ 囗 (quốc vi môn).",
+  "strokeSteps": [
+    { "range": "1",   "char": "丨", "label": "Nét dọc trái khung",    "detail": "dọc từ trên xuống, chưa đóng đáy" },
+    { "range": "2",   "char": "⌐", "label": "Nét ngang trên + dọc phải", "detail": "ngang trên rồi gập xuống dọc phải" },
+    { "range": "3",   "char": "一", "label": "Nét ngang trên 井",     "detail": "ngang ngắn bên trong" },
+    { "range": "4",   "char": "丨", "label": "Nét dọc trái 井",       "detail": "dọc bên trong bên trái" },
+    { "range": "5",   "char": "丨", "label": "Nét dọc phải 井",       "detail": "dọc bên trong bên phải" },
+    { "range": "6",   "char": "一", "label": "Nét ngang dưới 井",     "detail": "ngang ngắn bên trong" },
+    { "range": "7",   "char": "一", "label": "Đóng đáy khung 囗",     "detail": "nét ngang dưới cùng đóng khung" }
+  ],
+  "strokeDetail": "• <strong>Nét 1:</strong> dọc trái của 囗 — từ trên xuống<br>• <strong>Nét 2:</strong> ngang trên + gập thành dọc phải của 囗 (2 chiều trong 1 nét)<br>• <strong>Nét 3–6:</strong> viết phần 井 bên trong (ngang trên → dọc trái → dọc phải → ngang dưới)<br>• <strong>Nét 7:</strong> nét ngang cuối đóng đáy khung 囗 — luôn viết CUỐI CÙNG<br>• Tổng: 2+4+1 = <strong>7 nét ✓</strong>",
+
+  "calliNote": "Quy tắc quan trọng: bộ 囗 (くにがまえ) luôn <strong>chưa đóng đáy</strong> khi viết nội dung bên trong. Chỉ đóng nét ngang dưới sau cùng. Phần 井 bên trong phải nhỏ hơn, cân đối với khung ngoài. Giữ khoảng cách đều giữa 井 và 4 cạnh của khung.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Nhớ quy tắc bộ <span class=\"hl\">囗: viết 3 cạnh trước, điền nội dung, đóng đáy sau cùng</span>.",
+
+  "canvasHints": [
+    { "x": 90,  "y": 168, "label": "①" },
+    { "x": 168, "y": 60,  "label": "②" },
+    { "x": 148, "y": 138, "label": "③" },
+    { "x": 110, "y": 200, "label": "④" },
+    { "x": 225, "y": 200, "label": "⑤" },
+    { "x": 148, "y": 265, "label": "⑥" },
+    { "x": 168, "y": 330, "label": "⑦" }
+  ],
+
+  "quiz": [
+    {
+      "q": "囲 の訓読みは何ですか？",
+      "opts": ["かこむ (kakomu)", "まわる (mawaru)", "とりまく (torimaku)", "そとがわ (sotogawa)"],
+      "ans": 0,
+      "explain": "囲 の訓読みは かこむ (囲む = bao vây) và かこい (囲い = hàng rào). Âm Hán-Nhật là い (i), như trong 周囲 (しゅうい), 囲碁 (いご)."
+    },
+    {
+      "q": "「雰囲気」(ふんいき) の意味は何ですか？",
+      "opts": ["Hàng rào bảo vệ", "Bầu không khí, cảm giác chung", "Vòng vây quân sự", "Xung quanh, khu vực"],
+      "ans": 1,
+      "explain": "雰囲気 (ふんいき) = bầu không khí, khí quyển, cảm giác/không khí của một nơi hay tình huống. Đây là từ N3 cực kỳ thông dụng trong tiếng Nhật hàng ngày."
+    },
+    {
+      "q": "囲 の旧字体（繁体字）は何ですか？",
+      "opts": ["囲", "圓", "圍", "圖"],
+      "ans": 2,
+      "explain": "Chữ phồn thể của 囲 là 圍 (12 nét) — bộ 囗 bao ngoài, 韋 (da thuộc, gợi âm) bên trong. Nhật Bản giản lược 韋 thành 井 để đơn giản hóa."
+    },
+    {
+      "q": "「囲碁」(いご) とは何ですか？",
+      "opts": ["Cờ tướng truyền thống Trung Quốc", "Cờ vây — môn cờ dùng quân đen trắng vây đất", "Trò chơi bài Nhật Bản", "Cờ vua phương Tây"],
+      "ans": 1,
+      "explain": "囲碁 (いご) = cờ vây — môn cờ truyền thống Á Đông dùng quân cờ đen và trắng để giành đất. Tên gọi phản ánh chiến thuật cốt lõi: 囲む (bao vây) đất và quân đối phương."
+    },
+    {
+      "q": "囲 を書くとき、囗（くにがまえ）の最後の画は何ですか？",
+      "opts": ["Nét dọc trái", "Nét ngang trên", "Nét dọc phải", "Nét ngang dưới đóng khung"],
+      "ans": 3,
+      "explain": "Khi viết bộ 囗 (くにがまえ), nét cuối cùng luôn là nét ngang dưới đóng khung. Quy tắc: viết 3 cạnh (trái + trên + phải) → điền nội dung bên trong → đóng đáy."
+    },
+    {
+      "q": "「周囲」(しゅうい) の使い方として正しいのは？",
+      "opts": [
+        "「周囲を囲んだ。」",
+        "「周囲の意見をよく聞いてから決めた。」",
+        "「周囲に入った。」",
+        "「周囲が弱い。」"
+      ],
+      "ans": 1,
+      "explain": "周囲 (しゅうい) = xung quanh, môi trường xung quanh. Cách dùng đúng: 「周囲の意見を聞く」 (lắng nghe ý kiến xung quanh), 「周囲に気を配る」 (chú ý đến những người xung quanh)."
+    }
+  ]
+}

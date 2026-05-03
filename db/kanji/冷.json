@@ -1,0 +1,297 @@
+{
+  "kanji": "冷",
+  "on": "れい",
+  "onRomaji": "rei",
+  "kun": "つめ.たい · ひ.える · ひ.や · ひ.ややか · ひ.やす · ひ.やかす · さ.める · さ.ます",
+  "kunRomaji": "tsume.tai · hi.eru · hi.ya · hi.yayaka · hi.yasu · hi.yakasu · sa.meru · sa.masu",
+  "hanviet": "Lãnh",
+  "jlpt": "N2",
+  "strokes": 7,
+  "radical": "冫",
+  "radicalReading": "にすい",
+  "radicalMeaning": "băng / nước đá (hai chấm nước đá)",
+  "radicalNumber": 15,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "冫 (băng, lạnh — biểu nghĩa) + 令 (mệnh lệnh — biểu âm, gợi âm REI)",
+  "school": "Joyo · Dạy lớp 4 tiểu học",
+
+  "lead": "冷 là chữ Hán <span class=\"hl\">7 nét</span>, loại <span class=\"hl\">Hình thanh</span> — trái là 冫 (băng) biểu nghĩa, phải là 令 (lệnh) biểu âm. Chữ có <strong>nhiều kun'yomi nhất</strong> trong nhóm từ chỉ cảm giác: つめたい、ひえる、ひや、さめる… mỗi từ mang một sắc thái lạnh tinh tế riêng.",
+  "mnemonic": "Hình dung <strong>令 (mệnh lệnh)</strong> bị phủ thêm <strong>hai chấm băng 冫</strong> ở bên trái — như thể mệnh lệnh đó được ban ra bằng <span class=\"hl\">giọng lạnh lùng, băng giá, không cảm xúc</span>. → 冷 = lạnh!",
+
+  "originLead": "冷 là <span class=\"hl\">chữ Hình thanh điển hình</span>: 冫 (băng) chỉ nghĩa \"lạnh\", 令 gợi âm REI. Cấu trúc đơn giản nhưng sinh ra một gia đình từ vựng phong phú bậc nhất tiếng Nhật.",
+  "originDetail": "Bộ 冫 (にすい) là hình ảnh <strong>hai chấm nước đóng băng</strong> — phân biệt với 氵 (ba chấm nước lỏng). Đây là dạng rút gọn của 仌, tượng hình tinh thể băng trong văn tự cổ. Phần 令 (lệnh) được dùng hoàn toàn để <span class=\"hl\">gợi âm REI</span> — đây cũng là lý do tại sao 令 và 冷 đọc giống nhau. <br><br>Điều thú vị: tiếng Nhật phân biệt rất tinh tế các sắc thái của \"lạnh\": <span class=\"hl\">冷たい</span> (lạnh khi chạm vào), <span class=\"hl\">冷える</span> (nhiệt độ giảm dần), <span class=\"hl\">寒い</span> (lạnh thời tiết), <span class=\"hl\">涼しい</span> (mát dịu) — mỗi từ dùng một chữ kanji và ngữ cảnh khác nhau.",
+  "decomp": [
+    {
+      "char": "冫",
+      "name": "Nhị thủy / Băng",
+      "meaning": "Hai chấm băng — bộ にすい, chỉ sự lạnh lẽo, đóng băng; gặp trong 冬、凍、凉、冴…"
+    },
+    {
+      "char": "令",
+      "name": "Lệnh",
+      "meaning": "Mệnh lệnh — biểu âm gợi âm REI; bản thân 令 cũng là thanh phù của nhiều chữ khác (→ 領、鈴、玲、零…)"
+    }
+  ],
+
+  "meanings": [
+    {
+      "title": "Lạnh (khi chạm / cảm nhận)",
+      "desc": "Nghĩa gốc và phổ biến nhất — cảm giác lạnh khi tiếp xúc vật lý hoặc thời tiết. つめたい (lạnh khi chạm), ひえる (nhiệt độ giảm), さめる (nguội dần từ nóng)."
+    },
+    {
+      "title": "Lạnh lùng, thờ ơ (cảm xúc)",
+      "desc": "Nghĩa ẩn dụ về tình cảm, thái độ: lạnh nhạt, thờ ơ, không quan tâm. Dùng trong: 冷たい人 (người lạnh lùng), 冷淡 (thờ ơ), 冷たい目 (ánh mắt lạnh)."
+    },
+    {
+      "title": "Làm lạnh, bảo quản lạnh",
+      "desc": "Hành động giảm nhiệt độ hoặc bảo quản bằng lạnh. Dùng trong: 冷蔵庫 (tủ lạnh), 冷凍 (đông lạnh), 冷やす (làm lạnh), 冷房 (điều hòa)."
+    },
+    {
+      "title": "Bình tĩnh, điềm tĩnh",
+      "desc": "Nghĩa tích cực — đầu lạnh, không để cảm xúc chi phối. Dùng trong: 冷静 (bình tĩnh, điềm tĩnh), 冷静に考える (suy nghĩ bình tĩnh)."
+    }
+  ],
+
+  "vocab": [
+    {
+      "word": "冷たい",
+      "reading": "つめたい (tsumetai)",
+      "vi": "Lạnh (khi chạm), lạnh lùng (cảm xúc)",
+      "jlpt": "N4",
+      "jp": "「この水は冷たくて気持ちいい。」",
+      "jpVi": "Nước này lạnh mát thật dễ chịu."
+    },
+    {
+      "word": "冷蔵庫",
+      "reading": "れいぞうこ (reizōko)",
+      "vi": "Tủ lạnh",
+      "jlpt": "N4",
+      "jp": "「冷蔵庫に入れておけば三日は持つよ。」",
+      "jpVi": "Nếu cho vào tủ lạnh thì giữ được ba ngày đó."
+    },
+    {
+      "word": "冷静",
+      "reading": "れいせい (reisei)",
+      "vi": "Bình tĩnh, điềm tĩnh, giữ được lý trí",
+      "jlpt": "N3",
+      "jp": "「パニックにならず、冷静に対処することが大切だ。」",
+      "jpVi": "Quan trọng là không hoảng loạn mà đối phó bình tĩnh."
+    },
+    {
+      "word": "冷凍",
+      "reading": "れいとう (reitō)",
+      "vi": "Đông lạnh, bảo quản đông",
+      "jlpt": "N3",
+      "jp": "「冷凍食品をレンジで温めるだけで食べられる。」",
+      "jpVi": "Chỉ cần hâm nóng thực phẩm đông lạnh bằng lò vi sóng là ăn được."
+    },
+    {
+      "word": "冷房",
+      "reading": "れいぼう (reibō)",
+      "vi": "Máy điều hòa (làm lạnh), hệ thống lạnh",
+      "jlpt": "N3",
+      "jp": "「夏は冷房なしでは眠れない。」",
+      "jpVi": "Mùa hè không có điều hòa thì không ngủ được."
+    },
+    {
+      "word": "冷える",
+      "reading": "ひえる (hieru)",
+      "vi": "Trở nên lạnh, nhiệt độ giảm dần",
+      "jlpt": "N3",
+      "jp": "「夜になって急に冷えてきた。」",
+      "jpVi": "Đến đêm thì bỗng nhiên trở lạnh hẳn."
+    },
+    {
+      "word": "冷やす",
+      "reading": "ひやす (hiyasu)",
+      "vi": "Làm lạnh, ướp lạnh, làm dịu",
+      "jlpt": "N3",
+      "jp": "「ビールを冷やしておいたよ。」",
+      "jpVi": "Tao đã ướp lạnh bia rồi đó."
+    },
+    {
+      "word": "冷淡",
+      "reading": "れいたん (reitan)",
+      "vi": "Thờ ơ, lạnh nhạt, bàng quan",
+      "jlpt": "N2",
+      "jp": "「彼の冷淡な態度に傷ついた。」",
+      "jpVi": "Tôi bị tổn thương bởi thái độ lạnh nhạt của anh ấy."
+    },
+    {
+      "word": "冷酷",
+      "reading": "れいこく (reikoku)",
+      "vi": "Tàn nhẫn, lạnh lùng không thương xót",
+      "jlpt": "N2",
+      "jp": "「冷酷な判断が時には必要なこともある。」",
+      "jpVi": "Đôi khi cũng cần có những phán đoán tàn nhẫn."
+    },
+    {
+      "word": "冷戦",
+      "reading": "れいせん (reisen)",
+      "vi": "Chiến tranh lạnh",
+      "jlpt": "N2",
+      "jp": "「冷戦時代の米ソ対立は世界に緊張をもたらした。」",
+      "jpVi": "Cuộc đối đầu Mỹ-Xô thời Chiến tranh Lạnh đã tạo ra căng thẳng cho thế giới."
+    }
+  ],
+
+  "idioms": [
+    {
+      "text": "冷や汗",
+      "fontSize": 22,
+      "kana": "ひやあせ",
+      "meaning": "\"Mồ hôi lạnh\" — mồ hôi toát ra vì sợ hãi, lo lắng, xấu hổ hoặc hú vía. Khác với 汗 (mồ hôi nóng do gắng sức), 冷や汗 là mồ hôi do áp lực tâm lý. Rất thông dụng trong hội thoại hàng ngày.",
+      "jp": "「発表の直前に資料を忘れたことに気づき、冷や汗をかいた。」",
+      "jpVi": "Ngay trước khi thuyết trình mới nhận ra quên tài liệu — toát mồ hôi lạnh."
+    },
+    {
+      "text": "冷奴",
+      "fontSize": 22,
+      "kana": "ひややっこ",
+      "meaning": "Đậu phụ lạnh — món ăn Nhật cổ điển mùa hè từ thời Edo. 冷 (lạnh) + 奴 (tên người hầu võ sĩ Edo mặc áo hoa văn ô vuông → cắt hình vuông). Được ghi chép trong sách nấu ăn Tofu Hyakuchin (1782) như một món \"ai cũng biết, không cần giải thích\".",
+      "jp": "「夏になると冷奴が食べたくなる。薬味はねぎと生姜が定番だ。」",
+      "jpVi": "Cứ đến hè lại thèm ăn đậu phụ lạnh. Hành lá và gừng là topping truyền thống."
+    },
+    {
+      "text": "冷やかす",
+      "fontSize": 18,
+      "kana": "ひやかす",
+      "meaning": "Trêu chọc, chế giễu, hoặc xem hàng mà không mua (window shopping). Nghĩa \"chế giễu\" xuất phát từ hình ảnh dội nước lạnh lên ai — \"làm nguội\" nhiệt tình của họ. Rất thông dụng trong giao tiếp thân mật.",
+      "jp": "「友達のことをからかったら、逆に冷やかされてしまった。」",
+      "jpVi": "Định chọc bạn thì bị phản đòn, bị trêu lại ngay."
+    }
+  ],
+
+  "nuanceNote": "冷たい vs 寒い vs 涼しい — ba chữ \"lạnh\" khác nhau quan trọng: <br>• <strong>冷たい (つめたい)</strong>: lạnh khi chạm tay vào / lạnh lùng về cảm xúc → dùng cho vật thể và người <br>• <strong>寒い (さむい)</strong>: lạnh thời tiết, không khí → dùng cho môi trường xung quanh <br>• <strong>涼しい (すずしい)</strong>: mát dịu, dễ chịu → thường mang sắc thái tích cực, không đến mức lạnh giá",
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải</span>. Viết bộ 冫 (2 nét) trước bên trái, sau đó viết 令 (5 nét) bên phải.",
+  "strokeSteps": [
+    {
+      "range": "1",
+      "char": "冫",
+      "label": "Nét chấm trên của 冫",
+      "detail": "chấm nghiêng ngắn — giọt băng thứ nhất"
+    },
+    {
+      "range": "2",
+      "char": "冫",
+      "label": "Nét phẩy dưới của 冫",
+      "detail": "nét phẩy dài hơn hướng xuống trái — giọt băng thứ hai"
+    },
+    {
+      "range": "3",
+      "char": "ノ",
+      "label": "Nét phẩy trái của 令",
+      "detail": "phẩy từ đỉnh xuống trái — mái nhà ∧"
+    },
+    {
+      "range": "4",
+      "char": "乀",
+      "label": "Nét phẩy phải của 令",
+      "detail": "phẩy từ đỉnh xuống phải — hoàn chỉnh mái ∧"
+    },
+    {
+      "range": "5",
+      "char": "一",
+      "label": "Nét ngang của 令",
+      "detail": "nét ngang ngắn"
+    },
+    {
+      "range": "6",
+      "char": "𠃊",
+      "label": "Nét gấp của 令",
+      "detail": "nét gấp góc vuông xuống rồi ngang — thân người quỳ 卩"
+    },
+    {
+      "range": "7",
+      "char": "乛",
+      "label": "Nét móc cuối của 令",
+      "detail": "nét ngang có móc lên nhỏ — đáy của 卩"
+    }
+  ],
+  "strokeDetail": "• <strong>Nét 1–2:</strong> bộ 冫 (にすい) — hai nét biểu tượng băng, viết sát nhau ở bên trái<br>• <strong>Nét 3–7:</strong> chữ 令 bên phải — hoàn toàn giống cách viết chữ 令 độc lập<br>• Tổng: 2 + 5 = <strong>7 nét ✓</strong>",
+
+  "calliNote": "Bộ 冫 (にすい) cần viết nhỏ gọn, sát lề trái để nhường không gian cho phần 令 bên phải. Hai nét của 冫 phải rõ ràng: nét trên là chấm ngắn, nét dưới là phẩy dài hơn hướng xuống. Không nên để 冫 quá to khiến chữ mất cân đối.",
+
+  "practiceHint": "Hãy nhớ: <span class=\"hl\">冫 = 2 giọt băng</span>, khác với <span class=\"hl\">氵 = 3 giọt nước</span>. Đây là điểm phân biệt quan trọng — viết nhầm bộ sẽ thành chữ hoàn toàn khác. Sau khi viết 冫 xong, phần còn lại chính là chữ <span class=\"hl\">令</span> mà bạn đã học!",
+
+  "canvasHints": [
+    { "x": 55, "y": 100, "label": "①" },
+    { "x": 50, "y": 160, "label": "②" },
+    { "x": 145, "y": 55, "label": "③" },
+    { "x": 195, "y": 55, "label": "④" },
+    { "x": 168, "y": 125, "label": "⑤" },
+    { "x": 155, "y": 185, "label": "⑥" },
+    { "x": 175, "y": 240, "label": "⑦" }
+  ],
+
+  "quiz": [
+    {
+      "q": "冷 の部首（ぶしゅ）は何ですか？",
+      "opts": [
+        "氵 (さんずい — nước)",
+        "冫 (にすい — băng)",
+        "令 (れい — lệnh)",
+        "仌 (こおり — băng cổ)"
+      ],
+      "ans": 1,
+      "explain": "冷 の部首は 冫 (にすい) — biểu tượng hai giọt băng, chỉ sự lạnh lẽo. Phân biệt với 氵 (さんずい — ba chấm nước lỏng). Các chữ cùng bộ 冫: 冬、凍、凉、冴、准…"
+    },
+    {
+      "q": "「冷たい」と「寒い」の違いは何ですか？",
+      "opts": [
+        "Hoàn toàn đồng nghĩa, dùng lẫn nhau được",
+        "冷たい: lạnh khi chạm vào vật / lạnh lùng cảm xúc; 寒い: lạnh do thời tiết, không khí",
+        "冷たい: lạnh trong nhà; 寒い: lạnh ngoài trời",
+        "冷たい: dùng mùa đông; 寒い: dùng quanh năm"
+      ],
+      "ans": 1,
+      "explain": "冷たい (つめたい) = lạnh khi tiếp xúc trực tiếp (nước lạnh, người lạnh lùng). 寒い (さむい) = lạnh do môi trường, thời tiết xung quanh. Ví dụ: 「水が冷たい」(nước lạnh) vs「今日は寒い」(hôm nay trời lạnh)."
+    },
+    {
+      "q": "冷 の成り立ちで正しいのはどれですか？",
+      "opts": [
+        "冫 (biểu âm) + 令 (biểu nghĩa, chỉ sự lạnh)",
+        "冫 (biểu nghĩa — băng, lạnh) + 令 (biểu âm — gợi âm REI)",
+        "氵 (nước) + 令 (lệnh) — nước được ra lệnh đóng băng",
+        "人 (người) + 令 (lệnh) — lệnh làm người ta lạnh"
+      ],
+      "ans": 1,
+      "explain": "冷 は形声文字: 冫 (にすい — băng) は biểu nghĩa \"lạnh\", 令 は biểu âm gợi âm REI. Cấu trúc điển hình: bộ thủ chỉ ý nghĩa, thanh phù chỉ cách đọc."
+    },
+    {
+      "q": "「冷静」の意味は何ですか？",
+      "opts": [
+        "Lạnh buốt và yên tĩnh",
+        "Bình tĩnh, điềm tĩnh, giữ được lý trí",
+        "Thái độ lạnh nhạt, thờ ơ",
+        "Thời tiết lạnh và ổn định"
+      ],
+      "ans": 1,
+      "explain": "冷静 (れいせい) = 冷 (lạnh — đầu lạnh) + 静 (yên tĩnh) → bình tĩnh, điềm tĩnh. 「冷静に判断する」= phán đoán bình tĩnh. Đây là nghĩa tích cực của 冷 — \"đầu lạnh\" giúp suy nghĩ sáng suốt."
+    },
+    {
+      "q": "「冷奴（ひややっこ）」とは何ですか？",
+      "opts": [
+        "Võ sĩ thời Edo nổi tiếng về sự lạnh lùng",
+        "Đậu phụ lạnh — món ăn Nhật mùa hè từ thời Edo",
+        "Loại nước đá truyền thống Nhật Bản",
+        "Kỹ thuật làm lạnh thời cổ đại"
+      ],
+      "ans": 1,
+      "explain": "冷奴 (ひややっこ) = 冷 (lạnh) + 奴 (yakko — tên người hầu võ sĩ Edo mặc áo hoa văn ô vuông → cắt hình vuông). Món đậu phụ lạnh này phổ biến từ thời Edo, được ghi chép trong Tofu Hyakuchin (1782) như một món \"ai cũng biết\"."
+    },
+    {
+      "q": "「冷やかす」にはどんな意味がありますか？",
+      "opts": [
+        "Làm lạnh bằng nhiệt độ thấp",
+        "Trêu chọc, chế giễu; hoặc xem hàng mà không mua",
+        "Đông lạnh thực phẩm để bảo quản",
+        "Làm nguội nhanh bằng nước lạnh"
+      ],
+      "ans": 1,
+      "explain": "冷やかす (ひやかす) có hai nghĩa chính: ① からかう — trêu chọc, chế giễu (như dội nước lạnh vào nhiệt tình của người khác); ② 買う気もなくお店を見て回る — xem hàng không mua (window shopping). Cả hai đều liên quan đến ý \"làm nguội / giảm nhiệt\"."
+    }
+  ]
+}

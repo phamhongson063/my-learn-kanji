@@ -1,0 +1,149 @@
+{
+  "kanji": "渡",
+  "on": "と",
+  "onRomaji": "to",
+  "kun": "わた(る) · わた(す)",
+  "kunRomaji": "wata(ru) · wata(su)",
+  "hanviet": "Độ",
+  "jlpt": "N2",
+  "strokes": 12,
+  "radical": "氵",
+  "radicalReading": "さんずい",
+  "radicalMeaning": "nước / bộ thuỷ",
+  "radicalNumber": 85,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "氵 (bên trái) + 度 (bên phải)",
+  "school": "Tiểu học lớp 6 · Joyo kanji",
+
+  "lead": "渡 là chữ Hán <span class=\"hl\">12 nét</span>, loại <span class=\"hl\">Hình thanh</span> — 氵 gợi nghĩa qua nước, 度 gợi âm <span class=\"hl\">と</span>. Hai nghĩa cốt lõi: <span class=\"hl\">わたる</span> (tự vượt qua) và <span class=\"hl\">わたす</span> (chuyển giao cho người khác). Cùng một chữ, hai hướng hành động.",
+  "mnemonic": "Hình dung <strong>nước (氵)</strong> mênh mông cần phải <strong>đo lường, tính toán (度)</strong> trước khi dám bước qua → <span class=\"hl\">渡 = vượt qua, sang bên kia</span>. 度 (mức độ) nhắc nhở: vượt sông cần biết độ sâu, độ rộng.",
+
+  "originLead": "Chữ 渡 kết hợp 氵 (nước, bộ thuỷ) và 度 (đo lường, mức độ). Thời cổ đại, <strong>vượt sông</strong> là thử thách nguy hiểm đòi hỏi phải đo mực nước, tính toán điểm lội. Từ đó 渡 mang nghĩa rộng: vượt qua mọi ranh giới — biển, núi, thời gian, và cả các mối quan hệ xã hội.",
+  "originDetail": "渡 xuất hiện dày đặc trong tên họ người Nhật: <span class=\"hl\">渡辺 (Watanabe)</span> là họ phổ biến thứ 5 tại Nhật — gốc từ 渡り場 (bến đò). Trong văn học, 渡る世間 (thế gian phải vượt) là hình ảnh ẩn dụ cho cuộc sống đầy thách thức. 渡り鳥 (chim di trú) dùng 渡 để chỉ hành trình vượt biển đại dương theo mùa.",
+  "decomp": [
+    { "char": "氵", "name": "Tam thuỷ / Tả thuỷ bàng", "meaning": "Nước — gợi nghĩa vượt qua sông nước" },
+    { "char": "度", "name": "Độ / Đo lường",             "meaning": "Đo, mức độ — gợi âm と và ý tính toán trước khi vượt" }
+  ],
+
+  "meanings": [
+    { "title": "Vượt qua, đi sang bên kia (わたる)", "desc": "Nội động từ — tự mình vượt qua: 橋を渡る (qua cầu), 川を渡る (vượt sông), 海を渡る (vượt biển). Không cần tân ngữ người nhận." },
+    { "title": "Chuyển giao, trao tay (わたす)",      "desc": "Ngoại động từ — đưa cho người khác: 書類を渡す (đưa tài liệu), 鍵を渡す (trao chìa khoá). Luôn có người nhận." },
+    { "title": "Di cư, sang nước ngoài",              "desc": "渡航 (vượt biển đi xa), 渡米 (sang Mỹ), 渡欧 (sang châu Âu), 渡日 (sang Nhật). 渡 + tên vùng = di chuyển quốc tế." },
+    { "title": "Trải qua, tồn tại xuyên suốt",        "desc": "Nghĩa trừu tượng: 長きにわたる (kéo dài qua nhiều năm), 全国にわたる (trải khắp cả nước). Dùng trong văn viết trang trọng." }
+  ],
+
+  "vocab": [
+    { "word": "渡る",     "reading": "わたる (wataru)",         "vi": "Vượt qua, đi sang (nội động)",        "jlpt": "N3", "jp": "「橋を渡ると、そこに古い神社があった。」",                   "jpVi": "Qua cầu, ở đó có một ngôi đền cổ." },
+    { "word": "渡す",     "reading": "わたす (watasu)",         "vi": "Đưa, trao, chuyển giao (ngoại động)", "jlpt": "N3", "jp": "「大切な書類を直接手渡しした。」",                           "jpVi": "Tôi đã trao trực tiếp tài liệu quan trọng." },
+    { "word": "渡り鳥",   "reading": "わたりどり (wataridori)", "vi": "Chim di trú, chim thiên di",           "jlpt": "N2", "jp": "「秋になると、北から渡り鳥が飛んでくる。」",                 "jpVi": "Vào mùa thu, chim di trú bay về từ phía bắc." },
+    { "word": "渡航",     "reading": "とこう (tokō)",           "vi": "Vượt biển, du hành xa (chính thức)",   "jlpt": "N2", "jp": "「ビザなしでの渡航は認められていない。」",                   "jpVi": "Việc đi lại mà không có visa không được cho phép." },
+    { "word": "譲渡",     "reading": "じょうと (jōto)",         "vi": "Chuyển nhượng, nhượng lại",            "jlpt": "N1", "jp": "「土地の譲渡には複雑な手続きが必要だ。」",                   "jpVi": "Việc chuyển nhượng đất đai đòi hỏi thủ tục phức tạp." },
+    { "word": "引き渡す", "reading": "ひきわたす (hikiwatasu)", "vi": "Bàn giao, dẫn độ",                     "jlpt": "N2", "jp": "「容疑者を警察に引き渡した。」",                             "jpVi": "Nghi phạm đã được bàn giao cho cảnh sát." },
+    { "word": "渡辺",     "reading": "わたなべ (Watanabe)",     "vi": "Họ Watanabe — họ phổ biến nhất Nhật",  "jlpt": "",   "jp": "「渡辺さんは日本で5番目に多い苗字だ。」",                   "jpVi": "Watanabe là họ phổ biến thứ 5 tại Nhật Bản." },
+    { "word": "渡米",     "reading": "とべい (tobei)",           "vi": "Sang Mỹ, du học / làm việc tại Mỹ",   "jlpt": "",   "jp": "「大学卒業後、渡米して音楽を学んだ。」",                     "jpVi": "Sau khi tốt nghiệp đại học, tôi sang Mỹ học âm nhạc." }
+  ],
+
+  "idioms": [
+    {
+      "text": "渡る世間に鬼はない", "fontSize": 13,
+      "kana": "わたるせけんにおにはない",
+      "meaning": "Trên đời này không có ác quỷ — trong cuộc đời khó khăn vẫn có người tốt, không thiếu sự giúp đỡ. Tục ngữ nhắc nhở đừng bi quan về con người.",
+      "jp": "「困ったときに見知らぬ人が助けてくれた。渡る世間に鬼はないものだ。」",
+      "jpVi": "Khi gặp khó khăn có người lạ đã giúp tôi. Quả thật trên đời này không có ác quỷ."
+    },
+    {
+      "text": "渡りに船", "fontSize": 24,
+      "kana": "わたりにふね",
+      "meaning": "Thuyền đúng lúc cần sang sông — gặp may đúng thời điểm, cơ hội xuất hiện khi đang cần nhất. Tương tự 'mưa đúng hạn, thuyền đúng bến'.",
+      "jp": "「ちょうど仕事を探していたところに、知人から話が来た。渡りに船だった。」",
+      "jpVi": "Vừa đang tìm việc thì người quen giới thiệu. Đúng là thuyền đúng lúc sang sông."
+    },
+    {
+      "text": "海を渡る", "fontSize": 22,
+      "kana": "うみをわたる",
+      "meaning": "Vượt biển — hành trình đến xứ lạ, dũng cảm bước ra thế giới. Hình ảnh ẩn dụ cho sự can đảm và khát vọng vươn xa.",
+      "jp": "「夢を追いかけて海を渡る決意をした。」",
+      "jpVi": "Tôi quyết tâm vượt biển để theo đuổi giấc mơ của mình."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết bộ <span class=\"hl\">氵</span> (3 nét) trước bên trái, sau đó viết <span class=\"hl\">度</span> (9 nét) bên phải — 广 trên, phần trong giữa, 又 dưới.",
+  "strokeSteps": [
+    { "range": "1–3",  "char": "氵", "label": "Tam thuỷ bàng",   "detail": "3 nét chấm bên trái" },
+    { "range": "4–6",  "char": "广", "label": "Mái nghiêng 广",  "detail": "3 nét phần trên 度" },
+    { "range": "7–10", "char": "廿", "label": "Phần trong 度",   "detail": "4 nét ngang + đứng" },
+    { "range": "11–12","char": "又", "label": "Phần dưới 度",    "detail": "2 nét kết thúc 又" }
+  ],
+  "strokeDetail": "• <strong>氵 (3 nét):</strong> ① chấm trên → ② chấm giữa → ③ phẩy dài xuống<br>• <strong>广 (3 nét):</strong> ④ chấm → ⑤ nét ngang trên → ⑥ nét dọc-gập dài<br>• <strong>Phần trong 度 (4 nét):</strong> ⑦⑧ nét ngang → ⑨ nét đứng → ⑩ nét ngang dưới<br>• <strong>又 (2 nét):</strong> ⑪ nét phẩy → ⑫ nét chấm/móc<br>• Tổng: 3+9 = <strong>12 nét ✓</strong>",
+
+  "calliNote": "Bộ 氵 bên trái gọn, thẳng hàng. Phần 度 bên phải: 广 toả rộng che phủ, phần trong đều đặn, 又 ở dưới cùng mở rộng tạo chân vững. Tránh để 广 quá dẹt hoặc quá dốc.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">氵 trước</span> (trái), sau đó viết <span class=\"hl\">度</span> từ mái 广 xuống → phần trong → 又 cuối cùng.",
+
+  "canvasHints": [
+    { "x": 62,  "y": 138, "label": "①②③" },
+    { "x": 215, "y": 42,  "label": "④⑤⑥" },
+    { "x": 210, "y": 178, "label": "⑦⑧⑨⑩" },
+    { "x": 225, "y": 308, "label": "⑪⑫" }
+  ],
+
+  "quiz": [
+    {
+      "q": "渡る と 渡す の違いは何ですか？",
+      "opts": [
+        "Cả hai đều có nghĩa giống nhau, chỉ khác văn phong",
+        "渡る là nội động (tự vượt qua), 渡す là ngoại động (trao cho người khác)",
+        "渡る dùng cho người, 渡す dùng cho vật",
+        "渡る là lịch sự, 渡す là bình thường"
+      ],
+      "ans": 1,
+      "explain": "渡る (わたる) = nội động — chủ thể tự vượt qua: 橋を渡る. 渡す (わたす) = ngoại động — đưa cho ai: 手紙を渡す. Đây là cặp nội/ngoại động điển hình trong tiếng Nhật."
+    },
+    {
+      "q": "「渡り鳥」(わたりどり) の意味は？",
+      "opts": ["Chim học bay", "Chim di trú, thiên di theo mùa", "Chim sống trên sông", "Chim quý hiếm"],
+      "ans": 1,
+      "explain": "渡り鳥 = 渡り (di chuyển theo mùa) + 鳥 (chim) = Chim di trú. Những loài chim bay từ phương bắc về phương nam (hoặc ngược lại) theo mùa để tìm nơi ấm áp và nguồn thức ăn."
+    },
+    {
+      "q": "「渡辺」(わたなべ) という苗字の由来は？",
+      "opts": [
+        "Từ tên một vị thần Nhật Bản",
+        "Từ 渡り場 — bến đò, nơi sang sông",
+        "Từ tên địa danh nổi tiếng ở Kyoto",
+        "Từ chức danh quan lại thời Edo"
+      ],
+      "ans": 1,
+      "explain": "Họ 渡辺 (Watanabe) xuất phát từ 渡り場 (bến đò, điểm sang sông). Là họ phổ biến thứ 5 tại Nhật với hàng triệu người. Chữ 渡 trong họ phản ánh lịch sử sống ven sông của tổ tiên."
+    },
+    {
+      "q": "「渡りに船」の意味は？",
+      "opts": [
+        "Nguy hiểm khi ra khơi",
+        "May mắn gặp đúng cơ hội khi đang cần nhất",
+        "Phải vượt qua nhiều thử thách",
+        "Hành trình dài và gian khó"
+      ],
+      "ans": 1,
+      "explain": "渡りに船 = đang muốn sang sông thì có ngay chiếc thuyền. Chỉ việc cơ hội xuất hiện đúng lúc đang cần. Ví dụ: đang thiếu tiền thì nhận được thưởng — đúng là 渡りに船！"
+    },
+    {
+      "q": "渡 の画数は何画ですか？",
+      "opts": ["10画", "11画", "12画", "13画"],
+      "ans": 2,
+      "explain": "渡 は 12画 — 氵 (3 nét) + 度 (9 nét) = 12 nét tổng cộng. 度 gồm 广 (3) + phần trong (4) + 又 (2) = 9 nét."
+    },
+    {
+      "q": "「全国にわたる」の「わたる」はどんな意味ですか？",
+      "opts": [
+        "Đi bộ xuyên đất nước",
+        "Trải rộng khắp, bao phủ toàn bộ",
+        "Được nhân dân yêu mến",
+        "Bán hàng trên toàn quốc"
+      ],
+      "ans": 1,
+      "explain": "「〜にわたる」= trải dài / bao phủ. 全国にわたる (trải khắp toàn quốc), 長年にわたる (kéo dài nhiều năm). Đây là nghĩa ẩn dụ từ 渡る — vượt qua mọi vùng / suốt khoảng thời gian đó."
+    }
+  ]
+}

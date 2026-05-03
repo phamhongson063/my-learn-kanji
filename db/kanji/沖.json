@@ -1,0 +1,131 @@
+{
+  "kanji": "沖",
+  "on": "ちゅう",
+  "onRomaji": "chū",
+  "kun": "おき",
+  "kunRomaji": "oki",
+  "hanviet": "Xung",
+  "jlpt": "N2",
+  "strokes": 7,
+  "radical": "氵",
+  "radicalReading": "さんずい",
+  "radicalMeaning": "nước / bộ thuỷ",
+  "radicalNumber": 85,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "氵 (bên trái) + 中 (bên phải)",
+  "school": "Tiểu học lớp 4 · Joyo kanji",
+
+  "lead": "沖 là chữ Hán <span class=\"hl\">7 nét</span>, loại <span class=\"hl\">Hình thanh</span> — 氵 gợi nghĩa liên quan đến nước, 中 gợi âm <span class=\"hl\">ちゅう</span>. Nghĩa phổ biến nhất trong tiếng Nhật là <span class=\"hl\">おき</span> — vùng biển xa bờ, ngoài khơi.",
+  "mnemonic": "Hình dung <strong>nước (氵)</strong> trải dài ra <strong>giữa (中)</strong> đại dương, không còn thấy bờ nữa → <span class=\"hl\">沖 = ngoài khơi</span>. Càng ra xa, mặt nước càng mênh mông như khoảng trống ở giữa.",
+
+  "originLead": "Chữ 沖 trong tiếng Hán cổ (âm Hán Việt: <span class=\"hl\">Xung</span>) mang nghĩa <strong>nước chảy dâng lên, cuộn xoáy</strong>. Từ hình ảnh nước xoáy cuồn cuộn, nghĩa mở rộng sang <span class=\"hl\">vươn cao</span> (沖天 — bay thẳng lên trời) và <span class=\"hl\">trống rỗng, hư không</span> theo triết học Đạo gia.",
+  "originDetail": "Trong tiếng Nhật, nghĩa địa lý <span class=\"hl\">おき (ngoài khơi)</span> trở thành nghĩa chủ đạo. 沖縄 (Okinawa) là chuỗi đảo nằm ngoài khơi xa — tên gọi phản ánh đúng vị trí địa lý. Các từ như 沖合 (vùng ngoài khơi), 太平洋沖 (ngoài khơi Thái Bình Dương) đều gắn liền với biển cả. Nghĩa <strong>vươn cao</strong> còn sót lại trong thành ngữ 沖天の勢い.",
+  "decomp": [
+    { "char": "氵", "name": "Tam thuỷ / Tả thuỷ bàng", "meaning": "Nước / Bộ thuỷ — gợi nghĩa liên quan đến chất lỏng" },
+    { "char": "中", "name": "Trung",                    "meaning": "Giữa / Phần gợi âm ちゅう" }
+  ],
+
+  "meanings": [
+    { "title": "Ngoài khơi, biển xa",     "desc": "Nghĩa phổ biến nhất trong tiếng Nhật hiện đại. Chỉ vùng biển cách xa bờ. 沖合い (おきあい), 太平洋沖 (ngoài khơi Thái Bình Dương)." },
+    { "title": "Vươn lên cao, bay thẳng", "desc": "Nghĩa cổ điển: sức mạnh cuồn cuộn vươn thẳng lên trời. Còn dùng trong thành ngữ 沖天の勢い (khí thế bừng bừng)." },
+    { "title": "Trẻ thơ, non nớt",         "desc": "Trong văn học, 沖 đôi khi chỉ sự trong sáng, chưa trải đời. 沖人 (người còn non nớt, trẻ dại) — nghĩa ít dùng ngày nay." },
+    { "title": "Hư không, trống rỗng",    "desc": "Theo Đạo Đức Kinh: 道沖而用之 (Đạo trống rỗng mà dùng không bao giờ cạn). Nghĩa triết học, không dùng trong văn nói thường ngày." }
+  ],
+
+  "vocab": [
+    { "word": "沖合",   "reading": "おきあい (okiai)",         "vi": "Vùng ngoài khơi, vùng biển xa bờ",    "jlpt": "N2", "jp": "「沖合では波が高く、漁船が揺れていた。」",                   "jpVi": "Ngoài khơi sóng lớn, thuyền đánh cá đang lắc lư mạnh." },
+    { "word": "沖縄",   "reading": "おきなわ (Okinawa)",       "vi": "Okinawa — tỉnh đảo cực nam Nhật Bản", "jlpt": "N3", "jp": "「沖縄の海は透明度が高く、珊瑚礁が美しい。」",             "jpVi": "Biển Okinawa trong vắt, rạn san hô rất đẹp." },
+    { "word": "沖へ出る", "reading": "おきへでる (oki e deru)", "vi": "Ra ngoài khơi, tiến ra biển xa",       "jlpt": "",   "jp": "「漁師たちは夜明けに沖へ出た。」",                         "jpVi": "Những người ngư dân ra ngoài khơi lúc bình minh." },
+    { "word": "沖天",   "reading": "ちゅうてん (chūten)",      "vi": "Vươn thẳng lên trời, bay lên cao",    "jlpt": "",   "jp": "「火柱が沖天の勢いで燃え上がった。」",                     "jpVi": "Cột lửa bùng lên với sức mạnh vươn thẳng tận trời." },
+    { "word": "太平洋沖", "reading": "たいへいようおき (Taiheiyō-oki)", "vi": "Ngoài khơi Thái Bình Dương",  "jlpt": "",   "jp": "「地震は太平洋沖で発生した。」",                           "jpVi": "Trận động đất xảy ra ngoài khơi Thái Bình Dương." },
+    { "word": "沖積層", "reading": "ちゅうせきそう (chūsekisō)", "vi": "Tầng phù sa, địa tầng bồi tích",    "jlpt": "",   "jp": "「この平野は沖積層でできており、農業に適している。」",       "jpVi": "Đồng bằng này được tạo thành từ tầng phù sa, thích hợp cho nông nghiệp." },
+    { "word": "沖釣り", "reading": "おきづり (okizuri)",        "vi": "Câu cá ngoài khơi",                   "jlpt": "",   "jp": "「今日は船で沖釣りに行ってきた。」",                       "jpVi": "Hôm nay tôi đi câu cá ngoài khơi bằng thuyền." }
+  ],
+
+  "idioms": [
+    {
+      "text": "沖天の勢い", "fontSize": 18,
+      "kana": "ちゅうてんのいきおい",
+      "meaning": "Khí thế bừng bừng vươn thẳng tận trời — chỉ sức mạnh hay đà phát triển mạnh mẽ, không gì cản nổi.",
+      "jp": "「そのチームは沖天の勢いで勝ち続け、優勝を果たした。」",
+      "jpVi": "Đội đó liên tục thắng với khí thế bừng bừng và đã giành chức vô địch."
+    },
+    {
+      "text": "道沖而用之", "fontSize": 16,
+      "kana": "どうちゅうにしてこれをもちう",
+      "meaning": "Đạo trống rỗng mà dùng mãi không cạn — câu từ Đạo Đức Kinh (chương 4), chỉ 沖 theo nghĩa hư không, vô cực của Đạo gia.",
+      "jp": "「老子は「道沖而用之」と説き、空虚の中にこそ無限の可能性があると示した。」",
+      "jpVi": "Lão Tử giảng 'Đạo trống rỗng mà dùng không bao giờ hết', cho thấy trong hư không ẩn chứa vô hạn khả năng."
+    },
+    {
+      "text": "大海の沖", "fontSize": 20,
+      "kana": "たいかいのおき",
+      "meaning": "Giữa đại dương mênh mông — hình ảnh gợi tả sự bao la, cô đơn hoặc tự do giữa biển khơi vô tận.",
+      "jp": "「大海の沖に浮かぶ小島は、まるで世界から切り離されたようだった。」",
+      "jpVi": "Hòn đảo nhỏ nổi giữa đại dương mênh mông trông như bị cắt lìa khỏi thế giới."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết bộ <span class=\"hl\">氵</span> (3 nét chấm/phẩy) trước bên trái, sau đó viết <span class=\"hl\">中</span> (4 nét) bên phải.",
+  "strokeSteps": [
+    { "range": "1–3", "char": "氵", "label": "Tam thuỷ bàng", "detail": "3 nét chấm từ trên xuống" },
+    { "range": "4",   "char": "丨", "label": "Nét dọc trung tâm", "detail": "xuyên qua 口" },
+    { "range": "5–7", "char": "口", "label": "Khẩu của 中",    "detail": "3 nét tạo hình chữ 口" }
+  ],
+  "strokeDetail": "• <strong>氵 (3 nét):</strong> ① chấm trên → ② chấm giữa (hơi nghiêng) → ③ phẩy dài xuống dưới<br>• <strong>中 (4 nét):</strong> ④ nét dọc thẳng từ trên xuyên xuống → ⑤ nét gập (trái + trên của 口) → ⑥ nét ngang đóng đáy 口 → ⑦ nét dọc phải của 口<br>• Tổng: 3+4 = <strong>7 nét ✓</strong>",
+
+  "calliNote": "Bộ 氵 bên trái cần gọn, ba nét chấm thẳng hàng đều đặn. Phần 中 bên phải chiếm khoảng 2/3 chiều rộng, nét dọc trung tâm vươn thẳng và xuyên qua giữa 口. Tránh để 氵 quá to lấn sang 中.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">氵 trước</span> (3 nét bên trái) rồi mới viết <span class=\"hl\">中</span> từ nét dọc trung tâm.",
+
+  "canvasHints": [
+    { "x": 75,  "y": 170, "label": "①②③" },
+    { "x": 255, "y": 60,  "label": "④" },
+    { "x": 235, "y": 230, "label": "⑤⑥⑦" }
+  ],
+
+  "quiz": [
+    {
+      "q": "沖 の訓読みは何ですか？",
+      "opts": ["うみ (umi)", "おき (oki)", "かわ (kawa)", "いそ (iso)"],
+      "ans": 1,
+      "explain": "沖 の訓読みは おき — ngoài khơi, vùng biển xa bờ. 音読みは ちゅう (chū). Ví dụ phổ biến nhất là 沖合 (おきあい) và 沖縄 (おきなわ)."
+    },
+    {
+      "q": "「沖合」(おきあい) の意味は？",
+      "opts": ["Vùng gần bờ biển", "Vùng ngoài khơi, biển xa bờ", "Cảng biển, bến tàu", "Dưới đáy biển"],
+      "ans": 1,
+      "explain": "沖合 (おきあい) = 沖 (ngoài khơi) + 合 (vùng, khu vực) = Vùng biển ngoài khơi, xa bờ. Thường gặp trong bản tin thời tiết và ngư nghiệp."
+    },
+    {
+      "q": "沖 の部首は何ですか？",
+      "opts": ["中 (なかへん)", "氵 (さんずい)", "冫 (にすい)", "水 (みず)"],
+      "ans": 1,
+      "explain": "Bộ của 沖 là 氵 (さんずい) — bộ thuỷ 3 chấm, số 85 trong bảng 214 bộ thủ. 氵 luôn đứng bên trái và gợi nghĩa liên quan đến nước."
+    },
+    {
+      "q": "「沖縄」の読み方は？",
+      "opts": ["ちゅうなわ", "おきなわ", "ちゅうじょう", "おきしま"],
+      "ans": 1,
+      "explain": "沖縄 đọc là おきなわ (Okinawa) — tỉnh đảo cực nam Nhật Bản. Tên này có nghĩa là \"vùng đất (縄) ngoài khơi (沖)\", phản ánh vị trí địa lý của chuỗi đảo."
+    },
+    {
+      "q": "沖 の画数（かくすう）は何画ですか？",
+      "opts": ["5画", "6画", "7画", "8画"],
+      "ans": 2,
+      "explain": "沖 は 7画 — 氵 (3 nét) + 中 (4 nét) = 7 nét tổng cộng. Là một trong những kanji ít nét hơn nhưng xuất hiện phổ biến trong từ vựng về địa lý và biển."
+    },
+    {
+      "q": "「沖天の勢い」の意味は？",
+      "opts": [
+        "Sóng biển ngoài khơi dữ dội",
+        "Khí thế bừng bừng mạnh mẽ, vươn thẳng tận trời",
+        "Thuyền đánh cá ra khơi xa",
+        "Bầu trời trong xanh trên biển"
+      ],
+      "ans": 1,
+      "explain": "沖天の勢い (ちゅうてんのいきおい) = 沖天 (vươn tận trời) + の + 勢い (khí thế) = Khí thế bừng bừng không gì cản nổi. Dùng để mô tả đội thể thao, doanh nghiệp hay phong trào đang phát triển mạnh."
+    }
+  ]
+}

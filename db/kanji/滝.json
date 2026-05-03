@@ -1,0 +1,142 @@
+{
+  "kanji": "滝",
+  "on": "ろう",
+  "onRomaji": "rō",
+  "kun": "たき",
+  "kunRomaji": "taki",
+  "hanviet": "Lung",
+  "jlpt": "N2",
+  "strokes": 13,
+  "radical": "氵",
+  "radicalReading": "さんずい",
+  "radicalMeaning": "nước / bộ thuỷ",
+  "radicalNumber": 85,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "氵 (bên trái) + 竜 (bên phải)",
+  "school": "Trung học cơ sở · Joyo kanji",
+
+  "lead": "滝 là chữ Hán <span class=\"hl\">13 nét</span>, loại <span class=\"hl\">Hình thanh</span> — 氵 gợi nghĩa nước, 竜 (rồng) gợi âm và sức mạnh. Chữ phồn thể là <span class=\"hl\">瀧</span> (20 nét). Nghĩa duy nhất trong tiếng Nhật hiện đại là <span class=\"hl\">thác nước</span> — dòng nước chảy thẳng đứng mạnh mẽ từ trên cao xuống.",
+  "mnemonic": "Hình dung <strong>nước (氵)</strong> cuộn như <strong>rồng (竜)</strong> lao từ vách núi xuống — mãnh liệt, không gì cản nổi → <span class=\"hl\">滝 = thác nước</span>. Rồng và thác nước trong văn hoá Nhật gắn chặt với nhau: rồng coi thác là nhà.",
+
+  "originLead": "Chữ phồn thể <span class=\"hl\">瀧</span> gồm 氵(nước) + 龍(rồng). Trong thần thoại Đông Á, <strong>rồng sống dưới thác nước</strong> và cai quản mưa, sông hồ. Vì vậy hình ảnh thác nước và rồng hợp nhất thành một chữ rất tự nhiên về mặt văn hoá.",
+  "originDetail": "Trong văn học và thơ ca Nhật Bản, 滝 là hình tượng phổ biến — biểu tượng cho sức mạnh thiên nhiên, sự thanh khiết và vĩnh cửu. Bài thơ nổi tiếng của Fujiwara no Kinto (藤原公任): <em>「瀧の音は絶えて久しくなりぬれど名こそ流れてなほ聞こえけれ」</em> — tiếng thác đã tắt từ lâu nhưng tiếng tăm vẫn còn vang mãi. Nước Nhật có nhiều thác nổi tiếng: 那智の滝 (Nachi — thác linh thiêng nhất Nhật Bản), 華厳の滝 (Kegon), 白糸の滝 (Shiraito).",
+  "decomp": [
+    { "char": "氵", "name": "Tam thuỷ / Tả thuỷ bàng", "meaning": "Nước — gợi nghĩa chất lỏng, dòng chảy" },
+    { "char": "竜", "name": "Rồng (Ryū)",               "meaning": "Rồng — gợi âm ろう và sức mạnh cuộn chảy" }
+  ],
+
+  "meanings": [
+    { "title": "Thác nước",          "desc": "Nghĩa duy nhất trong tiếng Nhật hiện đại. Dòng nước đổ thẳng từ vách đá cao xuống. 那智の滝、華厳の滝、白糸の滝 là những thác nổi tiếng nhất Nhật Bản." },
+    { "title": "Dòng chảy mạnh, ào ạt", "desc": "Dùng theo nghĩa ẩn dụ chỉ lượng lớn đổ xuống mạnh mẽ: 滝のような雨 (mưa như thác), 滝のような汗 (mồ hôi chảy như thác)." },
+    { "title": "Biểu tượng thanh khiết", "desc": "Trong Thần đạo (神道), đứng dưới thác nước — 滝行 (takigyō) — là nghi lễ thanh tẩy thân tâm. 滝 mang ý nghĩa tâm linh và sự trong sạch." }
+  ],
+
+  "vocab": [
+    { "word": "滝",       "reading": "たき (taki)",             "vi": "Thác nước",                         "jlpt": "N2", "jp": "「山の奥に美しい滝があった。」",                             "jpVi": "Sâu trong núi có một thác nước đẹp." },
+    { "word": "滝壺",     "reading": "たきつぼ (takitsubo)",     "vi": "Hồ nước dưới chân thác",           "jlpt": "",   "jp": "「滝壺の水は驚くほど冷たかった。」",                         "jpVi": "Nước trong hồ dưới chân thác lạnh đến ngạc nhiên." },
+    { "word": "滝行",     "reading": "たきぎょう (takigyō)",     "vi": "Nghi lễ đứng dưới thác để tu tâm", "jlpt": "",   "jp": "「修行僧は毎朝滝行で心身を清める。」",                       "jpVi": "Các tu sĩ mỗi sáng đứng dưới thác để thanh tẩy thân tâm." },
+    { "word": "那智の滝", "reading": "なちのたき (Nachi no Taki)", "vi": "Thác Nachi — thác linh thiêng nhất Nhật Bản", "jlpt": "", "jp": "「那智の滝は落差133メートルもある日本一の直瀑だ。」", "jpVi": "Thác Nachi có chiều cao 133 mét, là thác đứng cao nhất Nhật Bản." },
+    { "word": "滝のような雨", "reading": "たきのようなあめ",     "vi": "Mưa như thác đổ",                   "jlpt": "",   "jp": "「突然、滝のような雨が降り出した。」",                       "jpVi": "Đột nhiên mưa như thác đổ xuống." },
+    { "word": "白糸の滝", "reading": "しらいとのたき (Shiraito)", "vi": "Thác Shiraito — thác chỉ trắng",   "jlpt": "",   "jp": "「白糸の滝は富士山のふもとにある絹糸のような滝だ。」",       "jpVi": "Thác Shiraito nằm dưới chân núi Phú Sĩ, nhìn như những sợi chỉ lụa." },
+    { "word": "滝登り",   "reading": "たきのぼり (takinobori)",  "vi": "Leo thác / Cá bơi ngược thác",     "jlpt": "",   "jp": "「鯉の滝登りは出世の象徴として知られている。」",             "jpVi": "Hình ảnh cá chép leo thác được biết đến như biểu tượng của sự thành đạt." }
+  ],
+
+  "idioms": [
+    {
+      "text": "鯉の滝登り", "fontSize": 17,
+      "kana": "こいのたきのぼり",
+      "meaning": "Cá chép vượt thác — biểu tượng của sự nỗ lực vươn lên, thành công sau gian khó. Truyền thuyết: cá chép vượt được thác Vũ Môn sẽ hoá rồng.",
+      "jp": "「息子が難関大学に合格した。まさに鯉の滝登りだ。」",
+      "jpVi": "Con trai tôi đỗ vào đại học khó nhất. Đúng là như cá chép vượt thác vậy."
+    },
+    {
+      "text": "滝のような汗", "fontSize": 18,
+      "kana": "たきのようなあせ",
+      "meaning": "Mồ hôi chảy như thác — diễn tả mồ hôi đổ ra rất nhiều vì gắng sức, sức nóng hay lo lắng tột độ.",
+      "jp": "「真夏のマラソンで、滝のような汗をかきながら走り続けた。」",
+      "jpVi": "Trong cuộc chạy marathon giữa hè, tôi tiếp tục chạy trong khi mồ hôi đổ như thác."
+    },
+    {
+      "text": "滝行", "fontSize": 28,
+      "kana": "たきぎょう",
+      "meaning": "Tu hành dưới thác nước — đứng dưới dòng nước đổ mạnh để rèn luyện tinh thần, một hình thức khổ tu trong Phật giáo và Thần đạo Nhật Bản.",
+      "jp": "「滝行を通じて、雑念を払い、本当の自分と向き合うことができた。」",
+      "jpVi": "Qua tu hành dưới thác, tôi gạt bỏ được tạp niệm và đối mặt với bản thân thật sự của mình."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trái → phải · trên → dưới</span>. Viết bộ <span class=\"hl\">氵</span> (3 nét) trước bên trái, sau đó viết <span class=\"hl\">竜</span> (10 nét) từ trên xuống dưới bên phải.",
+  "strokeSteps": [
+    { "range": "1–3",  "char": "氵", "label": "Tam thuỷ bàng",  "detail": "3 nét chấm bên trái" },
+    { "range": "4–7",  "char": "⺌", "label": "Phần đầu 竜",    "detail": "ngang + các nét trên" },
+    { "range": "8–10", "char": "月", "label": "Thân 竜",         "detail": "phần giữa dạng 月" },
+    { "range": "11–13","char": "乙", "label": "Đuôi 竜",         "detail": "3 nét kết thúc phía dưới" }
+  ],
+  "strokeDetail": "• <strong>氵 (3 nét):</strong> ① chấm trên → ② chấm giữa → ③ phẩy dài xuống<br>• <strong>竜 phần trên (4 nét):</strong> ④ nét ngang → ⑤ nét phẩy trái → ⑥ nét đứng → ⑦ nét ngang<br>• <strong>竜 phần giữa — thân (3 nét):</strong> ⑧ nét gập trái xuống → ⑨ nét ngang → ⑩ nét đứng phải<br>• <strong>竜 phần dưới (3 nét):</strong> ⑪ nét ngang → ⑫ nét phẩy → ⑬ nét móc cong<br>• Tổng: 3+10 = <strong>13 nét ✓</strong>",
+
+  "calliNote": "Bộ 氵 bên trái gọn và thẳng hàng. Phần 竜 bên phải chiếm 2/3 chiều rộng — phần đầu hơi hẹp, phần thân (月-dạng) mở rộng, nét cuối cong mạnh thể hiện sức mạnh của rồng. Tránh viết 竜 quá cứng nhắc.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Viết <span class=\"hl\">氵 trước</span> (3 nét bên trái), sau đó viết <span class=\"hl\">竜</span> từ phần đầu xuống đuôi — kết thúc bằng nét móc cong đặc trưng.",
+
+  "canvasHints": [
+    { "x": 62,  "y": 140, "label": "①②③" },
+    { "x": 215, "y": 42,  "label": "④⑤⑥⑦" },
+    { "x": 205, "y": 185, "label": "⑧⑨⑩" },
+    { "x": 205, "y": 305, "label": "⑪⑫⑬" }
+  ],
+
+  "quiz": [
+    {
+      "q": "滝 の訓読みは何ですか？",
+      "opts": ["みず (mizu)", "かわ (kawa)", "たき (taki)", "いずみ (izumi)"],
+      "ans": 2,
+      "explain": "滝 の訓読みは たき (taki) = thác nước. Đây là cách đọc phổ biến duy nhất trong tiếng Nhật hiện đại. Âm on là ろう (rō) nhưng rất ít dùng."
+    },
+    {
+      "q": "滝 の部首は何ですか？",
+      "opts": ["竜 (りゅう)", "水 (みず)", "氵 (さんずい)", "龍 (りゅう)"],
+      "ans": 2,
+      "explain": "Bộ của 滝 là 氵 (さんずい) — bộ thuỷ 3 chấm đứng bên trái, gợi nghĩa liên quan đến nước. Phần 竜 (rồng) là thành phần gợi âm."
+    },
+    {
+      "q": "「鯉の滝登り」の意味は？",
+      "opts": [
+        "Cá chép sợ thác nước và bỏ chạy",
+        "Cá chép vượt thác — biểu tượng nỗ lực vươn lên thành công",
+        "Dòng thác chảy ngược",
+        "Rồng cai quản thác nước"
+      ],
+      "ans": 1,
+      "explain": "鯉の滝登り = cá chép leo thác. Truyền thuyết Trung Hoa: cá chép vượt thác Vũ Môn sẽ hoá rồng. Đây là thành ngữ chỉ sự nỗ lực phi thường dẫn đến thành công vang dội."
+    },
+    {
+      "q": "「滝行」(たきぎょう) は何ですか？",
+      "opts": [
+        "Nghề dẫn khách du lịch đến thác",
+        "Tu hành đứng dưới thác nước để rèn luyện tinh thần",
+        "Kỹ thuật leo thác trong thể thao",
+        "Nghi lễ cầu mưa tại thác"
+      ],
+      "ans": 1,
+      "explain": "滝行 (たきぎょう) = đứng dưới dòng thác đổ xuống như một hình thức khổ tu. Phổ biến trong Phật giáo Mật tông (修験道) và Thần đạo Nhật Bản. Mục đích: thanh tẩy thân tâm, rèn sức chịu đựng."
+    },
+    {
+      "q": "滝 の旧字体（繁体字）は何ですか？",
+      "opts": [
+        "瀑 — thác nước dạng khác",
+        "瀧 — gồm 氵 và 龍 (rồng 16 nét)",
+        "漢 — chữ Hán",
+        "泉 — suối nước"
+      ],
+      "ans": 1,
+      "explain": "Chữ phồn thể của 滝 là 瀧 (20 nét) — gồm 氵 + 龍 (rồng đầy đủ 16 nét). Nhật Bản giản lược 龍 thành 竜, tạo ra 滝 gọn hơn nhiều. Cả hai đều được dùng trong thư pháp."
+    },
+    {
+      "q": "滝 の画数は何画ですか？",
+      "opts": ["11画", "12画", "13画", "14画"],
+      "ans": 2,
+      "explain": "滝 は 13画 — 氵 (3 nét) + 竜 (10 nét) = 13 nét tổng cộng. Chữ phồn thể 瀧 có tới 20 nét (氵3 + 龍17)."
+    }
+  ]
+}

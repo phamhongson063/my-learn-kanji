@@ -1,0 +1,268 @@
+{
+  "kanji": "兆",
+  "on": "ちょう",
+  "onRomaji": "chō",
+  "kun": "きざし · きざ.す",
+  "kunRomaji": "kizashi · kiza.su",
+  "hanviet": "Triệu",
+  "jlpt": "N2",
+  "strokes": 6,
+  "radical": "儿",
+  "radicalReading": "ひとあし / にんにょう",
+  "radicalMeaning": "chân người / người đi",
+  "radicalNumber": 10,
+  "type": "Tượng hình",
+  "typeJa": "象形文字",
+  "structure": "儿 (chân người) + hai nét uốn cong hai bên — hình dạng mai rùa nứt khi bói toán",
+  "school": "Tiểu học lớp 4 · Joyo kanji",
+
+  "lead": "兆 là chữ Hán <span class=\"hl\">6 nét</span>, loại <span class=\"hl\">Tượng hình</span> — mô phỏng hình ảnh mai rùa bị nung nứt ra khi bói toán thời cổ đại. Chữ mang hai nghĩa chính: <strong>điềm báo, dấu hiệu</strong> và <strong>con số một nghìn tỷ (10¹²)</strong>.",
+  "mnemonic": "Nhìn vào 兆: phần giữa là <strong>儿 (người đang chạy)</strong>, hai bên là <strong>các vết nứt toả ra</strong> — hình ảnh người cổ đại đọc vết nứt trên mai rùa để <span class=\"hl\">đoán điềm báo</span>. Từ một điềm nhỏ → số lượng vô cùng lớn → <span class=\"hl\">một nghìn tỷ!</span>",
+
+  "originLead": "兆 là <span class=\"hl\">chữ tượng hình cổ</span>, xuất hiện từ thời nhà Thương (khoảng 1600–1046 TCN) trên giáp cốt văn (文字 khắc trên mai rùa và xương thú).",
+  "originDetail": "Người cổ đại Trung Quốc dùng mai rùa để <strong>bói toán (甲骨占卜)</strong>: nung lửa vào mai rùa cho đến khi nứt vỡ, rồi đọc hướng các vết nứt để đoán tương lai. Hình dạng chữ 兆 chính là <span class=\"hl\">mô phỏng các vết nứt toả ra từ trung tâm</span> đó. Từ nghĩa gốc \"vết nứt — điềm báo\", chữ mở rộng sang nghĩa \"dấu hiệu, triệu chứng\". Riêng nghĩa số học <strong>一兆 (1.000.000.000.000)</strong> bắt nguồn từ quan niệm \"số lượng lớn vô tận như điềm trời\" — được chuẩn hóa trong hệ đếm Nhật–Trung hiện đại.",
+
+  "decomp": [
+    {
+      "char": "儿",
+      "name": "Nhân",
+      "meaning": "Chân người — phần đế của chữ, cũng gợi hình người đứng quan sát điềm báo"
+    },
+    {
+      "char": "⺦",
+      "name": "(vết nứt)",
+      "meaning": "Hai nét uốn cong hai bên — vết nứt toả ra từ mai rùa khi bói toán"
+    }
+  ],
+
+  "meanings": [
+    {
+      "title": "Điềm báo, dấu hiệu (きざし)",
+      "desc": "Dấu hiệu báo trước sự việc sắp xảy ra — tốt hoặc xấu. Đây là nghĩa gốc, gắn với tục bói mai rùa thời cổ."
+    },
+    {
+      "title": "Nảy mầm, hé lộ (きざす)",
+      "desc": "Động từ: bắt đầu xuất hiện, lộ ra dấu hiệu. Dùng cho thiên nhiên (mầm cây) và tâm lý (cảm xúc bắt đầu nảy sinh)."
+    },
+    {
+      "title": "Một nghìn tỷ — 10¹² (ちょう)",
+      "desc": "Trong hệ đếm Nhật Bản: 1兆 = 1.000.000.000.000. Thứ tự: 万(10⁴)→億(10⁸)→兆(10¹²). Dùng phổ biến trong kinh tế, GDP, ngân sách quốc gia."
+    },
+    {
+      "title": "Triệu (Hán Việt — ít dùng)",
+      "desc": "Trong Hán Việt, 兆 = triệu, nhưng trong tiếng Nhật hiện đại 兆 = nghìn tỷ (10¹²), không phải triệu (10⁶). Cần phân biệt khi đọc văn bản song ngữ."
+    }
+  ],
+
+  "vocab": [
+    {
+      "word": "兆し",
+      "reading": "きざし (kizashi)",
+      "vi": "Điềm báo, dấu hiệu",
+      "jlpt": "N1",
+      "jp": "「春の兆しが感じられる暖かい日が続いている。」",
+      "jpVi": "Những ngày ấm áp liên tiếp khiến người ta cảm nhận được dấu hiệu của mùa xuân."
+    },
+    {
+      "word": "兆す",
+      "reading": "きざす (kizasu)",
+      "vi": "Nảy mầm, hé lộ dấu hiệu",
+      "jlpt": "N1",
+      "jp": "「心の中に不安が兆していた。」",
+      "jpVi": "Sự lo lắng đã bắt đầu hé lộ trong lòng."
+    },
+    {
+      "word": "一兆",
+      "reading": "いっちょう (icchō)",
+      "vi": "Một nghìn tỷ",
+      "jlpt": "N1",
+      "jp": "「国の借金は一千兆円を超えた。」",
+      "jpVi": "Nợ quốc gia đã vượt qua một nghìn nghìn tỷ yên."
+    },
+    {
+      "word": "兆候",
+      "reading": "ちょうこう (chōkō)",
+      "vi": "Triệu chứng, dấu hiệu",
+      "jlpt": "N1",
+      "jp": "「病気の兆候が早い段階で現れた。」",
+      "jpVi": "Các dấu hiệu bệnh đã xuất hiện từ giai đoạn sớm."
+    },
+    {
+      "word": "前兆",
+      "reading": "ぜんちょう (zenchō)",
+      "vi": "Điềm báo trước",
+      "jlpt": "N1",
+      "jp": "「地震の前兆として動物が騒ぎ始めた。」",
+      "jpVi": "Như điềm báo trước động đất, các loài động vật bắt đầu xáo động."
+    },
+    {
+      "word": "吉兆",
+      "reading": "きっちょう (kicchō)",
+      "vi": "Điềm lành, điềm tốt",
+      "jlpt": "",
+      "jp": "「初夢に富士山を見るのは吉兆とされている。」",
+      "jpVi": "Mơ thấy núi Phú Sĩ trong giấc mơ đầu năm được coi là điềm lành."
+    },
+    {
+      "word": "凶兆",
+      "reading": "きょうちょう (kyōchō)",
+      "vi": "Điềm dữ, điềm xấu",
+      "jlpt": "",
+      "jp": "「烏が鳴くのを凶兆と感じる人もいる。」",
+      "jpVi": "Có người cảm thấy tiếng quạ kêu là điềm dữ."
+    },
+    {
+      "word": "兆円",
+      "reading": "ちょうえん (chō-en)",
+      "vi": "Nghìn tỷ yên",
+      "jlpt": "",
+      "jp": "「今年度の予算は百兆円を超える見込みだ。」",
+      "jpVi": "Ngân sách năm nay dự kiến vượt 100 nghìn tỷ yên."
+    }
+  ],
+
+  "idioms": [
+    {
+      "text": "春の兆し",
+      "fontSize": 20,
+      "kana": "はるのきざし",
+      "meaning": "Dấu hiệu của mùa xuân — dùng rộng rãi theo nghĩa bóng để chỉ sự khởi đầu tốt đẹp, hy vọng bắt đầu hé lộ sau giai đoạn khó khăn.",
+      "jp": "「不況が続くなか、経済回復の春の兆しが見えてきた。」",
+      "jpVi": "Dù suy thoái kéo dài, đã bắt đầu thấy dấu hiệu phục hồi kinh tế — như mùa xuân hé lộ."
+    },
+    {
+      "text": "吉兆・凶兆",
+      "fontSize": 18,
+      "kana": "きっちょう・きょうちょう",
+      "meaning": "Điềm lành và điềm dữ — cặp từ đối lập dùng trong văn học, lịch sử và đời sống tâm linh Nhật Bản. Gốc từ tục bói mai rùa đọc vết nứt (吉 = tốt, 凶 = xấu).",
+      "jp": "「昔の人々は自然現象を吉兆か凶兆かで読み解いた。」",
+      "jpVi": "Người xưa đọc các hiện tượng tự nhiên để phán xét đó là điềm lành hay điềm dữ."
+    },
+    {
+      "text": "兆しを読む",
+      "fontSize": 18,
+      "kana": "きざしをよむ",
+      "meaning": "\"Đọc điềm báo\" — chỉ khả năng nhạy bén phán đoán xu hướng trước khi nó xảy ra. Dùng trong kinh doanh, chính trị, và đời sống hàng ngày.",
+      "jp": "「優れたリーダーは時代の兆しを読む力を持っている。」",
+      "jpVi": "Lãnh đạo giỏi có khả năng đọc được dấu hiệu của thời đại."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết các nét uốn bên trái trước, rồi đến phần giữa (nét phẩy ngắn và nét móc), cuối cùng là nét uốn bên phải.",
+  "strokeSteps": [
+    {
+      "range": "1",
+      "char": "⺦",
+      "label": "Nét phẩy trái trên",
+      "detail": "phẩy từ trên xuống trái"
+    },
+    {
+      "range": "2",
+      "char": "⺦",
+      "label": "Nét cong trái dưới",
+      "detail": "cong xuống và vòng ra ngoài trái"
+    },
+    {
+      "range": "3",
+      "char": "⺦",
+      "label": "Nét phẩy giữa",
+      "detail": "nét phẩy ngắn hướng xuống"
+    },
+    {
+      "range": "4",
+      "char": "儿",
+      "label": "Nét móc giữa",
+      "detail": "dọc xuống và móc sang phải"
+    },
+    {
+      "range": "5",
+      "char": "⺦",
+      "label": "Nét phẩy phải trên",
+      "detail": "phẩy từ trên xuống phải"
+    },
+    {
+      "range": "6",
+      "char": "⺦",
+      "label": "Nét cong phải dưới",
+      "detail": "cong xuống và vòng ra ngoài phải"
+    }
+  ],
+  "strokeDetail": "• <strong>Nét 1–2:</strong> phần uốn cong bên trái (giống chữ ク nghiêng)<br>• <strong>Nét 3–4:</strong> phần trung tâm 儿 — phẩy ngắn và nét móc xuống<br>• <strong>Nét 5–6:</strong> phần uốn cong bên phải — đối xứng với trái<br>• Tổng: <strong>6 nét ✓</strong>",
+
+  "calliNote": "Chữ 兆 có tính đối xứng trái-phải rõ ràng — hai cánh cong hai bên phải cân bằng nhau. Khi viết thư pháp, các nét cong được kéo dài và uốn lượn hơn, tạo cảm giác năng động. Phần 儿 ở giữa cần viết vững chãi làm trụ cột.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Chú ý <span class=\"hl\">hai cánh cong phải đối xứng</span> — nếu một bên lệch, chữ sẽ mất cân đối. Hãy tưởng tượng đang vẽ <span class=\"hl\">vết nứt toả ra từ mai rùa</span>.",
+
+  "canvasHints": [
+    { "x": 90, "y": 80, "label": "①" },
+    { "x": 75, "y": 200, "label": "②" },
+    { "x": 155, "y": 130, "label": "③" },
+    { "x": 168, "y": 250, "label": "④" },
+    { "x": 245, "y": 80, "label": "⑤" },
+    { "x": 260, "y": 200, "label": "⑥" }
+  ],
+
+  "quiz": [
+    {
+      "q": "兆 の訓読みは何ですか？",
+      "opts": ["ちょう (chō)", "きざし (kizashi)", "じょう (jō)", "おく (oku)"],
+      "ans": 1,
+      "explain": "兆 の訓読みは きざし（名詞：điềm báo）và きざす（動詞：hé lộ dấu hiệu）。音読みは ちょう。"
+    },
+    {
+      "q": "数の単位として「一兆」はいくつですか？",
+      "opts": [
+        "1.000.000 (一百万)",
+        "1.000.000.000 (十億)",
+        "1.000.000.000.000 (một nghìn tỷ)",
+        "100.000.000 (一億)"
+      ],
+      "ans": 2,
+      "explain": "日本語の数の単位：万(10⁴)→億(10⁸)→兆(10¹²)。一兆 = 1.000.000.000.000 — một nghìn tỷ. Không nhầm với nghĩa Hán Việt \"triệu\" (10⁶)."
+    },
+    {
+      "q": "兆 という字の起源は何ですか？",
+      "opts": [
+        "Hình dạng ngọn lửa bốc lên",
+        "Vết nứt trên mai rùa khi bói toán",
+        "Người đứng trên núi cao",
+        "Chữ do người Nhật sáng tạo (国字)"
+      ],
+      "ans": 1,
+      "explain": "兆 là chữ tượng hình mô phỏng vết nứt trên mai rùa (甲骨) khi nung lửa để bói toán thời cổ đại. Từ \"vết nứt\" → \"điềm báo\" → \"con số lớn vô tận\"."
+    },
+    {
+      "q": "「前兆」の意味は何ですか？",
+      "opts": [
+        "Điềm lành trước lễ hội",
+        "Dấu hiệu báo trước sự việc sắp xảy ra",
+        "Số lượng trước khi tính toán",
+        "Bước đi phía trước"
+      ],
+      "ans": 1,
+      "explain": "前兆 (ぜんちょう) = dấu hiệu/điềm báo xuất hiện TRƯỚC khi sự việc xảy ra. 前 = trước + 兆 = điềm. Ví dụ: 地震の前兆 (dấu hiệu trước động đất)."
+    },
+    {
+      "q": "「春の兆し」という表現はどんな意味で使われますか？",
+      "opts": [
+        "Mùa xuân đã kết thúc",
+        "Dấu hiệu đầu tiên của điều tốt đẹp sắp đến",
+        "Thời tiết mùa xuân khắc nghiệt",
+        "Lễ hội mùa xuân truyền thống"
+      ],
+      "ans": 1,
+      "explain": "春の兆し = \"dấu hiệu của mùa xuân\" — dùng cả nghĩa đen (thời tiết ấm lên) và nghĩa bóng (hy vọng, sự khởi đầu tốt đẹp bắt đầu hé lộ sau giai đoạn khó khăn)."
+    },
+    {
+      "q": "「兆候」と「前兆」の違いは何ですか？",
+      "opts": [
+        "Hoàn toàn giống nhau, có thể dùng thay nhau",
+        "兆候 thiên về dấu hiệu cụ thể (bệnh, thời tiết), 前兆 thiên về điềm báo chung",
+        "前兆 chỉ dùng cho thiên nhiên, 兆候 chỉ dùng cho con người",
+        "兆候 là từ cổ, 前兆 là từ hiện đại"
+      ],
+      "ans": 1,
+      "explain": "兆候 (ちょうこう) thường dùng cho các dấu hiệu cụ thể, quan sát được (triệu chứng bệnh, dấu hiệu thời tiết). 前兆 (ぜんちょう) mang sắc thái điềm báo rộng hơn, thường dùng trong ngữ cảnh trang trọng hoặc văn học."
+    }
+  ]
+}

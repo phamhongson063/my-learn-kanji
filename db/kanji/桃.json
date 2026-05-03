@@ -1,0 +1,286 @@
+{
+  "kanji": "桃",
+  "on": "とう",
+  "onRomaji": "tō",
+  "kun": "もも",
+  "kunRomaji": "momo",
+  "hanviet": "Đào",
+  "jlpt": "N2",
+  "strokes": 10,
+  "radical": "木",
+  "radicalReading": "き / きへん",
+  "radicalMeaning": "cây / gỗ",
+  "radicalNumber": 75,
+  "type": "Hình thanh",
+  "typeJa": "形声文字",
+  "structure": "木 (cây — nghĩa phù) + 兆 (ちょう — thanh phù, cho âm đọc とう)",
+  "school": "Tiểu học lớp 6 · Joyo kanji",
+
+  "lead": "桃 là chữ Hán <span class=\"hl\">10 nét</span>, loại <span class=\"hl\">Hình thanh</span> — kết hợp bộ <strong>木 (cây)</strong> và phần <strong>兆 (cho âm)</strong>. Chữ chỉ <span class=\"hl\">cây đào và quả đào</span> — một trong những loài cây mang ý nghĩa văn hóa sâu sắc nhất trong thế giới Đông Á: biểu tượng của <strong>trường thọ, tình yêu, mùa xuân và sự thanh khiết</strong>.",
+  "mnemonic": "Nhìn vào 桃: <strong>木 (cây)</strong> + <strong>兆 (điềm lành)</strong> → <span class=\"hl\">cây mang điềm lành</span>. Trong thần thoại Nhật Bản và Trung Quốc, đào chính là loài cây huyền diệu xua đuổi tà ma và ban phúc trường thọ — <span class=\"hl\">cây của điềm lành chính là cây đào 桃!</span>",
+
+  "originLead": "桃 là <span class=\"hl\">chữ hình thanh (形声文字)</span> xuất hiện từ rất sớm trong Hán ngữ cổ. Phần 木 chỉ nghĩa \"cây\", phần 兆 cung cấp âm đọc (とう/ちょう tương cận trong Hán cổ).",
+  "originDetail": "Cây đào (Prunus persica) có nguồn gốc từ Trung Quốc, được trồng từ hơn <strong>4.000 năm trước</strong>. Trong văn hóa Trung Hoa, đào gắn với <span class=\"hl\">Tây Vương Mẫu (西王母)</span> — nữ thần sở hữu vườn đào tiên, quả chín 3.000 năm mới một lần và ai ăn được sẽ trường sinh bất tử. Hình ảnh này lan sang Nhật Bản qua con đường Phật giáo và Nho giáo. Trong thần thoại Nhật Bản, thần <span class=\"hl\">Izanagi</span> dùng quả đào để xua đuổi ác quỷ từ cõi chết. Đến thời Edo, hoa đào (桃の花) trở thành biểu tượng của <span class=\"hl\">Tết Hina (雛祭り)</span> — lễ hội mùng 3 tháng 3 cầu sức khỏe cho các bé gái. Ngày nay 桃 vẫn là biểu tượng kép: vừa là trái cây mùa hè được yêu thích, vừa là hình ảnh văn học đẹp đẽ.",
+
+  "decomp": [
+    {
+      "char": "木",
+      "name": "Mộc",
+      "meaning": "Cây, gỗ — bộ nghĩa phù chỉ đây là loài thực vật, cây cối. Xuất hiện trong hàng trăm chữ chỉ cây và đồ gỗ."
+    },
+    {
+      "char": "兆",
+      "name": "Triệu",
+      "meaning": "Thanh phù — cung cấp âm đọc とう. Gián tiếp gợi ý nghĩa \"điềm lành\" vì đào vốn là cây thiêng trong văn hóa Đông Á."
+    }
+  ],
+
+  "meanings": [
+    {
+      "title": "Quả đào (もも)",
+      "desc": "Trái cây mọng nước, vỏ hồng mịn, ruột thơm ngọt — thu hoạch vào mùa hè tại Nhật. Các vùng nổi tiếng: Yamanashi, Fukushima, Okayama."
+    },
+    {
+      "title": "Cây đào (もも / 桃の木)",
+      "desc": "Cây ăn quả thuộc họ Prunus, ra hoa hồng nhạt vào mùa xuân trước khi lá mọc — đẹp không kém hoa anh đào."
+    },
+    {
+      "title": "Màu đào, màu hồng đào (桃色)",
+      "desc": "Màu hồng nhẹ, tươi sáng như vỏ quả đào chín — dùng rộng trong thời trang, thiết kế, và văn học Nhật."
+    },
+    {
+      "title": "Biểu tượng trường thọ và may mắn",
+      "desc": "Trong văn hóa dân gian Nhật–Trung, đào là loài cây thiêng: xua đuổi tà ma, ban phúc thọ, bảo vệ trẻ em."
+    }
+  ],
+
+  "vocab": [
+    {
+      "word": "桃",
+      "reading": "もも (momo)",
+      "vi": "Quả đào, cây đào",
+      "jlpt": "N1",
+      "jp": "「夏になると甘い桃が店に並ぶ。」",
+      "jpVi": "Khi hè đến, những quả đào ngọt ngào được bày bán đầy cửa hàng."
+    },
+    {
+      "word": "桃色",
+      "reading": "ももいろ (momoiro)",
+      "vi": "Màu hồng đào",
+      "jlpt": "N1",
+      "jp": "「彼女は桃色のドレスを着ていた。」",
+      "jpVi": "Cô ấy mặc một chiếc váy màu hồng đào."
+    },
+    {
+      "word": "桃の花",
+      "reading": "もものはな (momo no hana)",
+      "vi": "Hoa đào",
+      "jlpt": "",
+      "jp": "「桃の花が咲く季節になると春を感じる。」",
+      "jpVi": "Đến mùa hoa đào nở, tôi cảm nhận được mùa xuân."
+    },
+    {
+      "word": "白桃",
+      "reading": "はくとう (hakutō)",
+      "vi": "Đào trắng (giống đào vỏ trắng)",
+      "jlpt": "",
+      "jp": "「岡山の白桃は日本一甘いと言われている。」",
+      "jpVi": "Đào trắng Okayama được xem là ngọt nhất Nhật Bản."
+    },
+    {
+      "word": "桃源郷",
+      "reading": "とうげんきょう (tōgenkyō)",
+      "vi": "Đào Nguyên, chốn bồng lai",
+      "jlpt": "N1",
+      "jp": "「その村はまるで桃源郷のように美しかった。」",
+      "jpVi": "Ngôi làng đó đẹp như chốn bồng lai vậy."
+    },
+    {
+      "word": "桃太郎",
+      "reading": "ももたろう (Momotarō)",
+      "vi": "Momotarō (nhân vật cổ tích)",
+      "jlpt": "",
+      "jp": "「桃太郎は日本で最も有名な昔話の主人公だ。」",
+      "jpVi": "Momotarō là nhân vật chính của câu chuyện cổ tích nổi tiếng nhất Nhật Bản."
+    },
+    {
+      "word": "桃の節句",
+      "reading": "もものせっく (momo no sekku)",
+      "vi": "Tết Hina (3/3) — lễ hội hoa đào",
+      "jlpt": "",
+      "jp": "「桃の節句には雛人形を飾る習慣がある。」",
+      "jpVi": "Vào Tết Hina, người ta có phong tục trưng bày búp bê Hina."
+    },
+    {
+      "word": "桃缶",
+      "reading": "もものかん (momo no kan)",
+      "vi": "Đào đóng hộp",
+      "jlpt": "",
+      "jp": "「病気のときは桃缶が食べたくなる。」",
+      "jpVi": "Lúc ốm lại thèm ăn đào hộp."
+    }
+  ],
+
+  "idioms": [
+    {
+      "text": "桃源郷",
+      "fontSize": 20,
+      "kana": "とうげんきょう",
+      "meaning": "\"Cõi Đào Nguyên\" — điển tích từ truyện của Đào Uyên Minh (陶淵明, Trung Quốc, thế kỷ 4–5): một ngư dân lạc vào thung lũng hoa đào nở rực, gặp người sống hạnh phúc xa lánh trần thế. Nay dùng để chỉ chốn thiên đường, nơi lý tưởng xa rời thực tại.",
+      "jp": "「都会の喧騒を離れて、まるで桃源郷のような静かな村で暮らしたい。」",
+      "jpVi": "Tôi muốn rời xa sự ồn ào của thành phố, sống ở một ngôi làng yên bình như chốn Đào Nguyên."
+    },
+    {
+      "text": "桃李もの言わざれども下自ら蹊を成す",
+      "fontSize": 10,
+      "kana": "とうりものいわざれどもしたおのずからみちをなす",
+      "meaning": "\"Cây đào cây mận chẳng nói lời nào, nhưng người đời tự tìm đến dưới bóng\" — tục ngữ Hán (Sử Ký): người có đức hạnh thật sự không cần quảng bá, người đời tự nhiên quy tụ. Câu này thường được rút gọn thành 桃李成蹊 (とうりせいけい).",
+      "jp": "「桃李もの言わざれども下自ら蹊を成す——本物のリーダーは黙っていても人がついてくる。」",
+      "jpVi": "Cây đào cây mận chẳng nói lời nào mà người đời vẫn tự tìm đến — lãnh đạo thật sự chẳng cần lên tiếng vẫn có người đi theo."
+    },
+    {
+      "text": "桃色吐息",
+      "fontSize": 18,
+      "kana": "ももいろといき",
+      "meaning": "\"Hơi thở màu hồng đào\" — tên một bài hát nổi tiếng của ca sĩ Kaoru Koga (1984), nay trở thành thành ngữ chỉ bầu không khí lãng mạn, ngọt ngào, mơ màng. Thường dùng trong văn học và lời bài hát.",
+      "jp": "「二人の間には桃色吐息のような甘い雰囲気が漂っていた。」",
+      "jpVi": "Giữa hai người thoảng lên một bầu không khí ngọt ngào như hơi thở màu hồng đào."
+    }
+  ],
+
+  "strokeRule": "Nguyên tắc viết: <span class=\"hl\">trên → dưới · trái → phải</span>. Viết bộ <strong>木 (4 nét, bên trái)</strong> trước theo thứ tự chuẩn, sau đó viết phần <strong>兆 (6 nét, bên phải)</strong>.",
+  "strokeSteps": [
+    {
+      "range": "1",
+      "char": "木",
+      "label": "Nét ngang của 木",
+      "detail": "ngang từ trái sang phải"
+    },
+    {
+      "range": "2",
+      "char": "木",
+      "label": "Nét dọc móc của 木",
+      "detail": "dọc xuống, móc sang trái ở cuối"
+    },
+    {
+      "range": "3",
+      "char": "木",
+      "label": "Nét phẩy trái của 木",
+      "detail": "phẩy xuống trái"
+    },
+    {
+      "range": "4",
+      "char": "木",
+      "label": "Nét mác phải của 木",
+      "detail": "mác xuống phải"
+    },
+    {
+      "range": "5",
+      "char": "⺦",
+      "label": "Nét phẩy trái trên (兆)",
+      "detail": "phẩy ngắn từ trên xuống trái"
+    },
+    {
+      "range": "6",
+      "char": "⺦",
+      "label": "Nét cong trái dưới (兆)",
+      "detail": "cong xuống và vòng ra ngoài trái"
+    },
+    {
+      "range": "7",
+      "char": "⺦",
+      "label": "Nét phẩy giữa (兆)",
+      "detail": "nét phẩy ngắn hướng xuống"
+    },
+    {
+      "range": "8",
+      "char": "儿",
+      "label": "Nét móc giữa (兆)",
+      "detail": "dọc xuống và móc sang phải"
+    },
+    {
+      "range": "9",
+      "char": "⺦",
+      "label": "Nét phẩy phải trên (兆)",
+      "detail": "phẩy từ trên xuống phải"
+    },
+    {
+      "range": "10",
+      "char": "⺦",
+      "label": "Nét cong phải dưới (兆)",
+      "detail": "cong xuống và vòng ra ngoài phải"
+    }
+  ],
+  "strokeDetail": "• <strong>Nét 1–4:</strong> viết bộ 木 bên trái — ngang → dọc móc → phẩy trái → mác phải<br>• <strong>Nét 5–10:</strong> viết phần 兆 bên phải theo thứ tự chuẩn (xem chữ 兆 riêng)<br>• Lưu ý: bộ 木 khi đứng bên trái (木へん) thì nét dọc <strong>không có móc</strong> — khác với 木 đứng độc lập<br>• Tổng: 4 + 6 = <strong>10 nét ✓</strong>",
+
+  "calliNote": "Điểm cần chú ý: khi 木 đóng vai bộ thủ bên trái (木へん), nét dọc thứ hai thường được viết <strong>thẳng xuống không móc</strong> — khác với chữ 木 độc lập. Phần 兆 bên phải chiếm khoảng 60% chiều rộng chữ. Trong thư pháp, hai cánh cong của 兆 được kéo dài tự do, tạo cảm giác cành đào mềm mại tỏa ra.",
+
+  "practiceHint": "Tô theo chữ mờ hướng dẫn. Nhớ: <span class=\"hl\">木へん bên trái không có móc ở nét dọc</span>. Phần 兆 bên phải cần <span class=\"hl\">cân đối hai cánh cong</span> — hãy tưởng tượng đang vẽ <span class=\"hl\">cành đào với hoa nở hai bên</span>.",
+
+  "canvasHints": [
+    { "x": 80, "y": 100, "label": "①" },
+    { "x": 80, "y": 200, "label": "②" },
+    { "x": 45, "y": 250, "label": "③" },
+    { "x": 115, "y": 250, "label": "④" },
+    { "x": 195, "y": 55, "label": "⑤" },
+    { "x": 175, "y": 155, "label": "⑥" },
+    { "x": 240, "y": 100, "label": "⑦" },
+    { "x": 248, "y": 210, "label": "⑧" },
+    { "x": 290, "y": 55, "label": "⑨" },
+    { "x": 310, "y": 155, "label": "⑩" }
+  ],
+
+  "quiz": [
+    {
+      "q": "桃 の訓読みは何ですか？",
+      "opts": ["とう (tō)", "もも (momo)", "はな (hana)", "さくら (sakura)"],
+      "ans": 1,
+      "explain": "桃 の訓読みは もも。音読みは とう。日常会話では もも が圧倒的に多く使われる（例：もも農家、もも色）。とう は熟語に現れる（例：桃源郷 とうげんきょう）。"
+    },
+    {
+      "q": "桃 は何画ですか？",
+      "opts": ["8画", "9画", "10画", "11画"],
+      "ans": 2,
+      "explain": "桃 は 10画 — 木へん (4 nét) + 兆 (6 nét) = 10 nét tổng cộng. Lưu ý: 木 đứng độc lập cũng là 4 nét, nhưng khi làm bộ thủ (木へん) thì nét dọc không có móc."
+    },
+    {
+      "q": "「桃源郷」の由来は何ですか？",
+      "opts": [
+        "Tên một ngọn núi thiêng ở Nhật Bản",
+        "Truyện của Đào Uyên Minh — ngư dân lạc vào thung lũng hoa đào sống ẩn dật",
+        "Tên vườn đào của nữ thần Tây Vương Mẫu",
+        "Địa danh thực tế ở tỉnh Hunan, Trung Quốc"
+      ],
+      "ans": 1,
+      "explain": "桃源郷 xuất phát từ 「桃花源記」của Đào Uyên Minh (tao yuan ming, thời Đông Tấn): một ngư dân lạc vào thung lũng hoa đào, gặp người sống hạnh phúc ẩn dật xa lánh thế sự. Nay dùng để chỉ chốn thiên đường lý tưởng."
+    },
+    {
+      "q": "日本の「桃の節句」はいつですか？",
+      "opts": ["1月1日", "2月3日", "3月3日", "5月5日"],
+      "ans": 2,
+      "explain": "桃の節句 (もものせっく) = Tết Hina, diễn ra vào ngày 3/3 hàng năm. Đây là lễ hội cầu sức khỏe cho các bé gái, người ta trưng bày búp bê Hina (雛人形) và cắm hoa đào. Gọi là 桃の節句 vì hoa đào nở đúng vào thời điểm này."
+    },
+    {
+      "q": "「桃太郎」の話で、桃太郎はどこから生まれましたか？",
+      "opts": [
+        "Từ hạt giống cây đào",
+        "Từ quả đào trôi theo dòng sông",
+        "Từ hoa đào trên núi",
+        "Từ vườn đào của thần tiên"
+      ],
+      "ans": 1,
+      "explain": "Trong cổ tích 桃太郎: một bà lão ra sông giặt đồ nhặt được quả đào khổng lồ trôi theo dòng nước, đem về nhà thì từ trong quả đào chui ra một đứa bé trai — đó là Momotarō. Cậu bé sau này lên đường diệt quỷ trên đảo Onigashima."
+    },
+    {
+      "q": "「桃色」は一般的にどんな色ですか？",
+      "opts": [
+        "Đỏ tươi như máu",
+        "Hồng nhạt như vỏ quả đào chín",
+        "Cam vàng như lòng đào",
+        "Trắng tinh như hoa đào"
+      ],
+      "ans": 1,
+      "explain": "桃色 (ももいろ) = màu hồng nhạt, tươi sáng — lấy cảm hứng từ màu vỏ ngoài của quả đào chín. Trong tiếng Nhật, 桃色 đôi khi còn dùng theo nghĩa bóng để chỉ điều gì đó lãng mạn, ngọt ngào (桃色吐息、桃色の関係)."
+    }
+  ]
+}
