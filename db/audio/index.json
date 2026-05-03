@@ -14,13 +14,6 @@
     "level": "N3"
   },
   {
-    "word": "こ",
-    "reading": "こ",
-    "romaji": "ko",
-    "vi": "Chà xát",
-    "level": "N3"
-  },
-  {
     "word": "雑談",
     "reading": "ざつだん",
     "romaji": "zatsudan",
@@ -140,8 +133,8 @@
     "level": "N1"
   },
   {
-    "word": "想像を絶",
-    "reading": "そうぞうをぜっ",
+    "word": "想像を絶する",
+    "reading": "そうぞうをぜっする",
     "romaji": "souzou wo zes",
     "vi": "Vượt ngoài trí tưởng tượng",
     "level": "N1"
@@ -7193,13 +7186,6 @@
     "reading": "しょゆう",
     "romaji": "shoyuu",
     "vi": "Sở hữu",
-    "level": "N3"
-  },
-  {
-    "word": "田集",
-    "reading": "でんしゅう",
-    "romaji": "denshuu",
-    "vi": "Tập hợp ruộng",
     "level": "N3"
   },
   {
