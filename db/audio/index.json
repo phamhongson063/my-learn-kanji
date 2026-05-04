@@ -135,7 +135,7 @@
   {
     "word": "想像を絶する",
     "reading": "そうぞうをぜっする",
-    "romaji": "souzou wo zes",
+    "romaji": "souzou wo zessuru",
     "vi": "Vượt ngoài trí tưởng tượng",
     "level": "N1"
   },
@@ -933,7 +933,7 @@
   {
     "word": "期間限定",
     "reading": "きかんげんてい",
-    "romaji": "kikangenntei",
+    "romaji": "kikangentei",
     "vi": "Giới hạn thời gian",
     "level": "N2"
   },
@@ -1353,7 +1353,7 @@
   {
     "word": "縮む",
     "reading": "ちぢむ",
-    "romaji": "chidimu",
+    "romaji": "chijimu",
     "vi": "Co lại",
     "level": "N2"
   },
@@ -2830,7 +2830,7 @@
   {
     "word": "おおいに",
     "reading": "おおいに",
-    "romaji": "ooni",
+    "romaji": "ooini",
     "vi": "Rất nhiều, hết lòng, nhiệt liệt",
     "level": "N2"
   },
@@ -4111,7 +4111,7 @@
   {
     "word": "脆弱性",
     "reading": "ぜいじゃくせい",
-    "romaji": "zeijyakusei",
+    "romaji": "zeijakusei",
     "vi": "Lỗ hổng bảo mật",
     "level": "N1"
   },
@@ -4573,7 +4573,7 @@
   {
     "word": "片付ける",
     "reading": "かたづける",
-    "romaji": "katadukeru",
+    "romaji": "katazukeru",
     "vi": "Dọn dẹp",
     "level": "N3"
   },
@@ -4860,7 +4860,7 @@
   {
     "word": "日中",
     "reading": "にっちゅう",
-    "romaji": "nicchuu",
+    "romaji": "nitchuu",
     "vi": "Ban ngày",
     "level": "N3"
   },
@@ -5413,14 +5413,14 @@
   {
     "word": "縮まる",
     "reading": "ちぢまる",
-    "romaji": "chidimaru",
+    "romaji": "chijimaru",
     "vi": "Co lại",
     "level": "N2"
   },
   {
     "word": "縮める",
     "reading": "ちぢめる",
-    "romaji": "chidimeru",
+    "romaji": "chijimeru",
     "vi": "Thu nhỏ",
     "level": "N2"
   },
@@ -5847,7 +5847,7 @@
   {
     "word": "やむを得ない",
     "reading": "やむをえない",
-    "romaji": "yamuoienai",
+    "romaji": "yamuwoenai",
     "vi": "Bất khả kháng",
     "level": "N2"
   },
@@ -6596,7 +6596,7 @@
   {
     "word": "統一",
     "reading": "とういつ",
-    "romaji": "touuitsu",
+    "romaji": "touitsu",
     "vi": "Thống nhất",
     "level": "N3"
   },
@@ -6778,7 +6778,7 @@
   {
     "word": "連れ出す",
     "reading": "つれだす",
-    "romaji": "tsuiredasu",
+    "romaji": "tsuredasu",
     "vi": "Dẫn ra",
     "level": "N3"
   },
@@ -6848,7 +6848,7 @@
   {
     "word": "差し込む",
     "reading": "さしこむ",
-    "romaji": "shikomu",
+    "romaji": "sashikomu",
     "vi": "Cắm vào",
     "level": "N3"
   },
@@ -6869,7 +6869,7 @@
   {
     "word": "詰め込む",
     "reading": "つめこむ",
-    "romaji": "tsumekoumu",
+    "romaji": "tsumekomu",
     "vi": "Nhét chật",
     "level": "N3"
   },
@@ -6939,7 +6939,7 @@
   {
     "word": "座り込む",
     "reading": "すわりこむ",
-    "romaji": "suwarίkomu",
+    "romaji": "suwarikomu",
     "vi": "Ngồi xuống",
     "level": "N3"
   },
@@ -7002,7 +7002,7 @@
   {
     "word": "言い合う",
     "reading": "いいあう",
-    "romaji": "iiiau",
+    "romaji": "iiau",
     "vi": "Tranh cãi",
     "level": "N3"
   },
@@ -7072,7 +7072,7 @@
   {
     "word": "詰め合わせる",
     "reading": "つめあわせる",
-    "romaji": "tsumawaseru",
+    "romaji": "tsumeawaseru",
     "vi": "Xếp hộp quà",
     "level": "N3"
   },
@@ -7205,7 +7205,7 @@
   {
     "word": "設備",
     "reading": "せつび",
-    "romaji": "setsuhi",
+    "romaji": "setsubi",
     "vi": "Thiết bị",
     "level": "N3"
   },
@@ -7255,7 +7255,7 @@
     "word": "刺激",
     "reading": "しげき",
     "romaji": "shigeki",
-    "vi": "Kích thích",
+    "vi": "Kích thích / tác động / làm hứng thú",
     "level": "N3"
   },
   {
@@ -7401,7 +7401,7 @@
   {
     "word": "信用",
     "reading": "しんよう",
-    "romaji": "shin'you",
+    "romaji": "shinyou",
     "vi": "Tín dụng",
     "level": "N3"
   },
@@ -7422,7 +7422,7 @@
   {
     "word": "吸収",
     "reading": "きゅうしゅう",
-    "romaji": "kyushu",
+    "romaji": "kyuushuu",
     "vi": "Hấp thụ",
     "level": "N3"
   },
@@ -7478,7 +7478,7 @@
   {
     "word": "中断",
     "reading": "ちゅうだん",
-    "romaji": "chudan",
+    "romaji": "chuudan",
     "vi": "Tạm dừng",
     "level": "N3"
   },
@@ -7519,8 +7519,8 @@
   },
   {
     "word": "都会",
-    "reading": "としかい",
-    "romaji": "tosikai",
+    "reading": "とかい",
+    "romaji": "tokai",
     "vi": "Thành phố",
     "level": "N3"
   },
@@ -7702,7 +7702,7 @@
   {
     "word": "一流",
     "reading": "いちりゅう",
-    "romaji": "ichiryu",
+    "romaji": "ichiryuu",
     "vi": "Hạng nhất",
     "level": "N3"
   },
@@ -7863,7 +7863,7 @@
   {
     "word": "組み立てる",
     "reading": "くみたてる",
-    "romaji": "kumitaeru",
+    "romaji": "kumitateru",
     "vi": "Lắp ráp",
     "level": "N3"
   },
@@ -8010,7 +8010,7 @@
   {
     "word": "ひっくり返す",
     "reading": "ひっくりかえす",
-    "romaji": "hikkurikaasu",
+    "romaji": "hikkurikaesu",
     "vi": "Lật ngược",
     "level": "N3"
   },
@@ -8108,7 +8108,7 @@
   {
     "word": "膨らます",
     "reading": "ふくらます",
-    "romaji": "fukurasu",
+    "romaji": "fukuramasu",
     "vi": "Phồng lên",
     "level": "N3"
   },
@@ -8227,7 +8227,7 @@
   {
     "word": "備わる",
     "reading": "そなわる",
-    "romaji": "sonawarou",
+    "romaji": "sonawaru",
     "vi": "Được trang bị",
     "level": "N3"
   },
@@ -8262,14 +8262,14 @@
   {
     "word": "整える・調える",
     "reading": "ととのえる",
-    "romaji": "totonoueru",
+    "romaji": "totonoeru",
     "vi": "Sắp xếp",
     "level": "N3"
   },
   {
     "word": "覆う",
     "reading": "おおう",
-    "romaji": "ouu",
+    "romaji": "oou",
     "vi": "Che phủ",
     "level": "N3"
   },
@@ -8352,8 +8352,8 @@
   },
   {
     "word": "謙譲",
-    "reading": "けんしょう",
-    "romaji": "kensho",
+    "reading": "けんじょう",
+    "romaji": "kenjou",
     "vi": "Khiêm nhường",
     "level": "N3"
   },
@@ -8500,7 +8500,7 @@
   {
     "word": "高級",
     "reading": "こうきゅう",
-    "romaji": "koukyu",
+    "romaji": "koukyuu",
     "vi": "Cao cấp",
     "level": "N3"
   },
@@ -8570,7 +8570,7 @@
   {
     "word": "抽象的",
     "reading": "ちゅうしょうてき",
-    "romaji": "chushouteki",
+    "romaji": "chuushouteki",
     "vi": "Trừu tượng",
     "level": "N3"
   },
@@ -8759,7 +8759,7 @@
   {
     "word": "普及",
     "reading": "ふきゅう",
-    "romaji": "fukyu",
+    "romaji": "fukyuu",
     "vi": "Phổ biến",
     "level": "N3"
   },
@@ -8913,7 +8913,7 @@
   {
     "word": "周辺",
     "reading": "しゅうへん",
-    "romaji": "shuhen",
+    "romaji": "shuuhen",
     "vi": "Xung quanh",
     "level": "N3"
   },
@@ -9158,7 +9158,7 @@
   {
     "word": "漱ぐ",
     "reading": "すすぐ",
-    "romaji": "susugi",
+    "romaji": "susugu",
     "vi": "Xúc nước súc miệng",
     "level": "N3"
   },
@@ -9473,7 +9473,7 @@
   {
     "word": "脅す",
     "reading": "おどす",
-    "romaji": "odasu",
+    "romaji": "odosu",
     "vi": "Đe dọa",
     "level": "N3"
   },
@@ -9487,7 +9487,7 @@
   {
     "word": "逆らう",
     "reading": "さからう",
-    "romaji": "sakarou",
+    "romaji": "sakarau",
     "vi": "Chống lại",
     "level": "N3"
   },
@@ -9501,7 +9501,7 @@
   {
     "word": "打ち消す",
     "reading": "うちけす",
-    "romaji": "uchíkesu",
+    "romaji": "uchikesu",
     "vi": "Phủ nhận",
     "level": "N3"
   },
@@ -9599,7 +9599,7 @@
   {
     "word": "濁す",
     "reading": "にごす",
-    "romaji": "nigasu",
+    "romaji": "nigosu",
     "vi": "Làm đục",
     "level": "N3"
   },
@@ -9620,7 +9620,7 @@
   {
     "word": "達",
     "reading": "たっ",
-    "romaji": "tas",
+    "romaji": "tatsu",
     "vi": "Đạt tới",
     "level": "N3"
   },
@@ -9676,7 +9676,7 @@
   {
     "word": "緩める",
     "reading": "ゆるめる",
-    "romaji": "yuremeru",
+    "romaji": "yurumeru",
     "vi": "Nới lỏng",
     "level": "N3"
   },
@@ -9690,7 +9690,7 @@
   {
     "word": "接",
     "reading": "せっ",
-    "romaji": "ses",
+    "romaji": "setsu",
     "vi": "Tiếp xúc",
     "level": "N3"
   },
@@ -9725,14 +9725,14 @@
   {
     "word": "躊躇う",
     "reading": "ためらう",
-    "romaji": "tamerarou",
+    "romaji": "tamerau",
     "vi": "Do dự",
     "level": "N3"
   },
   {
     "word": "何となく",
     "reading": "なんとなく",
-    "romaji": "nantoku",
+    "romaji": "nantonaku",
     "vi": "Không biết vì sao",
     "level": "N3"
   },
@@ -9760,7 +9760,7 @@
   {
     "word": "案の定",
     "reading": "あんのじょう",
-    "romaji": "annojo",
+    "romaji": "annojou",
     "vi": "Đúng như dự tính",
     "level": "N3"
   },
@@ -9872,7 +9872,7 @@
   {
     "word": "週末",
     "reading": "しゅうまつ",
-    "romaji": "shumatsu",
+    "romaji": "shuumatsu",
     "vi": "Cuối tuần",
     "level": "N3"
   },
@@ -9886,7 +9886,7 @@
   {
     "word": "休日",
     "reading": "きゅうじつ",
-    "romaji": "kyujitsu",
+    "romaji": "kyuujitsu",
     "vi": "Ngày lễ",
     "level": "N3"
   },
@@ -9949,7 +9949,7 @@
   {
     "word": "有料",
     "reading": "ゆうりょう",
-    "romaji": "yuryou",
+    "romaji": "yuuryou",
     "vi": "Trả tiền",
     "level": "N3"
   },
@@ -9969,15 +9969,15 @@
   },
   {
     "word": "喫茶店",
-    "reading": "きってん",
-    "romaji": "kittén",
+    "reading": "きっさてん",
+    "romaji": "kissaten",
     "vi": "Quán cà phê",
     "level": "N3"
   },
   {
     "word": "追求",
     "reading": "ついきゅう",
-    "romaji": "tuikyu",
+    "romaji": "tsuikyuu",
     "vi": "Theo đuổi",
     "level": "N3"
   },
@@ -10166,7 +10166,7 @@
   {
     "word": "死亡",
     "reading": "しぼう",
-    "romaji": "sibou",
+    "romaji": "shibou",
     "vi": "Tử vong",
     "level": "N3"
   },
@@ -10278,7 +10278,7 @@
   {
     "word": "取り扱う",
     "reading": "とりあつかう",
-    "romaji": "toriatsukai",
+    "romaji": "toriatsukau",
     "vi": "Xử lý",
     "level": "N3"
   },
@@ -10348,7 +10348,7 @@
   {
     "word": "心強い",
     "reading": "こころづよい",
-    "romaji": "kokoro dzuyoi",
+    "romaji": "kokorozuyoi",
     "vi": "Tự tin",
     "level": "N3"
   },
@@ -10403,8 +10403,8 @@
   },
   {
     "word": "平穏",
-    "reading": "へんおん",
-    "romaji": "henoun",
+    "reading": "へいおん",
+    "romaji": "heion",
     "vi": "Bình yên",
     "level": "N3"
   },
@@ -10452,15 +10452,15 @@
   },
   {
     "word": "図々しい",
-    "reading": "ずずうしい",
-    "romaji": "zuzushii",
+    "reading": "ずうずうしい",
+    "romaji": "zuuzuushii",
     "vi": "Dạn dày",
     "level": "N3"
   },
   {
     "word": "殺す",
     "reading": "ころす",
-    "romaji": "kokosu",
+    "romaji": "korosu",
     "vi": "Giết",
     "level": "N3"
   },
@@ -10474,7 +10474,7 @@
   {
     "word": "窮屈",
     "reading": "きゅうくつ",
-    "romaji": "kyukutsu",
+    "romaji": "kyuukutsu",
     "vi": "Chật chội",
     "level": "N3"
   },
@@ -10523,7 +10523,7 @@
   {
     "word": "神経を抜いた",
     "reading": "しんけいをぬいた",
-    "romaji": "shinkei wo nuitta",
+    "romaji": "shinkei wo nuita",
     "vi": "Gỡ bỏ dây thần kinh",
     "level": "N3"
   },
@@ -10593,7 +10593,7 @@
   {
     "word": "左右",
     "reading": "さゆう",
-    "romaji": "sayu",
+    "romaji": "sayuu",
     "vi": "Trái phải",
     "level": "N3"
   },
@@ -10894,7 +10894,7 @@
   {
     "word": "自給率",
     "reading": "じきゅうりつ",
-    "romaji": "jikyuritsu",
+    "romaji": "jikyuuritsu",
     "vi": "Tỉ lệ tự cấp",
     "level": "N3"
   },
@@ -11006,7 +11006,7 @@
   {
     "word": "待遇",
     "reading": "たいぐう",
-    "romaji": "taigu",
+    "romaji": "taiguu",
     "vi": "Đối xử",
     "level": "N3"
   },
@@ -11034,14 +11034,14 @@
   {
     "word": "追求",
     "reading": "ついきゅう",
-    "romaji": "tuikyu",
+    "romaji": "tsuikyuu",
     "vi": "Theo đuổi",
     "level": "N3"
   },
   {
     "word": "追求される",
     "reading": "ついきゅうされる",
-    "romaji": "tuikyu sareru",
+    "romaji": "tsuikyuu sareru",
     "vi": "Bị theo đuổi",
     "level": "N3"
   },
@@ -11076,7 +11076,7 @@
   {
     "word": "撃り取る",
     "reading": "しぼりとる",
-    "romaji": "shiboitoru",
+    "romaji": "shiboritoru",
     "vi": "Vắt lấy",
     "level": "N3"
   },
@@ -11132,7 +11132,7 @@
   {
     "word": "引き起こす",
     "reading": "ひきおこす",
-    "romaji": "hikiokasu",
+    "romaji": "hikiokosu",
     "vi": "Gây ra",
     "level": "N3"
   },
@@ -11342,7 +11342,7 @@
   {
     "word": "重要視",
     "reading": "じゅうようし",
-    "romaji": "juyoushi",
+    "romaji": "juuyoushi",
     "vi": "Coi trọng",
     "level": "N3"
   },
@@ -11356,7 +11356,7 @@
   {
     "word": "手直し",
     "reading": "てなおし",
-    "romaji": "tenaoashi",
+    "romaji": "tenaoshi",
     "vi": "Sửa chữa",
     "level": "N3"
   },
@@ -11391,7 +11391,7 @@
   {
     "word": "使い道",
     "reading": "つかいみち",
-    "romaji": "tsukaimithi",
+    "romaji": "tsukaimichi",
     "vi": "Cách sử dụng",
     "level": "N3"
   },
@@ -11433,14 +11433,14 @@
   {
     "word": "漱ぐ・ゆすぐ",
     "reading": "すすぐ",
-    "romaji": "susugi",
+    "romaji": "susugu",
     "vi": "Súc miệng",
     "level": "N3"
   },
   {
     "word": "言及",
     "reading": "げんきゅう",
-    "romaji": "genkyu",
+    "romaji": "genkyuu",
     "vi": "Đề cập",
     "level": "N3"
   },
@@ -11489,14 +11489,14 @@
   {
     "word": "追及",
     "reading": "ついきゅう",
-    "romaji": "tuikyu",
+    "romaji": "tsuikyuu",
     "vi": "Tìm kiếm",
     "level": "N3"
   },
   {
     "word": "重用",
     "reading": "じゅうよう",
-    "romaji": "juyou",
+    "romaji": "juuyou",
     "vi": "Sử dụng rộng rãi",
     "level": "N3"
   },
@@ -11545,7 +11545,7 @@
   {
     "word": "納入",
     "reading": "のうにゅう",
-    "romaji": "nounyu",
+    "romaji": "nounyuu",
     "vi": "Giao nộp",
     "level": "N3"
   },
@@ -11652,6 +11652,342 @@
     "reading": "こする",
     "romaji": "kosuru",
     "vi": "Chà",
+    "level": "N3"
+  },
+  {
+    "word": "女性ホルモン",
+    "reading": "じょせいホルモン",
+    "romaji": "josei horumon",
+    "vi": "Hormone nữ",
+    "level": "N2"
+  },
+  {
+    "word": "エストロゲン",
+    "reading": "エストロゲン",
+    "romaji": "esutorogen",
+    "vi": "Estrogen",
+    "level": "N1"
+  },
+  {
+    "word": "閉経",
+    "reading": "へいけい",
+    "romaji": "heikei",
+    "vi": "Mãn kinh",
+    "level": "N1"
+  },
+  {
+    "word": "更年期",
+    "reading": "こうねんき",
+    "romaji": "kounenki",
+    "vi": "Thời kỳ mãn kinh",
+    "level": "N2"
+  },
+  {
+    "word": "老年期",
+    "reading": "ろうねんき",
+    "romaji": "rounenki",
+    "vi": "Tuổi già",
+    "level": "N2"
+  },
+  {
+    "word": "高齢期",
+    "reading": "こうれいき",
+    "romaji": "koureiki",
+    "vi": "Thời kỳ cao tuổi",
+    "level": "N2"
+  },
+  {
+    "word": "骨粗しょう症",
+    "reading": "こつそしょうしょう",
+    "romaji": "kotsu soshou shou",
+    "vi": "Loãng xương",
+    "level": "N1"
+  },
+  {
+    "word": "骨盤臓器脱",
+    "reading": "こつばんぞうきだつ",
+    "romaji": "kotsuban zouki datsu",
+    "vi": "Sa tạng chậu",
+    "level": "N1"
+  },
+  {
+    "word": "認知症",
+    "reading": "にんちしょう",
+    "romaji": "ninchi shou",
+    "vi": "Sa sút trí tuệ / mất trí nhớ",
+    "level": "N1"
+  },
+  {
+    "word": "アルツハイマー型認知症",
+    "reading": "アルツハイマーがたにんちしょう",
+    "romaji": "arutsuhaimaa gata ninchi shou",
+    "vi": "Chứng mất trí Alzheimer",
+    "level": "N1"
+  },
+  {
+    "word": "骨密度",
+    "reading": "こつみつど",
+    "romaji": "kotsu mitsudo",
+    "vi": "Mật độ xương",
+    "level": "N1"
+  },
+  {
+    "word": "骨量",
+    "reading": "こつりょう",
+    "romaji": "kotsuryou",
+    "vi": "Lượng xương",
+    "level": "N1"
+  },
+  {
+    "word": "じん帯",
+    "reading": "じんたい",
+    "romaji": "jintai",
+    "vi": "Dây chằng",
+    "level": "N2"
+  },
+  {
+    "word": "臓器",
+    "reading": "ぞうき",
+    "romaji": "zouki",
+    "vi": "Nội tạng",
+    "level": "N2"
+  },
+  {
+    "word": "子宮",
+    "reading": "しきゅう",
+    "romaji": "shikyuu",
+    "vi": "Tử cung",
+    "level": "N2"
+  },
+  {
+    "word": "直腸",
+    "reading": "ちょくちょう",
+    "romaji": "chokuchou",
+    "vi": "Trực tràng",
+    "level": "N2"
+  },
+  {
+    "word": "ぼうこう",
+    "reading": "ぼうこう",
+    "romaji": "boukou",
+    "vi": "Bàng quang",
+    "level": "N2"
+  },
+  {
+    "word": "膣",
+    "reading": "ちつ",
+    "romaji": "chitsu",
+    "vi": "Âm đạo",
+    "level": "N1"
+  },
+  {
+    "word": "腎臓",
+    "reading": "じんぞう",
+    "romaji": "jinzou",
+    "vi": "Thận",
+    "level": "N2"
+  },
+  {
+    "word": "排尿障害",
+    "reading": "はいにょうしょうがい",
+    "romaji": "hainyou shougai",
+    "vi": "Rối loạn tiểu tiện",
+    "level": "N1"
+  },
+  {
+    "word": "尿もれ",
+    "reading": "にょうもれ",
+    "romaji": "nyou more",
+    "vi": "Tiểu không kiểm soát",
+    "level": "N1"
+  },
+  {
+    "word": "骨盤底",
+    "reading": "こつばんてい",
+    "romaji": "kotsubantei",
+    "vi": "Đáy chậu",
+    "level": "N1"
+  },
+  {
+    "word": "インナーマッスル",
+    "reading": "インナーマッスル",
+    "romaji": "innaa massuru",
+    "vi": "Cơ sâu / cơ bên trong",
+    "level": "N1"
+  },
+  {
+    "word": "ホルモン補充療法",
+    "reading": "ホルモンほじゅうりょうほう",
+    "romaji": "horumon hojuu ryouhou",
+    "vi": "Liệu pháp bổ sung hormone",
+    "level": "N1"
+  },
+  {
+    "word": "カルシウム",
+    "reading": "カルシウム",
+    "romaji": "karushiumu",
+    "vi": "Canxi",
+    "level": "N2"
+  },
+  {
+    "word": "ビタミンD",
+    "reading": "ビタミンD",
+    "romaji": "bitamin D",
+    "vi": "Vitamin D",
+    "level": "N2"
+  },
+  {
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "romaji": "gyuunyuu",
+    "vi": "Sữa bò",
+    "level": "N3"
+  },
+  {
+    "word": "乳製品",
+    "reading": "にゅうせいひん",
+    "romaji": "nyuuseihin",
+    "vi": "Sản phẩm từ sữa",
+    "level": "N2"
+  },
+  {
+    "word": "小魚",
+    "reading": "こざかな",
+    "romaji": "kozakana",
+    "vi": "Cá nhỏ",
+    "level": "N2"
+  },
+  {
+    "word": "大豆食品",
+    "reading": "だいずしょくひん",
+    "romaji": "daizu shokuhin",
+    "vi": "Thực phẩm từ đậu nành",
+    "level": "N2"
+  },
+  {
+    "word": "サケ",
+    "reading": "サケ",
+    "romaji": "sake",
+    "vi": "Cá hồi",
+    "level": "N2"
+  },
+  {
+    "word": "ウナギ",
+    "reading": "ウナギ",
+    "romaji": "unagi",
+    "vi": "Lươn",
+    "level": "N2"
+  },
+  {
+    "word": "干しシイタケ",
+    "reading": "ほしシイタケ",
+    "romaji": "hoshi shiitake",
+    "vi": "Nấm shiitake khô",
+    "level": "N2"
+  },
+  {
+    "word": "ウォーキング",
+    "reading": "ウォーキング",
+    "romaji": "wookingu",
+    "vi": "Đi bộ",
+    "level": "N3"
+  },
+  {
+    "word": "水泳",
+    "reading": "すいえい",
+    "romaji": "suiei",
+    "vi": "Bơi lội",
+    "level": "N3"
+  },
+  {
+    "word": "日光浴",
+    "reading": "にっこうよく",
+    "romaji": "nikkouyoku",
+    "vi": "Tắm nắng",
+    "level": "N2"
+  },
+  {
+    "word": "記憶力",
+    "reading": "きおくりょく",
+    "romaji": "kiokuryoku",
+    "vi": "Trí nhớ",
+    "level": "N2"
+  },
+  {
+    "word": "体調",
+    "reading": "たいちょう",
+    "romaji": "taichou",
+    "vi": "Tình trạng sức khỏe",
+    "level": "N3"
+  },
+  {
+    "word": "分泌",
+    "reading": "ぶんぴつ",
+    "romaji": "bunpitsu",
+    "vi": "Tiết (hormone, dịch...)",
+    "level": "N2"
+  },
+  {
+    "word": "発症",
+    "reading": "はっしょう",
+    "romaji": "hasshou",
+    "vi": "Phát bệnh",
+    "level": "N2"
+  },
+  {
+    "word": "専門医",
+    "reading": "せんもんい",
+    "romaji": "senmon'i",
+    "vi": "Bác sĩ chuyên khoa",
+    "level": "N2"
+  },
+  {
+    "word": "専門施設",
+    "reading": "せんもんしせつ",
+    "romaji": "senmon shisetsu",
+    "vi": "Cơ sở chuyên khoa",
+    "level": "N2"
+  },
+  {
+    "word": "医療機関",
+    "reading": "いりょうきかん",
+    "romaji": "iryou kikan",
+    "vi": "Cơ sở y tế",
+    "level": "N2"
+  },
+  {
+    "word": "生活の質",
+    "reading": "せいかつのしつ",
+    "romaji": "seikatsu no shitsu",
+    "vi": "Chất lượng cuộc sống",
+    "level": "N2"
+  },
+  {
+    "word": "寝たきり",
+    "reading": "ねたきり",
+    "romaji": "netakiri",
+    "vi": "Nằm liệt giường",
+    "level": "N2"
+  },
+  {
+    "word": "モチベーション",
+    "reading": "モチベーション",
+    "romaji": "mochibeshon",
+    "vi": "Động lực",
+    "level": "N2"
+  },
+  {
+    "word": "ライフステージ",
+    "reading": "ライフステージ",
+    "romaji": "raifu suteeji",
+    "vi": "Giai đoạn cuộc đời",
+    "level": "N2"
+  },
+  {
+    "word": "サポート",
+    "reading": "サポート",
+    "romaji": "sapooto",
+    "vi": "Hỗ trợ",
     "level": "N3"
   }
 ]
