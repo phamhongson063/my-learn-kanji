@@ -950,6 +950,81 @@
 
   [data-dark="1"] .vl-pip-btn { background: #252119; }
 
+  /* TAG FILTER */
+  .vl-tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .vl-tag-filter-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--muted);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-right: 2px;
+    white-space: nowrap;
+  }
+
+  .vl-tag-check {
+    display: none;
+  }
+
+  .vl-tag-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 13px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: border-color 0.2s, background 0.2s, color 0.2s, box-shadow 0.2s;
+    user-select: none;
+  }
+
+  .vl-tag-pill::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.2s ease;
+    font-size: 11px;
+    line-height: 1;
+  }
+
+  .vl-tag-check:checked + .vl-tag-pill {
+    border-color: var(--gold);
+    background: var(--gold);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(138,98,24,0.3);
+  }
+
+  .vl-tag-check:checked + .vl-tag-pill::before {
+    content: '✓';
+    width: 14px;
+  }
+
+  .vl-tag-pill:hover {
+    border-color: rgba(200,168,75,0.6);
+    background: rgba(200,168,75,0.08);
+    color: var(--text);
+  }
+
+  .vl-tag-check:checked + .vl-tag-pill:hover {
+    background: #b8962e;
+    border-color: #b8962e;
+    color: #fff;
+  }
+
 </style>
 </head>
 <body>
@@ -1090,6 +1165,9 @@
 
 <!-- MAIN -->
 <div class="vl-wrap">
+  <div class="vl-tag-filter" id="tag-filter-wrap" style="display:none">
+    <span class="vl-tag-filter-label">Tags</span>
+  </div>
   <div class="vl-grid" id="vocab-grid">
     <div class="vl-loading">ĐANG TẢI…</div>
   </div>
@@ -1126,15 +1204,71 @@
     return map;
   }
 
+  let activeTags = new Set();
+
+  function renderTagFilter(tags) {
+    const wrap = document.getElementById('tag-filter-wrap');
+    if (!tags || tags.length === 0) return;
+    wrap.style.display = 'flex';
+    tags.forEach(tag => {
+      const id = 'tag-cb-' + tag.replace(/\s+/g, '-');
+      const label = document.createElement('label');
+      label.htmlFor = id;
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.className = 'vl-tag-check';
+      cb.id = id;
+      cb.value = tag;
+      cb.addEventListener('change', onTagChange);
+      const pill = document.createElement('span');
+      pill.className = 'vl-tag-pill';
+      pill.textContent = tag;
+      label.appendChild(cb);
+      label.appendChild(pill);
+      wrap.appendChild(label);
+    });
+  }
+
+  function onTagChange(e) {
+    if (e.target.checked) {
+      activeTags.add(e.target.value);
+    } else {
+      activeTags.delete(e.target.value);
+    }
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const q = document.getElementById('search-input').value.trim().toLowerCase();
+    let result = allWords;
+
+    if (activeTags.size > 0) {
+      result = result.filter(w => w.tag && w.tag.some(t => activeTags.has(t)));
+    }
+
+    if (q) {
+      result = result.filter(w =>
+        w.word.includes(q) ||
+        (w.reading && w.reading.includes(q)) ||
+        (w.romaji && w.romaji.toLowerCase().includes(q)) ||
+        (w.vi && w.vi.toLowerCase().includes(q))
+      );
+    }
+
+    renderGrid(result);
+  }
+
   async function loadVocab() {
     try {
-      const [wordsRes, reiRes] = await Promise.all([
+      const [wordsRes, reiRes, tagsRes] = await Promise.all([
         fetch(AUDIO_BASE + 'index.json'),
-        fetch('../db/audio/rei/index.txt').catch(() => null)
+        fetch('../db/audio/rei/index.txt').catch(() => null),
+        fetch('../db/audio/tags.json').catch(() => null)
       ]);
       if (!wordsRes.ok) throw new Error('fetch failed');
       allWords = await wordsRes.json();
       if (reiRes && reiRes.ok) reiMap = parseReiText(await reiRes.text());
+      if (tagsRes && tagsRes.ok) renderTagFilter(await tagsRes.json());
       const rnd32 = new Uint32Array(allWords.length);
       crypto.getRandomValues(rnd32);
       for (let i = allWords.length - 1; i > 0; i--) {
@@ -1497,24 +1631,11 @@
       setTimeout(() => input.focus(), 50);
     } else {
       input.value = '';
-      renderGrid(allWords);
+      applyFilters();
     }
   }
 
-  document.getElementById('search-input').addEventListener('input', function () {
-    const q = this.value.trim().toLowerCase();
-    if (!q) {
-      renderGrid(allWords);
-      return;
-    }
-    const filtered = allWords.filter(w =>
-      w.word.includes(q) ||
-      (w.reading && w.reading.includes(q)) ||
-      (w.romaji && w.romaji.toLowerCase().includes(q)) ||
-      (w.vi && w.vi.toLowerCase().includes(q))
-    );
-    renderGrid(filtered);
-  });
+  document.getElementById('search-input').addEventListener('input', applyFilters);
 
   // Play All
   let playAllActive = false;

@@ -11989,5 +11989,85 @@
     "romaji": "sapooto",
     "vi": "Hỗ trợ",
     "level": "N3"
+  },
+  {
+    "word": "提供",
+    "reading": "ていきょう",
+    "romaji": "teikyou",
+    "vi": "Cung cấp",
+    "level": "N3",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "ぐったり",
+    "reading": "ぐったり",
+    "romaji": "guttari",
+    "vi": "Mệt lả, kiệt sức",
+    "level": "N2",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "ショック",
+    "reading": "ショック",
+    "romaji": "shokku",
+    "vi": "Sốc, cú sốc",
+    "level": "N3",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "なだらか",
+    "reading": "なだらか",
+    "romaji": "nadaraka",
+    "vi": "Thoai thoải, dần dần",
+    "level": "N2",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "愉快",
+    "reading": "ゆかい",
+    "romaji": "yukai",
+    "vi": "Vui vẻ, thú vị",
+    "level": "N2",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "やむをえない",
+    "reading": "やむをえない",
+    "romaji": "yamuoenai",
+    "vi": "Bất đắc dĩ, không thể tránh",
+    "level": "N2",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "息抜き",
+    "reading": "いきぬき",
+    "romaji": "ikinuki",
+    "vi": "Nghỉ ngơi, thư giãn",
+    "level": "N2",
+    "tag": [
+      "New"
+    ]
+  },
+  {
+    "word": "ついている",
+    "reading": "ついている",
+    "romaji": "tsuite iru",
+    "vi": "May mắn, có phước",
+    "level": "N3",
+    "tag": [
+      "New"
+    ]
   }
 ]
