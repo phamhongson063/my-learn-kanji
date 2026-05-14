@@ -5845,13 +5845,6 @@
     "level": "N2"
   },
   {
-    "word": "やむを得ない",
-    "reading": "やむをえない",
-    "romaji": "yamuwoenai",
-    "vi": "Bất khả kháng",
-    "level": "N2"
-  },
-  {
     "word": "面倒くさい",
     "reading": "めんどうくさい",
     "romaji": "mendoukusai",
@@ -11996,9 +11989,7 @@
     "romaji": "teikyou",
     "vi": "Cung cấp",
     "level": "N3",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
     "word": "ぐったり",
@@ -12006,9 +11997,7 @@
     "romaji": "guttari",
     "vi": "Mệt lả, kiệt sức",
     "level": "N2",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
     "word": "ショック",
@@ -12016,9 +12005,7 @@
     "romaji": "shokku",
     "vi": "Sốc, cú sốc",
     "level": "N3",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
     "word": "なだらか",
@@ -12026,9 +12013,7 @@
     "romaji": "nadaraka",
     "vi": "Thoai thoải, dần dần",
     "level": "N2",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
     "word": "愉快",
@@ -12036,19 +12021,15 @@
     "romaji": "yukai",
     "vi": "Vui vẻ, thú vị",
     "level": "N2",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
-    "word": "やむをえない",
+    "word": "やむを得ない",
     "reading": "やむをえない",
     "romaji": "yamuoenai",
-    "vi": "Bất đắc dĩ, không thể tránh",
+    "vi": "Không còn cách nào khác / đành chịu / đành phải",
     "level": "N2",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
     "word": "息抜き",
@@ -12056,9 +12037,7 @@
     "romaji": "ikinuki",
     "vi": "Nghỉ ngơi, thư giãn",
     "level": "N2",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   },
   {
     "word": "ついている",
@@ -12066,8 +12045,6 @@
     "romaji": "tsuite iru",
     "vi": "May mắn, có phước",
     "level": "N3",
-    "tag": [
-      "New"
-    ]
+    "tag": ["New"]
   }
 ]
