@@ -74,14 +74,16 @@
     "reading": "とまどう",
     "romaji": "tomadou",
     "vi": "bối rối / lúng túng",
-    "level": "N2"
+    "level": "N2",
+    "tag": ["May15"]
   },
   {
     "word": "いかにも",
     "reading": "いかにも",
     "romaji": "ikanimo",
     "vi": "Quả thật",
-    "level": "N2"
+    "level": "N2",
+    "tag": ["May15"]
   },
   {
     "word": "営む",
@@ -12070,6 +12072,14 @@
     "romaji": "ketsuatsu",
     "vi": "Huyết áp",
     "level": "N3",
+    "tag": ["May15"]
+  },
+  {
+    "word": "豪邸",
+    "reading": "ごうてい",
+    "romaji": "goutei",
+    "vi": "Biệt thự sang trọng",
+    "level": "N2",
     "tag": ["May15"]
   }
 ]
