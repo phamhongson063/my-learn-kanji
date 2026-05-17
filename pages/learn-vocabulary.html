@@ -1596,7 +1596,7 @@
         ? `<button class="vc-play" data-grammar="${g.id}" onclick="event.stopPropagation(); playAllGrammar(this)" title="Phát tất cả câu ví dụ">${ICON_PLAY}</button>`
         : '';
       return `
-        <div class="vc vc-grammar">
+        <div class="vc vc-grammar collapsed">
           <div class="vc-top" onclick="toggleGrammarCard(this)">
             <div class="vc-word-wrap vc-grammar-head">
               <span class="vc-grammar-id">${g.id}</span>
@@ -1748,7 +1748,14 @@
 
   function toggleGrammarCard(top) {
     const card = top.closest('.vc-grammar');
-    if (card) card.classList.toggle('collapsed');
+    if (!card) return;
+    const willOpen = card.classList.contains('collapsed');
+    if (willOpen) {
+      document.querySelectorAll('.vc-grammar:not(.collapsed)').forEach(c => {
+        if (c !== card) c.classList.add('collapsed');
+      });
+    }
+    card.classList.toggle('collapsed');
   }
 
   function playAllGrammar(btn) {
@@ -1757,7 +1764,12 @@
       return;
     }
     const card = btn.closest('.vc-grammar');
-    if (card) card.classList.remove('collapsed');
+    if (card) {
+      document.querySelectorAll('.vc-grammar:not(.collapsed)').forEach(c => {
+        if (c !== card) c.classList.add('collapsed');
+      });
+      card.classList.remove('collapsed');
+    }
     cancelGrammarPlayAll();
     cancelReiLoop();
     stopPlayback();
