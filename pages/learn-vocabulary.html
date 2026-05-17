@@ -1037,6 +1037,75 @@
   .vc-grammar .vc-rei-sentence { color: var(--text); }
   .vc-grammar .vc-rei-label { color: var(--gold); opacity: 1; }
 
+  .vc-grammar .vc-rei-item {
+    cursor: pointer;
+    padding: 5px 9px;
+    border-radius: 7px;
+    transition: background 0.15s, color 0.15s;
+    user-select: none;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .vc-grammar .vc-rei-num {
+    width: auto;
+    text-align: left;
+    line-height: 1.2;
+  }
+  .vc-grammar .vc-rei-item:hover {
+    background: rgba(200,168,75,0.1);
+  }
+  .vc-grammar .vc-rei-item.playing {
+    background: var(--gold);
+  }
+  .vc-grammar .vc-rei-item.playing .vc-rei-sentence,
+  .vc-grammar .vc-rei-item.playing .vc-rei-num {
+    color: #fff;
+  }
+
+  [data-dark="1"] .vc-grammar .vc-rei-item.playing .vc-rei-sentence,
+  [data-dark="1"] .vc-grammar .vc-rei-item.playing .vc-rei-num {
+    color: #15120b;
+  }
+
+  .copy-toast {
+    position: fixed;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%) translateY(16px);
+    padding: 8px 16px;
+    background: var(--gold);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10000;
+  }
+  [data-dark="1"] .copy-toast { color: #15120b; }
+  .copy-toast.show {
+    animation: copy-toast-fade 1.5s forwards;
+  }
+  @keyframes copy-toast-fade {
+    0%   { opacity: 0; transform: translateX(-50%) translateY(16px); }
+    15%  { opacity: 1; transform: translateX(-50%) translateY(0); }
+    80%  { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-8px); }
+  }
+
+  .vc-rei-num {
+    flex-shrink: 0;
+    width: 26px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gold);
+    letter-spacing: 0.5px;
+    line-height: 1.65;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
 </style>
 </head>
 <body>
@@ -1195,6 +1264,7 @@
   const AUDIO_BASE = '../db/audio/';
   const VOCA_BASE = '../db/audio/voca/0/';
   const REI_BASE  = '../db/audio/rei/';
+  const GRAMMAR_BASE = '../db/audio/grammar/';
   let allWords = [];
   let reiMap = {};
   let grammarList = [];
@@ -1216,6 +1286,42 @@
       map[word] = sentences;
     }
     return map;
+  }
+
+  function copyToClipboard(text) {
+    if (!text) return;
+    const fallback = () => {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.top = '-9999px';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, ta.value.length);
+      try { document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(ta);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).catch(fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function showCopyToast() {
+    let toast = document.getElementById('copy-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'copy-toast';
+      toast.className = 'copy-toast';
+      toast.textContent = '✓ Đã copy';
+      document.body.appendChild(toast);
+    }
+    toast.classList.remove('show');
+    void toast.offsetWidth;
+    toast.classList.add('show');
   }
 
   function parseGrammarText(text) {
@@ -1458,11 +1564,15 @@
     }
 
     grid.innerHTML = items.map(g => {
-      const reiItems = g.sentences.map((sentence, idx) => `
-          <div class="vc-rei-item">
-            <button class="vc-rei-play" data-word="${g.id}" data-folder="${idx}" onclick="playRei(this)" title="Phát câu ví dụ">${ICON_REI_PLAY}</button>
+      const reiItems = g.sentences.map((sentence, idx) => {
+        const src = `${GRAMMAR_BASE}${g.id}_${idx + 1}.mp3`;
+        const num = String(idx + 1).padStart(2, '0');
+        return `
+          <div class="vc-rei-item" data-src="${src}" data-word="${g.id}" data-folder="${idx}" onclick="playRei(this)" title="Bấm để phát/dừng">
+            <span class="vc-rei-num">${num}</span>
             <span class="vc-rei-sentence">${sentence}</span>
-          </div>`).join('');
+          </div>`;
+      }).join('');
       const reiHtml = reiItems
         ? `<div class="vc-rei-section"><div class="vc-rei-label">例文</div>${reiItems}</div>`
         : '';
@@ -1585,7 +1695,9 @@
     if (reiLoopBtn) {
       reiLoopBtn.classList.remove('playing');
       reiLoopBtn.style.removeProperty('--progress');
-      reiLoopBtn.innerHTML = ICON_REI_PLAY;
+      if (reiLoopBtn.tagName === 'BUTTON') {
+        reiLoopBtn.innerHTML = ICON_REI_PLAY;
+      }
       reiLoopBtn = null;
     }
     reiAudio = null;
@@ -1607,10 +1719,9 @@
       state.btn.style.removeProperty('--progress');
       state.btn.innerHTML = ICON_PLAY;
     }
-    document.querySelectorAll('.vc-grammar .vc-rei-play.playing').forEach(b => {
+    document.querySelectorAll('.vc-grammar .vc-rei-item.playing').forEach(b => {
       b.classList.remove('playing');
       b.style.removeProperty('--progress');
-      b.innerHTML = ICON_REI_PLAY;
     });
     if (progressRaf) { cancelAnimationFrame(progressRaf); progressRaf = null; }
     if (currentAudio === state.audio) {
@@ -1654,26 +1765,24 @@
       return;
     }
 
-    const reiBtn = document.querySelector(
-      `.vc-grammar .vc-rei-play[data-word="${grammar.id}"][data-folder="${idx}"]`
+    const reiItem = document.querySelector(
+      `.vc-grammar .vc-rei-item[data-word="${grammar.id}"][data-folder="${idx}"]`
     );
-    if (reiBtn) {
-      reiBtn.classList.add('playing');
-      reiBtn.style.removeProperty('--progress');
-      reiBtn.innerHTML = ICON_REI_STOP;
+    if (reiItem) {
+      reiItem.classList.add('playing');
+      reiItem.style.removeProperty('--progress');
     }
 
     const tryPlay = (src, isFallback) => {
       const audio = new Audio(src);
       state.audio = audio;
       currentAudio = audio;
-      currentBtn = reiBtn;
+      currentBtn = reiItem;
 
       audio.addEventListener('ended', () => {
-        if (reiBtn) {
-          reiBtn.classList.remove('playing');
-          reiBtn.style.removeProperty('--progress');
-          reiBtn.innerHTML = ICON_REI_PLAY;
+        if (reiItem) {
+          reiItem.classList.remove('playing');
+          reiItem.style.removeProperty('--progress');
         }
         if (state.cancelled || grammarPlayAll !== state) return;
         playGrammarSequence(state, grammar, idx + 1);
@@ -1681,19 +1790,16 @@
 
       audio.play().then(() => { tickProgress(); }).catch(() => {
         if (!isFallback) {
-          tryPlay(REI_BASE + idx + '/' + grammar.id + '.wav', true);
+          tryPlay(`${GRAMMAR_BASE}${grammar.id}_${idx + 1}.wav`, true);
         } else {
-          if (reiBtn) {
-            reiBtn.classList.remove('playing');
-            reiBtn.innerHTML = ICON_REI_PLAY;
-          }
+          if (reiItem) reiItem.classList.remove('playing');
           if (state.cancelled || grammarPlayAll !== state) return;
           playGrammarSequence(state, grammar, idx + 1);
         }
       });
     };
 
-    tryPlay(REI_BASE + idx + '/' + grammar.id + '.mp3', false);
+    tryPlay(`${GRAMMAR_BASE}${grammar.id}_${idx + 1}.mp3`, false);
   }
 
   function stopPlayback() {
@@ -1703,7 +1809,9 @@
       currentBtn.classList.remove('playing');
       currentBtn.classList.remove('done');
       currentBtn.style.removeProperty('--progress');
-      currentBtn.innerHTML = currentBtn.classList.contains('vc-rei-play') ? ICON_REI_PLAY : ICON_PLAY;
+      if (currentBtn.tagName === 'BUTTON') {
+        currentBtn.innerHTML = currentBtn.classList.contains('vc-rei-play') ? ICON_REI_PLAY : ICON_PLAY;
+      }
     }
     currentAudio = null;
     currentBtn = null;
@@ -1770,24 +1878,39 @@
     cancelReiLoop();
     stopPlayback();
 
+    const sentenceEl = btn.querySelector?.('.vc-rei-sentence');
+    if (sentenceEl) {
+      const text = sentenceEl.textContent.trim();
+      if (text) {
+        copyToClipboard(text);
+        showCopyToast();
+      }
+    }
+
     reiLoopBtn = btn;
 
-    const audioKey = folder + '/' + word;
-    const audio = new Audio(REI_BASE + folder + '/' + word + '.mp3');
+    const srcOverride = btn.dataset.src;
+    const src = srcOverride || (REI_BASE + folder + '/' + word + '.mp3');
+    const fallbackSrc = src.replace(/\.mp3$/, '.wav');
+    const audio = new Audio(src);
     audio.loop = true;
     reiAudio = audio;
-    reiAudioFile = audioKey;
+    reiAudioFile = src;
 
     btn.classList.add('playing');
     btn.style.removeProperty('--progress');
-    btn.innerHTML = ICON_REI_STOP;
+    if (btn.tagName === 'BUTTON') {
+      btn.innerHTML = ICON_REI_STOP;
+    }
     currentAudio = audio;
     currentBtn = btn;
 
     const onFail = () => {
       btn.classList.remove('playing');
       btn.style.removeProperty('--progress');
-      btn.innerHTML = ICON_REI_PLAY;
+      if (btn.tagName === 'BUTTON') {
+        btn.innerHTML = ICON_REI_PLAY;
+      }
       currentAudio = null;
       currentBtn = null;
       reiLoopBtn = null;
@@ -1797,7 +1920,7 @@
 
     audio.play().then(() => { tickProgress(); }).catch(() => {
       // fallback: thử .wav nếu .mp3 không tồn tại
-      const wav = new Audio(REI_BASE + folder + '/' + word + '.wav');
+      const wav = new Audio(fallbackSrc);
       wav.loop = true;
       reiAudio = wav;
       currentAudio = wav;
