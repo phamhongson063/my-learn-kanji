@@ -912,18 +912,6 @@
     pointer-events: none;
   }
 
-  .vc-rei-play.rei-waiting {
-    border-color: var(--gold);
-    background: rgba(200,168,75,0.08);
-    color: var(--gold);
-    animation: rei-pulse 0.9s ease-in-out infinite;
-  }
-
-  @keyframes rei-pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: 0.45; transform: scale(0.92); }
-  }
-
   /* PiP BUTTON */
   .vl-pip-btn {
     flex-shrink: 0;
@@ -1023,6 +1011,27 @@
     background: #b8962e;
     border-color: #b8962e;
     color: #fff;
+  }
+
+  .vc-grammar-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .vc-grammar-head .vc-word { display: inline; }
+
+  .vc-grammar-id {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 5px;
+    background: var(--gold, #c8a84b);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
   }
 
 </style>
@@ -1185,8 +1194,10 @@
   const REI_BASE  = '../db/audio/rei/';
   let allWords = [];
   let reiMap = {};
+  let grammarList = [];
   let currentAudio = null;
   let currentBtn = null;
+  const GRAMMAR_TAG = '__grammar__';
 
   function parseReiText(text) {
     const map = {};
@@ -1202,6 +1213,23 @@
       map[word] = sentences;
     }
     return map;
+  }
+
+  function parseGrammarText(text) {
+    const entries = [];
+    let current = null;
+    for (const raw of text.split('\n')) {
+      const line = raw.trim();
+      const m = line.match(/^(\d+)\.\s+(.+)$/);
+      if (m) {
+        if (current) entries.push(current);
+        current = { id: m[1], pattern: m[2].trim(), sentences: [] };
+      } else if (line && current) {
+        current.sentences.push(line);
+      }
+    }
+    if (current) entries.push(current);
+    return entries;
   }
 
   let activeTags = new Set();
@@ -1229,6 +1257,45 @@
     });
   }
 
+  function renderGrammarTag() {
+    if (grammarList.length === 0) return;
+    const wrap = document.getElementById('tag-filter-wrap');
+    wrap.style.display = 'flex';
+    const id = 'tag-cb-grammar';
+    const label = document.createElement('label');
+    label.htmlFor = id;
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.className = 'vl-tag-check vl-grammar-check';
+    cb.id = id;
+    cb.value = GRAMMAR_TAG;
+    cb.addEventListener('change', onGrammarTagChange);
+    const pill = document.createElement('span');
+    pill.className = 'vl-tag-pill vl-grammar-pill';
+    pill.textContent = 'Grammar';
+    label.appendChild(cb);
+    label.appendChild(pill);
+    const filterLabel = wrap.querySelector('.vl-tag-filter-label');
+    if (filterLabel && filterLabel.nextSibling) {
+      wrap.insertBefore(label, filterLabel.nextSibling);
+    } else {
+      wrap.appendChild(label);
+    }
+  }
+
+  function onGrammarTagChange(e) {
+    const others = document.querySelectorAll('.vl-tag-check:not(.vl-grammar-check)');
+    if (e.target.checked) {
+      activeTags.clear();
+      activeTags.add(GRAMMAR_TAG);
+      others.forEach(cb => { cb.checked = false; cb.disabled = true; });
+    } else {
+      activeTags.delete(GRAMMAR_TAG);
+      others.forEach(cb => { cb.disabled = false; });
+    }
+    applyFilters();
+  }
+
   function onTagChange(e) {
     if (e.target.checked) {
       activeTags.add(e.target.value);
@@ -1240,6 +1307,20 @@
 
   function applyFilters() {
     const q = document.getElementById('search-input').value.trim().toLowerCase();
+
+    if (activeTags.has(GRAMMAR_TAG)) {
+      let result = grammarList;
+      if (q) {
+        result = result.filter(g =>
+          g.pattern.toLowerCase().includes(q) ||
+          g.id.includes(q) ||
+          g.sentences.some(s => s.toLowerCase().includes(q))
+        );
+      }
+      renderGrammarGrid(result);
+      return;
+    }
+
     let result = allWords;
 
     if (activeTags.size > 0) {
@@ -1260,15 +1341,20 @@
 
   async function loadVocab() {
     try {
-      const [wordsRes, reiRes, tagsRes] = await Promise.all([
+      const [wordsRes, reiRes, tagsRes, grammarRes] = await Promise.all([
         fetch(AUDIO_BASE + 'index.json'),
         fetch('../db/audio/rei/index.txt').catch(() => null),
-        fetch('../db/audio/tags.json').catch(() => null)
+        fetch('../db/audio/tags.json').catch(() => null),
+        fetch('../db/audio/grammar.txt').catch(() => null)
       ]);
       if (!wordsRes.ok) throw new Error('fetch failed');
       allWords = await wordsRes.json();
       if (reiRes && reiRes.ok) reiMap = parseReiText(await reiRes.text());
       if (tagsRes && tagsRes.ok) renderTagFilter(await tagsRes.json());
+      if (grammarRes && grammarRes.ok) {
+        grammarList = parseGrammarText(await grammarRes.text());
+        renderGrammarTag();
+      }
       const rnd32 = new Uint32Array(allWords.length);
       crypto.getRandomValues(rnd32);
       for (let i = allWords.length - 1; i > 0; i--) {
@@ -1349,13 +1435,57 @@
     }).join('');
   }
 
+  function renderGrammarGrid(items) {
+    const grid = document.getElementById('vocab-grid');
+    const toggle = document.getElementById('word-count-toggle');
+
+    if (!wordCountText) {
+      toggle.textContent = items.length + ' mục';
+    } else {
+      toggle.textContent = wordCountText;
+    }
+
+    if (items.length === 0) {
+      grid.innerHTML = `
+        <div class="vl-empty">
+          <span class="vl-empty-char">無</span>
+          <p class="vl-empty-msg">Không có ngữ pháp.</p>
+        </div>`;
+      return;
+    }
+
+    grid.innerHTML = items.map(g => {
+      const reiItems = g.sentences.map((sentence, idx) => `
+          <div class="vc-rei-item">
+            <button class="vc-rei-play" data-word="${g.id}" data-folder="${idx}" onclick="playRei(this)" title="Phát câu ví dụ">${ICON_REI_PLAY}</button>
+            <span class="vc-rei-sentence">${sentence}</span>
+          </div>`).join('');
+      const reiHtml = reiItems
+        ? `<div class="vc-rei-section"><div class="vc-rei-label">例文</div>${reiItems}</div>`
+        : '';
+      const playAllBtn = g.sentences.length > 0
+        ? `<button class="vc-play" data-grammar="${g.id}" onclick="playAllGrammar(this)" title="Phát tất cả câu ví dụ">${ICON_PLAY}</button>`
+        : '';
+      return `
+        <div class="vc vc-grammar">
+          <div class="vc-top">
+            <div class="vc-word-wrap vc-grammar-head">
+              <span class="vc-grammar-id">${g.id}</span>
+              <span class="vc-word">${g.pattern}</span>
+            </div>
+            ${playAllBtn}
+          </div>
+          ${reiHtml}
+        </div>`;
+    }).join('');
+  }
+
   const ICON_PLAY = '<svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" style="margin-left:2px"><polygon points="2,1 13,7 2,13"/></svg>';
   const ICON_STOP = '<svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor"><rect width="11" height="11" rx="1.5"/></svg>';
   const ICON_PLAY_SMALL = '<svg width="11" height="11" viewBox="0 0 14 14" fill="currentColor"><polygon points="2,1 13,7 2,13"/></svg>';
   const ICON_STOP_SMALL = '<svg width="10" height="10" viewBox="0 0 11 11" fill="currentColor"><rect width="11" height="11" rx="1.5"/></svg>';
   const ICON_REI_PLAY = '<svg width="9" height="9" viewBox="0 0 14 14" fill="currentColor" style="margin-left:1px"><polygon points="2,1 13,7 2,13"/></svg>';
   const ICON_REI_STOP = '<svg width="8" height="8" viewBox="0 0 11 11" fill="currentColor"><rect width="11" height="11" rx="1.5"/></svg>';
-  const ICON_REI_REPLAY = '<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.4"/></svg>';
 
   // ── Picture-in-Picture overlay ──────────────────────────────────────────
   let pipWin = null;
@@ -1444,38 +1574,123 @@
 
   let progressRaf = null;
   let reiLoopBtn = null;
-  let reiPending = null;
   let reiAudio = null;
   let reiAudioFile = null;
 
-  // Web Worker timer — không bị throttle khi tab ẩn hoặc màn hình dim
-  const _reiWorker = new Worker(URL.createObjectURL(new Blob([`
-    var t = null;
-    self.onmessage = function(e) {
-      if (e.data === 'start') { clearTimeout(t); t = setTimeout(function() { self.postMessage('fire'); }, 2000); }
-      else if (e.data === 'cancel') { clearTimeout(t); }
-    };
-  `], { type: 'application/javascript' })));
-
-  _reiWorker.onmessage = function() {
-    if (reiLoopBtn && reiPending) {
-      var btn = reiLoopBtn, p = reiPending;
-      reiPending = null;
-      startReiLoop(btn, p.word, p.folder);
-    }
-  };
-
+  // Native HTMLMediaElement loop — keeps playing when the screen is locked.
   function cancelReiLoop() {
-    _reiWorker.postMessage('cancel');
-    reiPending = null;
     if (reiLoopBtn) {
-      reiLoopBtn.classList.remove('playing', 'rei-waiting');
+      reiLoopBtn.classList.remove('playing');
       reiLoopBtn.style.removeProperty('--progress');
       reiLoopBtn.innerHTML = ICON_REI_PLAY;
       reiLoopBtn = null;
     }
     reiAudio = null;
     reiAudioFile = null;
+  }
+
+  let grammarPlayAll = null;
+
+  function cancelGrammarPlayAll() {
+    if (!grammarPlayAll) return;
+    const state = grammarPlayAll;
+    grammarPlayAll = null;
+    state.cancelled = true;
+    if (state.audio) {
+      try { state.audio.pause(); } catch (e) {}
+    }
+    if (state.btn) {
+      state.btn.classList.remove('playing');
+      state.btn.style.removeProperty('--progress');
+      state.btn.innerHTML = ICON_PLAY;
+    }
+    document.querySelectorAll('.vc-grammar .vc-rei-play.playing').forEach(b => {
+      b.classList.remove('playing');
+      b.style.removeProperty('--progress');
+      b.innerHTML = ICON_REI_PLAY;
+    });
+    if (progressRaf) { cancelAnimationFrame(progressRaf); progressRaf = null; }
+    if (currentAudio === state.audio) {
+      currentAudio = null;
+      currentBtn = null;
+    }
+  }
+
+  function playAllGrammar(btn) {
+    if (grammarPlayAll && grammarPlayAll.btn === btn) {
+      cancelGrammarPlayAll();
+      return;
+    }
+    cancelGrammarPlayAll();
+    cancelReiLoop();
+    stopPlayback();
+
+    const id = btn.dataset.grammar;
+    const grammar = grammarList.find(g => g.id === id);
+    if (!grammar || grammar.sentences.length === 0) return;
+
+    const state = { btn, cancelled: false, audio: null, grammarId: id };
+    grammarPlayAll = state;
+    btn.classList.add('playing');
+    btn.innerHTML = ICON_STOP;
+
+    playGrammarSequence(state, grammar, 0);
+  }
+
+  function playGrammarSequence(state, grammar, idx) {
+    if (state.cancelled || grammarPlayAll !== state) return;
+    if (idx >= grammar.sentences.length) {
+      // Reached end naturally — reset the play-all button.
+      grammarPlayAll = null;
+      state.btn.classList.remove('playing');
+      state.btn.style.removeProperty('--progress');
+      state.btn.innerHTML = ICON_PLAY;
+      if (progressRaf) { cancelAnimationFrame(progressRaf); progressRaf = null; }
+      currentAudio = null;
+      currentBtn = null;
+      return;
+    }
+
+    const reiBtn = document.querySelector(
+      `.vc-grammar .vc-rei-play[data-word="${grammar.id}"][data-folder="${idx}"]`
+    );
+    if (reiBtn) {
+      reiBtn.classList.add('playing');
+      reiBtn.style.removeProperty('--progress');
+      reiBtn.innerHTML = ICON_REI_STOP;
+    }
+
+    const tryPlay = (src, isFallback) => {
+      const audio = new Audio(src);
+      state.audio = audio;
+      currentAudio = audio;
+      currentBtn = reiBtn;
+
+      audio.addEventListener('ended', () => {
+        if (reiBtn) {
+          reiBtn.classList.remove('playing');
+          reiBtn.style.removeProperty('--progress');
+          reiBtn.innerHTML = ICON_REI_PLAY;
+        }
+        if (state.cancelled || grammarPlayAll !== state) return;
+        playGrammarSequence(state, grammar, idx + 1);
+      }, { once: true });
+
+      audio.play().then(() => { tickProgress(); }).catch(() => {
+        if (!isFallback) {
+          tryPlay(REI_BASE + idx + '/' + grammar.id + '.wav', true);
+        } else {
+          if (reiBtn) {
+            reiBtn.classList.remove('playing');
+            reiBtn.innerHTML = ICON_REI_PLAY;
+          }
+          if (state.cancelled || grammarPlayAll !== state) return;
+          playGrammarSequence(state, grammar, idx + 1);
+        }
+      });
+    };
+
+    tryPlay(REI_BASE + idx + '/' + grammar.id + '.mp3', false);
   }
 
   function stopPlayback() {
@@ -1504,6 +1719,7 @@
     if (!file) return;
 
     const wasSameBtn = currentBtn === btn;
+    cancelGrammarPlayAll();
     cancelReiLoop();
     stopPlayback();
 
@@ -1541,56 +1757,29 @@
     const folder = parseInt(btn.dataset.folder);
     if (!word) return;
 
-    // Nếu đang là loop button (dù đang phát hay đang chờ replay) → dừng hẳn
     if (btn === reiLoopBtn) {
       cancelReiLoop();
       stopPlayback();
       return;
     }
 
+    cancelGrammarPlayAll();
     cancelReiLoop();
     stopPlayback();
 
     reiLoopBtn = btn;
-    startReiLoop(btn, word, folder);
-  }
-
-  function startReiLoop(btn, word, folder) {
-    if (!btn.isConnected || btn !== reiLoopBtn) return;
 
     const audioKey = folder + '/' + word;
+    const audio = new Audio(REI_BASE + folder + '/' + word + '.mp3');
+    audio.loop = true;
+    reiAudio = audio;
+    reiAudioFile = audioKey;
 
-    // Reuse same Audio element across replays — browser keeps permission granted
-    // from original user gesture, avoiding play() rejection in background tabs
-    if (!reiAudio || reiAudioFile !== audioKey) {
-      reiAudio = new Audio(REI_BASE + folder + '/' + word + '.mp3');
-      reiAudioFile = audioKey;
-    }
-    const audio = reiAudio;
-    audio.currentTime = 0;
-
-    btn.classList.remove('rei-waiting');
     btn.classList.add('playing');
     btn.style.removeProperty('--progress');
     btn.innerHTML = ICON_REI_STOP;
     currentAudio = audio;
     currentBtn = btn;
-
-    const onEnded = () => {
-      if (progressRaf) { cancelAnimationFrame(progressRaf); progressRaf = null; }
-      currentAudio = null;
-      currentBtn = null;
-
-      if (btn !== reiLoopBtn) return; // đã bị cancel
-
-      btn.classList.remove('playing');
-      btn.classList.add('rei-waiting');
-      btn.style.removeProperty('--progress');
-      btn.innerHTML = ICON_REI_REPLAY;
-
-      reiPending = { word, folder };
-      _reiWorker.postMessage('start');
-    };
 
     const onFail = () => {
       btn.classList.remove('playing');
@@ -1603,15 +1792,12 @@
       reiAudioFile = null;
     };
 
-    audio.addEventListener('ended', onEnded, { once: true });
-
     audio.play().then(() => { tickProgress(); }).catch(() => {
       // fallback: thử .wav nếu .mp3 không tồn tại
-      audio.removeEventListener('ended', onEnded);
       const wav = new Audio(REI_BASE + folder + '/' + word + '.wav');
+      wav.loop = true;
       reiAudio = wav;
       currentAudio = wav;
-      wav.addEventListener('ended', onEnded, { once: true });
       wav.play().then(() => { tickProgress(); }).catch(onFail);
     });
   }
