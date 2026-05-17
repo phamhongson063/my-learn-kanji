@@ -1034,6 +1034,22 @@
     flex-shrink: 0;
   }
 
+  .vc-grammar .vc-top {
+    cursor: pointer;
+    user-select: none;
+  }
+  .vc-grammar .vc-rei-section {
+    overflow: hidden;
+    max-height: 4000px;
+    transition: max-height 0.4s ease, opacity 0.25s ease, padding 0.25s, margin 0.25s, border-color 0.25s;
+  }
+  .vc-grammar.collapsed .vc-rei-section {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    border-top-color: transparent;
+  }
+
   .vc-grammar .vc-rei-sentence { color: var(--text); }
   .vc-grammar .vc-rei-label { color: var(--gold); opacity: 1; }
 
@@ -1577,11 +1593,11 @@
         ? `<div class="vc-rei-section"><div class="vc-rei-label">例文</div>${reiItems}</div>`
         : '';
       const playAllBtn = g.sentences.length > 0
-        ? `<button class="vc-play" data-grammar="${g.id}" onclick="playAllGrammar(this)" title="Phát tất cả câu ví dụ">${ICON_PLAY}</button>`
+        ? `<button class="vc-play" data-grammar="${g.id}" onclick="event.stopPropagation(); playAllGrammar(this)" title="Phát tất cả câu ví dụ">${ICON_PLAY}</button>`
         : '';
       return `
         <div class="vc vc-grammar">
-          <div class="vc-top">
+          <div class="vc-top" onclick="toggleGrammarCard(this)">
             <div class="vc-word-wrap vc-grammar-head">
               <span class="vc-grammar-id">${g.id}</span>
               <span class="vc-word">${g.pattern}</span>
@@ -1730,11 +1746,18 @@
     }
   }
 
+  function toggleGrammarCard(top) {
+    const card = top.closest('.vc-grammar');
+    if (card) card.classList.toggle('collapsed');
+  }
+
   function playAllGrammar(btn) {
     if (grammarPlayAll && grammarPlayAll.btn === btn) {
       cancelGrammarPlayAll();
       return;
     }
+    const card = btn.closest('.vc-grammar');
+    if (card) card.classList.remove('collapsed');
     cancelGrammarPlayAll();
     cancelReiLoop();
     stopPlayback();
