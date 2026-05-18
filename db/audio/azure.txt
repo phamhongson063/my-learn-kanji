@@ -1,0 +1,2 @@
+001. Azure Resource Manager (ARM)
+Azure Resource Manager (ARM) は、Azure のリソースを管理・制御するためのサービスであり、統一された管理レイヤーを通じて、Azure 上の各種リソースの作成、設定、デプロイ、および管理を行うことができます。
